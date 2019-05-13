@@ -8,32 +8,38 @@ pages:
         - '1.2 System requirements': '01.Getting-Started/02.System-Requirements.md'
         - '1.3 Installation and Deployment': '01.Getting-Started/03.Installation-and-Deployment.md'
     - 2. DataFlows:
-        - '3.1 Overview': '3.-Dataflows/3.1-Overview.md'
+        - '2.1 Overview': '02.DataFlows/01.Overview.md'
+        - '2.1 Overview': '02.DataFlows/02.Composable-Designer.md'
+        - '2.1 Overview': '02.DataFlows/03.KeyBoard-Shortcuts.md'
+        - '2.1 Overview': '02.DataFlows/04.Modules.md'
+        - '2.1 Overview': '02.DataFlows/05.DataFlows.md'
+        - '2.1 Overview': '02.DataFlows/06.DataFlow-Reuse.md'
+        - '2.1 Overview': '02.DataFlows/07.Alerts.md'
+        - 2.8 Data Sources:
+            - '2.8 Data Sources': 02.DataFlows/08.Data-Sources/01.Overview.md'
+        - 2.9 Analytics:
+            - '2.8 Data Sources': 02.DataFlows/08.Analytics/01.Overview.md'
+        - 2.10 DataFlow Patterns:
+            - '2.8 Data Sources': 02.DataFlows/08.DataFlow-Patterns/01.Overview.md'
     - 3. QueryViews:
-        - '3.1 Overview': '3.-Dataflows/3.1-Overview.md'
-    - 4. Boards:
-        - '4.1 Overview': '4.-Boards/4.1-Overview.md'
-    - 5. Dynamic Forms:
-        - '5.1 Overview': '5.-Dynamic-Forms/5.1-Overview.md'
-    - 6. Data Sources:
-        - '6.1 Overview': '6.-Data-Sources/6.1-Overview.md'
-    - 7. Analytics:
-        - '7.1 Overview': '7.-Analytics/7.1-Overview.md'
-    - 8. Properties:
-        - '8.1 Overview': '8.-Properties/8.1-Overview.md'
-    - 9. Groups:
-        - '9.1 Overview': '9.-Groups/9.1-Overview.md'
+        - '3.1 Overview': '03.Dataflows/01.Overview.md'
+    - 4. DataPortals:
+        - '4.1 Overview': '04.DataPortals/01.Overview.md'
+    - 5. WebApps:
+        - '5.1 Overview': '05.WebApps/01.Overview.md'
+    - 6. DataExplorer:
+        - '6.1 Overview': '06.DataExplorer/01.Overview.md'
+    - 7. DashBoards:
+        - '7.1 Overview': '07.DashBoards/01.Overview.md'
+    - 8. Keys:
+        - '8.1 Overview': '08.Keys/01.Overview.md'
+    - 9. Users and Groups:
+        - '9.1 Overview': '09.Users-and-Groups/01.Overview.md'
     - 10. FluentAPI:
-        - '10.1 FluentAPI User Guide': '10.-FluentAPI/10.1-FluentAPI-User-Guide.md'
-        - '10.2 FluentAPI Reference': '10.-FluentAPI/10.2-FluentAPI-Reference.md'
-    - 10. How to Articles:
-        - '10.1 Overview': '10.-How-To-Articles/10.1-Overview.md'
+        - '10.1 FluentAPI User Guide': '10.FluentAPI/01.FluentAPI-User-Guide.md'
+        - '10.2 FluentAPI Reference': '10.FluentAPI/02.FluentAPI-Reference.md'
     - 11. How to Articles:
-        - '11.1 Overview': '11.-How-To-Articles/11.1-Overview.md'
-    - 11. Quick Reference Guides:
-        - '11.1 Overview': '11.-Quick-Reference-Guides/11.1-Overview.md'
-        - '11.2 KeyBoard Shortcuts': '11.-Quick-Reference-Guides/11.2-KeyBoard-Shortcuts.md'
+        - '11.1 Overview': '01.How-To-Articles/10.1-Overview.md'
     - 12. Quick Reference Guides:
-        - '12.1 Overview': '12.-Quick-Reference-Guides/12.1-Overview.md'
-        - '12.2 KeyBoard Shortcuts': '12.-Quick-Reference-Guides/12.2-KeyBoard-Shortcuts.md'
+        - '12.1 Overview': '12.Quick-Reference-Guides/01.Overview.md'
 theme: readthedocs
