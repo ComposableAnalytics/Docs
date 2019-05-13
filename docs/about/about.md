@@ -1,0 +1,7 @@
+# About
+
+Composable DataOps Platform is a full-stack analytics platform with built-in services for data orchestration, automation and analytics. Composable accelerates data engineering, preparation and analysis and serves as a coherent data operations and analytics ecosystem for users that want to architect data intelligence solutions that leverage disparate data sources, live feeds, and event data regardless of the amount, format or structure of the data. Composable was initially prototyped at MIT, developed to be a universal, dataflow-based data operations engine for big data. Today, Composable is the industry's leading Intelligent DataOps platform for solving complex enterprise data management, preparation and exploration challenges.
+
+As a self-service platform for just-in-time analytics, Composable provides a rich, web-based environment for users to compose, discover and collaborate on analytical methods.
+
+Composable DataOps Platform is built and maintained by Composable Analytics, Inc. Composable Analytics, Inc. builds computing and data infrastructure that enables enterprises to rapidly adopt a modern data strategy and robustly manage unlimited amounts of data. For more about the company, visit [here](https://composable.ai).
