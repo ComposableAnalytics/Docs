@@ -9,12 +9,12 @@ pages:
         - '1.3 Installation and Deployment': '01.Getting-Started/03.Installation-and-Deployment.md'
     - 2. DataFlows:
         - '2.1 Overview': '02.DataFlows/01.Overview.md'
-        - '2.1 Composable Designer': '02.DataFlows/02.Composable-Designer.md'
-        - '2.1 KeyBoard Shortcuts': '02.DataFlows/03.KeyBoard-Shortcuts.md'
-        - '2.1 Modules': '02.DataFlows/04.Modules.md'
-        - '2.1 DataFlows': '02.DataFlows/05.DataFlows.md'
-        - '2.1 DataFlow Reuse': '02.DataFlows/06.DataFlow-Reuse.md'
-        - '2.1 Alerts': '02.DataFlows/07.Alerts.md'
+        - '2.2 Composable Designer': '02.DataFlows/02.Composable-Designer.md'
+        - '2.3 KeyBoard Shortcuts': '02.DataFlows/03.KeyBoard-Shortcuts.md'
+        - '2.4 Modules': '02.DataFlows/04.Modules.md'
+        - '2.5 DataFlows': '02.DataFlows/05.DataFlows.md'
+        - '2.6 DataFlow Reuse': '02.DataFlows/06.DataFlow-Reuse.md'
+        - '2.7 Alerts': '02.DataFlows/07.Alerts.md'
         - 2.8 Data Sources:
             - '2.8 Data Sources': '02.DataFlows/08.Data-Sources/01.Overview.md'
         - 2.9 Analytics:
