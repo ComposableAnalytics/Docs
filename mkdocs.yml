@@ -10,13 +10,13 @@ pages:
     - 2. Composable Platform:
         - '2.1 Overview': '02.Composable-Platform/01.Overview.md'    
     - 3. DataFlows:
-        - '3.1 Overview': '02.DataFlows/01.Overview.md'
-        - '3.2 Composable Designer': '02.DataFlows/02.Composable-Designer.md'
-        - '3.3 KeyBoard Shortcuts': '02.DataFlows/03.KeyBoard-Shortcuts.md'
-        - '3.4 Modules': '02.DataFlows/04.Modules.md'
-        - '3.5 DataFlows': '02.DataFlows/05.DataFlows.md'
-        - '3.6 DataFlow Reuse': '02.DataFlows/06.DataFlow-Reuse.md'
-        - '3.7 Alerts': '02.DataFlows/07.Alerts.md'
+        - '3.1 Overview': '03.DataFlows/01.Overview.md'
+        - '3.2 Composable Designer': '03.DataFlows/02.Composable-Designer.md'
+        - '3.3 KeyBoard Shortcuts': '03.DataFlows/03.KeyBoard-Shortcuts.md'
+        - '3.4 Modules': '03.DataFlows/04.Modules.md'
+        - '3.5 DataFlows': '03.DataFlows/05.DataFlows.md'
+        - '3.6 DataFlow Reuse': '03.DataFlows/06.DataFlow-Reuse.md'
+        - '3.7 Alerts': '03.DataFlows/07.Alerts.md'
         - 3.8 Data Sources:
             - '3.8 Data Sources': '03.DataFlows/08.Data-Sources/01.Overview.md'
         - 3.9 Analytics:
