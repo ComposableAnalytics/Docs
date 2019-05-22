@@ -51,7 +51,7 @@ pages:
         - '11.1 FluentAPI User Guide': '11.FluentAPI/01.FluentAPI-User-Guide.md'
         - '11.2 FluentAPI Reference': '11.FluentAPI/02.FluentAPI-Reference.md'
     - 12. How to Articles:
-        - '12.1 Overview': '12.How-To-Articles/10.1-Overview.md'
+        - '12.1 Overview': '12.How-To-Articles/01.Overview.md'
     - 13. Quick Reference Guides:
         - '13.1 Overview': '13.Quick-Reference-Guides/01.Overview.md'
 
