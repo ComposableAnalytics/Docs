@@ -1,9 +1,13 @@
-site_name: Composable Docs
+site_name: MkDocs
+site_url: https://docs.composable.ai
+site_description: Composable DataOps Platform technical documentation for big data orchestration, automation and analytics
+site_author: Composable Analytics, Inc.
 
-markdown_extensions:
-  - admonition
-  
-html_logo = 'img/composable.png'
+repo_url: https://github.com/ComposableAnalytics/Docs
+
+theme:
+    name: mkdocs
+    highlightjs: true
 
 pages:
 - Home: 'index.md'
@@ -50,4 +54,8 @@ pages:
         - '12.1 Overview': '12.How-To-Articles/10.1-Overview.md'
     - 13. Quick Reference Guides:
         - '13.1 Overview': '13.Quick-Reference-Guides/01.Overview.md'
-theme: readthedocs
+
+markdown_extensions:
+  - admonition
+  
+html_logo = 'img/composable.png'
