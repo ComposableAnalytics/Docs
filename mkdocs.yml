@@ -57,5 +57,3 @@ pages:
 
 markdown_extensions:
   - admonition
-  
-html_logo = 'img/composable.png'
