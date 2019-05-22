@@ -6,7 +6,7 @@ site_author: Composable Analytics, Inc.
 repo_url: https://github.com/ComposableAnalytics/Docs
 
 theme:
-    name: mkdocs
+    name: readthedocs
     highlightjs: true
 
 pages:
