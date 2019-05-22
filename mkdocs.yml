@@ -1,10 +1,5 @@
 site_name: Composable Docs
 
-# General information about the site
-project = 'Composable DataOps Platform'
-copyright = '2010-2019, Composable Analytics, Inc. and Composable community'
-author = 'Composable Analytics, Inc. and Composable community'
-
 markdown_extensions:
   - admonition
   
