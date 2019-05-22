@@ -1,4 +1,15 @@
-site_name: Composable DataOps Platform Knowledge Base
+site_name: Composable Docs
+
+# General information about the site
+project = 'Composable DataOps Platform'
+copyright = '2010-2019, Composable Analytics, Inc. and Composable community'
+author = 'Composable Analytics, Inc. and Composable community'
+
+markdown_extensions:
+  - admonition
+  
+html_logo = 'img/composable.png'
+
 pages:
 - Home: 'index.md'
 - About: 'about/about.md'
@@ -43,5 +54,5 @@ pages:
     - 12. How to Articles:
         - '12.1 Overview': '12.How-To-Articles/10.1-Overview.md'
     - 13. Quick Reference Guides:
-        - '13.1 Overview': '12.Quick-Reference-Guides/01.Overview.md'
+        - '13.1 Overview': '13.Quick-Reference-Guides/01.Overview.md'
 theme: readthedocs
