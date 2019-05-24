@@ -21,6 +21,8 @@ pages:
         - '2.1 Overview': '02.Composable-Platform/01.Overview.md'
         - '2.2 Navigation': '02.Composable-Platform/02.Navigation.md'
         - '2.3 Search': '02.Composable-Platform/03.Search.md'
+        - '2.4 Product Areas': '02.Composable-Platform/04.Product-Areas.md'
+        - '2.5 System Administration': '02.Composable-Platform/05.System-Administration.md'
     - 3. DataFlows:
         - '3.1 Overview': '03.DataFlows/01.Overview.md'
         - '3.2 Composable Designer': '03.DataFlows/02.Composable-Designer.md'
