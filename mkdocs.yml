@@ -38,7 +38,7 @@ pages:
         - 3.10 DataFlow Patterns:
             - '3.10 DataFlow Patterns': '03.DataFlows/10.DataFlow-Patterns/01.Overview.md'
     - 4. QueryViews:
-        - '4.1 Overview': '04.Dataflows/01.Overview.md'
+        - '4.1 Overview': '04.QueryViews/01.Overview.md'
     - 5. DataPortals:
         - '5.1 Overview': '05.DataPortals/01.Overview.md'
     - 6. DataExplorer:
