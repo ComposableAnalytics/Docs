@@ -17,6 +17,7 @@ pages:
         - '1.1 Overview': '01.Getting-Started/01.Overview.md'
         - '1.2 System requirements': '01.Getting-Started/02.System-Requirements.md'
         - '1.3 Installation and Deployment': '01.Getting-Started/03.Installation-and-Deployment.md'
+        - '1.4 Public Cloud Deployment': '01.Getting-Started/04.Public-Cloud-Deployment.md'
     - 2. Composable Platform:
         - '2.1 Overview': '02.Composable-Platform/01.Overview.md'
         - '2.2 Navigation': '02.Composable-Platform/02.Navigation.md'
