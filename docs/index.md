@@ -9,6 +9,6 @@ Please browse the topics (on the left) to find technical documentation, getting 
 
 - Read articles on the [Composable Blog](https://blog.composable.ai) to keep up to date with the latest new features and updates.
 - Search through the [Support Forums](https://support.composable.ai) to read through past discussions and ask questions.
-- Review the [Composable API Docs](http://dev.composable.ai) for details on the Composable API services and data objects.
+- Review the [Composable API Docs](https://dev.composable.ai) for details on the Composable API services and data objects.
 
 Feel free to [contact us](https://composable.ai/contact-us) or send an e-mail to <info@composable.ai> with any questions or requests for live tutorials and demonstrations.
