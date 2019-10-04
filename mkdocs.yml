@@ -32,6 +32,7 @@ pages:
         - '3.5 DataFlows': '03.DataFlows/05.DataFlows.md'
         - '3.6 DataFlow Reuse': '03.DataFlows/06.DataFlow-Reuse.md'
         - '3.7 Alerts': '03.DataFlows/07.Alerts.md'
+        - '3.8 Custom Module Extensions': '03.DataFlows/08.Custom-Modules.md'
         - 3.8 Data Sources:
             - '3.8 Data Sources': '03.DataFlows/08.Data-Sources/01.Overview.md'
         - 3.9 Analytics:
