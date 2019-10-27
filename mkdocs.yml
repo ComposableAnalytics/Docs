@@ -51,6 +51,7 @@ pages:
         - '8.1 Overview': '08.WebApps/01.Overview.md'
     - 9. Keys:
         - '9.1 Overview': '09.Keys/01.Overview.md'
+        - '9.2 Using Keys': '09.Keys/02.Using-Keys.md'
     - 10. Users and Groups:
         - '10.1 Overview': '10.Users-and-Groups/01.Overview.md'
     - 11. FluentAPI:

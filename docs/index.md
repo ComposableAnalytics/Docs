@@ -1,3 +1,12 @@
+---
+title: Composable Docs
+summary: Technical Documentation for the Composable DataOps Platform
+authors:
+    - Composable Analytics, Inc.
+date: 2014-08-12
+some_url: https://docs.composable.ai
+---
+
 Welcome to the official documentation site for the Composable DataOps Platform, the best-in-class intelligent data operations and analytics platform. You will find Composable to be a powerful development environment that will allow you to architect data-driven applications that leverage disparate data sources, live feeds, and event data and significantly reduce your time to deployment for operational data intelligence solutions.
 
 This documentation is continuously written, edited, and expanded by members of the Composable community. It is edited via text files in the [Markdown format](https://guides.github.com/features/mastering-markdown/) and then compiled into a static website and hosted using [ReadTheDocs](https://readthedocs.org/).
