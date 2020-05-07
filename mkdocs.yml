@@ -38,8 +38,8 @@ pages:
         - '4.2 QueryView Creation': '04.QueryViews/02.Create-QueryView.md'
     - 5. DataPortals:
         - '5.1 Overview': '05.DataPortals/01.Overview.md'
-        - '5.2 DataPortals Creation': '05.DataPortals/01.Create-DataPortals.md'
-        - '5.3 Search': '05.DataPortals/01.Search-Features.md'
+        - '5.2 DataPortals Creation': '05.DataPortals/02.Create-DataPortals.md'
+        - '5.3 Search': '05.DataPortals/03.Search-Features.md'
     - 6. DataExplorer:
         - '6.1 Overview': '06.DataExplorer/01.Overview.md'
     - 7. DashBoards:
