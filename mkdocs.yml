@@ -54,6 +54,11 @@ pages:
     - 11. FluentAPI:
         - '11.1 FluentAPI User Guide': '11.FluentAPI/01.FluentAPI-User-Guide.md'
         - '11.2 FluentAPI Reference': '11.FluentAPI/02.FluentAPI-Reference.md'
+    - 12. Code Promotion:
+        - '12.1 Overview': '11.Code-Promotion/01.Overview.md'
+        - '12.2 Setup': '11.Code-Promotion/02.Setup.md'
+        - '12.3 Optional Settings': '11.Code-Promotion/03.Optional-Settings.md'
+        - '12.4 Possible-Issues': '11.Code-Promotion/04.Possible-Issues.md'
     
 markdown_extensions:
   - admonition
