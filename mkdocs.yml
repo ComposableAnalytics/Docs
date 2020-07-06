@@ -40,6 +40,7 @@ pages:
         - '5.1 Overview': '05.DataPortals/01.Overview.md'
         - '5.2 DataPortals Creation': '05.DataPortals/02.Create-DataPortals.md'
         - '5.3 Search': '05.DataPortals/03.Search-Features.md'
+        - '5.4 NumberFormatting Field': '05.DataPortals/04.Number-Formatting.md'
     - 6. DataExplorer:
         - '6.1 Overview': '06.DataExplorer/01.Overview.md'
     - 7. DashBoards:
