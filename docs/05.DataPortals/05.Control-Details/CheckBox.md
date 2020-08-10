@@ -21,42 +21,42 @@ The **CheckBox** control type will create a checkbox for a boolean field on the 
 
 The **CheckBox** control type requires the following Excel columns:
 
-- [**Name**:](../06.Settings-Details/Name.md) The name of the field saved to the database.
+- [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
 
-- [**Type**:](../06.Settings-Details/Type.md) The name of the `C#` type backing this field. Must be set to `System.Boolean`.
+- [**Type**:](../06.Setting-Details/Type.md) The name of the `C#` type backing this field. Must be set to `System.Boolean`.
 
-- [**ControlType**:](../06.Settings-Details/ControlType.md) The name of the desired control type. Must be set to `CheckBox`.
+- [**ControlType**:](../06.Setting-Details/ControlType.md) The name of the desired control type. Must be set to `CheckBox`.
 
 ### Optional fields
 
 The **CheckBox** control type also supports the following Excel columns:
 
-- [**ClearWhenHidden**](../06.Settings-Details/ClearWhenHidden.md)
+- [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 
-- [**CustomIndex**:](../06.Settings-Details/CustomIndex.md) Settings for one or more indexes to create on the database that include this column.
+- [**CustomIndex**:](../06.Setting-Details/CustomIndex.md) Settings for one or more indexes to create on the database that include this column.
 
-- [**DefaultValue**](../06.Settings-Details/DefaultValue.md)
+- [**DefaultValue**](../06.Setting-Details/DefaultValue.md)
 
-- [**Description**:](../06.Settings-Details/Description.md) Optional further details about the field.
+- [**Description**:](../06.Setting-Details/Description.md) Optional further details about the field.
 
-- [**DisplayName**:](../06.Settings-Details/DisplayName.md) The name that will be shown for the field above the input box. This can be any string. If no **DisplayName** is provided, **Name** will be shown.
+- [**DisplayName**:](../06.Setting-Details/DisplayName.md) The name that will be shown for the field above the input box. This can be any string. If no **DisplayName** is provided, **Name** will be shown.
 
-- [**Group**](../06.Settings-Details/Group.md)
+- [**Group**](../06.Setting-Details/Group.md)
 
-- [**MaskedCondition**](../06.Settings-Details/MaskedCondition.md)
+- [**MaskedCondition**](../06.Setting-Details/MaskedCondition.md)
 
-- [**ReadOnlyCondition**](../06.Settings-Details/ReadOnlyCondition.md)
+- [**ReadOnlyCondition**](../06.Setting-Details/ReadOnlyCondition.md)
 
-- [**Required**](../06.Settings-Details/Required.md)
+- [**Required**](../06.Setting-Details/Required.md)
 
-- [**Style**](../06.Settings-Details/Style.md)
+- [**Style**](../06.Setting-Details/Style.md)
 
-- [**TabIndex**](../06.Settings-Details/TabIndex.md)
+- [**TabIndex**](../06.Setting-Details/TabIndex.md)
 
-- [**UniqueConstraint**](../06.Settings-Details/UniqueConstraint.md) *(deprecated)*
+- [**UniqueConstraint**](../06.Setting-Details/UniqueConstraint.md) *(deprecated)*
 
-- [**UniqueConstraintScopeToParent**](../06.Settings-Details/UniqueConstraintScopeToParent.md) *(deprecated)*
+- [**UniqueConstraintScopeToParent**](../06.Setting-Details/UniqueConstraintScopeToParent.md) *(deprecated)*
 
-- [**ValidationCondition**](../06.Settings-Details/ValidationCondition.md)
+- [**ValidationCondition**](../06.Setting-Details/ValidationCondition.md)
 
-- [**VisibilityCondition**](../06.Settings-Details/VisibilityCondition.md)
+- [**VisibilityCondition**](../06.Setting-Details/VisibilityCondition.md)
