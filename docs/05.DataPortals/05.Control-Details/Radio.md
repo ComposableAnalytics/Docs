@@ -21,46 +21,46 @@ The **Radio** control type allows selection of one value from a predefined set o
 
 The **Radio** control type requires the following Excel columns:
 
-- [**Name**:](../05.Settings-Details/Name.md) The name of the field saved to the database.
+- [**Name**:](../06.Settings-Details/Name.md) The name of the field saved to the database.
 
-- [**Type**:](../05.Settings-Details/Type.md) The name of the `C#` type backing this field. Must be set to `Form.<CategoryName>` where `<CategoryName>` is the name of a category field defined elsewhere in the Excel file.
+- [**Type**:](../06.Settings-Details/Type.md) The name of the `C#` type backing this field. Must be set to `Form.<CategoryName>` where `<CategoryName>` is the name of a category field defined elsewhere in the Excel file.
 
-- [**ControlType**:](../05.Settings-Details/ControlType.md) The name of the desired control type. Must be set to `Category`.
+- [**ControlType**:](../06.Settings-Details/ControlType.md) The name of the desired control type. Must be set to `Category`.
 
 ### Optional fields
 
 The **Category** control type also supports the following Excel columns:
 
-- [**ClearWhenHidden**](../05.Settings-Details/ClearWhenHidden.md)
+- [**ClearWhenHidden**](../06.Settings-Details/ClearWhenHidden.md)
 
-- [**ControlGroup**](../05.Settings-Details/ControlGroup.md)
+- [**ControlGroup**](../06.Settings-Details/ControlGroup.md)
 
-- [**CustomIndex**:](../05.Settings-Details/CustomIndex.md) Settings for one or more indexes to create on the database that include this column.
+- [**CustomIndex**:](../06.Settings-Details/CustomIndex.md) Settings for one or more indexes to create on the database that include this column.
 
-- [**DefaultValue**](../05.Settings-Details/DefaultValue.md)
+- [**DefaultValue**](../06.Settings-Details/DefaultValue.md)
 
-- [**Description**:](../05.Settings-Details/Description.md) Optional further details about the field.
+- [**Description**:](../06.Settings-Details/Description.md) Optional further details about the field.
 
-- [**DisplayName**:](../05.Settings-Details/DisplayName.md) The name that will be shown for the field above the input box. This can be any string. If no **DisplayName** is provided, **Name** will be shown.
+- [**DisplayName**:](../06.Settings-Details/DisplayName.md) The name that will be shown for the field above the input box. This can be any string. If no **DisplayName** is provided, **Name** will be shown.
 
-- [**Group**:](../05.Settings-Details/Group.md) The layout group position for this control.
+- [**Group**:](../06.Settings-Details/Group.md) The layout group position for this control.
 
-- [**MaskedCondition**](../05.Settings-Details/MaskedCondition.md)
+- [**MaskedCondition**](../06.Settings-Details/MaskedCondition.md)
 
-- [**OptionController**](../05.Settings-Details/OptionController.md)
+- [**OptionController**](../06.Settings-Details/OptionController.md)
 
-- [**ReadOnlyCondition**](../05.Settings-Details/ReadOnlyCondition.md)
+- [**ReadOnlyCondition**](../06.Settings-Details/ReadOnlyCondition.md)
 
-- [**Required**](../05.Settings-Details/Required.md)
+- [**Required**](../06.Settings-Details/Required.md)
 
-- [**Style**](../05.Settings-Details/Style.md)
+- [**Style**](../06.Settings-Details/Style.md)
 
-- [**TabIndex**](../05.Settings-Details/TabIndex.md)
+- [**TabIndex**](../06.Settings-Details/TabIndex.md)
 
-- [**UniqueConstraint**](../05.Settings-Details/UniqueConstraint.md) *(deprecated)*
+- [**UniqueConstraint**](../06.Settings-Details/UniqueConstraint.md) *(deprecated)*
 
-- [**UniqueConstraintScopeToParent**](../05.Settings-Details/UniqueConstraintScopeToParent.md) *(deprecated)*
+- [**UniqueConstraintScopeToParent**](../06.Settings-Details/UniqueConstraintScopeToParent.md) *(deprecated)*
 
-- [**ValidationCondition**](../05.Settings-Details/ValidationCondition.md)
+- [**ValidationCondition**](../06.Settings-Details/ValidationCondition.md)
 
-- [**VisibilityCondition**](../05.Settings-Details/VisibilityCondition.md)
+- [**VisibilityCondition**](../06.Settings-Details/VisibilityCondition.md)
