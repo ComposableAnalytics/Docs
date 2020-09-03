@@ -17,7 +17,7 @@ The basic behavior of **DataPortal Sync** is best demonstrated via an example. S
 
 ## Example DataFlow
 
-The following <a href="https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/03.DataFlows/09.Module-Details/files/DataPortal%20Sync%20and%20Delete%20Example.json" download>an example DataFlow</a> demonstrates many of the possible ways to use the **DataPortal Sync** module. This DataFlow uses the <a href="./files/InsuranceApplication.xlsx" download>Insurance Application</a> sample DataPortal model, which creates a DataPortal called `AppManagement` by default. **WARNING: this DataFlow deletes all existing data in the DataPortal, so only run it against a test DataPortal.** You can change the name in the Excel file if you already have an `AppManagement` DataPortal, just be sure to select the right DataPortal when configuring the DataFlow.
+The following <a id="raw-url" href="https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/03.DataFlows/09.Module-Details/files/DataPortal%20Sync%20and%20Delete%20Example.json" download>example DataFlow</a> demonstrates many of the possible ways to use the **DataPortal Sync** module. This DataFlow uses the <a href="./files/InsuranceApplication.xlsx" download>Insurance Application</a> sample DataPortal model, which creates a DataPortal called `AppManagement` by default. **WARNING: this DataFlow deletes all existing data in the DataPortal, so only run it against a test DataPortal.** You can change the name in the Excel file if you already have an `AppManagement` DataPortal, just be sure to select the right DataPortal when configuring the DataFlow.
 
 ### Create New Containers
 
