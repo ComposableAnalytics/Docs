@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **Table** control type displays a collection of instances of a linked container.
+The **Table** control type displays a collection of instances of a linked child container.
 
 ![Table Control](../img/Table.png)
 

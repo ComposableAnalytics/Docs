@@ -11,11 +11,13 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **Page** control type is used to separate fields into multiple linked containers. Adding a page creates a 1-1 relationship between the container and the linked container. This relationship is represented visually as tabs at the top of the screen:
+The **Page** control type is used to separate fields into multiple linked child containers. Adding a page creates a 1-1 parent-child relationship between the container and the linked container. This relationship is represented visually as tabs at the top of the screen:
 
 ![Page](../img/Page.png)
 
 Note the similarity to the [Tab](Tab.md) control, which allows for visual separation of data without creating a new container and database table.
+
+Also note the similarity to the [Table](Table.md) control, which also creates a parent-child relationship but allows the parent container to have multiple instances of the child container.
 
 ## Excel Sheet Input
 
