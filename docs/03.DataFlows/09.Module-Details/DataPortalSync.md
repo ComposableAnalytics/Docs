@@ -21,7 +21,7 @@ The following <a href="https://raw.githubusercontent.com/ComposableAnalytics/Doc
 
 ### Create New Containers
 
-The simplest way to use DataPortal Sync is to create new entries in a [DataPortal Table.](../../05.DataPortals/05.Control-Details/Table.md). In the `AppManagement` DataPortal, the first page we see is a table of `Application`s. Each of these is a DataPortal "Container" with type `Application`, defined in the DataPortal model. Each container encompasses many fields, which may be spread across multiple tables in the underlying database by use of the [Page](../../05.DataPortals/05.Control-Details/Page.md) control type.
+The simplest way to use DataPortal Sync is to create new entries in a [DataPortal Table](../../05.DataPortals/05.Control-Details/Table.md). In the `AppManagement` DataPortal, the first page we see is a table of `Application`s. Each of these is a DataPortal "Container" with type `Application`, defined in the DataPortal model. Each container encompasses many fields, which may be spread across multiple tables in the underlying database by use of the [Page](../../05.DataPortals/05.Control-Details/Page.md) control type.
 
 ![Application Table](img/DataPortalSync.ApplicationTable.png)
 
