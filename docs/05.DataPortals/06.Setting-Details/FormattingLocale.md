@@ -12,7 +12,7 @@ some_url: https://docs.composable.ai
 The **FormattingLocale** column on a container field is used to define the "locale" for [NumberFormatting](../Control-Details/NumberFormatting.md) controls.
 
 ### Locale
-Numeric representation differs significantly throughout the world. Different regions have different syntactical customs which can lead to inconsisencies when displaying numbers. Number Formatting addresses this by supporting numeric format representation specific to a wide array of locales. Individual fields locales can be set by defining the specific locale within the **FormattingLocale** column. 
+Numeric representation differs significantly throughout the world. Different regions have different syntactical customs which can lead to inconsistences when displaying numbers. Number Formatting addresses this by supporting numeric format representation specific to a wide array of locales. Individual fields locales can be set by defining the specific locale within the **FormattingLocale** column. 
 
 ### Possible Values
 
