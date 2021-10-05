@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **DataPortal Delete** module allows mass deletion of data in a [Composable DataPortal](../../05.DataPortals/01.Overview.md). It takes a Composable Table and uses each row to identify a container to delete from the DataPortal.
+The **DataPortal Delete** module allows mass deletion of data in a [Composable DataPortal](../../DataPortals/01.Overview.md). It takes a Composable Table and uses each row to identify a container to delete from the DataPortal.
 
 ![DataPortal Delete](img/DataPortalDelete.png)
 

@@ -11,17 +11,17 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **DataPortal Sync** module (formerly known as **Table To Form Automapper**) allows mass creation, modification, and deletion of data in a [Composable DataPortal](../../05.DataPortals/01.Overview.md). It takes a Composable Table and converts each row into a "Container" in the DataPortal, either creating a new container or updating the values in an existing container.
+The **DataPortal Sync** module (formerly known as **Table To Form Automapper**) allows mass creation, modification, and deletion of data in a [Composable DataPortal](../../DataPortals/01.Overview.md). It takes a Composable Table and converts each row into a "Container" in the DataPortal, either creating a new container or updating the values in an existing container.
 
 The basic behavior of **DataPortal Sync** is best demonstrated via an example. See [below](#input-details) for a complete discussion of inputs and options.
 
 ## Example DataFlow
 
-The following <a href="https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/03.DataFlows/09.Module-Details/files/DataPortal%20Sync%20and%20Delete%20Example.json" download>example DataFlow</a> demonstrates many of the possible ways to use the **DataPortal Sync** module. This DataFlow uses the <a href="https://github.com/ComposableAnalytics/Docs/blob/master/docs/03.DataFlows/09.Module-Details/files/InsuranceApplication.xlsx?raw=true" download>Insurance Application</a> sample DataPortal model, which creates a DataPortal called `AppManagement` by default. **WARNING: this DataFlow deletes all existing data in the DataPortal, so only run it against a test DataPortal.** You can change the name in the Excel file if you already have an `AppManagement` DataPortal, just be sure to select the right DataPortal when configuring the DataFlow.
+The following <a href="https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/DataFlows/09.Module-Details/files/DataPortal%20Sync%20and%20Delete%20Example.json" download>example DataFlow</a> demonstrates many of the possible ways to use the **DataPortal Sync** module. This DataFlow uses the <a href="https://github.com/ComposableAnalytics/Docs/blob/master/docs/DataFlows/09.Module-Details/files/InsuranceApplication.xlsx?raw=true" download>Insurance Application</a> sample DataPortal model, which creates a DataPortal called `AppManagement` by default. **WARNING: this DataFlow deletes all existing data in the DataPortal, so only run it against a test DataPortal.** You can change the name in the Excel file if you already have an `AppManagement` DataPortal, just be sure to select the right DataPortal when configuring the DataFlow.
 
 ### Create New Containers
 
-The simplest way to use DataPortal Sync is to create new entries in a [DataPortal Table](../../05.DataPortals/05.Control-Details/Table.md). In the `AppManagement` DataPortal, the first page we see is a table of `Application`s. Each of these is a DataPortal "Container" with type `Application`, defined in the DataPortal model. Each container encompasses many fields, which may be spread across multiple tables in the underlying database by use of the [Page](../../05.DataPortals/05.Control-Details/Page.md) control type.
+The simplest way to use DataPortal Sync is to create new entries in a [DataPortal Table](../../DataPortals/05.Control-Details/Table.md). In the `AppManagement` DataPortal, the first page we see is a table of `Application`s. Each of these is a DataPortal "Container" with type `Application`, defined in the DataPortal model. Each container encompasses many fields, which may be spread across multiple tables in the underlying database by use of the [Page](../../DataPortals/05.Control-Details/Page.md) control type.
 
 ![Application Table](img/DataPortalSync.ApplicationTable.png)
 
@@ -61,16 +61,16 @@ This is the table being fed into **Data** in the first module:
 |Application 2|Bob||Bennett|Male|1980-01-01|true|Homemaker|Trust to be Established|
 |Application 3|Charlie||Charles|Male|May 15, 1965|No|Retired|Existing Trust|
 
-The column names are all names of fields in the DataPortal. Note, however, that they are not all directly defined on the Application container. Most are defined on separate containers linked to `Application` via the [Page](../../05.DataPortals/05.Control-Details/Page.md) control type. Because these are in a one to one relationship with `Application`, the DataPortal sync module treats them identically to fields defined directly on `Application`.
+The column names are all names of fields in the DataPortal. Note, however, that they are not all directly defined on the Application container. Most are defined on separate containers linked to `Application` via the [Page](../../DataPortals/05.Control-Details/Page.md) control type. Because these are in a one to one relationship with `Application`, the DataPortal sync module treats them identically to fields defined directly on `Application`.
 
 The values in this table will be written to the DataPortal in the appropriate fields when this module is run. Because there are three rows, three `Application` entries will be created. Any fields not included in this table will be left with their default value (which is usually no value). If there were any additional columns in this table that didn't map to any field on `Application` or one of it's pages, those values would be ignored.
 
 Finally note the types of information present in the table. In general, the DataPortal sync module will try to convert whatever values it receives into the appropriate format for the DataPortal field being written to. In this case, because this data is coming from a Table Editor module, all the raw values are simply text; conversions will also work with differently typed data from other sources.
 
-- For [Text](../../05.DataPortals/05.Control-Details/Text.md) controls like `FirstName`, the value to be stored will simply be the string.
-- For [Category](../../05.DataPortals/05.Control-Details/Category.md) controls like `Sex` and `Occupation`, the values in the table match the picklist values (case-insensitive); if a value doesn't match one of the options no value will be set and an error will be included in the **Errors** output.
-- For [CheckBox](../../05.DataPortals/05.Control-Details/CheckBox.md) controls like the `Citizenship` field, the DataPortal stores a Boolean value (`true` or `false`). This can be expressed in a variety of ways in the input table, we use `Yes`, `No`, and `true` for the values here; the strings `0`, `1`, `N`, and `Y` also work, as will a variety of non-string values.
-- For [Date](../../05.DataPortals/05.Control-Details/Date.md) controls the input will be parsed as a date; a wide variety of formats are possible.
+- For [Text](../../DataPortals/05.Control-Details/Text.md) controls like `FirstName`, the value to be stored will simply be the string.
+- For [Category](../../DataPortals/05.Control-Details/Category.md) controls like `Sex` and `Occupation`, the values in the table match the picklist values (case-insensitive); if a value doesn't match one of the options no value will be set and an error will be included in the **Errors** output.
+- For [CheckBox](../../DataPortals/05.Control-Details/CheckBox.md) controls like the `Citizenship` field, the DataPortal stores a Boolean value (`true` or `false`). This can be expressed in a variety of ways in the input table, we use `Yes`, `No`, and `true` for the values here; the strings `0`, `1`, `N`, and `Y` also work, as will a variety of non-string values.
+- For [Date](../../DataPortals/05.Control-Details/Date.md) controls the input will be parsed as a date; a wide variety of formats are possible.
 
 ### Updating Existing Containers
 
@@ -121,7 +121,7 @@ The key inputs here are **JoinColumns** and **DeleteUnmatched**. All of the othe
 
 - If no existing container matches on all join columns, a new container is created. Note that this is what happened on the first run of [the first DataPortal Sync module](#create-new-containers), so the behavior was the same as it would be with no value for that input
 - If exactly one existing container matches on all join columns, that container is updated with the values from **Data**.
-- If more than one existing container matches on all join columns, the module fails. Thus the join columns should uniquely identify entries in the DataPortal; it is often a good idea to have a [CustomIndex](../../05.DataPortals/06.Setting-Details/CustomIndex.md) enforcing that uniqueness on columns you intend to use as **JoinColumns**.
+- If more than one existing container matches on all join columns, the module fails. Thus the join columns should uniquely identify entries in the DataPortal; it is often a good idea to have a [CustomIndex](../../DataPortals/06.Setting-Details/CustomIndex.md) enforcing that uniqueness on columns you intend to use as **JoinColumns**.
 
 **DeleteUnmatched** allows you to delete any containers that aren't part of the current sync. The `All` option selected here means that any containers not included in **Data** will be deleted. This allows for a true "sync" behavior where the data in the DataPortal exactly matches the input data after the sync. `None` does no deletion and is usually the desired behavior. The `MatchedParents` option [is discussed below](#delete-unmatched)
 
@@ -147,7 +147,7 @@ The other is **ParentInstanceId**, which is now empty. This signals to the modul
 |33|Charlie|Canton Charles|50|Individual|
 |33|Charlie|Carol Charles|50|Individual|
 
-Note the `ParentInstanceId` column. The values in this column are `InstanceId` values for `SectionC` instances, where `SectionC` is the [Page](../../05.DataPortals/05.Control-Details/Page.md) under `Application` that contains a [Table](../../05.DataPortals/05.Control-Details/Table.md) of `BeneficiaryInfo` entries. Thus the "Parent" of each `BeneficiaryInfo` is the `SectionC` instance we want to write to. Because `SectionC` is in a one to one correspondance with `Application`, in this small demo example the instance ID of `SectionC` will match the ID of `Application`, so in this case we have retrieved them from a previous run of DataPortal Sync on `Application`. **This identity is not guaranteed to hold in general, and you should always use the ID of the direct parent as the ParentInstanceId.**
+Note the `ParentInstanceId` column. The values in this column are `InstanceId` values for `SectionC` instances, where `SectionC` is the [Page](../../DataPortals/05.Control-Details/Page.md) under `Application` that contains a [Table](../../DataPortals/05.Control-Details/Table.md) of `BeneficiaryInfo` entries. Thus the "Parent" of each `BeneficiaryInfo` is the `SectionC` instance we want to write to. Because `SectionC` is in a one to one correspondance with `Application`, in this small demo example the instance ID of `SectionC` will match the ID of `Application`, so in this case we have retrieved them from a previous run of DataPortal Sync on `Application`. **This identity is not guaranteed to hold in general, and you should always use the ID of the direct parent as the ParentInstanceId.**
 
 ### DataPortal Delete
 
@@ -165,7 +165,7 @@ In this case, we have submitted the following table for **Data**:
 |---------|--------|
 |Bob      |Bennett |
 
-This one row table will result in one `Application` entry being deleted. Because we have chosen to include columns corresponding to fields on `Application` or its [Page](../../05.DataPortals/05.Control-Details/Page.md) containers, this **Data** table is treated as containing join columns. Every column in the table is used to join to the existing data, in this case finding the entry with `FirstName` Bob and `LastName` Bennett. Because **ParentInstanceId** is set this search is also limited to those with parent ID 1, but all `Application` entries have parent 1 because they are at the top level of the DataPortal (underneath only the singleton `AppContainer`). We could also have included a `ParentInstanceId` column in the table to limit the join to different parents on each row. Finally, we could have instead identified the containers to delete by `InstanceId` as the only column in **Data**.
+This one row table will result in one `Application` entry being deleted. Because we have chosen to include columns corresponding to fields on `Application` or its [Page](../../DataPortals/05.Control-Details/Page.md) containers, this **Data** table is treated as containing join columns. Every column in the table is used to join to the existing data, in this case finding the entry with `FirstName` Bob and `LastName` Bennett. Because **ParentInstanceId** is set this search is also limited to those with parent ID 1, but all `Application` entries have parent 1 because they are at the top level of the DataPortal (underneath only the singleton `AppContainer`). We could also have included a `ParentInstanceId` column in the table to limit the join to different parents on each row. Finally, we could have instead identified the containers to delete by `InstanceId` as the only column in **Data**.
 
 ## Input Details
 
@@ -175,7 +175,7 @@ This one row table will result in one `Application` entry being deleted. Because
 
 This is your input table, containing the data to sync into your DataPortal and optionally including information to use to identify existing data to update.
 
-Most column headers should be the exact name of a field in the container or one of its [Page](../../05.DataPortals/05.Control-Details/Page.md) children. For example, suppose your DataPortal's container has a field defined as such:
+Most column headers should be the exact name of a field in the container or one of its [Page](../../DataPortals/05.Control-Details/Page.md) children. For example, suppose your DataPortal's container has a field defined as such:
 
 | Name      	| DisplayName 	| Description 	| Type          	| ControlType 	|
 |-----------	|-------------	|-------------	|---------------	|-------------	|
@@ -198,7 +198,7 @@ There are two other columns that may optionally be included in **Data**:
 
 Join columns, `InstanceId`, and `ParentInstanceId` will be used to determine which container, existing or new, to write data to. The data in all other columns will be stored to the identified container. If a column does not match a field on the container that column will be ignored.
 
-There is no need to worry about exact type matching — the module will automatically attempt to convert the data provided in the table to the appropriate type in the container's underlying database. [Category](../../05.DataPortals/05.Control-Details/Category.md) fields should be entered as the string value in the table, rather than the integer ID.
+There is no need to worry about exact type matching — the module will automatically attempt to convert the data provided in the table to the appropriate type in the container's underlying database. [Category](../../DataPortals/05.Control-Details/Category.md) fields should be entered as the string value in the table, rather than the integer ID.
 
 ### FormId
 
@@ -214,7 +214,7 @@ This is the name of the container that the module will be creating instances of 
 
 > ... /DataPortal.aspx#/form/2340034/SurveyManager/1/**Survey**/324
 
-Note that data may be written to containers with different names if they are [Page](../../05.DataPortals/05.Control-Details/Page.md) children of the given container name.
+Note that data may be written to containers with different names if they are [Page](../../DataPortals/05.Control-Details/Page.md) children of the given container name.
 
 ### ParentInstanceId
 
