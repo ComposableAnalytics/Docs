@@ -49,7 +49,7 @@ This defines the minimum possible numeric input into the NumberFormatting field 
 This defines the maximum possible numeric input into the NumberFormatting field and can be declared in the **Max** column. All input values below will display an error box to the user.
 
 ## DefaultValue
-This defines the default balue that is displayed to the user and stored in number representation on the database upon initialization. It can be declared under the **DefaultValue** column.
+This defines the default value that is displayed to the user and stored in number representation on the database upon initialization. It can be declared under the **DefaultValue** column.
 
 # User Experience
 The user experience for Number Formatting consists of three stages. 1) Pre-populated fields, 2) fields during numeric inputting, 3) post-populated field.
