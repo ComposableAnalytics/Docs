@@ -9,7 +9,7 @@ some_url: https://docs.composable.ai
 
 # RefreshComponents
 
-The **RefreshComponents** column on a container field defines what other fields should be refreshed after running a Composable [DataFlow](../03.DataFlows/01.Overview.md) via an [AppRun](../05.Control-Details/AppRun.md) control.
+The **RefreshComponents** column on a container field defines what other fields should be refreshed after running a Composable [DataFlow](../../03.DataFlows/01.Overview.md) via an [AppRun](../05.Control-Details/AppRun.md) control.
 
 Must be a comma-separated list of field names.
 

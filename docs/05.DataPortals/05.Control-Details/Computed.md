@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **Computed** control type creates a read-only control showing a value computed from other fields on the same container. See [ComputedCondition](../05.Setting-Details.md) for configuration details.
+The **Computed** control type creates a read-only control showing a value computed from other fields on the same container. See [ComputedCondition](../06.Setting-Details/ComputedCondition.md) for configuration details.
 
 ![Computed Control](../img/Computed.png)
 
@@ -24,7 +24,7 @@ The **Computed** control type requires the following Excel columns:
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
 
 - [**Type**:](../06.Setting-Details/Type.md) The name of the `C#` type backing this field. Can be any numeric type, including (but not limited to):
-    
+  
     - `System.Int32`
     - `System.Double`
     - `System.Decimal`

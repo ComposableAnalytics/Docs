@@ -9,7 +9,7 @@ some_url: https://docs.composable.ai
 
 # FormattingOptions
 
-The **FormattingOptions** column on a container field is used to define specifics of number formatting for [NumberFormatting](../Control-Details/NumberFormatting.md) controls. This allows DataPortal creators to format numbers into **notations**, **percents**, **currencies**, and much more. These options can be declared in the **FormattingOptions** column. When blank, the Options will be set to empty options by default.
+The **FormattingOptions** column on a container field is used to define specifics of number formatting for [NumberFormatting](../05.Control-Details/NumberFormatting.md) controls. This allows DataPortal creators to format numbers into **notations**, **percents**, **currencies**, and much more. These options can be declared in the **FormattingOptions** column. When blank, the Options will be set to empty options by default.
 
 ### Input Format
 

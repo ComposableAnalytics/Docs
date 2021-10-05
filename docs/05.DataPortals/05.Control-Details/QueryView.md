@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **QueryView** control type displays the results of a Composable [QueryView](../04.QueryViews/01.Overview.md) as a table.
+The **QueryView** control type displays the results of a Composable [QueryView](../../04.QueryViews/01.Overview.md) as a table.
 
 ![QueryView Control](../img/QueryView.png)
 
