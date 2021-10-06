@@ -6,10 +6,12 @@ site_author: Composable Analytics, Inc.
 repo_url: https://github.com/ComposableAnalytics/Docs
 
 theme:
-    name: readthedocs
+    name: windmill
     highlightjs: true
+    navigation-depth: 4
 
-pages:
+
+nav:
 - Home: 'index.md'
 - About: 'about/about.md'
 - Documentation:
