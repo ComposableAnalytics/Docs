@@ -6,9 +6,10 @@ site_author: Composable Analytics, Inc.
 repo_url: https://github.com/ComposableAnalytics/Docs
 
 theme:
-    name: windmill
-    highlightjs: true
-    navigation-depth: 4
+    name: null
+    custom_dir: 'mkdocs_windmill'
+    search_index_only: true
+    include_search_page: true
 
 
 nav:
