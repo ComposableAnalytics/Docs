@@ -39,6 +39,7 @@ nav:
     - 3.9 Module Details:
         - 'DataPortal Delete': 'DataFlows/09.Module-Details/DataPortalDelete.md'
         - 'DataPortal Sync': 'DataFlows/09.Module-Details/DataPortalSync.md'
+    - '3.10 Runs': 'DataFlows/10.Runs.md'
 - 4. QueryViews:
     - '4.1 Overview': 'QueryViews/01.Overview.md'
     - '4.2 QueryView Creation': 'QueryViews/02.Create-QueryView.md'
