@@ -139,6 +139,8 @@ nav:
     - '12.2 Setup': 'Code-Promotion/02.Setup.md'
     - '12.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
     - '12.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
-    
+- Tutorials:
+    - 'Lunch Recommender Slack App': 'Tutorials/Lunch.md'
+
 markdown_extensions:
   - admonition
