@@ -153,6 +153,7 @@ function visitUrl(url, event) {
   var relPath = getRelPath('/', url);
   if (relPath !== null) {
     event.preventDefault();
+/*try changing this*/
     var newUrl = getAbsUrl('#', relPath);
     if (newUrl !== mainWindow.location.href) {
       mainWindow.history.pushState(null, '', newUrl);
@@ -172,7 +173,7 @@ function adjustLink(linkEl) {
     linkEl.setAttribute('data-wm-adjusted', 'done');
     var relPath = getRelPath('/', linkEl.href);
     if (relPath !== null) {
-      var newUrl = getAbsUrl('#', relPath);
+      var newUrl = getAbsUrl('', relPath);
       linkEl.href = newUrl;
     }
   }
