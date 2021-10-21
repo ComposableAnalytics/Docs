@@ -18,7 +18,7 @@ Our final Slack message will look like this
 
 ![Lunch Slack Message](img/LunchSlackMessage.png)
 
-Here is the DataFlow that you can import into Composable to follow along and implement for your own slack channel. <a href="/Tutorials/img/" download="Lunch Recommender.json">Download Lunch Recommender DataFlow</a> You will need to add your google cloud API key and Slack webhook as described below.
+Here is the DataFlow that you can import into Composable to follow along and implement for your own slack channel. <a href="./Tutorials/img/" download="Lunch Recommender.json">Download Lunch Recommender DataFlow</a> You will need to add your google cloud API key and Slack webhook as described below.
 
 ## Getting Started
 
