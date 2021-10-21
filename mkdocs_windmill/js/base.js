@@ -154,7 +154,7 @@ function visitUrl(url, event) {
   if (relPath !== null) {
     event.preventDefault();
 /*try changing this*/
-    var newUrl = getAbsUrl('', relPath);
+    var newUrl = getAbsUrl('#', relPath);
     if (newUrl !== mainWindow.location.href) {
       mainWindow.history.pushState(null, '', newUrl);
       updateIframe(false);
@@ -173,8 +173,13 @@ function adjustLink(linkEl) {
     linkEl.setAttribute('data-wm-adjusted', 'done');
     var relPath = getRelPath('/', linkEl.href);
     if (relPath !== null) {
-      var newUrl = getAbsUrl('', relPath);
-      linkEl.href = newUrl;
+	  if (relPath.split('.').pop() !== 'json')  {
+		var newUrl = getAbsUrl('#', relPath);
+		linkEl.href = newUrl;
+	  } else {
+		var newUrl = getAbsUrl('', relPath);
+		linkEl.href = newUrl;
+	  }
     }
   }
 }

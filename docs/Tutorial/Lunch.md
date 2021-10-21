@@ -8,7 +8,7 @@ some_url: https://docs.composable.ai
 
 ---
 
-# Creating a DataFlow to Reccomend a Lunch Spot in Slack using the Google Maps Places API
+# Creating a DataFlow to Recommend a Lunch Spot in Slack using the Google Maps Places API
 
  I think we all know the feeling when noon hits and it's time to decide where to get lunch. At Composable, this starts a discussion to see what everyone is in the mood for, agreeing on a spot, then sending a link to our #lunch slack channel with the link to order. If you're bad at making decisions, the good news is that we get automate this easily in a Composable DataFlow! 
 
@@ -22,9 +22,9 @@ Here is the DataFlow that you can import into Composable to follow along and imp
 
 ## Getting Started
 
-For this project, you'll need an Google Cloud Console account and a Slack workspace where you can create a Slack App. 
+For this project, you'll need a Google Cloud Console account and a Slack workspace where you can create a Slack App. 
 
-First, you'll need to generate an API token on the Google Cloud Console. This is described in the [Google Maps documentation](https://developers.google.com/maps/gmp-get-started). After [logging in](https://console.cloud.google.com/), you'll also need to have billing set up on your account. We will only be making a few API calls each day, so this will fall well within the $200 monthly credit tier. Once logged in, create a Project, then in the sidebar, select "APIs and Services" then ["Credentials"](https://console.cloud.google.com/apis/credentials). Click on the "Create Credentials" button at the top and select API key. To help prevent unathorized use, you can restrict your API key to be restricted to the Places API.
+First, you'll need to generate an API token on the Google Cloud Console. This is described in the [Google Maps documentation](https://developers.google.com/maps/gmp-get-started). After [logging in](https://console.cloud.google.com/), you'll also need to have billing set up on your account. We will only be making a few API calls each day, so this will fall well within the $200 monthly credit tier. Once logged in, create a Project, then in the sidebar, select "APIs and Services" then ["Credentials"](https://console.cloud.google.com/apis/credentials). Click on the "Create Credentials" button at the top and select API key. To help prevent unauthorized use, you can restrict your API key to be restricted to the Places API.
 
 ![Google Cloud Platform API Creation](img/GoogleAPICreation.png)
 
@@ -65,7 +65,7 @@ The API call is limited to return 20 results. We can make 2 more calls using the
 
 We use the output of the `WebClient` module from the previous step and attach it to a `JSONPath Query` module to extract the next_page_token. The JSONPathQuery is `$.next_page_token`. We then make this a Key Value Pair with the key `pagetoken` and create another uri with the `UriBuilder` module. The other QueryParam to add is our API key from the previous step. 
 
-Usually, we want a module to execute as soon as it has received all of it's inputs, but in this case the API documentation states that there is a delay before the next page token is valid, so we will use the `Pause` module to create a dummy input into the Uri Builder module. Because the output of the JSONPath Query module cannot connect directly to the Pause module, we first use a `Boolean IfElse` module where it is always set to True, so the value in the `IfTrue` input will always be the output. This will be the amount of the delay, which connects to the Pause. Then the `Dependency Waiter` module is also used as a graph flow module, waiting for all of it's input modules to execute before it runs. We pass a null output to the Uri Builder. Then we have another WebClient module to make the API call for the next 20 results.
+Usually, we want a module to execute as soon as it has received all of its inputs, but in this case the API documentation states that there is a delay before the next page token is valid, so we will use the `Pause` module to create a dummy input into the Uri Builder module. Because the output of the JSONPath Query module cannot connect directly to the Pause module, we first use a `Boolean IfElse` module where it is always set to True, so the value in the `IfTrue` input will always be the output. This will be the amount of the delay, which connects to the Pause. Then the `Dependency Waiter` module is also used as a graph flow module, waiting for all of its input modules to execute before it runs. We pass a null output to the Uri Builder. Then we have another WebClient module to make the API call for the next 20 results.
 
 We can repeat this flow one more time, to get the maximum possible 60 results from the API call.
 
@@ -152,4 +152,4 @@ Finally, we want to schedule the DataFlow to run every week day at noon. There's
 
 ## Additional Features
 
-This is a great version 1.0 of our DataFlow, but what could we put into version 2.0? Some ideas would be to add more integration with the Slack App api, to allow interaction from Slack users. What if they don't like the chosen lunch option? Could you weight the results so our random selection prefers locations that are closer? Or we could introduce a slash command to also activate the dataflow so we can get a new choice. Or with that slash command, set the starting location as a parameter instead of hardcoding a specific location. Could you get a DataFlow to parse a restaurant's reviews and see what menu items people are talking about? Or build out a Composable WebApp for your coworkers to add their lunch orders. Try it out!
+This is a great version 1.0 of our DataFlow, but what could we put into version 2.0? Some ideas would be to add more integration with the Slack App API, to allow interaction from Slack users. What if they don't like the chosen lunch option? Could you weight the results so our random selection prefers locations that are closer? Or we could introduce a slash command to also activate the dataflow so we can get a new choice. Or with that slash command, set the starting location as a parameter instead of hardcoding a specific location. Could you get a DataFlow to parse a restaurant's reviews and see what menu items people are talking about? Or build out a Composable WebApp for your coworkers to add their lunch orders. Try it out!
