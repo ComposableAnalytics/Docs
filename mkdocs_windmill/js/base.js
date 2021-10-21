@@ -154,7 +154,7 @@ function visitUrl(url, event) {
   if (relPath !== null) {
     event.preventDefault();
 /*try changing this*/
-    var newUrl = getAbsUrl('#', relPath);
+    var newUrl = getAbsUrl('', relPath);
     if (newUrl !== mainWindow.location.href) {
       mainWindow.history.pushState(null, '', newUrl);
       updateIframe(false);
