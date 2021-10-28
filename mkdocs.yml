@@ -140,6 +140,7 @@ nav:
     - '12.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
     - '12.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
 - Tutorials:
+    - 'Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
     - 'Lunch Recommender Slack App': 'Tutorial/Lunch.md'
 
 markdown_extensions:

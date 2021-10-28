@@ -3,7 +3,7 @@ title: Composable Docs
 summary: Technical Documentation for the Composable DataOps Platform
 authors:
     - Composable Analytics, Inc.
-date: 2014-08-12
+date: 2021-10-21
 some_url: https://docs.composable.ai
 
 ---
@@ -46,14 +46,14 @@ The base of the url will be `https://maps.googleapis.com/maps/api/place/details/
 
 To use our API key, add a `Key Loader (ID)` module, and click the pencil icon and select the key we added earlier. Connect this to the value of a `Key Value Pair` module. The other required parameter is the location, which we set to the coordinates of Composable's office. When you search a place on google maps, the coordinates will be in the url. For the other filters, we want to find places that are open (opennow), within a roughly 10 min walk of the office (distance,900 meters), are not too expensive (maxprice), and serve food (keyword). When testing, we can try out other keywords to see if it gives a better result set. The `Uri Builder` takes all of these inputs and formats them correctly to make the API call. 
 
-| Key                 | Value Format               | Value                  |
-| ------------------- | -------------------------- | ---------------------- |
-| key (required)      | Key Loader Module          |                        |
-| location (required) | \<Latitude\>,\<Longitude\> | 42.3900177,-71.1232273 |
-| keyword             | \<string\>                 | food                   |
-| opennow             |                            |                        |
-| radius              | \<meters\>                 | 900                    |
-| maxprice (optional) | 0-4                        | 3                      |
+| Key                 | Value Format              | Value                  |
+| ------------------- | ------------------------- | ---------------------- |
+| key (required)      | Key Loader Module Input   |                        |
+| location (required) | <Latitude\>,\<Longitude\> | 42.3900177,-71.1232273 |
+| keyword             | <string\>                 | food                   |
+| opennow             |                           |                        |
+| radius              | <meters\>                 | 900                    |
+| maxprice (optional) | 0-4                       | 3                      |
 
 Next connect the `Uri Builder` to a `WebClient` module and set the Method to `GET`. This module makes the request to get information from the link we created. Try running the DataFlow now and right-click out the output of the `WebClient` module and View Results. We have the results of the API call! The Composable module has also formatted the JSON so that it is easy to read the returned results.
 
@@ -146,7 +146,7 @@ Run your DataFlow and you'll have a notification in your slack channel a few sec
 
 ### Scheduling the DataFlow
 
-Finally, we want to schedule the DataFlow to run every week day at noon. There's a module for that! Activation modules will activate the DataFlow when the criteria is met, without you having to hit the run button. The `Timer` module activates a DataFlow at the assigned time. This is a similar format to a cron scheduler. We don't want it to run on weekends, so set the day of week to `Monday,Tuesday,Wednesday,Thursday,Friday`. And then set the hour (0-23) and minute to when you want to be notified. And that's our DataFlow!
+Finally, we want to schedule the DataFlow to run every week day at noon. There's a module for that! Activation modules will activate the DataFlow when the criteria is met, without you having to hit the run button. The `Timer` module activates a DataFlow at the assigned time. This is a similar format to a cron scheduler. We don't want it to run on weekends, so set the day of week to `Monday,Tuesday,Wednesday,Thursday,Friday`. And then set the hour (0-23) and minute to when you want to be notified. It does not need to be connected to any other modules. And that's our DataFlow!
 
 ![Timer Module](img/LunchTimer.png)
 
