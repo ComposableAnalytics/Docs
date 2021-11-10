@@ -9,15 +9,15 @@ some_url: https://docs.composable.ai
 
 # Type
 
-The **Type** column on a container field defines the variable that the input field represents in the database. There are three main types of values you can put in this field: system types, such as `System.String`; category types, which represent a sort of picklist; container types, which represent a link to another page or table if it’s a one to many relationships.
+The **Type** column on a container field defines the variable that the input field represents in the database. There are three main types of values you can put in this field: [system types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types), such as `System.String`; category types, which represent a sort of picklist; container types, which represent a link to another page or table if it’s a one to many relationships.
 
 ### System Types
 
-Most fields have a type value representing the `C#` type and database type backing the field. The value should be the name of a `C#` type appropriate for the [ControlType](ControlType.md), such as `System.String` for a [Text](../05.Control-Details/Text.md) control or `System.Decimal` for a [NumberFormatting](../05.Control-Details/NumberFormatting.md) control.
+Most fields have a type value representing the `C#` type and database type backing the field. The value should be the name of a [`C#` type](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) appropriate for the [ControlType](ControlType.md), such as `System.String` for a [Text](../05.Control-Details/Text.md) control or `System.Decimal` for a [NumberFormatting](../05.Control-Details/NumberFormatting.md) control.
 
 ### Category Types
 
-For [Category](../05.Control-Details/Category.md) and [Radio](../05.Control-Details/Radio.md) controls, the **Type** is not a `C#` type but rather a [Category](../04.Categories.md) defined elsewhere in the Excel sheet; these will look like `Form.<Name>` where `<Name>` is the name of another Excel sheet (or column in the `Categories` sheet). To allow selection of multiple values, enclose the type in `[]` brackets (e.g. `[Form.Name]`).
+For [Category](../05.Control-Details/Category.md) and [Radio](../05.Control-Details/Radio.md) controls, the **Type** is not a `C#` type but rather a [Category](../05.Categories.md) defined elsewhere in the Excel sheet; these will look like `Form.<Name>` where `<Name>` is the name of another Excel sheet (or column in the `Categories` sheet). To allow selection of multiple values, enclose the type in `[]` brackets (e.g. `[Form.Name]`).
 
 ### Reference Types
 
@@ -40,6 +40,7 @@ The **Type** column applies to, and is required for, the following controls:
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
 - [Page](../05.Control-Details/Page.md)
 - [Phone](../05.Control-Details/Phone.md)
+- [Pill](../05.Control-Details/Pill.md)
 - [QueryView](../05.Control-Details/QueryView.md)
 - [QueryViewChooser](../05.Control-Details/QueryViewChooser.md)
 - [Radio](../05.Control-Details/Radio.md)

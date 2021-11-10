@@ -17,21 +17,15 @@ Menu Closed                      | Menu Open
 :-------------------------------:|:------------------------:
 ![Date Control](../img/Date.png) | ![Date Menu](../img/Date-With-Menu.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Date** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must be set to `System.DateTimeOffset`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.DateTimeOffset`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `Date`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `Date`.
 
-### Optional fields
-
-The **Date** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 

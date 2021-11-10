@@ -15,23 +15,17 @@ The **HyperLink** control type creates a link to another page either within Comp
 
 ![HyperLink Control](../img/Hyperlink.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **HyperLink** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must be set to `System.String`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.String`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `HyperLink`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `HyperLink`.
 
 - [**Href**](../06.Setting-Details/Href.md)
 
-### Optional fields
-
-The **HyperLink** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**Description**](../06.Setting-Details/Description.md): Optional further details about the field.
 

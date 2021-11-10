@@ -26,6 +26,7 @@ The **ReadOnlyCondition** column applies to the following controls:
 - [Label](../05.Control-Details/Label.md)
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
 - [Phone](../05.Control-Details/Phone.md)
+- [Pill](../05.Control-Details/Pill.md)
 - [QueryView](../05.Control-Details/QueryView.md)
 - [QueryViewChooser](../05.Control-Details/QueryViewChooser.md)
 - [Radio](../05.Control-Details/Radio.md)

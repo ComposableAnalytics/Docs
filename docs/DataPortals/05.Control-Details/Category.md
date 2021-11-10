@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **Category** control type allows selection of one or more values from a predefined set of options. See [Categories](../04.Categories.md) for a complete discussion of creating and using categories.
+The **Category** control type allows selection of one or more values from a predefined set of options. See [Categories](../05.Categories.md) for a complete discussion of creating and using categories.
 
 A **Category** control that allows a single selection creates a dropdown menu showing the available options:
 
@@ -23,21 +23,15 @@ A **Category** control that allows multiple selections creates a multiselect con
 
 ![MultiCategory Control](../img/MultiCategory.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Category** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
 
-- [**Type**:](../06.Setting-Details/Type.md) The name of the `C#` type backing this field. Must be set to `Form.<CategoryName>` or `[Form.<CategoryName>]` where `<CategoryName>` is the name of a category field defined elsewhere in the Excel file. Enclosing `Form.<CategoryName>` in `[]` brackets allows multiple selection, while using just `Form.<CategoryName>` will create a single selection control.
+- [**Type**:](../06.Setting-Details/Type.md) Must be set to `Form.<CategoryName>` or `[Form.<CategoryName>]` where `<CategoryName>` is the name of a category field defined elsewhere in the Excel file. Enclosing `Form.<CategoryName>` in `[]` brackets allows multiple selection, while using just `Form.<CategoryName>` will create a single selection control.
 
-- [**ControlType**:](../06.Setting-Details/ControlType.md) The name of the desired control type. Must be set to `Category`.
+- [**ControlType**:](../06.Setting-Details/ControlType.md) Must be set to `Category`.
 
-### Optional fields
-
-The **Category** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 

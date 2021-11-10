@@ -3,23 +3,24 @@ title: Composable Docs
 summary: Technical Documentation for the Composable DataOps Platform
 authors:
     - Composable Analytics, Inc.
-date: 2014-08-12
+date: 2021-11-08
 some_url: https://docs.composable.ai
+
 ---
 
-# Radio
+# Pill
 
 ## Overview
 
-The **Radio** control type allows selection of one value from a predefined set of options. See [Categories](../05.Categories.md) for a complete discussion of creating and using categories. These options are presented as a collection of radio buttons:
+The **Pill** control type allows selection of one or multiple values from a predefined set of options. See [Categories](../05.Categories.md) for a complete discussion of creating and using categories. These options are presented as a collection of pill buttons:
 
-![Radio Control](../img/Radio.png)
+![Radio Control](C:\Users\compo\ComposableDocumentation\Docs\docs\DataPortals\img\Pill.png)
 
 ## Required Fields
 
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
-- [**Type**:](../06.Setting-Details/Type.md) Must be set to `Form.<CategoryName>` where `<CategoryName>` is the name of a category field defined elsewhere in the Excel file.
-- [**ControlType**:](../06.Setting-Details/ControlType.md) Must be set to `Radio`.
+- [**Type**:](../06.Setting-Details/Type.md) Must be set to `Form.<CategoryName>` or `[Form.<CategoryName>]` where `<CategoryName>` is the name of a category field defined elsewhere in the Excel file. Enclosing `Form.<CategoryName>` in `[]` brackets allows multiple selection, while using just `Form.<CategoryName>` will create a single selection control.
+- [**ControlType**:](../06.Setting-Details/ControlType.md) Must be set to `Pill`.
 
 ## Optional Fields
 

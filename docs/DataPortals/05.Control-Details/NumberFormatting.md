@@ -17,39 +17,25 @@ The **NumberFormatting** control supports number formatting functionality for nu
 
 ## Excel Sheet Input
 
-### Required fields
-
-The **NumberFormatting** control type requires the following Excel columns:
+## Required Fields
 
 - **Name**: The name of the field saved to the database. See [here](../06.Setting-Details/Name.md) for details and restrictions.
 
-- **Type**: The name of the `C#` type backing this field. Can be any of the following types:
-
+- **Type**: Can be any of the following types:
     - `System.Double`
     - `System.Single`
     - `System.Decimal` 
-
-- **ControlType**: The name of the desired control type. Must be set to `NumberFormatting`.
-
-- **FormattingLocale**: The "locale" describing what cultural norms to use when formatting the number. If not provided or blank, defaults to United States English (`en-us`). See [here](../06.Setting-Details/FormattingLocale.md) for details.
-
-- **FormattingOptions**: Various options describing what formatting to apply to the number. See [here](../06.Setting-Details/FormattingOptions.md) for details.
-
-### Optional fields
-
-The **NumberFormatting** control type also supports the following Excel columns:
-
-## FormattingOptions
+    
+- **ControlType**: Must be set to `NumberFormatting`.
 
 
-## Min
-This defines the minimum possible numeric input into the NumberFormatting field and can be declared in the **Min** column. All input values below will display an error box to the user.
+## Optional Fields
 
-## Max
-This defines the maximum possible numeric input into the NumberFormatting field and can be declared in the **Max** column. All input values below will display an error box to the user.
-
-## DefaultValue
-This defines the default value that is displayed to the user and stored in number representation on the database upon initialization. It can be declared under the **DefaultValue** column.
+- [**FormattingLocale**](../06.Setting-Details/FormattingLocale.md): The "locale" describing what cultural norms to use when formatting the number. If not provided or blank, defaults to United States English (`en-us`).
+- [**FormattingOptions**](../06.Setting-Details/FormattingOptions.md): Options describing what formatting to apply to the number.
+- [**Min**](../06.Setting-Details/Min.md): This defines the minimum possible numeric input into the NumberFormatting field. All input values below will display an error box to the user.
+- [**Max**](../06.Setting-Details/Max.md): This defines the maximum possible numeric input into the NumberFormatting field. All input values above will display an error box to the user.
+- [**DefaultValue**](../06.Setting-Details/DefaultValue.md): This defines the default value that is displayed to the user and stored in number representation on the database upon initialization.
 
 # User Experience
 The user experience for Number Formatting consists of three stages. 1) Pre-populated fields, 2) fields during numeric inputting, 3) post-populated field.

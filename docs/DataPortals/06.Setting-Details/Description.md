@@ -31,6 +31,7 @@ The **Description** column applies to the following controls:
 - [HyperLink](../05.Control-Details/HyperLink.md)
 - [Label](../05.Control-Details/Label.md)
 - [Phone](../05.Control-Details/Phone.md)
+- [Pill](../05.Control-Details/Pill.md)
 - [QueryView](../05.Control-Details/QueryView.md)
 - [QueryViewChooser](../05.Control-Details/QueryViewChooser.md)
 - [Radio](../05.Control-Details/Radio.md)

@@ -15,21 +15,15 @@ The **ClearButton** control type generates a button to clear all data entered on
 
 ![ClearButton Control](../img/ClearButton.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **ClearButton** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must be set to `System.String`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.String`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `ClearButton`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `ClearButton`.
 
-### Optional fields
-
-The **ClearButton** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**DisplayName**](../06.Setting-Details/DisplayName.md): The name that will be shown for on the generated button. This can be any string. If no **DisplayName** is provided, **Name** will be shown.
 

@@ -52,6 +52,7 @@ The **Name** column applies to, and is required for, the following controls:
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
 - [Page](../05.Control-Details/Page.md)
 - [Phone](../05.Control-Details/Phone.md)
+- [Pill](../05.Control-Details/Pill.md)
 - [QueryView](../05.Control-Details/QueryView.md)
 - [QueryViewChooser](../05.Control-Details/QueryViewChooser.md)
 - [Radio](../05.Control-Details/Radio.md)

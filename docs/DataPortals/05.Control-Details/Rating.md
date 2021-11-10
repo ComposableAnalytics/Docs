@@ -15,25 +15,19 @@ The **Rating** control type allows for selection of a whole number rating betwee
 
 ![Rating Control](../img/Rating.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Rating** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must represent an integer, such as `System.Int32`.
+- [**Type**](../06.Setting-Details/Type.md): Must represent an integer, such as `System.Int32`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `Rating`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `Rating`.
 
 - [**Max**](../06.Setting-Details/Max.md)
 
 - [**Min**](../06.Setting-Details/Min.md)
 
-### Optional fields
-
-The **Rating** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 

@@ -17,23 +17,17 @@ Simple Label                            | Markdown Label
 :---------------------------------------:|:------------------------:
 ![Label Control](../img/Label.png) | ![Label Menu](../img/Rich-Label.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Label** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field.
 
 - [**DisplayName**](../06.Setting-Details/DisplayName.md): The text that will be displayed for the label.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must be set to `System.String`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.String`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `Label`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `Label`.
 
-### Optional fields
-
-The **Label** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**Group**](../06.Setting-Details/Group.md): The layout group position for this control.
 

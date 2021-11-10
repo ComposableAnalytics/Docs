@@ -15,21 +15,15 @@ The **CheckBox** control type will create a checkbox for a boolean field on the 
 
 ![CheckBox](../img/CheckBox.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **CheckBox** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
 
-- [**Type**:](../06.Setting-Details/Type.md) The name of the `C#` type backing this field. Must be set to `System.Boolean`.
+- [**Type**:](../06.Setting-Details/Type.md) Must be set to `System.Boolean`.
 
-- [**ControlType**:](../06.Setting-Details/ControlType.md) The name of the desired control type. Must be set to `CheckBox`.
+- [**ControlType**:](../06.Setting-Details/ControlType.md) Must be set to `CheckBox`.
 
-### Optional fields
-
-The **CheckBox** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 

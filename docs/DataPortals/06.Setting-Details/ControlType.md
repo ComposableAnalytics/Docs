@@ -27,6 +27,7 @@ The **ControlType** column applies to all controls. It's possible values are:
 - [Link](../05.Control-Details/Link.md)
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
 - [Page](../05.Control-Details/Page.md)
+- [Pill](../05.Control-Details/Pill.md)
 - [Phone](../05.Control-Details/Phone.md)
 - [QueryView](../05.Control-Details/QueryView.md)
 - [QueryViewChooser](../05.Control-Details/QueryViewChooser.md)

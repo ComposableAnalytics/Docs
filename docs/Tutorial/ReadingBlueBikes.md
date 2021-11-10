@@ -12,7 +12,7 @@ some_url: https://docs.composable.ai
 
 One of the most common steps in any analysis process is to collect and read in your data. This may come from files, an API call, a database query or many other ways. In this page, we'll show an example of reading in data from the web into a Composable Table.
 
-The dataset we'll be using is the [BlueBikes](https://www.bluebikes.com/) trip data. Bluebikes is the bike share system in Boston, and they have the entire trip history for rides taken since they first started in 2014. This is a publicly available dataset.
+The dataset we'll be using is the [BlueBikes](https://www.bluebikes.com/) trip data. BlueBikes is the bike share system in Boston, and they have the entire trip history for rides taken since they first started in 2014. This is a publicly available dataset.
 
 [BlueBikes Data Documentation](https://www.bluebikes.com/system-data) 
 
@@ -85,20 +85,20 @@ As an optional step, column names with spaces in them can be annoying to deal wi
 
 ```sqlite
 SELECT
-tripduration,
-starttime,
-stoptime,
-[start station id] AS startstationid,
-[start station name] AS startstationname,
-[start station latitude] AS startstationlatitude,
-[start station longitude] AS startstationlongitude,
-[end station id] AS endstationid,
-[end station name] AS endstationname,
-[end station latitude] AS endstationlatitude,
-[end station longitude] AS endstationlongitude,
-[bikeid],
-usertype,
-[postal code] AS postalcode
+TripDuration,
+StartTime,
+StopTime,
+[start station id] AS StartStationID,
+[start station name] AS StartStationName,
+[start station latitude] AS StartStationLatitude,
+[start station longitude] AS StartStationLongitude,
+[end station id] AS EndStationID,
+[end station name] AS EndStationName,
+[end station latitude] AS EndStationLatitude,
+[end station longitude] AS EndStationLongitude,
+[BikeID],
+UserType,
+[postal code] AS ZipCode
 FROM [t0]
 ```
 

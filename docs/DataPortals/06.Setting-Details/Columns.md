@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 The **Columns** column on a container field defines columns of the child or reference container that should be shown in the relevant control.
 
-Using JSON notation, have the option to rename the column names from their defaults. If left blank, only each record ID is shown in the table.  
+Using JSON notation, have the option to rename the column names from their defaults. If left blank, only each record ID is shown in the table.  Example notation: `[Form.<ContainerName>.<Name1>, Form.<ContainerName>.<Name2>, Form.<ContainerName>.<Name3>]`
 
 ## Controls
 

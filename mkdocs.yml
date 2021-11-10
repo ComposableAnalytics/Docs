@@ -46,9 +46,9 @@ nav:
 - 5. DataPortals:
     - '5.1 Overview': 'DataPortals/01.Overview.md'
     - '5.2 DataPortal Creation': 'DataPortals/02.Create-DataPortals.md'
-    - '5.3 Search': 'DataPortals/03.Search-Features.md'
-    - '5.4 Categories': 'DataPortals/04.Categories.md'
-    - 5.5 Control Type Details:
+    - '5.3 Master Sheets': 'DataPortals/03.MasterSheet.md'
+    - '5.4 Container Sheets': 'DataPortals/04.ContainerSheet.md'
+    - 5.5 Control Types:
         - 'AppRun': 'DataPortals/05.Control-Details/AppRun.md'
         - 'Category': 'DataPortals/05.Control-Details/Category.md'
         - 'ClearButton': 'DataPortals/05.Control-Details/ClearButton.md'
@@ -62,6 +62,7 @@ nav:
         - 'NumberFormatting': 'DataPortals/05.Control-Details/NumberFormatting.md'
         - 'Page': 'DataPortals/05.Control-Details/Page.md'
         - 'Phone': 'DataPortals/05.Control-Details/Phone.md'
+        - 'Pill': 'DataPortals/05.Control-Details/Pill.md'
         - 'QueryView': 'DataPortals/05.Control-Details/QueryView.md'
         - 'QueryViewChooser': 'DataPortals/05.Control-Details/QueryViewChooser.md'
         - 'Radio': 'DataPortals/05.Control-Details/Radio.md'
@@ -77,7 +78,7 @@ nav:
         - 'Voice': 'DataPortals/05.Control-Details/Voice.md'
         - 'YesNo': 'DataPortals/05.Control-Details/YesNo.md'
         - 'ZIP': 'DataPortals/05.Control-Details/ZIP.md'
-    - 5.6 Setting Details:
+    - 5.6 Container Fields:
         - 'AfterSaveUri': 'DataPortals/06.Setting-Details/AfterSaveUri.md'
         - 'ClearWhenHidden': 'DataPortals/06.Setting-Details/ClearWhenHidden.md'
         - 'Columns': 'DataPortals/06.Setting-Details/Columns.md'
@@ -120,6 +121,9 @@ nav:
         - 'UniqueConstraintScopeToParent': 'DataPortals/06.Setting-Details/UniqueConstraintScopeToParent.md'
         - 'ValidationCondition': 'DataPortals/06.Setting-Details/ValidationCondition.md'
         - 'VisibilityCondition': 'DataPortals/06.Setting-Details/VisibilityCondition.md'
+    - '5.7 Categories': 'DataPortals/05.Categories.md'
+    - '5.8 Setting Sheets': 'DataPortals/06.SettingSheet.md'
+    - '5.9 Search': 'DataPortals/03.Search-Features.md'          
 - 6. DataRepository:
     - '6.1 Overview': 'DataRepository/01.Overview.md'
 - 7. DashBoards:

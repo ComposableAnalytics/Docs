@@ -22,6 +22,7 @@ The **Required** column applies to the following controls:
 - [DateTime](../05.Control-Details/DateTime.md)
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
 - [Phone](../05.Control-Details/Phone.md)
+- [Pill](../05.Control-Details/Pill.md)
 - [Radio](../05.Control-Details/Radio.md)
 - [Rating](../05.Control-Details/Rating.md)
 - [Reference](../05.Control-Details/Reference.md)

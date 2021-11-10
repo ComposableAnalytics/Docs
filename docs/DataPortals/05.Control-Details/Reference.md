@@ -19,21 +19,15 @@ Clicking this button opens a menu showing possible choices:
 
 ![Reference Modal](../img/Reference-Modal.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Reference** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the container type backing this field. Must be set to `Form.<ContainerName>` where `<ContainerName>` is the name of the Excel sheet representing the referenced container.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `Form.<ContainerName>` where `<ContainerName>` is the name of the Excel sheet representing the referenced container.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `Reference`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `Reference`.
 
-### Optional fields
-
-The **Reference** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 

@@ -11,6 +11,8 @@ some_url: https://docs.composable.ai
 
 The **SearchBoxes** column on a container field determines whether search boxes should be shown over each column header of a [Table](../05.Control-Details/Table.md). Set to `True` to show boxes. Defaults to not showing boxes.
 
+More information on using search boxes is at [Search Details](../03.Search-Features.md).
+
 ## Controls
 
 The **SearchBoxes** column applies to the following controls:

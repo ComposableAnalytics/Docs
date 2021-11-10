@@ -15,21 +15,15 @@ The **\<ControlType>** control type...
 
 ![Text Control](../img/Text.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **\<ControlType>** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must be set to `System.String`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.String`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `\<ControlType>`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `\<ControlType>`.
 
-### Optional fields
-
-The **\<ControlType>** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**AfterSaveUri**](../06.Setting-Details/AfterSaveUri.md)
 

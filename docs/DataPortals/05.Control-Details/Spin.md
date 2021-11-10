@@ -15,25 +15,18 @@ The **Spin** control type allows for entry of numeric values.
 
 ![Spin Control](../img/Spin.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Spin** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Can be any numeric type, including (but not limited to):
-    
-    - `System.Int32`
+- [**Type**](../06.Setting-Details/Type.md): Can be any numeric type, including (but not limited to):
+  - `System.Int32`
     - `System.Double`
     - `System.Decimal`
+    
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `Spin`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `Spin`.
-
-### Optional fields
-
-The **Spin** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 

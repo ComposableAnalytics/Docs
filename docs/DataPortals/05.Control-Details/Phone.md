@@ -15,21 +15,15 @@ The **Phone** control type allows entry of a valid phone number.
 
 ![Phone Control](../img/Phone.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Phone** control type requires the following Excel columns:
+## Required fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must be set to `System.String`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.String`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `Phone`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `Phone`.
 
-### Optional fields
-
-The **Phone** control type also supports the following Excel columns:
+## Optional fields
 
 - [**CustomIndex**](../06.Setting-Details/CustomIndex.md): Settings for one or more indexes to create on the database that include this column.
 

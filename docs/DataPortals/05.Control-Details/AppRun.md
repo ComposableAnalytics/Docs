@@ -15,23 +15,17 @@ The **AppRun** control type will create a button that runs a Composable DataFlow
 
 ![AppRun](../img/AppRun.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **AppRun** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
 
-- [**Type**:](../06.Setting-Details/Type.md) The name of the `C#` type backing this field. Must be set to `System.Int32`.
+- [**Type**:](../06.Setting-Details/Type.md) Must be set to `System.Int32`.
 
-- [**ControlType**:](../06.Setting-Details/ControlType.md) The name of the desired control type. Must be set to `AppRun`.
+- [**ControlType**:](../06.Setting-Details/ControlType.md) Must be set to `AppRun`.
 
-- [**DefaultValue**:](../06.Setting-Details/DefaultValue.md) The default value of the field. Must be the `Id` of the DataFlow to run.
+- [**DefaultValue**:](../06.Setting-Details/DefaultValue.md) Must be the `Id` of the DataFlow to run.
 
-### Optional fields
-
-The **AppRun** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**Description**:](../06.Setting-Details/Description.md) Optional further details about the field.
 
@@ -54,5 +48,3 @@ The **AppRun** control type also supports the following Excel columns:
 - [**TabIndex**](../06.Setting-Details/TabIndex.md)
 
 - [**VisibilityCondition**](../06.Setting-Details/VisibilityCondition.md)
-
-## Usage Notes

@@ -17,21 +17,17 @@ The **QueryView** control type displays the results of a Composable [QueryView](
 
 ## Excel Sheet Input
 
-### Required fields
-
-The **QueryView** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must be set to `System.String`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.String`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `QueryView`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `QueryView`.
 
-- [**DefaultValue**](../06.Setting-Details/DefaultValue.md): The default value of the field. Must be the `Id` of the QueryView to run.
+- [**DefaultValue**](../06.Setting-Details/DefaultValue.md): Must be the `Id` of the QueryView to run.
 
-### Optional fields
-
-The **QueryView** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**Description**](../06.Setting-Details/Description.md): Optional further details about the field.
 

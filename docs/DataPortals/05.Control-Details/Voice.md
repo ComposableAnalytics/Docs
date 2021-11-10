@@ -15,21 +15,15 @@ The **Voice** control type creates a large text box that transcripes spoken audi
 
 ![Voice Control](../img/Voice.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Voice** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database. See [here](../06.Setting-Details/Name.md) for details and restrictions.
 
-- [**Type**:](../06.Setting-Details/Type.md) The name of the `C#` type backing this field. Must be set to `System.String`.
+- [**Type**:](../06.Setting-Details/Type.md) Must be set to `System.String`.
 
-- [**ControlType**:](../06.Setting-Details/ControlType.md) The name of the desired control type. Must be set to `Voice`.
+- [**ControlType**:](../06.Setting-Details/ControlType.md) Must be set to `Voice`.
 
-### Optional fields
-
-The **Text** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 

@@ -15,21 +15,15 @@ The **SaveButton** control type creates a button that can be used to save all th
 
 ![SaveButton Control](../img/SaveButton.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **SaveButton** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the `C#` type backing this field. Must be set to `System.String`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.String`.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `SaveButton`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `SaveButton`.
 
-### Optional fields
-
-The **SaveButton** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**AfterSaveUri**](../06.Setting-Details/AfterSaveUri.md)
 

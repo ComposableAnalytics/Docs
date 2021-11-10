@@ -15,27 +15,20 @@ The **Computed** control type creates a read-only control showing a value comput
 
 ![Computed Control](../img/Computed.png)
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Computed** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
 
-- [**Type**:](../06.Setting-Details/Type.md) The name of the `C#` type backing this field. Can be any numeric type, including (but not limited to):
-  
-    - `System.Int32`
+- [**Type**:](../06.Setting-Details/Type.md) Can be any numeric type, including (but not limited to):
+  - `System.Int32`
     - `System.Double`
     - `System.Decimal`
-
-- [**ControlType**:](../06.Setting-Details/ControlType.md) The name of the desired control type. Must be set to `Computed`.
+  
+- [**ControlType**:](../06.Setting-Details/ControlType.md) Must be set to `Computed`.
 
 - [**ComputedCondition**](../06.Setting-Details/ComputedCondition.md)
 
-### Optional fields
-
-The **Computed** control type also supports the following Excel columns:
+## Optional Fields
 
 - [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 

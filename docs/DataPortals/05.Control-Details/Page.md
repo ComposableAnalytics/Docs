@@ -19,21 +19,15 @@ Note the similarity to the [Tab](Tab.md) control, which allows for visual separa
 
 Also note the similarity to the [Table](Table.md) control, which also creates a parent-child relationship but allows the parent container to have multiple instances of the child container.
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Page** control type requires the following Excel columns:
+## Required fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the container type backing this field. Must be set to `Form.<ContainerName>` where `<ContainerName>` is the name of another Excel container sheet.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `Form.<ContainerName>` where `<ContainerName>` is the name of another Excel container sheet.
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `Page`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `Page`.
 
-### Optional fields
-
-The **Page** control type also supports the following Excel columns:
+## Optional fields
 
 - [**DisplayName**](../06.Setting-Details/DisplayName.md): The name that will be shown for the field above the input box. This can be any string. If no **DisplayName** is provided, **Name** will be shown.
 

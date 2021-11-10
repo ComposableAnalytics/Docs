@@ -17,23 +17,17 @@ The **Table** control type displays a collection of instances of a linked child 
 
 See [Search Features](../03.Search-Features.md) for more discussion of the special capabilities of tables.
 
-## Excel Sheet Input
-
-### Required fields
-
-The **Table** control type requires the following Excel columns:
+## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): The name of the container type backing this field, enclosed in `[]` brackets. Must be set to `[Form.<ContainerName>]` where `<ContainerName>` is the name of the Excel sheet representing the linked container.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `[Form.<ContainerName>]` where `<ContainerName>` is the name of the Excel sheet representing the linked container. It must be enclosed in `[]` brackets
 
-- [**ControlType**](../06.Setting-Details/ControlType.md): The name of the desired control type. Must be set to `Table`.
+- [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `Table`.
 
-### Optional fields
+## Optional Fields
 
-The **Table** control type also supports the following Excel columns:
-
-- [**Columns**](../06.Setting-Details/Columns.md)
+- [**Columns**](../06.Setting-Details/Columns.md) Columns are selected with the syntax `[Form.<ContainerName>.<Name1>, Form.<ContainerName>.<Name2>, Form.<ContainerName>.<Name3>]` Note the square brackets to select multiple columns.
 
 - [**DefaultSearchFilter**](../06.Setting-Details/DefaultSearchFilter.md)
 
