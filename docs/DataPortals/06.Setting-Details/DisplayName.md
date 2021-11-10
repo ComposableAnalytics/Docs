@@ -9,7 +9,7 @@ some_url: https://docs.composable.ai
 
 # DisplayName
 
-The **DisplayName** column on a container field defines the name to display for the generated control. For most controls this is a text label above the control. If no display name is set, then [Name](Name.md) will be used. To hide the name entirely, set **DisplayName** to `NoDisplayName`.
+The **DisplayName** column on a container field defines the name to display for the generated control. For most controls this is a text label above the control. If no display name is set, then [Name](Name.md) will be used. To hide the name entirely, set **DisplayName** to `NoDisplayName`. DisplayName can contain rich text written in [Markdown.](https://daringfireball.net/projects/markdown/)
 
 ## Controls
 

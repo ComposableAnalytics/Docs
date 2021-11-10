@@ -80,6 +80,7 @@ nav:
         - 'ZIP': 'DataPortals/05.Control-Details/ZIP.md'
     - 5.6 Container Fields:
         - 'AfterSaveUri': 'DataPortals/06.Setting-Details/AfterSaveUri.md'
+        - 'CategoryCondition': 'DataPortals/06.Setting-Details/CategoryCondition.md'
         - 'ClearWhenHidden': 'DataPortals/06.Setting-Details/ClearWhenHidden.md'
         - 'Columns': 'DataPortals/06.Setting-Details/Columns.md'
         - 'ComputedCondition': 'DataPortals/06.Setting-Details/ComputedCondition.md'
@@ -123,7 +124,8 @@ nav:
         - 'VisibilityCondition': 'DataPortals/06.Setting-Details/VisibilityCondition.md'
     - '5.7 Categories': 'DataPortals/05.Categories.md'
     - '5.8 Setting Sheets': 'DataPortals/06.SettingSheet.md'
-    - '5.9 Search': 'DataPortals/03.Search-Features.md'          
+    - '5.9 Search': 'DataPortals/03.Search-Features.md'
+    - '5.10 Updating DataPortals': 'DataPortals/10.UpdateDataPortals.md' 
 - 6. DataRepository:
     - '6.1 Overview': 'DataRepository/01.Overview.md'
 - 7. DashBoards:
