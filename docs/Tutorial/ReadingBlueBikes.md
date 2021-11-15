@@ -8,7 +8,7 @@ some_url: https://docs.composable.ai
 
 ---
 
-# Reading in Data To Composable from the Web
+# Reading Data from the Web
 
 One of the most common steps in any analysis process is to collect and read in your data. This may come from files, an API call, a database query or many other ways. In this page, we'll show an example of reading in data from the web into a Composable Table.
 
@@ -30,7 +30,10 @@ So instead we can go straight to the source, and get the filenames directly. Ope
 
 The `XML Reader`parses the results into a table. Connect the result of the WebClient to the `Xml` input of the XML Reader. Enter `//*[local-name()="Key"]` as the `RootPath`. This is an XPath format. The rows in the output look like `<Key xmlns="http://s3.amazonaws.com/doc/2006-03-01/">201501-hubway-tripdata.zip</Key>`.
 
-Now we can strip everything except the filenames, and filter to keep the files we want to process. To start, we only want to look at 2021 data, so a `Table Filter` module will filter the results. Attach the output of the XML Reader module to the `Table` input. Right click on the `Clause` input and it will suggest the `Table Filter Operator Clause` module. Set `ColumnName` to `Root`, `Operator` to `LIKE`, and `Value` to `%2021%.zip%`. This is SQL syntax, so the % are wildcard symbols. This query will filter to only zip files with 2021 in the field. 
+Now we can strip everything except the filenames, and filter to keep the files we want to process. To start, we only want to look at 2021 data, so a `Table Filter` module will filter the results. Attach the output of the XML Reader module to the `Table` input. Right click on the `Clause` input and it will suggest the `Table Filter Operator Clause` module. Set `ColumnName` to `Root`, `Operator` to `LIKE`, and `Value` to `%2021%.zip%` (Edit: do `%20210%.zip%` to not read in October data with a different format). This is SQL syntax, so the % are wildcard symbols. This query will filter to only zip files with 2021 in the field. 
+
+!!! note
+    Starting in October 2021, it looks like BlueBikes started releasing their data in a different format, with a tripID value, and changing the membership types. This will break the Union All happening later so for now, filter out data past this point. 
 
 To extract the filenames from the rows, the `Table Query` module can be used to apply string functions. Enter the query below as the `Query`.
 

@@ -45,7 +45,7 @@ nav:
     - '4.2 QueryView Creation': 'QueryViews/02.Create-QueryView.md'
 - 5. DataPortals:
     - '5.1 Overview': 'DataPortals/01.Overview.md'
-    - '5.2 DataPortal Creation': 'DataPortals/02.Create-DataPortals.md'
+    - '5.2 DataPortal Basics': 'DataPortals/02.Create-DataPortals.md'
     - '5.3 Master Sheets': 'DataPortals/03.MasterSheet.md'
     - '5.4 Container Sheets': 'DataPortals/04.ContainerSheet.md'
     - 5.5 Control Types:
@@ -147,6 +147,7 @@ nav:
     - '12.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
 - Tutorials:
     - 'Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
+    - 'Creating a Database and Inserting Data with DataPortals': 'Tutorial/BlueBlikesDataPortal.md'
     - 'Lunch Recommender Slack App': 'Tutorial/Lunch.md'
 
 markdown_extensions:

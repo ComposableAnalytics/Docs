@@ -25,7 +25,7 @@ The **Text** control type will create a simple text box for a string field on th
 
 ## Optional Fields
 
-- **ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
+- [**ClearWhenHidden**](../06.Setting-Details/ClearWhenHidden.md)
 
 - [**CustomIndex**:](../06.Setting-Details/CustomIndex.md) Settings for one or more indexes to create on the database that include this column. See [here](../06.Setting-Details/CustomIndex.md) for details.
 
