@@ -42,7 +42,12 @@ nav:
     - '3.10 Runs': 'DataFlows/10.Runs.md'
 - 4. QueryViews:
     - '4.1 Overview': 'QueryViews/01.Overview.md'
-    - '4.2 QueryView Creation': 'QueryViews/02.Create-QueryView.md'
+    - '4.2 QueryView Basics': 'QueryViews/02.Create-QueryView.md'
+    - '4.3 Paging': 'QueryViews/Paging.md'  
+    - '4.4 Inputs': 'QueryViews/Inputs.md'
+    - '4.5 Child QueryViews': 'QueryViews/ChildrenQueries.md'
+    - '4.6 Actions': 'QueryViews/Actions.md'
+    - '4.7 Hyperlinks': 'QueryViews/Hyperlinks.md'
 - 5. DataPortals:
     - '5.1 Overview': 'DataPortals/01.Overview.md'
     - '5.2 DataPortal Basics': 'DataPortals/02.Create-DataPortals.md'
