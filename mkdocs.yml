@@ -157,3 +157,4 @@ nav:
 
 markdown_extensions:
   - admonition
+  - lightgallery
