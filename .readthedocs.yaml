@@ -4,7 +4,7 @@
 version: 2
 
 mkdocs:
-  configureation: mkdocs.yml
+  configuration: mkdocs.yml
 
 python:
   install:
