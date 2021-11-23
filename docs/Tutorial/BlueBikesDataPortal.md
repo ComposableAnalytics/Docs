@@ -23,13 +23,13 @@ The DataPortal will have a similar structure to the "Simple Survey" example exce
 
 In the [master sheet](../DataPortals/03.MasterSheet.md), we name the database, and use the `Link` ControlType to point towards the entry page of the DataPortal. As `Type`, enter `Form.BlueBikes` which points towards another sheet in the file.
 
- ![DataPortal Master Sheet](img/BBPortalMaster.png)
+ ![!DataPortal Master Sheet](img/BBPortalMaster.png)
 
 ### Master.settings (optional step)
 
 [Settings pages](../DataPortals/06.SettingSheet.md) are optional. The heading fields are `Option, Value`. Here, we disable the AutoSave feature. With AutoSave enabled, when you start entering data on a DataPortal page, it is automatically saved, even if your entry is not complete. When it is turned off, you need to click the `Save` Button for the data to be saved. 
 
-![DataPortal Master Settings](img/BBPortalMasterSettings.png)
+![!DataPortal Master Settings](img/BBPortalMasterSettings.png)
 
 ### TripData Container Page
 
@@ -56,13 +56,13 @@ Now go through each of the fields in the dataset, and list out their properties.
 
 Now let's go to the `Categories` sheet. so we can define the UserTypes we referenced as `Form.UserType`. Here, "UserType" is the header of a column of the Categories sheet. We add in the two values `Customer` and `Subscriber`.
 
-![BlueBikes DataPortal Categories](img/BBPortalCategories.png)
+![!BlueBikes DataPortal Categories](img/BBPortalCategories.png)
 
 ### BlueBikes Container Page
 
 Now let's go back to the `BlueBikes` sheet we referenced in the master sheet. Here we describe what to show as the main page of the DataPortal. We need to reference our `TripData` container, and list what columns we want to display. 
 
-![BlueBikes DataPortal Container](img/BBPortalMainContainer.png)
+![!BlueBikes DataPortal Container](img/BBPortalMainContainer.png)
 
 For Type, enter `[Form.TripData]`.
 
@@ -74,7 +74,7 @@ Optionally, the column `SearchBoxes` set to `TRUE` will allow us to search on a 
 
 On the New DataPortal page, either click the `Choose File` button, or drag your file over to the upload box, and in the background Composable creates your database. Once it's finished processing, click on the `Open DataPortal` button and you'll be brought to the homepage of your DataPortal, which will look empty, since we haven't added any data.
 
-![BlueBikes DataPortal Home](img/BBPortalEmptyHome.png)
+![!BlueBikes DataPortal Home](img/BBPortalEmptyHome.png)
 
 ## Inserting Data with the DataPortal Sync Module
 
@@ -82,13 +82,13 @@ In the DataPortal, we can manually enter in entries one by one. In this case, we
 
 To start, go back to the data ingestion DataFlow, and add the `ExternalTableOutput` to the last module. This allows us to run the DataFlow and access the table [from another DataFlow](../DataFlows/06.DataFlow-Reuse.md). We are separating out the two functions of extracting our data and loading it to the database, so other processes could also read in the data and run transformations without the DataPortalSync module running every time.
 
-![BlueBikes DataPortal Home](img/BBPortalExternalTable.png)
+![!BlueBikes DataPortal Home](img/BBPortalExternalTable.png)
 
 Next, create a new DataFlow, which will have two modules. The first is our previous module. In the module sidebar, go to `My DataFlows` or `Search All DataFlows` and enter in the DataFlow name (exactly). You can also search without any search keyword to bring up all applicable DataFlows. After adding the module to the designer, you can see it has one output node, which was added from the `External Table Output` module. Running this module runs the DataFlow that it references. You can also click on the module name, which will open up the referenced dataflow in a new browser.
 
 Add in a `DataPortal Sync` module and connect the output of the previous module to the DataModule. In the `FormID` selector, select the DataPortal that was created earlier. `ContainerName` is `TripData` (the sheet name in the DataPortal excel file). And ParentInstanceId is 1. Click on the question mark for the module details, that explains more about how the DataPortal Sync module runs.
 
-![BlueBikes DataPortal Home](img/BBPortalSync.png)
+![!BlueBikes DataPortal Home](img/BBPortalSync.png)
 
 Run this DataFlow and you will see updates in the Trace Log at the bottom with how many rows have been inserted. (It'll take a while, it's a large dataset.) And then we're done.
 

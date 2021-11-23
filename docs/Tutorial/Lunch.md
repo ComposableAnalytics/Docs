@@ -34,11 +34,11 @@ First, you'll need to generate an API token on the Google Cloud Console. This is
 
 The next step is to save your API token as a Key in Composable to keep it secure. In Composable, go to the sidebar and select `Key -> Manage Keys`. Click the `New Key` button in the top right. Our API key will be a `String` property type. Add a name and copy your API Key from the Google Cloud Platform into the `Value` field, then Save.
 
-![Composable Key Creation](img/LunchKeyCreation.png)
+![!Composable Key Creation](img/LunchKeyCreation.png)
 
 ### Making the API Call
 
-![Google Maps Nearby Search API call](img/LunchNearbyAPICall.png)
+![!Google Maps Nearby Search API call](img/LunchNearbyAPICall.png)
 
 Now we can start creating a DataFlow to call Google Maps API. First we'll be using the [Nearby Search](https://developers.google.com/maps/documentation/places/web-service/search-nearby) to find places around our office, and later we will make a [Place Details](https://developers.google.com/maps/documentation/places/web-service/details) call to get more information about the restaurant that was selected. Google's documentation is easy to understand, so we can easily figure out what parameters we need to specify to find food spots nearby to the office. 
 
@@ -57,11 +57,11 @@ To use our API key, add a `Key Loader (ID)` module, and click the pencil icon an
 
 Next connect the `Uri Builder` to a `WebClient` module and set the Method to `GET`. This module makes the request to get information from the link we created. Try running the DataFlow now and right-click out the output of the `WebClient` module and View Results. We have the results of the API call! The Composable module has also formatted the JSON so that it is easy to read the returned results.
 
-![Lunch JSON Results](img/LunchJSONResult.png)
+![!Lunch JSON Results](img/LunchJSONResult.png)
 
 The API call is limited to return 20 results. We can make 2 more calls using the `next_page_token` and our API key as the parameters to get these results (this is an optional step). The `next_page_token` does not activate immediately, so we also need to introduce a short pause into the DataFlow before the next WebClient module executes. 
 
-![Next Page Token API Call](img/LunchNextPageToken.png)
+![!Next Page Token API Call](img/LunchNextPageToken.png)
 
 We use the output of the `WebClient` module from the previous step and attach it to a `JSONPath Query` module to extract the next_page_token. The JSONPathQuery is `$.next_page_token`. We then make this a Key Value Pair with the key `pagetoken` and create another uri with the `UriBuilder` module. The other QueryParam to add is our API key from the previous step. 
 
@@ -73,7 +73,7 @@ We can repeat this flow one more time, to get the maximum possible 60 results fr
 
 In this step, we want to extract the `place_id` for each of the 60 results and then choose one randomly. Then we can make a [Place Details](https://developers.google.com/maps/documentation/places/web-service/details) API call to get more specific location and website information about the location, since the Nearby Places call only gives coordinates and name of the locations. 
 
-![Parsing the results of the API call](img/LunchParseAPIResult.png)
+![!Parsing the results of the API call](img/LunchParseAPIResult.png)
 
 As the name suggests, the `JSON To Table` module parses a JSON text and creates a table. The path for the place_id is `$.results.[*].place_id`. The `Table Set Operation` module with Union All set as the Operation, unions these three tables all together.
 
@@ -91,13 +91,13 @@ Finally, the `Table Cell Selector` module the get the value of a cell from our t
 
 The Nearby Search results does not have enough information about the chosen lunch spot, so we make another API call using the [Place Details](https://developers.google.com/maps/documentation/places/web-service/details) service. This returns results similar to what you would expect when using Google Maps, such as the full address, website and hours. This part of the DataFlow should look familiar, because we are doing another API call. The parameters are the place_id from the previous step, the `fields` we want the call to return about the location, and our API key. The fields we requested are `name,formatted_address,formatted_phone_number,website,url`. We will use these in our slack message. The url is a google maps link, so that we can easily look up how to get there directly from Slack. The `Base` for the Uri Builder is `https://maps.googleapis.com/maps/api/place/details/json`, so note that this is a different url from the earlier steps.
 
-![Place Details API call](img/LunchPlaceDetailsCall.png)
+![!Place Details API call](img/LunchPlaceDetailsCall.png)
 
 ### Parsing the Results of the Places Details API Call
 
 In this step, we will parse our JSON results, and then write a string which will be the Slack message.
 
-![Parsing the Place Details](img/LunchParsePlaceDetails.png)
+![!Parsing the Place Details](img/LunchParsePlaceDetails.png)
 
 The `JSON To Table` module is used again to parse the results of the API call. 
 
@@ -138,7 +138,7 @@ oauth_config:
 
 Webhooks can also be turned on in the by going to "Incoming Webhooks" in the sidebar, and setting the toggle to "On". Then Select "Add New Webhook to Workspace" at the bottom of the page and select which channel you want your app to post to. Copy the generated webhook url and we can return to the DataFlow. 
 
-![Lunch Slack Output](img/LunchSlackOutput.png)
+![!Lunch Slack Output](img/LunchSlackOutput.png)
 
 Using the `Slack Output` module, connect the output of the `String Formatter` to the Text field, and paste the Webhook into the WebhookUri field.
 

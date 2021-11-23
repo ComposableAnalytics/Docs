@@ -19,4 +19,4 @@ First, set the `Parent Override` in the child QueryView.
 - **Only override with parent data row values**: If a column in the parent QueryView matches the `Display Name` of this input, the input value will be the value of the parent column in that row
 - **Allow parent input values to override**: If the parent and child QueryViews both have inputs with the same `Display Name`, then the child QueryView input value will be the input of the parent QueryView. However, a column name in the parent QueryView takes priority over an input Display Name if they are the same.
 
-![A Child QueryView (BBStationID) expanded for a row](img/ChildQuery.png)
+![!A Child QueryView (BBStationID) expanded for a row](img/ChildQuery.png)
