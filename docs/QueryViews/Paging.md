@@ -21,7 +21,7 @@ To use the template, replace the query in the block comments `/*` `*/` with your
 
 ### Count Query
 
-The Count Query should be written to return the total number of rows in your query, so the paging functionality knows what the last row of the data will be and show how many rows you are navigating through.
+The Count Query should be written to return the total number of rows in your query, so the paging functionality knows what the last row of the data will be and show how many rows you are navigating through. This must be set
 
-In most cases, it can be similar to `SELECT COUNT(*) FROM <YourQuery>`
+In most cases, it can be similar to `SELECT COUNT(*) FROM (<YourQuery>)`
 

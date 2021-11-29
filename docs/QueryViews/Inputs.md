@@ -1,11 +1,14 @@
 # QueryView Inputs
 
-Inputs give the user viewing the QueryView the ability to define input values. These can either be Literals or Filters. Literals are a single value, constrained by type.
+Inputs give the user viewing the QueryView the ability to define input values. These can either be Literals or Filters.
 
-**Literals** are a type of input that simply inserts a provided value at the desired location in the query.
+**Literals** are a type of input that simply inserts a provided value at the desired location in the query. They are a single value, constrained by type.
+
 **Filters** are *optional* `WHERE` clauses that are added to the query only if a value was provided. If a filter input is blank, the filter will not be applied.
 
 Inputs can be added to the query using their **Template Name**, which is surrounded by two curly braces, like `{{<TemplateName>}}`
+
+![QueryView Input Field](img/InputFilter.png)
 
 !!! note
     When you add a filter into your query, it starts with `AND`. So if your where clause only has one filter, use `WHERE 1=1` before the filter.

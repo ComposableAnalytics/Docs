@@ -10,7 +10,7 @@ theme:
     custom_dir: 'themeExtension'
     palette:
       primary: blue grey
-    logo: img/ComposableLogo.png
+    logo: img/Composable_Logo.svg
     features:
       - toc.integrate
 
@@ -154,9 +154,9 @@ nav:
     - '12.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
     - '12.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
 - Tutorials:
-    - 'Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
-    - 'Creating a Database and Inserting Data with DataPortals': 'Tutorial/BlueBikesDataPortal.md'
-    - 'Lunch Recommender Slack App': 'Tutorial/Lunch.md'
+    - 'DataFlow: Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
+    - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
+    - 'DataFlow: Lunch Recommender Slack App': 'Tutorial/Lunch.md'
 
 markdown_extensions:
   - admonition
