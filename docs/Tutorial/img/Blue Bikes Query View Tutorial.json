@@ -1,0 +1,264 @@
+{
+  "__type": "QueryView:#CompAnalytics.Contracts.QueryView",
+  "AllowMultiExpansion": false,
+  "AutoRun": true,
+  "AutoRunOnInputChange": false,
+  "ChildQueryViewConnections": [],
+  "ColumnDefinitions": [
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 0,
+      "Name": "Id",
+      "OriginalIndex": 0,
+      "Type": "System.Int32",
+      "UniqueName": "Id-0"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 1,
+      "Name": "BlueBikesId",
+      "OriginalIndex": 1,
+      "Type": "System.Int32",
+      "UniqueName": "BlueBikesId-1"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 2,
+      "Name": "TripDuration",
+      "OriginalIndex": 2,
+      "Type": "System.Int32",
+      "UniqueName": "TripDuration-2"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 3,
+      "Name": "StartTime",
+      "OriginalIndex": 3,
+      "Type": "System.String",
+      "UniqueName": "StartTime-3"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 4,
+      "Name": "StopTime",
+      "OriginalIndex": 4,
+      "Type": "System.String",
+      "UniqueName": "StopTime-4"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 5,
+      "Name": "StartStationID",
+      "OriginalIndex": 5,
+      "Type": "System.Int32",
+      "UniqueName": "StartStationID-5"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 6,
+      "Name": "StartStationName",
+      "OriginalIndex": 6,
+      "Type": "System.String",
+      "UniqueName": "StartStationName-6"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 7,
+      "Name": "StartStationLatitude",
+      "OriginalIndex": 7,
+      "Type": "System.Double",
+      "UniqueName": "StartStationLatitude-7"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 8,
+      "Name": "StartStationLongitude",
+      "OriginalIndex": 8,
+      "Type": "System.Double",
+      "UniqueName": "StartStationLongitude-8"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 9,
+      "Name": "EndStationID",
+      "OriginalIndex": 9,
+      "Type": "System.Int32",
+      "UniqueName": "EndStationID-9"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 10,
+      "Name": "EndStationName",
+      "OriginalIndex": 10,
+      "Type": "System.String",
+      "UniqueName": "EndStationName-10"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 11,
+      "Name": "EndStationLatitude",
+      "OriginalIndex": 11,
+      "Type": "System.Double",
+      "UniqueName": "EndStationLatitude-11"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 12,
+      "Name": "EndStationLongitude",
+      "OriginalIndex": 12,
+      "Type": "System.Double",
+      "UniqueName": "EndStationLongitude-12"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 13,
+      "Name": "BikeID",
+      "OriginalIndex": 13,
+      "Type": "System.Int32",
+      "UniqueName": "BikeID-13"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 14,
+      "Name": "ZipCode",
+      "OriginalIndex": 14,
+      "Type": "System.String",
+      "UniqueName": "ZipCode-14"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 15,
+      "Name": "AclId",
+      "OriginalIndex": 15,
+      "Type": "System.Int32",
+      "UniqueName": "AclId-15"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 16,
+      "Name": "CreatedById",
+      "OriginalIndex": 16,
+      "Type": "System.Guid",
+      "UniqueName": "CreatedById-16"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 17,
+      "Name": "CreatedByUserName",
+      "OriginalIndex": 17,
+      "Type": "System.String",
+      "UniqueName": "CreatedByUserName-17"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 18,
+      "Name": "CreatedDateTime",
+      "OriginalIndex": 18,
+      "Type": "System.String",
+      "UniqueName": "CreatedDateTime-18"
+    },
+    {
+      "__type": "ColumnDefinition:#CompAnalytics.Contracts.QueryView",
+      "Exclude": false,
+      "Index": 19,
+      "Name": "UserType_Id",
+      "OriginalIndex": 19,
+      "Type": "System.Int32",
+      "UniqueName": "UserType_Id-19"
+    }
+  ],
+  "CountQueryString": "",
+  "DbConnectionId": null,
+  "DbConnectionName": null,
+  "Description": "",
+  "Id": null,
+  "IsOwner": false,
+  "LiteralInputs": [
+    {
+      "__type": "LiteralInput:#CompAnalytics.Contracts.QueryView",
+      "AcceptParentOverride": false,
+      "ChoiceQuery": "SELECT DISTINCT StartStationID, StartStationName FROM TripDatas",
+      "DataType": "Number",
+      "Default": "371",
+      "DisplayName": "Start Station",
+      "Id": null,
+      "IsHidden": false,
+      "IsVertical": false,
+      "IsVisibleAsChild": false,
+      "Order": 0,
+      "TemplateName": "stations",
+      "Value": "371"
+    }
+  ],
+  "Name": "Blue Bikes Query View Tutorial",
+  "OrderClause": [],
+  "OutputType": "grid",
+  "PagingOptions": {
+    "__type": "PagingOptions:#CompAnalytics.Contracts.QueryView",
+    "AutoPaging": true,
+    "DefaultOrderClause": "1",
+    "FullPaging": false,
+    "LimitPaging": false,
+    "PageLimit": 50,
+    "PageNum": 1
+  },
+  "Permissions": null,
+  "QueryString": "SELECT *\nFROM TripDatas\nWHERE StartStationID = {{ stations }} {{ DurationInput }}",
+  "QueryTimeout": null,
+  "QueryViewActions": [],
+  "QueryViewLinks": [
+    {
+      "__type": "QueryViewLink:#CompAnalytics.Contracts.QueryView",
+      "HideIfDefault": false,
+      "HideTemplateColumn": false,
+      "IsDefault": false,
+      "LinkTemplate": "https://google.com/maps/dir/{{StartStationLatitude}},{{StartStationLongitude}}/{{EndStationLatitude}},{{EndStationLongitude}}/data=!4m2!4m1!3e1",
+      "Name": "Google Maps Biking Directions",
+      "Order": 0,
+      "QueryViewId": null
+    }
+  ],
+  "SearchInputs": [
+    {
+      "__type": "SearchInput:#CompAnalytics.Contracts.QueryView",
+      "AcceptParentOverride": false,
+      "ChoiceQuery": null,
+      "DataType": "Number",
+      "Default": "",
+      "DisplayName": "Trip Duration Filter",
+      "Id": null,
+      "IsHidden": false,
+      "IsVertical": false,
+      "IsVisibleAsChild": false,
+      "Order": 1,
+      "TemplateName": "DurationInput",
+      "Value": "",
+      "Column": "TripDuration",
+      "Custom": "",
+      "DefaultOperator": "<=",
+      "IsMultiChoice": false,
+      "OperatorOptional": true
+    }
+  ],
+  "ShowNullAsWhitespace": false,
+  "TimeZoneOffset": -300
+}

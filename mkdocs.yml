@@ -156,6 +156,7 @@ nav:
 - Tutorials:
     - 'DataFlow: Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
     - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
+    - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
     - 'DataFlow: Lunch Recommender Slack App': 'Tutorial/Lunch.md'
 
 markdown_extensions:

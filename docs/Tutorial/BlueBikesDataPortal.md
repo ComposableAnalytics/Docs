@@ -11,13 +11,15 @@ some_url: https://docs.composable.ai
 
 # Creating a DataPortal
 
- In an ETL pipeline, the next step after processing data from an external source is to put it in a data store (load). A [DataPortal](../DataPortals/01.Overview.md) makes setting up a database from the data model very simple.
+In an ETL pipeline, the next step after processing data from an external source is to put it in a data store (load). A [DataPortal](../DataPortals/01.Overview.md) makes setting up a database from the data model very simple.
 
 In this tutorial, we will continue from the [Reading BlueBikes data](./ReadingBlueBikes.md) tutorial to use it as our dataset. We will set up a DataPortal, then use the [DataPortalSync](../DataFlows/09.Module-Details/DataPortalSync.md) to load the data into the database. This is so we now have a permanent store for our data, and an access point for other applications as well.
 
 ## The DataPortal Excel File
 
 The DataPortal will have a similar structure to the "Simple Survey" example excel file that is available on the Create New DataPortal Page, since we are essentially creating one table in the database.
+
+The excel file used in this Tutorial is available here. <a href="../../Tutorial/img/BlueBikesDataPortal.xlsx" download="BlueBikesDataPortal.xlsx">Download BlueBikes DataPortal Excel</a> 
 
 ### Master  Sheet
 
