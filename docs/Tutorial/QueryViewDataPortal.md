@@ -18,12 +18,12 @@ Then enter the following values into the fields, including the credentials that 
 
 | Field       | Entry                                                        |
 | ----------- | ------------------------------------------------------------ |
-| Name        | \<The name for the Key. This is displayed in Key selection windows> |
-| Description | \<Optional description of the key>                           |
+| Name        | <The name for the Key. This is displayed in Key selection windows\> |
+| Description | <Optional description of the key\>                           |
 | Host        | .                                                            |
 | Database    | BlueBikesModel (name of the DataPortal Database)             |
-| Username    | \<Your database username>                                    |
-| Password    | \<Your database password>                                    |
+| Username    | <Your database username\>                                    |
+| Password    | <Your database password\>                                    |
 
 ![!Key to access the Composable Database DataPortal](img/BBKey.png)
 
