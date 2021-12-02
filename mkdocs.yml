@@ -136,23 +136,28 @@ nav:
     - '5.10 Updating DataPortals': 'DataPortals/10.UpdateDataPortals.md' 
 - 6. DataRepository:
     - '6.1 Overview': 'DataRepository/01.Overview.md'
-- 7. DashBoards:
-    - '7.1 Overview': 'DashBoards/01.Overview.md'
-- 8. WebApps:
-    - '8.1 Overview': 'WebApps/01.Overview.md'
-- 9. Keys:
-    - '9.1 Overview': 'Keys/01.Overview.md'
-    - '9.2 Using Keys': 'Keys/02.Using-Keys.md'
-- 10. Users and Groups:
-    - '10.1 Overview': 'Users-and-Groups/01.Overview.md'
-- 11. FluentAPI:
-    - '11.1 FluentAPI User Guide': 'FluentAPI/01.FluentAPI-User-Guide.md'
-    - '11.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
-- 12. Code Promotion:
-    - '12.1 Overview': 'Code-Promotion/01.Overview.md'
-    - '12.2 Setup': 'Code-Promotion/02.Setup.md'
-    - '12.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
-    - '12.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
+    - '6.2 DataRepository Basics': 'DataRepository/Create-DataRepository.md'
+    - '6.3 Repository Details': 'DataRepository/Repository-Details.md'
+    - '6.4 DataQuery': 'DataRepository/DataQuery-Overview.md'
+- 7. DataCatalog:
+    - '7.1 Overview': 'DataCatalogs/Overview.md'
+- 8. DashBoards:
+    - '8.1 Overview': 'DashBoards/01.Overview.md'
+- 9. WebApps:
+    - '9.1 Overview': 'WebApps/01.Overview.md'
+- 10. Keys:
+    - '10.1 Overview': 'Keys/01.Overview.md'
+    - '10.2 Using Keys': 'Keys/02.Using-Keys.md'
+- 11. Users and Groups:
+    - '11.1 Overview': 'Users-and-Groups/01.Overview.md'
+- 12. FluentAPI:
+    - '12.1 FluentAPI User Guide': 'FluentAPI/01.FluentAPI-User-Guide.md'
+    - '12.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
+- 13. Code Promotion:
+    - '13.1 Overview': 'Code-Promotion/01.Overview.md'
+    - '13.2 Setup': 'Code-Promotion/02.Setup.md'
+    - '13.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
+    - '13.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
 - Tutorials:
     - 'DataFlow: Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
     - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
