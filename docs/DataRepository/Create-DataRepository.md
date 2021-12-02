@@ -28,6 +28,6 @@ Simply enter a name and description for the repository, then select which type o
 
 Once you have selected your type, use the appropriate button to select the data source. In the MSSQL Database example above, clicking `Select Key` will bring up a searchable list of `SqlConnectionSettings` keys you have access to. 
 
-![!Select SQL Key](img/Select_SQL_Key.png)
+![!Select SQL Key](img/Select_SQL_key.png)
 
 Once everything is configured, click `Create Repo` and Composable will generate your new DataRepository.
