@@ -29,8 +29,7 @@ nav:
     - '2.2 Navigation': 'Composable-Platform/02.Navigation.md'
     - '2.3 Search': 'Composable-Platform/03.Search.md'
     - '2.4 Product Areas': 'Composable-Platform/04.Product-Areas.md'
-    - '2.5 User Profile': 'Composable-Platform/05.User-Profile.md'
-    - '2.6 System Administration': 'Composable-Platform/06.System-Administration.md'
+    - '2.5 System Administration': 'Composable-Platform/05.System-Administration.md'
 - 3. DataFlows:
     - '3.1 Overview': 'DataFlows/01.Overview.md'
     - '3.2 Composable Designer': 'DataFlows/02.Composable-Designer.md'
@@ -152,6 +151,8 @@ nav:
     - '10.2 Using Keys': 'Keys/02.Using-Keys.md'
 - 11. Users and Groups:
     - '11.1 Overview': 'Users-and-Groups/01.Overview.md'
+    - '11.2 User Profile': 'Users-and-Groups/02.User-Profile.md'
+
 - 12. FluentAPI:
     - '12.1 FluentAPI User Guide': 'FluentAPI/01.FluentAPI-User-Guide.md'
     - '12.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
