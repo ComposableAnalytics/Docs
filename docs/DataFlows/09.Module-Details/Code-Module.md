@@ -26,7 +26,7 @@ The following are the Code Module input parameters:
 - **Language**: A parameter to select the programming language, C#, VB.NET, and F#.
 - **TypeName**: The name of the class type where the method resides.
 - **MethodName**: The name of the method to execute.
-- **Code**: This is the actual code that will be compiled and executed, specifically including the class with method to execute specified in the above inputs, along with any other dependent classes.
+- **Code**: This is the actual code that will be compiled and executed, specifically including the class with method to execute specified in the above inputs, along with any other dependent classes. The code editor window provides IntelliSense (for code-completion aid), live syntax highlighting and live compiler warning.
 
 
 ## Advanced Table Manipulation with the Code Module
