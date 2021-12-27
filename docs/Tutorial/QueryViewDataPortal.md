@@ -5,6 +5,7 @@ QueryViews provide querying and exploration of data stored in a database in an i
 In this tutorial, we will continue the series using BlueBike data, [Reading BlueBikes data](./ReadingBlueBikes.md), then [loaded into a DataPortal](BlueBikesDataPortal.md). Here, we'll view the data we stored in the DataPortal with QueryViews and demonstrate the functionality of QueryViews. QueryViews can be easily used for generating reports where users can apply filters for their use case. 
 
 Here are the json files for the QueryViews created in this tutorial that can be imported into a QueryView as reference.
+
 - <a href="../../Tutorial/img/Blue Bikes Query View Tutorial.json" download="Blue Bikes Query View Tutorial.json">Download Parent QueryView</a>
 - <a href="../../Tutorial/img/BlueBikes Trip Summaries.json" download="BlueBikes Trip Summaries.json">Download Child QueryView</a>
 
