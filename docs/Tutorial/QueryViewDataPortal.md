@@ -2,17 +2,22 @@
 
 QueryViews provide querying and exploration of data stored in a database in an interactive web-based environment. The interactivity features can also be used to connect Composable applications together, such as starting DataFlows with [actions](../QueryViews/Actions.md).
 
-In this tutorial, we will continue the series using BlueBike data, [Reading BlueBikes data](./ReadingBlueBikes.md), then [loaded into a DataPortal](BlueBikesDataPortal.md). Here we'll view the data we stored in the DataPortal with QueryViews and demonstrate the functionality of QueryViews. QueryViews can be easily used for generating reports where users can apply filters for their use case. 
+In this tutorial, we will continue the series using BlueBike data, [Reading BlueBikes data](./ReadingBlueBikes.md), then [loaded into a DataPortal](BlueBikesDataPortal.md). Here, we'll view the data we stored in the DataPortal with QueryViews and demonstrate the functionality of QueryViews. QueryViews can be easily used for generating reports where users can apply filters for their use case. 
 
-Here are the json files for the QueryViews created in this tutorial that can be imported into a QueryView as reference.<a href="../../Tutorial/img/Blue Bikes Query View Tutorial.json" download="Blue Bikes Query View Tutorial.json">Download Parent QueryView</a> (Note the child QueryView is not linked in the export) <a href="../../Tutorial/img/BlueBikes Trip Summaries.json" download="BlueBikes Trip Summaries.json">Download Child QueryView</a>
+Here are the json files for the QueryViews created in this tutorial that can be imported into a QueryView as reference.
+- <a href="../../Tutorial/img/Blue Bikes Query View Tutorial.json" download="Blue Bikes Query View Tutorial.json">Download Parent QueryView</a>
+- <a href="../../Tutorial/img/BlueBikes Trip Summaries.json" download="BlueBikes Trip Summaries.json">Download Child QueryView</a>
+
+!!! note
+	When importing these QueryViews from the json files, note that the parent/child relationship is not yet defined as the QueryViews are not linked in the export/import process. The child relationship will need to be defined, as shown below in the "Adding a Child QueryView" section.
 
 ## Accessing the Database with a Key
 
 To access any database, you need log-in credentials. When we created the DataPortal, this does not create credentials, so you will need to get in touch with your Composable administrator/DBA to create credentials to access the `BlueBikesModel` Database before continuing.
 
-With your database credentials, you can store them securely in Composable as a [Key](../Keys/01.Overview.md).
+With your database credentials, you can store them securely in Composable Key Vault as a [Key](../Keys/01.Overview.md).
 
- Go to the `Create New` Keys page, and select `Database Connection Settings` as the `Property Type`.
+Go to the `Create New` Keys page, and select `Database Connection Settings` as the `Property Type`.
 
 Then enter the following values into the fields, including the credentials that were set up. Because this is the local Composable instance the `Host` is `.`. If accessing a database on another server, the host is the IP address of the server.
 
