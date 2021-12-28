@@ -9,23 +9,29 @@ some_url: https://docs.composable.ai
 
 # DataFlow Error Handling Options
 
-The Composable DataFlow Designer provides a full (visual) development environment, with features ranging from debugging to version control, to replicate the concepts of coding in an IDE. To further that goal, the DataFlow Designer allows the user to define how to handle errors, at both a global level and Module level. There are three major features that encompass error handling for DataFlows: 
+The Composable DataFlow Designer provides a full (visual) development environment, with features ranging from debugging to version control, to replicate the concepts of coding in an IDE. To further that goal, the DataFlow Designer allows the user to define how to handle errors, at both a global (DataFlow) level and granular (Module) level. There are three major features that encompass error handling for DataFlows: 
 
-- Continue On Error (at both global and Module level)
+- Continue On Error
 - Email On Error
 - Execute On Error
 
-The Global DataFlow error handling settings can be altered in the Error Handling Options modal by selecting the `Error Handling Options` button in the Designer.
+The global DataFlow error handling settings can be altered in the Error Handling Options modal by selecting the `Error Handling Options` button in the Designer.
 
 ![!Error Handling Options for DataFlows](img/Error-Handling-01.png)
 
-Individual Module-level error handling can be set by clicking on the gear icon on the top right of a Module.
+The granular Module level error handling can be set by clicking on the gear icon on the top right of a Module.
 
 ![!Error Handling Options for individual Modules](img/Error-Handling-02.png)
 
-A Module Settings modal is provided to set individual Module options, including Retry (retries a given Module during Execution for a specified number of times, separated by a specified amount of time), Continue on Error (as explained below) and Cache Run Results.
+A Module Settings modal is provided to set individual Module options, including:
+
+- Retry (retries a given Module during Execution for a specified number of times, with each retry separated by a specified amount of time)
+- Continue on Error
+- Cache Run Results
 
 ![!Error Handling Options for individual Modules](img/Error-Handling-03.png)
+
+With these features for error handling and manipulation, Composable users can be further empowered to automate DataFlow applications.
 
 ## Continue On Error
 
@@ -44,5 +50,3 @@ Email On Error allows for immediate notification upon an error occurring. Email 
 ## DataFlow To Execute On Error
 
 DataFlow To Execute On Error allows for immediate action upon an error occurring. DataFlow To Execute On Error allows the user to specify another DataFlow if the one running fails. In order to provide information about what occurred, Composable passes error and Run information to the reacting DataFlow so that actions can be taken based on the type or error logged or what Module failed previously. Re-running tasks, updating external databases post error, correcting any potential partial DataFlow completion results, and more are all possible.
-
-With these features for error handling and manipulation, Composable users can be further empowered to automate DataFlow applications.
