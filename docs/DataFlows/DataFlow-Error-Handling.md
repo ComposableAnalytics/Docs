@@ -9,17 +9,17 @@ some_url: https://docs.composable.ai
 
 # DataFlow Error Handling Options
 
-The Composable DataFlow Designer provides a full (visual) development environment, with features ranging from debugging to version control, to replicate the concepts of coding in an IDE. To further that goal, the DataFlow Designer allows the user to define how to handle errors, at both a global (DataFlow) level and granular (Module) level. There are three major features that encompass error handling for DataFlows: 
+The Composable DataFlow Designer provides a full (visual) development environment, with features ranging from debugging to [Resume](./DataFlow-Resume.md) to version control, to replicate the concepts of coding in an IDE. To further that goal, the DataFlow Designer allows the user to define how to handle errors, at both a global (DataFlow) level and granular (Module) level. There are three major features that encompass error handling for DataFlows: 
 
 - Continue On Error
 - Email On Error
 - Execute On Error
 
-The global DataFlow error handling settings can be altered in the Error Handling Options modal by selecting the `Error Handling Options` button in the Designer.
+The global DataFlow-level error handling settings can be altered in the Error Handling Options modal by selecting the `Error Handling Options` button in the Designer.
 
 ![!Error Handling Options for DataFlows](img/Error-Handling-01.png)
 
-The granular Module level error handling can be set by clicking on the gear icon on the top right of a Module.
+The granular Module-level error handling can be set by clicking on the gear icon on the top right of a Module.
 
 ![!Error Handling Options for individual Modules](img/Error-Handling-02.png)
 

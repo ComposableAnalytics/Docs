@@ -37,14 +37,15 @@ nav:
     - '3.4 Modules': 'DataFlows/04.Modules.md'
     - '3.5 DataFlows': 'DataFlows/05.DataFlows.md'
     - '3.6 DataFlow Reuse': 'DataFlows/06.DataFlow-Reuse.md'
-    - '3.7 DataFlow Error Handling': 'DataFlows/DataFlow-Error-Handling.md'
-    - '3.8 Custom Module Extensions': 'DataFlows/07.Custom-Modules.md'
-    - '3.9 Example DataFlows': 'DataFlows/08.Example-DataFlows.md'
-    - 3.10 Module Details:
+    - '3.7 DataFlow Resume': 'DataFlows/DataFlow-Resume.md'
+    - '3.8 DataFlow Error Handling': 'DataFlows/DataFlow-Error-Handling.md'
+    - '3.9 Custom Module Extensions': 'DataFlows/07.Custom-Modules.md'
+    - '3.10 Example DataFlows': 'DataFlows/08.Example-DataFlows.md'
+    - 3.11 Module Details:
         - 'Code Module': 'DataFlows/09.Module-Details/Code-Module.md'
         - 'DataPortal Delete Module': 'DataFlows/09.Module-Details/DataPortalDelete.md'
         - 'DataPortal Sync Module': 'DataFlows/09.Module-Details/DataPortalSync.md'
-    - '3.11 Runs': 'DataFlows/10.Runs.md'
+    - '3.12 Runs': 'DataFlows/10.Runs.md'
 - 4. QueryViews:
     - '4.1 Overview': 'QueryViews/01.Overview.md'
     - '4.2 QueryView Basics': 'QueryViews/02.Create-QueryView.md'
