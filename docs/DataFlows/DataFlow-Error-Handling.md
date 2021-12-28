@@ -25,9 +25,10 @@ The granular Module level error handling can be set by clicking on the gear icon
 
 A Module Settings modal is provided to set individual Module options, including:
 
-- Retry (retries a given Module during Execution for a specified number of times, with each retry separated by a specified amount of time)
-- Continue on Error
-- Cache Run Results
+- **Retry Count**: Number of times to retry module execution if it errors
+- **Retry Delay**: Allows the user to set a delay between retry executions
+- **Continue on Error**: An error will not prevent the rest of the DataFlow from running.
+- **Cache Run Results**: Caches the output values of the module with the inputs when executing. When the same inputs are used on a later run within the user-defined caching period, the cached value is used instead of executing again. For example, if you have a slow SQL query from which the returned data is not expected to change often, you could choose to cache the results of your query module for 30 minutes in order to avoid running the query as frequently
 
 ![!Error Handling Options for individual Modules](img/Error-Handling-03.png)
 
