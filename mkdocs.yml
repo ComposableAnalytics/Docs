@@ -39,12 +39,12 @@ nav:
     - '3.6 DataFlow Reuse': 'DataFlows/06.DataFlow-Reuse.md'
     - '3.7 DataFlow Resume': 'DataFlows/DataFlow-Resume.md'
     - '3.8 DataFlow Error Handling': 'DataFlows/DataFlow-Error-Handling.md'
-    - '3.9 Custom Module Extensions': 'DataFlows/07.Custom-Modules.md'
-    - 3.10 Module Details:
+    - '3.9 DataFlow Runs': 'DataFlows/10.Runs.md'
+    - '3.10 Custom Module Extensions': 'DataFlows/07.Custom-Modules.md'
+    - 3.11 Module Details:
         - 'Code Module': 'DataFlows/09.Module-Details/Code-Module.md'
         - 'DataPortal Delete Module': 'DataFlows/09.Module-Details/DataPortalDelete.md'
         - 'DataPortal Sync Module': 'DataFlows/09.Module-Details/DataPortalSync.md'
-    - '3.11 Runs': 'DataFlows/10.Runs.md'
 - 4. QueryViews:
     - '4.1 Overview': 'QueryViews/01.Overview.md'
     - '4.2 QueryView Basics': 'QueryViews/02.Create-QueryView.md'
@@ -154,7 +154,6 @@ nav:
 - 11. Users and Groups:
     - '11.1 Overview': 'Users-and-Groups/01.Overview.md'
     - '11.2 User Profile': 'Users-and-Groups/02.User-Profile.md'
-
 - 12. FluentAPI:
     - '12.1 FluentAPI User Guide': 'FluentAPI/01.FluentAPI-User-Guide.md'
     - '12.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
@@ -167,9 +166,9 @@ nav:
     - 'DataFlow: Word Count Using Python and C#': 'Tutorial/DataFlow-Word-Count.md'
     - 'DataFlow: Image Processing DataFlows': 'Tutorial/DataFlow-Image-Processing.md'
     - 'DataFlow: Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
-    - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
-    - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
     - 'DataFlow: Lunch Recommender Slack App': 'Tutorial/Lunch.md'
+    - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
+    - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
 
 markdown_extensions:
   - admonition
