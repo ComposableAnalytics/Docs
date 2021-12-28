@@ -13,7 +13,7 @@ some_url: https://docs.composable.ai
 
 This is a simple DataFlow that will introduce you to a few concepts, including entering in a table using the Table Editor Module and looping over rows in a table.
 
-1.	Create a new DataFlow by clicking on the DataFlow icon or select DataFlow > Create New from the side menu.
+1. Create a new DataFlow by clicking on the DataFlow icon or select DataFlow > Create New from the side menu.
 
 ![!Example "Hello, World!" DataFlow](img/DataFlow-HelloWorld-01.png)
 
@@ -21,7 +21,7 @@ The Composable Designer will load, and you will be presented with a new canvas a
  
 ![!Example "Hello, World!" DataFlow](img/DataFlow-HelloWorld-02.png)
 
-2.	We will start with some "dirty" data. Imagine being given a spreadsheet with just a single column, with letters arranged as follows:
+2. We will start with some "dirty" data. Imagine being given a spreadsheet with just a single column, with letters arranged as follows:
 
 ![!Example "Hello, World!" DataFlow](img/DataFlow-HelloWorld-03.png)
 
@@ -31,18 +31,19 @@ Find the **Table Editor Module** in the Module Library on the left. Drag and Dro
 
 ![!Example "Hello, World!" DataFlow](img/DataFlow-HelloWorld-04.png)
 
-3.	Now, we will loop through the rows and accumulate the data into a single string.
+3. Now, we will loop through the rows and accumulate the data into a single string.
 
-4.	Select the following modules to create a loop:
-a.	**Table ForEach** – acts as a For Loop over the columns
-b.	**TableRow Cell Selector** – Allows you to choose a Column (here, "DirtyData") to select, and will give you a given cell value from the table on each loop iteration
-c.	**Accumulator** – Will accumulate results over the loop; provide an input, and the trigger for when the loop completes
-d.	**String Array Aggregator** – To aggregate the array into a string
+4. Select the following modules to create a loop:
+
+- **Table ForEach** – Acts as a For Loop over the rows of the input table
+- **TableRow Cell Selector** – Allows you to choose a Column (here, "DirtyData") to select from the given Row, and will give you a given cell value from the table on each loop iteration
+- **Accumulator** – Accumulates results over the loop; provide an input, and the trigger from the Table ForEach Module for when the loop completes
+- **String Array Aggregator** – Aggregates the array into a string
 
 Your DataFlow should look like:
 
 ![!Example "Hello, World!" DataFlow](img/DataFlow-HelloWorld-05.png)
 
-5.	Click Run, and right click on the final output to see the results.
+5. Click Run, and right click on the final output to see the results.
  
 ![!Example "Hello, World!" DataFlow](img/DataFlow-HelloWorld-06.png)
