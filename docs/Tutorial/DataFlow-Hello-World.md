@@ -31,14 +31,14 @@ Find the **Table Editor Module** in the Module Library on the left. Drag and Dro
 
 ![!Example "Hello, World!" DataFlow](img/DataFlow-HelloWorld-04.png)
 
-- Now, we will loop through the rows and accumulate the data into a single string.
+Now, we will loop through the rows and accumulate the data into a single string.
 
-- Select the following modules to create a loop:
+Select the following modules to create a loop:
 
-  * **Table ForEach** – Acts as a For Loop over the rows of the input table
-  * **TableRow Cell Selector** – Allows you to choose a Column (here, "DirtyData") to select from the given Row, and will give you a given cell value from the table on each loop iteration
-  * **Accumulator** – Accumulates results over the loop; provide an input, and the trigger from the Table ForEach Module for when the loop completes
-  * **String Array Aggregator** – Aggregates the array into a string
+- **Table ForEach** – Acts as a For Loop over the rows of the input table
+- **TableRow Cell Selector** – Allows you to choose a Column (here, "DirtyData") to select from the given Row, and will give you a given cell value from the table on each loop iteration
+- **Accumulator** – Accumulates results over the loop; provide an input, and the trigger from the Table ForEach Module for when the loop completes
+- **String Array Aggregator** – Aggregates the array into a string
 
 Your DataFlow should look like:
 
