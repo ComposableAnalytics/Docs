@@ -40,12 +40,11 @@ nav:
     - '3.7 DataFlow Resume': 'DataFlows/DataFlow-Resume.md'
     - '3.8 DataFlow Error Handling': 'DataFlows/DataFlow-Error-Handling.md'
     - '3.9 Custom Module Extensions': 'DataFlows/07.Custom-Modules.md'
-    - '3.10 Example DataFlows': 'DataFlows/08.Example-DataFlows.md'
-    - 3.11 Module Details:
+    - 3.10 Module Details:
         - 'Code Module': 'DataFlows/09.Module-Details/Code-Module.md'
         - 'DataPortal Delete Module': 'DataFlows/09.Module-Details/DataPortalDelete.md'
         - 'DataPortal Sync Module': 'DataFlows/09.Module-Details/DataPortalSync.md'
-    - '3.12 Runs': 'DataFlows/10.Runs.md'
+    - '3.11 Runs': 'DataFlows/10.Runs.md'
 - 4. QueryViews:
     - '4.1 Overview': 'QueryViews/01.Overview.md'
     - '4.2 QueryView Basics': 'QueryViews/02.Create-QueryView.md'
@@ -165,6 +164,8 @@ nav:
     - '13.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
     - '13.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
 - Tutorials:
+    - 'DataFlow: Word Count Using Python and C#': 'Tutorial/DataFlow-Word-Count.md'
+    - 'DataFlow: Image Processing DataFlows': 'Tutorial/DataFlow-Image-Processing.md'
     - 'DataFlow: Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
     - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
     - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'

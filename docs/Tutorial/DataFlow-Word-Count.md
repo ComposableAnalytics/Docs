@@ -7,11 +7,9 @@ date: 2014-08-12
 some_url: https://docs.composable.ai
 ---
 
-# Example DataFlows
+# Word Count using Python and C\#
 
-Below are some example DataFlows that you can build to gain some familiarity with the Composable platform.
-
-## Word Count using Python and C#
+This is a simple DataFlow that you can build to gain some familiarity with the Composable platform.
 
 In this DataFlow, we will be creating a simple histogram of word frequency in a random block of text.
 While there are simpler approaches to do this, we will use separate Python and C# Modules so that we can specifically show the approach of combining different languages in a single DataFlow. The basic workflow will be as follows:
@@ -19,7 +17,7 @@ While there are simpler approaches to do this, we will use separate Python and C
 1. Parse (split) text into a list of words
 2. Calculate the frequency of each word
 
-### Step 1 - Create A New DataFlow
+## Step 1 - Create A New DataFlow
 
 Create a new DataFlow by clicking on the DataFlow icon or select DataFlow > Create New from the side menu.
 
@@ -31,7 +29,7 @@ As explained previously, the Composable Designer is made up of five primary area
 
 ![!Composable Example Blank Canvas](img/03.08.Img_2.png)
 
-### Step 2 - Retrieve Text
+## Step 2 - Retrieve Text
 
 The DataFlow we are creating will parse a set of text and produce a frequency count. Therefore, we need some text at the start of this DataFlow. This text can be retrieved from any number of sources, including a file, a database table, a web service, etc.
 
@@ -46,7 +44,7 @@ http://www.randomtext.me/download/txt/gibberish/p-5/25-45
 
 Your DataFlow should look like the above. You can even run the DataFlow at this point, and view the results of the Module by right-clicking on the blue output dot.
 
-### Step 3 - Split the String
+## Step 3 - Split the String
 
 The WebClient Module returns a block of text. Our next step will require us to split this string into a list of words. While there are many (simpler) ways to do that in Composable (including a Split String Module), we will use Python here to illustrate the use of Python from within a DataFlow.
 
@@ -77,7 +75,7 @@ At this point, your DataFlow should look like this:
 
 You can go ahead and run the DataFlow, and inspect the output of the Python Code module. You should see a list of words as the output.
 
-### Step 4 - Calculate Word Frequency
+## Step 4 - Calculate Word Frequency
 
 To calculate the word frequency (in the list of words obtained above), we will use a Code Module.
 
@@ -149,7 +147,7 @@ The result is a table.
 
 ![!Composable Example Code Module Output](img/03.08.Img_5b.png)
 
-### Step 5 - View Results
+## Step 5 - View Results
 
 With that, we are done! We retrieved a block of text, split it into a list of words and calculated the word frequency. At this point, you can take the resulting table, and do any number of things (export to a xlsx/csv, insert into a database, etc.).
 
