@@ -21,7 +21,7 @@ This video covers user registration and login, as well as basic navigation acros
 
 This video provides an introduction to Composable DataFlow Applications. A simple DataFlow is used to demonstrate the functional areas of the Designer, as well as how to Create, Run, Resume, and Share DataFlows.
 
-[![Introduction to Composable DataFlows](img/Composable_DataFlow_01.png)](https://www.youtube.com/watch?v=HBpr_UOKvGA "Introduction to Composable DataFlows")
+[![Introduction to Composable DataFlows](img/Composable_DataFlow_Intro_01.png)](https://www.youtube.com/watch?v=HBpr_UOKvGA "Introduction to Composable DataFlows")
 
 # Introduction to Composable QueryViews
 
