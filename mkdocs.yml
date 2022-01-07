@@ -170,8 +170,7 @@ nav:
     - 'DataFlow: Lunch Recommender Slack App': 'Tutorial/Lunch.md'
     - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
     - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
-- Videos:
-    - 'Video Tutorials': 'Videos/Composable-Videos.md'
+- Videos: 'Videos/Composable-Videos.md'
 
 markdown_extensions:
   - admonition
