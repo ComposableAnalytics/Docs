@@ -33,7 +33,7 @@ This video provides an introduction to creating a new Composable QueryView, to p
 
 This video provides an introduction to Composable Dataportals, with additional context on when and how to use DataPortals for data modeling.
 
-[![Introduction to Composable DataPortals](img/Composable_DataPortals_01.png)](https://www.youtube.com/watch?v=tvkkImU1bm0 "Introduction to Composable DataPortals")
+[![Introduction to Composable DataPortals](img/Composable_DataPortals_Intro_01.png)](https://www.youtube.com/watch?v=tvkkImU1bm0 "Introduction to Composable DataPortals")
 
 # Building Web Services with Composable DataFlows (Part 1)
 
