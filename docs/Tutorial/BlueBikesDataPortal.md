@@ -15,13 +15,13 @@ In an ETL pipeline, the next step after processing data from an external source 
 
 In this tutorial, we will continue from the [Reading BlueBikes data](./ReadingBlueBikes.md) tutorial to use it as our dataset. We will set up a DataPortal, then use the [DataPortalSync](../DataFlows/09.Module-Details/DataPortalSync.md) to load the data into the database. This is so we now have a permanent store for our data, and an access point for other applications as well.
 
-## The DataPortal Excel File
+## The DataPortal Model File
 
 The DataPortal will have a similar structure to the "Simple Survey" example excel file that is available on the Create New DataPortal Page, since we are essentially creating one table in the database.
 
-The excel file used in this Tutorial is available here. <a href="../../Tutorial/img/BlueBikesDataPortal.xlsx" download="BlueBikesDataPortal.xlsx">Download BlueBikes DataPortal Excel</a> 
+The Excel file used in this tutorial is available here: <a href="../../Tutorial/img/BlueBikesDataPortal.xlsx" download="BlueBikesDataPortal.xlsx">Download BlueBikes DataPortal Model (xlxs)</a> 
 
-### Master  Sheet
+### Master Sheet
 
 In the [master sheet](../DataPortals/03.MasterSheet.md), we name the database, and use the `Link` ControlType to point towards the entry page of the DataPortal. As `Type`, enter `Form.BlueBikes` which points towards another sheet in the file.
 
