@@ -53,9 +53,9 @@ The table and screenshot below shows our design for the "Survey" page. We have f
 | Instructions                                      | **Welcome to our Survey**                                    |                                                              | `System.String`                                   | [Label](../DataPortals/05.Control-Details/Label.md)          |                                                           |
 | FirstName                                         | First Name                                                   |                                                              | `System.String`                                   | [Text](../DataPortals/05.Control-Details/Text.md)            | TRUE                                                      |
 | LastName                                          | Last Name                                                    |                                                              | `System.String`                                   | [Text](../DataPortals/05.Control-Details/Text.md)            | TRUE                                                      |
-| DOB                                               | Date of Birth                                                |                                                              | `System.DateTimeOffset`                           | [Text](../DataPortals/05.Control-Details/DateTime.md)        | TRUE                                                      |
+| DOB                                               | Date of Birth                                                |                                                              | `System.DateTimeOffset`                           | [Date](../DataPortals/05.Control-Details/Date.md)        | TRUE                                                      |
 | Gender                                            | Gender                                                       |                                                              | `Form.Gender`                                     | [Category](../DataPortals/05.Control-Details/Category.md)    |
-| Feedback                                          | Please provide any thoughts you would like to convey.        |                                                              | `System.String`                                   | [Text](../DataPortals/05.Control-Details/Textarea.md)        |                                                           |
+| Feedback                                          | Please provide any thoughts you would like to convey.        |                                                              | `System.String`                                   | [Textarea](../DataPortals/05.Control-Details/Textarea.md)        |                                                           |
 
 As you can see from the table above and screenshot below, we set up the "Survey" page by listing each of the fields we would like to collect in the survey data. along with their properties.
 
@@ -72,14 +72,14 @@ In our survey example, the [`Categories`](../DataPortals/05.Categories.md) sheet
 
 ## The SurveyList Container
 
-With our survey page (or, as we refer to pages, "containers") defined, let's create a parent page called `SurveyList` that allows us to create multiple survey instances, creating a one-to-many relationship in our data model. Here, we use the ControlType [`Table`](../DataPortals/05.Control-Details/Table.md), indicating that we would like a table of all the survey instances. Note that the data type for the Table field is `[Form.Survey]`, with brackets indicating an array of our Survey containers. We also pick out some of the fields from our Survey container to be displayed in the table, via the [`Columns`](../DataPortals/06.Setting-Details/Columns.md) column shown to the right.
+With our survey page (or, as we refer to pages, "containers") defined, let's create a parent page called `SurveyList` that allows us to create multiple survey instances, creating a one-to-many relationship in our data model. Here, we use the ControlType [`Table`](../DataPortals/05.Control-Details/Table.md), indicating that we would like a table of all the survey instances. Note that the data type for the Table field is `[Form.Survey]`, with brackets indicating an array of our Survey containers. We also pick out some of the fields from our Survey container to be displayed in the table, via the [`Columns`](../DataPortals/06.Setting-Details/Columns.md) column shown below in the last column on the right.
 
 ![!Composable DataPortals SurveyList Container](img/DataPortal_Survey_03.png)
 
 
 ## The Master Container
 
-Finally, we need to create a [`Master`](../DataPortals/03.MasterSheet.md) sheet that points `Forms` to the container we would like to use as the root of our survey form. We'll use the `SurveyList` container we defined in the last step. Our `ControlType` here is always `Link`, and we select the container by writing its fully-qualified name (including the `Form.` prefix) in the `Type` column. Also in this `Master` sheet, we define the name of our DataPortal and the name of the database that will be created to store its data. Here, I've chosen `SurveyResponseManager`.
+Finally, we need to create a [`Master`](../DataPortals/03.MasterSheet.md) sheet that points `Forms` to the container we would like to use as the root of our survey form. We'll use the `SurveyList` container we defined in the last step. Our `ControlType` here is always [`Link`](../DataPortals/05.Control-Details/Link.md), and we select the container by writing its fully-qualified name (including the `Form.` prefix) in the [`Type`](../DataPortals/06.Setting-Details/Type.md) column. Also in this [`Master`](../DataPortals/03.MasterSheet.md) sheet, we define the name of our DataPortal and the name of the database that will be created to store its data. Here, the database name is set to `SurveyResponseManager`.
 
 ![!Composable DataPortals Master Container](img/DataPortal_Survey_04.png)
 
@@ -89,8 +89,7 @@ And, we're done!
 
 To build the DataPortal, simply upload the Excel workbook to Composable. 
 
-!!!note
-   To upload the DataPortal model file (Excel Workbook), create a new DataPortal and either click the `Choose File` button, or drag your file over to the upload box.
+To upload the DataPortal model file (Excel Workbook), create a new DataPortal and either click the `Choose File` button, or drag your file over to the upload box.
 
 ![!Composable DataPortals - New DataPortal Creation](img/DataPortal_Survey_05.png)
 
@@ -117,7 +116,7 @@ Now that our front-end is taken care of, let's see what Composable generated und
 We can create a Composable [DataRepository](../DataRepository/01.Overview.md) for our DataPortal to view and query the back-end database directly.
 
 !!!note
-   A [DataRepository](../DataRepository/01.Overview.md) can connect directly to a DataPortal id and show you a database diagram with tables connected by primary and foreign keys.
+    A [DataRepository](../DataRepository/01.Overview.md) can connect directly to a DataPortal id and show you a database diagram with tables connected by primary and foreign keys.
 
 ![!Create new Composable DataRepository for the existing survey DataPortal](img/DataPortal_Survey_09.png)
 
@@ -125,13 +124,14 @@ Many of these tables are generated to support things like authentication, access
 
 ![!Composable DataPortals Back-end Database includes not just the fields we defined, but additional fields, relationships and other attributes](img/DataPortal_Survey_10.png)
 
-![!View of the relationships automatically defined in the database](img/DataPortal_Survey_11.png)
+We can also view a visual representation of the relationships (the "entity–relationship model," or ER model) from our [DataRepository](../DataRepository/01.Overview.md).
 
+![!View of the relationships automatically defined in the database](img/DataPortal_Survey_11.png)
 
 We can add some sample data using the DataPortals web interface, and query the table in the database. You'll notice that all of the fields you defined are present and strongly typed in the database table. You'll also get some useful metadata, like the user who filled out the survey and when they did so. 
 
-!!!note 
-   DataPortals provide certain features that automatically protect you from malicious users who would try to corrupt your data
+!!!note
+    DataPortals provide certain features that automatically protect you from malicious users who would try to corrupt your data
 
 ![!Query on the Survey table in the DataPortal showing sample data](img/DataPortal_Survey_12.png)
 
