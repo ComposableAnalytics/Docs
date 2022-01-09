@@ -169,6 +169,7 @@ nav:
     - 'DataFlow: Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
     - 'DataFlow: Lunch Recommender Slack App': 'Tutorial/Lunch.md'
     - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
+    - 'DataPortal: Creating a Simple Survey Form': 'Tutorial/DataPortals-Survey.md'
     - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
 - Videos: 'Videos/Composable-Videos.md'
 
