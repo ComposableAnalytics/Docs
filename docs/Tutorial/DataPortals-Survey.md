@@ -25,7 +25,7 @@ You may be tempted by using an off-the-shelf, pre-built solution. Google Forms &
 
 ## The DataPortal Model File
 
-We'll be designing a simple survey form. All DataPortals start with a data model that is defined in an Excel workbook. The Excel model file used in this tutorial is available here: <a href="../../Tutorial/img/BlueBikesDataPortal.xlsx" download="BlueBikesDataPortal.xlsx">Download Simple Survey DataPortal Model (xlxs)</a> 
+We'll be designing a simple survey form. All DataPortals start with a data model that is defined in an Excel workbook. The Excel model file used in this tutorial is available here: <a href="../../Tutorial/img/DataPortals_Model_Simple_Survey.xlsx" download="DataPortals_Model_Simple_Survey.xlsx">Download Simple Survey DataPortal Model (xlxs)</a> 
 
 ## The Survey Container Page
 
@@ -109,6 +109,36 @@ Composable has provided us with a fully responsive web-based CRUD (Create, Read,
 
 ![!Composable DataPortals Full, Responsive Web Interface](img/DataPortal_Survey_08.png)
 
+### Optional Styling
+
+The web interface can be styled with custom styling rules, written in CSS, to change the design.
+
+We can add an optional sheet called `CSS` and enter custom CSS rules to style the pages with any colors, margins or other custom style behavior.
+
+![!Composable DataPortals Model File - Optional CSS sheet for custom styling](img/DataPortal_Survey_14.png)
+
+try using the following CSS code:
+
+```css
+".form-field label { font-size: 1.6rem; color: #002d62; } 
+.form-field .radio-list label, .form-boolean-field label { font-size: inherit; color: inherit; }
+.form-boolean-field { padding-top: 0; padding-bottom: 0; }
+.container-group-level-0:not(.tab-container) { background: none; }
+#forms-top-bar-left-group > button.breadcrumb-heading { display: none; }
+.form-label-field { padding-bottom: 0; }
+#subheader.subheader.manulife-bg.manulife-subheader { height: 35px }
+img { vertical-align: middle;    margin: auto}
+.manulife-subheader-separator span{ visibility:hidden }
+.forms-top-bar-right-group { display: none; }
+div:forms-top-bar-left-group.col-md-10 {color:  #002d62; font-size: 3em;}
+h5.container-name-top { font-size: 3em; color: #002d62; }
+.form-app-run-field { text-align: center }"
+```
+
+Our Survey page will now look like this:
+
+![!Composable DataPortals Full, Responsive Web Interface with Custom Styling](img/DataPortal_Survey_13.png)
+
 ## Exploring the Back-end Database
 
 Now that our front-end is taken care of, let's see what Composable generated under the hood to store our responses. 
@@ -138,7 +168,7 @@ We can add some sample data using the DataPortals web interface, and query the t
 
 ## Next Steps
 
-Just like that, we've gone from scratch to a fully operational data modeling and acquisition application with just a few sheets written in Excel. With a bit more effort, you can create much more powerful forms and data models, like the one below, with complex hierarchies, field grouping, dynamic layouts, nested tabbing, complex validation, and more. And, if you don't like the way it looks, you can change the design yourself. Simply, add an optional sheet called `CSS` and enter custom CSS rules to style the pages with any colors, margins or other custom style behavior.
+Just like that, we've gone from scratch to a fully operational data modeling and acquisition application with just a few sheets written in Excel. With a bit more effort, you can create much more powerful forms and data models, like the one below, with complex hierarchies, field grouping, dynamic layouts, nested tabbing, complex validation, and more.
 
 DataPortals can be also referenced in other Composable product areas. Create [QueryViews](../QueryViews/01.Overview.md) to query the data or Create [DataFlows](../DataFlows/01.Overview.md) that define full analytical workflows utilizing the data.
 
