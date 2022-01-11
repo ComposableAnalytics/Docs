@@ -37,12 +37,14 @@ nav:
     - '3.4 Modules': 'DataFlows/04.Modules.md'
     - '3.5 DataFlows': 'DataFlows/05.DataFlows.md'
     - '3.6 DataFlow Reuse': 'DataFlows/06.DataFlow-Reuse.md'
-    - '3.7 Custom Module Extensions': 'DataFlows/07.Custom-Modules.md'
-    - '3.8 Example DataFlows': 'DataFlows/08.Example-DataFlows.md'
-    - 3.9 Module Details:
-        - 'DataPortal Delete': 'DataFlows/09.Module-Details/DataPortalDelete.md'
-        - 'DataPortal Sync': 'DataFlows/09.Module-Details/DataPortalSync.md'
-    - '3.10 Runs': 'DataFlows/10.Runs.md'
+    - '3.7 DataFlow Resume': 'DataFlows/DataFlow-Resume.md'
+    - '3.8 DataFlow Error Handling': 'DataFlows/DataFlow-Error-Handling.md'
+    - '3.9 DataFlow Runs': 'DataFlows/10.Runs.md'
+    - '3.10 Custom Module Extensions': 'DataFlows/07.Custom-Modules.md'
+    - 3.11 Module Details:
+        - 'Code Module': 'DataFlows/09.Module-Details/Code-Module.md'
+        - 'DataPortal Delete Module': 'DataFlows/09.Module-Details/DataPortalDelete.md'
+        - 'DataPortal Sync Module': 'DataFlows/09.Module-Details/DataPortalSync.md'
 - 4. QueryViews:
     - '4.1 Overview': 'QueryViews/01.Overview.md'
     - '4.2 QueryView Basics': 'QueryViews/02.Create-QueryView.md'
@@ -175,11 +177,13 @@ nav:
     - '8.1 Overview': 'DashBoards/01.Overview.md'
 - 9. WebApps:
     - '9.1 Overview': 'WebApps/01.Overview.md'
+    - '9.2 WebApp Basics': 'WebApps/02.WebApp-Basics.md'
 - 10. Keys:
     - '10.1 Overview': 'Keys/01.Overview.md'
     - '10.2 Using Keys': 'Keys/02.Using-Keys.md'
 - 11. Users and Groups:
     - '11.1 Overview': 'Users-and-Groups/01.Overview.md'
+    - '11.2 User Profile': 'Users-and-Groups/02.User-Profile.md'
 - 12. FluentAPI:
     - '12.1 FluentAPI User Guide': 'FluentAPI/01.FluentAPI-User-Guide.md'
     - '12.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
@@ -189,10 +193,15 @@ nav:
     - '13.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
     - '13.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
 - Tutorials:
+    - 'DataFlow: "Hello, World!"': 'Tutorial/DataFlow-Hello-World.md'
+    - 'DataFlow: Word Count Using Python and C#': 'Tutorial/DataFlow-Word-Count.md'
+    - 'DataFlow: Image Processing DataFlows': 'Tutorial/DataFlow-Image-Processing.md'
     - 'DataFlow: Reading in Data from the Web': 'Tutorial/ReadingBlueBikes.md'
-    - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
-    - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
     - 'DataFlow: Lunch Recommender Slack App': 'Tutorial/Lunch.md'
+    - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
+    - 'DataPortal: Creating a Simple Survey Form': 'Tutorial/DataPortals-Survey.md'
+    - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
+- Videos: 'Videos/Composable-Videos.md'
 
 markdown_extensions:
   - admonition
