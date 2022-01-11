@@ -69,13 +69,11 @@ In our survey example, the [`Categories`](../DataPortals/05.Categories.md) sheet
 
 ![!Composable DataPortals Survey Categories Sheet](img/DataPortal_Survey_02.png)
 
-
 ## The SurveyList Container
 
 With our survey page (or, as we refer to pages, "containers") defined, let's create a parent page called `SurveyList` that allows us to create multiple survey instances, creating a one-to-many relationship in our data model. Here, we use the ControlType [`Table`](../DataPortals/05.Control-Details/Table.md), indicating that we would like a table of all the survey instances. Note that the data type for the Table field is `[Form.Survey]`, with brackets indicating an array of our Survey containers. We also pick out some of the fields from our Survey container to be displayed in the table, via the [`Columns`](../DataPortals/06.Setting-Details/Columns.md) column shown below in the last column on the right.
 
 ![!Composable DataPortals SurveyList Container](img/DataPortal_Survey_03.png)
-
 
 ## The Master Container
 
@@ -117,10 +115,10 @@ We can add an optional sheet called `CSS` and enter custom CSS rules to style th
 
 ![!Composable DataPortals Model File - Optional CSS sheet for custom styling](img/DataPortal_Survey_14.png)
 
-try using the following CSS code:
+Try using the following CSS code:
 
 ```css
-".form-field label { font-size: 1.6rem; color: #002d62; } 
+.form-field label { font-size: 1.6rem; color: #002d62; } 
 .form-field .radio-list label, .form-boolean-field label { font-size: inherit; color: inherit; }
 .form-boolean-field { padding-top: 0; padding-bottom: 0; }
 .container-group-level-0:not(.tab-container) { background: none; }
@@ -132,7 +130,7 @@ img { vertical-align: middle;    margin: auto}
 .forms-top-bar-right-group { display: none; }
 div:forms-top-bar-left-group.col-md-10 {color:  #002d62; font-size: 3em;}
 h5.container-name-top { font-size: 3em; color: #002d62; }
-.form-app-run-field { text-align: center }"
+.form-app-run-field { text-align: center }
 ```
 
 Our Survey page will now look like this:
