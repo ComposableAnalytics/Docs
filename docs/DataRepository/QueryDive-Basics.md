@@ -1,6 +1,6 @@
-# Creating a DataQuery
+# Creating a QueryDive
 
-To create a new DataQuery, [navigate](./Repository-Details.md#navigation) to any collection or field in a DataRepository. From there, click on the "Queries" tab:
+To create a new QueryDive, [navigate](./Repository-Details.md#navigation) to any collection or field in a DataRepository. From there, click on the "Queries" tab:
 
 ![!Collection Query Tab](img/Query_tab.png)
 
@@ -12,7 +12,7 @@ This new query defaults to selecting the first page of results for all fields in
 
 Now that we can see some of the data from our chosen collection, let's see how we can expand this query to discover more about the database and answer whatever questions we might have about the data.
 
-## Modifying a DataQuery
+## Modifying a QueryDive
 
 There are two main ways to modify a query: via interacting with the results panel headers and via the "Query" sidebar panel.
 
@@ -26,7 +26,7 @@ For example, suppose we're not interested in the `rowguid` column of `ProductCat
 
 ![!Query Step 2](img/Basic_query_step_2.png)
 
-For details on all actions that can be taken on fields see [here](./DataQuery-Details.md#field-menu-options) and for collections see [here](./DataQuery-Details.md#collection-menu-options).
+For details on all actions that can be taken on fields see [here](./QueryDive-Details.md#field-menu-options) and for collections see [here](./QueryDive-Details.md#collection-menu-options).
 
 ### Query sidebar
 
@@ -69,7 +69,7 @@ Notice that the new field `Name` appears under a new collection header: `[Produc
 
 Now that we have multiple collections and a better sense of what this data is, we can start to see questions we might want to answer. First notice that `[Production].[ProductSubcategory]` suggests another link to `[Production].[Product]`. Let's [Add](./Collection-Menu-Options/Add.md) that link and see what fields are available: ![!Product Fields](img/Product_fields.png)
 
-`ListPrice` stands out as a field we might be interested in. One option would be to [Add](./Field-Menu-Options/Add.md) that field and see all the list prices for every product in each subcategory, perhaps that's more data than we need right now. Instead, let's directly [Aggregate](./Field-Menu-Options/Aggregate.md) the field to generate a new field. Selecting this option will pop up a new window to define exactly what we want:
+`ListPrice` stands out as a field we might be interested in. One option would be to [Add](./Field-Menu-Options/Add.md) that field and see all the list prices for every product in each subcategory, but perhaps that's more data than we need right now. Instead, let's directly [Aggregate](./Field-Menu-Options/Aggregate.md) the field to generate a new field. Selecting this option will pop up a new window to define exactly what we want:
 
 ![!Aggregate Field Editor](img/Aggregate_modal.png)
 
@@ -81,7 +81,7 @@ The `Mean Price` column has appeared in `[Production].[ProductSubcategory]`, sho
 
 ![!Basic Query Step 5](img/Basic_query_step_5.png)
 
-Now we can see that the subcategory with the lowest average price is `Cleaners` in the `Accessories` category. For more details on ordering by fields, see [here](./Field-Menu-Options/Order.md).
+Now we can see that the subcategory with the lowest average price is `Cleaners` in the `Accessories` category. For more details on ordering by fields, see [here](./QueryDive-Details.md#ordering).
 
 ## Wrapping up
 

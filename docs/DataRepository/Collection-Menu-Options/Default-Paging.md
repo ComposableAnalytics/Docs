@@ -4,7 +4,7 @@ Edit the paging behavior for rows of this collection.
 
 ![!Default Paging](../img/Default_paging.png)
 
-View and edit the maximum number of rows to return in a single page of results for this collection. The placeholder value is the page size for the whole query, which can be overridden here for this collection. See [paging](../DataQuery-Details.md#paging) for more discussion of paging.
+View and edit the maximum number of rows to return in a single page of results for this collection. The placeholder value is the page size for the whole query, which can be overridden here for this collection. See [paging](../QueryDive-Details.md#paging) for more discussion of paging.
 
 Note that in some circumstances the collection that determines the visible paging will not be the collection the visible field belongs to directly, if the collection introducing the multple rows does not show any fields in the query. For example, consider these query results on `[Production].[ProductModel].Name`:
 

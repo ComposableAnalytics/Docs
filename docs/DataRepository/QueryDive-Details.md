@@ -1,10 +1,10 @@
-# DataQuery Details
+# QueryDive Details
 
-This page contains detailed information about core DataQuery concepts and the options available for them.
+This page contains detailed information about core QueryDive concepts and the options available for them.
 
 ## Collections
 
-Every DataQuery contains one or more collections. Each query collection points to a particular [Repository Collection](./Repository-Details.md#collections), but multiple query collections may point to the same Repository Collection, allowing complex queries that join multiple parts of the same underlying data together.
+Every QueryDive contains one or more collections. Each query collection points to a particular [Repository Collection](./Repository-Details.md#collections), but multiple query collections may point to the same Repository Collection, allowing complex queries that join multiple parts of the same underlying data together.
 
 The first collection in the query is the **Root Collection**. All other collections are defined relative to the root collection, and top level paging of results is based on rows of the root collection.
 
@@ -118,8 +118,8 @@ The sort control icon can appear in a variety of states, representing different 
 |![Unsorted](img/Sort_control_unsorted.png)|Unsorted|Field is not being used to sort (but can be)|
 |![Ascending](img/Sort_ascending.png)|Ascending Primary|Query is being sorted by this field from low to high|
 |![Descending](img/Sort_descending.png)|Descending Primary|Query is being sorted by this field from high to low|
-|![Ascending Secondary](img/Sort_ascending_second.png)|Ascending Secondary|Query is being sorted by another field and this field is being used as a secondary sort, from high to low| 
-|![Descending Secondary](img/Sort_descending_second.png)|Descending Secondary|Query is being sorted by another field and this field is being used as a secondary sort, from low to high| 
+|![Ascending Secondary](img/Sort_ascending_second.png)|Ascending Secondary|Query is being sorted by another field and this field is being used as a secondary sort, from low to high| 
+|![Descending Secondary](img/Sort_descending_second.png)|Descending Secondary|Query is being sorted by another field and this field is being used as a secondary sort, from high to low| 
 
 The number modifying secondary sorts indicates the given field's position in the set of fields being used to order.
 
@@ -156,19 +156,19 @@ The sort on `Name` can be applied to all collections in this query, so the first
 Filters provide a way to limit the results included in the query. Add a filter by selecting the [Add Filter](./Field-Menu-Options/Add-Filter.md) option from a field menu. There are two types of filters:
 
 - [**Value Filters**](./Filter-Types/Value.md) limit the field to a fixed set of values
-- [**Condition Filters**](./Filter-Types/Condition.md) compare the fields to another field via some condition.
+- [**Condition Filters**](./Filter-Types/Condition.md) compare the field to another field via some condition.
 
 In either case, the filter applies to the collection containing the given field. If that collection is defined as an inner join, the filter may also remove rows of ancestor collections.
 
 ### Grouping
 
-Grouping by a field allows the creation of [aggregate fields](./Field-Types/Aggregate.md) with groups other than those defined by the query structure. Without grouping, aggregation applies across all values of the field that would appear within a given row of the parent collection. With grouping, intermediate rows can be created, replacing the fine-grain child collection results with groups that are more still more fine-grain than the parent rows. An aggregate field on a collection with at least one grouped field will appear at the same level as its source field, except that an aggregate of a grouped aggregate will still appear on the parent collection.
+Grouping by a field allows the creation of [aggregate fields](./Field-Types/Aggregate.md) with groups other than those defined by the query structure. Without grouping, aggregation applies across all values of the field that would appear within a given row of the parent collection. With grouping, intermediate rows can be created, replacing the fine-grain child collection results with groups that are more still more fine-grain than the parent rows. An aggregate field on a collection with at least one grouped field will appear at the same level as its source field, except that an aggregate of a grouped aggregate will still appear on the parent collection. See [here](./Field-Types/Aggregate.md#grouping) for more on the interaction between grouping and aggregation.
 
 Note that grouping imposes significant restrictions on what fields may be included in query results, and thus grouping by a field may place a query into an invalid state. Usually this is because a non-aggregate field is being selected for a grouped collection. When a query is in an invalid state, you may edit the query to make it valid, but results will not be returned until the query is valid.
 
 ### Paging
 
-All results of DataQueries are paged, so only a manageable amount of data is returned at once.
+All results of QueryDives are paged, so only a manageable amount of data is returned at once.
 
 For the root collection, the paging controls appear at the bottom of the main results panel.
 

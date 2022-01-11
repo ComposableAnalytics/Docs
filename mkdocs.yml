@@ -138,17 +138,17 @@ nav:
     - '6.1 Overview': 'DataRepository/01.Overview.md'
     - '6.2 DataRepository Basics': 'DataRepository/Create-DataRepository.md'
     - '6.3 Repository Details': 'DataRepository/Repository-Details.md'
-    - '6.4 DataQuery': 'DataRepository/DataQuery-Overview.md'
-    - '6.5 DataQuery Basics': 'DataRepository/DataQuery-Basics.md'
-    - '6.6 DataQuery Details': 'DataRepository/DataQuery-Details.md'
-    - 6.7 DataQuery Fields:
+    - '6.4 QueryDives': 'DataRepository/QueryDive-Overview.md'
+    - '6.5 QueryDive Basics': 'DataRepository/QueryDive-Basics.md'
+    - '6.6 QueryDive Details': 'DataRepository/QueryDive-Details.md'
+    - 6.7 QueryDive Fields:
         - 'Simple Fields': 'DataRepository/Field-Types/Simple.md'
         - 'Aggregate Fields': 'DataRepository/Field-Types/Aggregate.md'
         - 'Constant Fields': 'DataRepository/Field-Types/Constant.md'
-    - 6.8 DataQuery Filters:
+    - 6.8 QueryDive Filters:
         - 'Value Filters': 'DataRepository/Filter-Types/Value.md'
         - 'Condition Filters': 'DataRepository/Filter-Types/Condition.md'
-    - 6.9 DataQuery Collection Actions:
+    - 6.9 QueryDive Collection Actions:
         - 'Add': 'DataRepository/Collection-Menu-Options/Add.md'
         - 'Remove': 'DataRepository/Collection-Menu-Options/Remove.md'
         - 'Edit': 'DataRepository/Collection-Menu-Options/Edit.md'
@@ -156,7 +156,7 @@ nav:
         - 'Add Field': 'DataRepository/Collection-Menu-Options/Add-Field.md'
         - 'Default Paging': 'DataRepository/Collection-Menu-Options/Default-Paging.md'
         - 'Rename': 'DataRepository/Collection-Menu-Options/Rename.md'
-    - 6.10 DataQuery Field Actions:
+    - 6.10 QueryDive Field Actions:
         - 'Add': 'DataRepository/Field-Menu-Options/Add.md'
         - 'Show': 'DataRepository/Field-Menu-Options/Show.md'
         - 'Remove': 'DataRepository/Field-Menu-Options/Remove.md'
@@ -169,7 +169,6 @@ nav:
         - 'Group By': 'DataRepository/Field-Menu-Options/Group-By.md'
         - 'Ungroup': 'DataRepository/Field-Menu-Options/Ungroup.md'
         - 'Link': 'DataRepository/Field-Menu-Options/Link.md'
-        - 'Order': 'DataRepository/Field-Menu-Options/Order.md'
 - 7. DataCatalog:
     - '7.1 Overview': 'DataCatalogs/Overview.md'
 - 8. DashBoards:
