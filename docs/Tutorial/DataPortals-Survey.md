@@ -35,12 +35,12 @@ The table and screenshot below shows our design for the "Survey" page. We have f
 
 - [`Name`](../DataPortals/06.Setting-Details/Name.md): A whitespace-free name for the field. Think of this as the name you would give this field's column in a database.
 
-!!!note
+!!! note
     The [`Name`](../DataPortals/06.Setting-Details/Name.md) field will be used as column names in the underlying database, and will not be shown to users (that's what [`DisplayName`](../DataPortals/06.Setting-Details/DisplayName.md) is for). Therefore, it is advisable to choose names that make good database column names, that do not contain any whitespace.
 
 - [`DisplayName`](../DataPortals/06.Setting-Details/DisplayName.md): A human-friendly label that will be displayed above the input box for the field on the form interface.
 
-!!!note
+!!! note
     Note the special case for [Label](../DataPortals/05.Control-Details/Label.md) fields. [`DisplayName`](../DataPortals/06.Setting-Details/DisplayName.md) contains rich text written in Markdown.
 
 - `Description`: A longer clarification that can be displayed in a tooltip to more fully explain the field.
@@ -117,20 +117,13 @@ We can add an optional sheet called `CSS` and enter custom CSS rules to style th
 
 Try using the following CSS code:
 
-```css
-.form-field label { font-size: 1.6rem; color: #002d62; } 
-.form-field .radio-list label, .form-boolean-field label { font-size: inherit; color: inherit; }
-.form-boolean-field { padding-top: 0; padding-bottom: 0; }
-.container-group-level-0:not(.tab-container) { background: none; }
-#forms-top-bar-left-group > button.breadcrumb-heading { display: none; }
-.form-label-field { padding-bottom: 0; }
-#subheader.subheader.manulife-bg.manulife-subheader { height: 35px }
-img { vertical-align: middle;    margin: auto}
-.manulife-subheader-separator span{ visibility:hidden }
-.forms-top-bar-right-group { display: none; }
-div:forms-top-bar-left-group.col-md-10 {color:  #002d62; font-size: 3em;}
-h5.container-name-top { font-size: 3em; color: #002d62; }
-.form-app-run-field { text-align: center }
+``` css
+    .form-field label { font-size: 1.6rem; color: #002d62; } 
+    .container-group-level-0:not(.tab-container) { background: none; }
+    .form-label-field { padding-bottom: 0; }
+    .forms-top-bar-right-group { display: none; }
+    div:forms-top-bar-left-group.col-md-10 {color:  #002d62; font-size: 3em;}
+    h5.container-name-top { font-size: 3em; color: #002d62; }
 ```
 
 Our Survey page will now look like this:
@@ -143,7 +136,7 @@ Now that our front-end is taken care of, let's see what Composable generated und
 
 We can create a Composable [DataRepository](../DataRepository/01.Overview.md) for our DataPortal to view and query the back-end database directly.
 
-!!!note
+!!! note
     A [DataRepository](../DataRepository/01.Overview.md) can connect directly to a DataPortal id and show you a database diagram with tables connected by primary and foreign keys.
 
 ![!Create new Composable DataRepository for the existing survey DataPortal](img/DataPortal_Survey_09.png)
@@ -158,7 +151,7 @@ We can also view a visual representation of the relationships (the "entity–rel
 
 We can add some sample data using the DataPortals web interface, and query the table in the database. You'll notice that all of the fields you defined are present and strongly typed in the database table. You'll also get some useful metadata, like the user who filled out the survey and when they did so. 
 
-!!!note
+!!! note
     DataPortals provide certain features that automatically protect you from malicious users who would try to corrupt your data
 
 ![!Query on the Survey table in the DataPortal showing sample data](img/DataPortal_Survey_12.png)
