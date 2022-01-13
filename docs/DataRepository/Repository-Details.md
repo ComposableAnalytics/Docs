@@ -58,4 +58,4 @@ The relationship graph also provides an alternate way to navigate the DataReposi
 
 ## Queries
 
-In the "Saved Queries" tab for the DataRepository, you will find a list of [Composable DataQueries](./DataQuery-Overview.md) that you have created or that have been shared with you. New queries can be created from any collection or field, with the new query initialized by selecting data from that collection. Each collection or field also shows a list of all queries you have access to that reference that collection or field.
+In the "Saved Queries" tab for the DataRepository, you will find a list of [Composable QueryDives](./QueryDive-Overview.md) that you have created or that have been shared with you. New queries can be created from any collection or field, with the new query initialized by selecting data from that collection. Each collection or field also shows a list of all queries you have access to that reference that collection or field.
