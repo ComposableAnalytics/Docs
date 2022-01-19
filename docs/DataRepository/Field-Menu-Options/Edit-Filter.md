@@ -4,4 +4,4 @@ View and modify any filters applied to the selected field. If there are multiple
 
 ![!Edit Filter Dropdown](../img/Edit_filter_dropdown.png)
 
-See [Filtering](../QueryDive-Details.md#filtering) for more details on filters.
+See [Filtering](../DeepQuery-Details.md#filtering) for more details on filters.

@@ -1,14 +1,14 @@
-# QueryDive Details
+# DeepQuery Details
 
-This page contains detailed information about core QueryDive concepts and the options available for them.
+This page contains detailed information about core DeepQuery concepts and the options available for them.
 
 ## Collections
 
-Every QueryDive contains one or more collections. Each query collection points to a particular [Repository Collection](./Repository-Details.md#collections), but multiple query collections may point to the same Repository Collection, allowing complex queries that join multiple parts of the same underlying data together.
+Every DeepQuery contains one or more collections. Each query collection points to a particular [Repository Collection](./Repository-Details.md#collections), but multiple query collections may point to the same Repository Collection, allowing complex queries that join multiple parts of the same underlying data together.
 
 The first collection in the query is the **Root Collection**. All other collections are defined relative to the root collection, and top level paging of results is based on rows of the root collection.
 
-All other collections in the query are **Nested Collections**. A nested collection is joined to one or more other collections in the query via Link Conditions, defining how to line up rows of the nested collection with the rest of the query. In the hierarchy of collections illustrated by the expanded header row, nested collections appear beneath all collections involved in their link conditions.
+All other collections in the query are **Nested Collections**. A nested collection is joined to one or more other collections in the query via link conditions, defining how to line up rows of the nested collection with the rest of the query. In the hierarchy of collections illustrated by the expanded header row, nested collections appear beneath all collections involved in their link conditions.
 
 ### Adding Collections
 
@@ -31,7 +31,7 @@ Once an underlying collection has been selected, the **Link Conditions** can be 
 
 At least one link condition must be provided. For each link condition, the **Origin Field** is a field on a query collection already included in the query and the **Destination Field** is a field on the new collection to be added. For both origin and destination it is also possible to create a new field from this screen by clicking the + button (after selecting a collection in the case of the origin field). See [below](#creating-fields) for details on creating new fields.
 
-Click Save to create the new collection and add it to the query. No fields will be added automatically, but the new collection will become available in the sidebar list of `Included Collections`.
+Click `Save` to create the new collection and add it to the query. No fields will be added automatically, but the new collection will become available in the sidebar list of `Included Collections`.
 
 ### Collection Menu Options
 
@@ -168,7 +168,7 @@ Note that grouping imposes significant restrictions on what fields may be includ
 
 ### Paging
 
-All results of QueryDives are paged, so only a manageable amount of data is returned at once.
+All results of DeepQueries are paged, so only a manageable amount of data is returned at once.
 
 For the root collection, the paging controls appear at the bottom of the main results panel.
 
