@@ -65,16 +65,20 @@ With our Master sheet defined, we will now create a parent container called `Log
 
 The Workload Container will be a new sheet in the Excel DataPortal Model File called **Workload**. For our ETL workloads, we will capture the following attributes as fields in our table:
 
-| Workload            | Description                                           |
-|---------------------|-------------------------------------------------------|
-|Name    	          | The name of the workload                              |
-|AppID   	          | The unique ID of the DataFlow Application             |
-|RunID  	          | The unique ID of the Run of a DataFlow Application    |
-|StartTime            | The start time of the workload                        |
-|EndTime	          | The end time of the workload                          |
-|Status	              | The status (success or failed) of the workload        |
+| Workload            | Description                                                                      |
+|---------------------|----------------------------------------------------------------------------------|
+|Name    	          | The name of the workload                                                         |
+|AppID   	          | The unique ID of the [DataFlow Application](../DataFlows/01.Overview.md)         |
+|RunID  	          | The unique ID of the [Run](../DataFlows/10.Runs.md) of a DataFlow Application    |
+|StartTime            | The start time of the workload                                                   |
+|EndTime	          | The end time of the workload                                                     |
+|Status	              | The status (success or failed) of the workload                                   |
 
 The screenshot below shows our design for the "Workload" page. 
+
+Note, for the status field, while it may ordinarily be useful to provide multiple status codes (for failed, complete, cancelled, etc.), for simplicity (and to show another DataPortal [`Type`](../DataPortals/06.Setting-Details/Type.md) and [ControlType](../DataPortals/06.Setting-Details/ControlType.md)), we defined a boolean called Success to indicate success or failure of the workload.
+
+Also, note that two additional fields are added, one for **Extract Task Entries** and one for **Load Task Entries**, which reference the respective container pages (defined in the next step) using the `[Form.<ContainerName>]` syntax.
 
 ![!Composable DataPortals MastWorkload Container](img/DataPortal_ETLLogs_04-1.png)
 
@@ -84,15 +88,17 @@ Similarly to the Workload Container, we will create a new sheet in the Excel Dat
 
 For our ExtractTask entity, we will capture the following attributes as fields in our table:
 
-| ExtractTask           | Description                                           |
-|-----------------------|-------------------------------------------------------|
-|DataSource	            | The name of the source system                         |
-|SchemaName	            | The name of the source schema                         |
-|TableName	            | The name of the source table                          |
-|ExtractCount           | The number of rows extracted                          |
-|StartTime	            | The start time of the workload                        |
-|EndTime	            | The end time of the workload                          |
-|Status	                | The status (success or failed) of the workload        |
+| ExtractTask           | Description                                              |
+|-----------------------|----------------------------------------------------------|
+|DataSource	            | The name of the source system                            |
+|SchemaName	            | The name of the source schema                            |
+|TableName	            | The name of the source table                             |
+|ExtractCount           | The number of rows extracted                             |
+|StartTime	            | The start time of the extraction process                 |
+|EndTime	            | The end time of the extraction process                   |
+|Status	                | The status (success or failed) of the extraction process |
+
+Note, for the status field, while it may ordinarily be useful to provide multiple status codes (for failed, complete, cancelled, etc.), for simplicity (and to show another DataPortal [`Type`](../DataPortals/06.Setting-Details/Type.md) and [ControlType](../DataPortals/06.Setting-Details/ControlType.md)), we defined a boolean called Success to indicate success or failure of the workload.
 
 ![!Composable DataPortals ExtractTask Container](img/DataPortal_ETLLogs_04-2.png)
 
@@ -102,16 +108,18 @@ And finally, we will create a new sheet in the Excel DataPortal Model File calle
 
 For our LoadTask entity, we will capture the following attributes as fields in our table:
 
-| LoadTask        | Description                                           |
-|-----------------|-------------------------------------------------------|
-|SchemaName	      | The name of the target schema                         |
-|TableName	      | The name of the target table                          |
-|UpdateCount      | The number of rows updated                            |
-|InsertCount      | The number of rows inserted                           |
-|DeleteCount      | The number of rows deleted                            |
-|StartTime	      | The start time of the workload                        |
-|EndTime	      | The end time of the workload                          |
-|Status	          | The status (success or failed) of the workload        |
+| LoadTask        | Description                                              |
+|-----------------|----------------------------------------------------------|
+|SchemaName	      | The name of the target schema                            |
+|TableName	      | The name of the target table                             |
+|UpdateCount      | The number of rows updated                               |
+|InsertCount      | The number of rows inserted                              |
+|DeleteCount      | The number of rows deleted                               |
+|StartTime	      | The start time of the load process                       |
+|EndTime	      | The end time of the load process                         |
+|Status	          | The status (success or failed) of the load process       |
+
+Note, for the status field, while it may ordinarily be useful to provide multiple status codes (for failed, complete, cancelled, etc.), for simplicity (and to show another DataPortal [`Type`](../DataPortals/06.Setting-Details/Type.md) and [ControlType](../DataPortals/06.Setting-Details/ControlType.md)), we defined a boolean called Success to indicate success or failure of the workload.
 
 ![!Composable DataPortals LoadTask Container](img/DataPortal_ETLLogs_04-3.png)
 
