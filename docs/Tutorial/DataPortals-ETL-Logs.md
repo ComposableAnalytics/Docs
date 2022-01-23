@@ -15,7 +15,7 @@ In this tutorial, we will create a [DataPortal](../DataPortals/01.Overview.md) t
 
 Enterprises typically manage tens, hundreds, or even thousands of ETL workloads. Therefore, maintaining accurate, and queriable, logs of these processes is critical for enterprise data management. Composable [DataFlows](../DataFlows/01.Overview.md) lend themselves well to ETL workloads, given their flow-based approach to data orchestration. Similarly, Composable [DataPortals](../DataPortals/01.Overview.md) can automatically generate a back-end data store for all ETL logs, and Composable [DataRepositories](../DataRepository/01.Overview.md) can provide an effective approach to monitoring and querying the logs.
 
-## ETL Worload Logging
+## ETL Workload Logging
 
 This tutorial will walk through the use of Composable to rapidly develop logging and monitoring infrastructure for enterprise data management.  Specifically, we will:
 
