@@ -57,7 +57,7 @@ Our [`Master`](../DataPortals/03.MasterSheet.md) sheet is shown below.
 
 ## The LogManager Container
 
-With our Master sheet defined, we will now create a parent container called `LogManager` that allows us to create multiple workload log instances, creating a one-to-many relationship in our data model. Here, we use the ControlType [`Table`](../DataPortals/05.Control-Details/Table.md), indicating that we would like a table of all the workload log instances that we will capture. Note that the data type for the Table field is `[Form.Workload]`, with brackets indicating an array of our Workload container (which we will define next). We also pick out some of the fields from our Workload container to be displayed in the table, via the [`Columns`](../DataPortals/06.Setting-Details/Columns.md) column shown below in the last column on the right.
+With our Master sheet defined, we will now create a parent container called `LogManager` that allows us to create multiple workload log instances, creating a one-to-many relationship in our data model. Here, we use the ControlType [`Table`](../DataPortals/05.Control-Details/Table.md), indicating that we would like a table of all the workload log instances that we will capture. Note that the data type for the Table field is `[Form.Workload]`, with brackets indicating an array of our Workload container (which we will define next). We also pick out some of the fields from our Workload container to be displayed in the table, via the [`Columns`](../DataPortals/06.Setting-Details/Columns.md) column shown below in the last column on the right. Specifically, we use `[Form.Workload.Id, Form.Workload.JobName, Form.Workload.AppID, Form.Workload.RunID, Form.Workload.StartTime, Form.Workload.Success]` which will define the header for the table in our Web Interface.
 
 ![!Composable DataPortals LogManager container that stores all ETL workload log instances](img/DataPortal_ETLLogs_03.png)
 
@@ -76,7 +76,7 @@ The Workload Container will be a new sheet in the Excel DataPortal Model File ca
 
 The screenshot below shows our design for the "Workload" page. 
 
-![!Composable DataPortals Master Container](img/DataPortal_ETLLogs_04.png)
+![!Composable DataPortals MastWorkload Container](img/DataPortal_ETLLogs_04-1.png)
 
 ## The ExtractTask Container Page
 
@@ -94,6 +94,8 @@ For our ExtractTask entity, we will capture the following attributes as fields i
 |EndTime	            | The end time of the workload                          |
 |Status	                | The status (success or failed) of the workload        |
 
+![!Composable DataPortals ExtractTask Container](img/DataPortal_ETLLogs_04-2.png)
+
 ## The ExtractTask Container Page
 
 And finally, we will create a new sheet in the Excel DataPortal Model File called **LoadTask**.
@@ -110,6 +112,8 @@ For our LoadTask entity, we will capture the following attributes as fields in o
 |StartTime	      | The start time of the workload                        |
 |EndTime	      | The end time of the workload                          |
 |Status	          | The status (success or failed) of the workload        |
+
+![!Composable DataPortals LoadTask Container](img/DataPortal_ETLLogs_04-3.png)
 
 ## The Categories Sheet
 
@@ -139,59 +143,34 @@ The initial view of the DataPortal will be the "table of workloads" we defined. 
 
 We can create a new "workload entry" using the "Create New Workload Entry" button.
 
-![!Composable DataPortals - Create new workload entry](img/DataPortal_ETLLogs_07.png)
+![!Composable DataPortals - Create new workload entry](img/DataPortal_ETLLogs_08.png)
 
 After creating a new Workload entry, we are presented with the Workload fields for this new entry. Note that the ExtractTask and LoadTask Entities are tables, given that we defined them in the **Workload** sheet as **Form.ExtractLog** and **Form.LoadLog**. In this way, a workload can have zero, one or more of each of these tasks.
 
 The tables for these tasks have a header column that is defined in the `Columns`cell: Id, SchemaName, TableName, StartTime, and Success.
 
-![!Composable DataPortals - New workload entry](img/DataPortal_ETLLogs_08.png)
+![!Composable DataPortals - New workload entry](img/DataPortal_ETLLogs_09.png)
 
 We can create one or more ExtractTask and LoadTask entries, in the same way we created a new "workload entry" using the respective buttons.
 
-![!Composable DataPortals - Create new Extract and Load Task entries](img/DataPortal_ETLLogs_09.png)
-
-### Optional Styling
-
-The web interface can be styled with custom styling rules, written in CSS, to change the design.
-
-We can add an optional sheet called `CSS` and enter custom CSS rules to style the pages with any colors, margins or other custom style behavior.
-
-![!Composable DataPortals Model File - Optional CSS sheet for custom styling](img/DataPortal_ETLLogs_10.png)
-
-Try using the following CSS code:
-
-``` css
-    .form-field label { font-size: 1.6rem; color: #002d62; } 
-    .container-group-level-0:not(.tab-container) { background: none; }
-    .form-label-field { padding-bottom: 0; }
-    .forms-top-bar-right-group { display: none; }
-    div:forms-top-bar-left-group.col-md-10 {color:  #002d62; font-size: 3em;}
-    h5.container-name-top { font-size: 3em; color: #002d62; }
-```
-
-Our Workload page will now look like this:
-
-![!Composable DataPortals Full, Responsive Web Interface with Custom Styling](img/DataPortal_ETLLogs_11.png)
+![!Composable DataPortals - Create new Extract and Load Task entries](img/DataPortal_ETLLogs_10.png)
 
 ## Exploring the Back-end Database
-
-Now that our front-end is taken care of, let's see what Composable generated under the hood to store our responses. 
 
 We can create a Composable [DataRepository](../DataRepository/01.Overview.md) for our DataPortal to view and query the back-end database directly.
 
 !!! note
     A [DataRepository](../DataRepository/01.Overview.md) can connect directly to a DataPortal id and show you a database diagram with tables connected by primary and foreign keys.
 
-![!Composable DataRepository for ETL Logs Monitoring](img/DataPortal_ETLLogs_12.png)
+![!Composable DataRepository - Creating a new DataRepository for ETL Logs Monitoring](img/DataPortal_ETLLogs_11.png)
 
 The DataPortal's back-end database includes not just the entities and fields we defined, but additional entities, fields, and relationships that are automatically generated by Composable to support things like authentication, access control, and revision history.
 
-![!Composable DataRepository ER Visualization](img/DataPortal_ETLLogs_13.png)
+![!Composable DataRepository for ETL Logs Monitoring](img/DataPortal_ETLLogs_12.png)
 
 The [DataRepository](../DataRepository/01.Overview.md) can be used to explore and query the ETL workload logs.
 
-![!Composable ](img/DataPortal_Survey_10.png)
+![!Composable DataRepository ER Visualization](img/DataPortal_ETLLogs_13.png)
 
 ## Next Steps
 
