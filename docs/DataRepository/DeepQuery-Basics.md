@@ -1,6 +1,6 @@
-# Creating a QueryDive
+# Creating a DeepQuery
 
-To create a new QueryDive, [navigate](./Repository-Details.md#navigation) to any collection or field in a DataRepository. From there, click on the "Queries" tab:
+To create a new DeepQuery, [navigate](./Repository-Details.md#navigation) to any collection or field in a DataRepository. From there, click on the `DeepQueries` tab:
 
 ![!Collection Query Tab](img/Query_tab.png)
 
@@ -12,13 +12,13 @@ This new query defaults to selecting the first page of results for all fields in
 
 Now that we can see some of the data from our chosen collection, let's see how we can expand this query to discover more about the database and answer whatever questions we might have about the data.
 
-## Modifying a QueryDive
+## Modifying a DeepQuery
 
 There are two main ways to modify a query: via interacting with the results panel headers and via the "Query" sidebar panel.
 
 ### Results Headers
 
-The column headers above the query results tell you what data is being displayed; the bottom row shows the field being displayed in that column and the top row shows what collection each field belongs to. Both sets of headers are also interactive; the three-dots icon on the right hand side opens a menu with a variety of actions that can be taken on each field.
+The column headers above the query results tell you what data is being displayed. The bottom row shows the field being displayed in that column and the top row shows what collection each field belongs to. Both sets of headers are also interactive; the three-dots icon on the right hand side opens a menu with a variety of actions that can be taken on each field.
 
 ![!Field Menu Options](img/Field_menu_options.png)
 
@@ -26,7 +26,7 @@ For example, suppose we're not interested in the `rowguid` column of `ProductCat
 
 ![!Query Step 2](img/Basic_query_step_2.png)
 
-For details on all actions that can be taken on fields see [here](./QueryDive-Details.md#field-menu-options) and for collections see [here](./QueryDive-Details.md#collection-menu-options).
+For details on all actions that can be taken on fields see [here](./DeepQuery-Details.md#field-menu-options) and for collections see [here](./DeepQuery-Details.md#collection-menu-options).
 
 ### Query sidebar
 
@@ -43,7 +43,7 @@ The main feature of the sidebar is a list of all the collections included in the
 - Included Fields
     - Fields that are included in the query results
 
-The field and collection labels in the sidebar have the same control options that the results headers have, though the menu options may vary depending on the state of the field or collection. For example, since `Suggested Collections` aren't yet part of the query, they have an [Add](./Collection-Menu-Options/Add.md) option:
+The field and collection labels in the sidebar have the same control options that the results headers have, though the menu options may vary depending on the state of the field or collection. For example, since `Suggested Collections` aren't yet part of the query, they have an [Add](./Collection-Menu-Options/Add.md) option.
 
 ![!Suggested Collection Menu](img/Suggested_collection_menu.png)
 
@@ -51,7 +51,7 @@ Selecting [Add](./Collection-Menu-Options/Add.md) will add the suggested collect
 
 ![!Added Collection Sidebar](img/Added_collection_sidebar.png)
 
-We now have a whole new set of available fields, along with a new suggested collection. Let's [Add](./Field-Menu-Options/Add.md) the `Name` field and see how that impacts the query:
+We now have a whole new set of available fields, along with a new suggested collection. Let's [Add](./Field-Menu-Options/Add.md) the `Name` field and see how that impacts the query.
 
 ![!Basic Query Step 3](img/Basic_query_step_3.png)
 
@@ -81,8 +81,8 @@ The `Mean Price` column has appeared in `[Production].[ProductSubcategory]`, sho
 
 ![!Basic Query Step 5](img/Basic_query_step_5.png)
 
-Now we can see that the subcategory with the lowest average price is `Cleaners` in the `Accessories` category. For more details on ordering by fields, see [here](./QueryDive-Details.md#ordering).
+Now we can see that the subcategory with the lowest average price is `Cleaners` in the `Accessories` category. For more details on ordering by fields, see [here](./DeepQuery-Details.md#ordering).
 
 ## Wrapping up
 
-We've now generated a query that includes data from three separate tables while both discovering and answering a question about the underlying data. To be sure we can get back to this query and pick up where we left off next time, let's save the query. Before saving, it's probably a good idea to give it a better name: either click on `New [Production].[ProductCategory] Query` or the `Rename` button at the top of the page to edit the query name. Once you've changed the name; click the `Save` button to save the query. Now your query will be available on the `Saved Queries` tab of your [Repository Details](./Repository-Details.md#Queries) and on the `Queries` tab of any collection or field that's included in your query. For example, even though we started the query from `ProductCategory`, it also appears when we look at the `Product` queries.
+We've now generated a query that includes data from three separate tables while both discovering and answering a question about the underlying data. To be sure we can get back to this query and pick up where we left off next time, let's save the query. Before saving, it's probably a good idea to give it a better name: either click on `New [Production].[ProductCategory] Query` or the `Rename` button at the top of the page to edit the query name. Once you've changed the name; click the `Save` button to save the query. Now your query will be available on the `DeepQueries` tab of your [Repository Details](./Repository-Details.md#Queries) and any collection or field that's included in your query. For example, even though we started the query from `ProductCategory`, it also appears when we look at the `Product` queries.

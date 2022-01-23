@@ -1,6 +1,6 @@
 # Add Field
 
-Create a new field using the given collection. See [Creating Fields](../QueryDive-Details.md#creating-fields) for more details on field creation.
+Create a new field using the given collection. See [Creating Fields](../DeepQuery-Details.md#creating-fields) for more details on field creation.
 
 Note that the role of the selected collection will vary by field type.
 

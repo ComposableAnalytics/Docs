@@ -9,7 +9,7 @@ Aggregate fields can be added in several ways:
 - Clicking the `Field` button in the `Add` section in the Query sidebar,
 - Selecting the [Add field](../Collection-Menu-Options/Add-Field.md) option from a collection menu,
 - Selecting the [Aggregate](../Field-Menu-Options/Aggregate.md) option from a field menu,
-- Clicking the `+` button next to the dropdown menu allowing selection of an existing field when creating or editing some other QueryDive object.
+- Clicking the `+` button next to the dropdown menu allowing selection of an existing field when creating or editing some other DeepQuery object.
 ![Field Picker](../img/Field_picker.png)
 
 Most of these options will bring up a window for creating a new field of any type. To create an aggregate field, select `Aggregate` from the `Type` dropdown.
@@ -25,7 +25,7 @@ This brings up the configuration options for an aggregate field:
 
 ![!Create New Aggregate Field](../img/Create_new_field_aggregate.png)
 
-Click `Save` to create the new field and add it to the QueryDive. Click `Cancel` to close the window without creating the field.
+Click `Save` to create the new field and add it to the DeepQuery. Click `Cancel` to close the window without creating the field.
 
 ## Aggregate Functions
 
@@ -68,7 +68,7 @@ The behavior of aggregate fields is determined by the grouping conditions on the
 
 ### Nested Collection, No Grouping
 
-This is the most common type of aggregate field, in which data from a joined collection is aggregated up to a higher level of the query. For example, consider the following snippet of QueryDive results from the [AdventureWorks](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure) database:
+This is the most common type of aggregate field, in which data from a joined collection is aggregated up to a higher level of the query. For example, consider the following snippet of DeepQuery results from the [AdventureWorks](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure) database:
 
 ![!Nested Collection/No Grouping Example](../img/Nested_collection_no_grouping.png)
 
@@ -76,7 +76,7 @@ The `Mean Price` column of these results is an aggregate field with `ListPrice` 
 
 ### Root Collection, No Grouping
 
-If the QueryDive contains any aggregate field with a source field on the root collection and does not have any grouping on the root collection, the only results that can be shown for that QueryDive are aggregates of the root collection. Rather than showing a row for each row of the root collection, the results will include a single row for aggregates of the root collection.
+If the DeepQuery contains any aggregate field with a source field on the root collection and does not have any grouping on the root collection, the only results that can be shown for that DeepQuery are aggregates of the root collection. Rather than showing a row for each row of the root collection, the results will include a single row for aggregates of the root collection.
 
 ### With Grouping
 

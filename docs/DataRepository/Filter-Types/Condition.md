@@ -10,14 +10,14 @@ These will bring up a window for creating a condition filter, with the following
 
 - **Type**: What type of filter to create; set to `Condition` for a Condition Filter.
 - **Alias**: Display name for the filter. (optional, used when switching between multiple filters on a single field when editing)
-- **Handle**: External handle to use in modifying or overriding this filter when running this QueryDive in other contexts.
+- **Handle**: External handle to use in modifying or overriding this filter when running this DeepQuery in other contexts.
 - **Field**: Which existing field this filter will act on. This is preset by the field selected to add a filter to.
 - **Condition**: The operation to apply between **Field** and **Compare To**
 - **Compare To**: Which existing field to compare to **Field**. This is hidden for some values of **Condition**.
 
 ![!Create New Condition Filter](../img/Create_new_filter_condition.png)
 
-Click `Save` to create the new filter and add it to the QueryDive. Click `Cancel` to close the window without creating the filter.
+Click `Save` to create the new filter and add it to the DeepQuery. Click `Cancel` to close the window without creating the filter.
 
 ## Conditions
 
