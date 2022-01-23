@@ -200,7 +200,7 @@ nav:
     - 'DataFlow: Lunch Recommender Slack App': 'Tutorial/Lunch.md'
     - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
     - 'DataPortal: Creating a Simple Survey Form': 'Tutorial/DataPortals-Survey.md'
-    - 'DataPortal: ETL Logging and Monitoring': 'DataPortals-ETL-Logs.md'
+    - 'DataPortal: ETL Logging and Monitoring': 'Tutorial/DataPortals-ETL-Logs.md'
     - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
 - Videos: 'Videos/Composable-Videos.md'
 
