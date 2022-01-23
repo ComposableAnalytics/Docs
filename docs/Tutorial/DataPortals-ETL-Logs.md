@@ -78,7 +78,7 @@ The screenshot below shows our design for the "Workload" page.
 
 Note, for the status field, while it may ordinarily be useful to provide multiple status codes (for failed, complete, cancelled, etc.), for simplicity (and to show another DataPortal [`Type`](../DataPortals/06.Setting-Details/Type.md) and [ControlType](../DataPortals/06.Setting-Details/ControlType.md)), we defined a boolean called Success to indicate success or failure of the workload.
 
-Also, note that two additional fields are added, one for **Extract Task Entries** and one for **Load Task Entries**, which reference the respective container pages (defined in the next step) using the `[Form.<ContainerName>]` syntax.
+Also, note that two additional fields are added, one for **Extract Task Entries** and one for **Load Task Entries**, which reference the respective container pages (defined in the next step) using the `[Form.<ContainerName>]` syntax. The `Columns` values define the header fields that will be displayed in the web interface, as will be seen in the sections below.
 
 ![!Composable DataPortals MastWorkload Container](img/DataPortal_ETLLogs_04-1.png)
 
@@ -155,7 +155,7 @@ We can create a new "workload entry" using the "Create New Workload Entry" butto
 
 After creating a new Workload entry, we are presented with the Workload fields for this new entry. Note that the ExtractTask and LoadTask Entities are tables, given that we defined them in the **Workload** sheet as **Form.ExtractLog** and **Form.LoadLog**. In this way, a workload can have zero, one or more of each of these tasks.
 
-The tables for these tasks have a header column that is defined in the `Columns`cell: Id, SchemaName, TableName, StartTime, and Success.
+The tables for these tasks have a header column that is defined in the `Columns` cell: Id, SchemaName, TableName, StartTime, and Success.
 
 ![!Composable DataPortals - New workload entry](img/DataPortal_ETLLogs_09.png)
 
@@ -184,4 +184,6 @@ The [DataRepository](../DataRepository/01.Overview.md) can be used to explore an
 
 So far, we have covered how to define a new data model for ETL Workload logs, utilizing Composable [DataPortals](../DataPortals/01.Overview.md) to automatically generate a back-end data store, ORM layer and web interface and Composable [DataRepositorys](../DataRepository/01.Overview.md) to query and view the logs that are captured.
 
-While the DataPortal Web Interface provides a full, responsive CRUD (Create, Read, Update, Delete) interface (and we show above how to manual use this interface to create new entries), we will want to automatically capture logs ***as part of*** the ETL workload. To do this, we can define ETL workloads using [DataFlows](../DataFlows/01.Overview.md), with syncing of logs to the [DataPortal](../DataPortals/01.Overview.md). We can use the [DataPortal Sync](../DataFlows/09.Module-Details/DataPortalSync.md).
+While the DataPortal Web Interface provides a full, responsive CRUD (Create, Read, Update, Delete) interface (and we show above how to manual use this interface to create new entries), we will want to automatically capture logs ***as part of*** the ETL workload. 
+
+In the next part of this tutorial (to be published), we will show how to create ETL workloads using [DataFlows](../DataFlows/01.Overview.md), with syncing of logs to the [DataPortal](../DataPortals/01.Overview.md). Specifically, we will demonstrate the use of the [DataPortal Sync](../DataFlows/09.Module-Details/DataPortalSync.md) Module to capture ETL logs.
