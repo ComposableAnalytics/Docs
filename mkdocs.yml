@@ -201,6 +201,7 @@ nav:
     - 'QueryView: Creation from a DataPortal and Functionality Demo': 'Tutorial/QueryViewDataPortal.md'
     - 'DataPortal: Creating a Simple Survey Form': 'Tutorial/DataPortals-Survey.md'
     - 'DataPortal: ETL Logging and Monitoring': 'Tutorial/DataPortals-ETL-Logs.md'
+    - 'DataPortal: Online Delivery App': 'Tutorial/DataPortals-DeliveryApp.md'
     - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
 - Videos: 'Videos/Composable-Videos.md'
 
