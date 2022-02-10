@@ -175,25 +175,27 @@ nav:
         - 'Link': 'DataRepository/Field-Menu-Options/Link.md'
 - 7. DataCatalog:
     - '7.1 Overview': 'DataCatalogs/Overview.md'
-- 8. DashBoards:
-    - '8.1 Overview': 'DashBoards/01.Overview.md'
+- 8. DataLabs:
+    - '8.1 Overview': 'DataLabs/01.Overview.md'
 - 9. WebApps:
     - '9.1 Overview': 'WebApps/01.Overview.md'
     - '9.2 WebApp Basics': 'WebApps/02.WebApp-Basics.md'
-- 10. Keys:
-    - '10.1 Overview': 'Keys/01.Overview.md'
-    - '10.2 Using Keys': 'Keys/02.Using-Keys.md'
-- 11. Users and Groups:
-    - '11.1 Overview': 'Users-and-Groups/01.Overview.md'
-    - '11.2 User Profile': 'Users-and-Groups/02.User-Profile.md'
-- 12. FluentAPI:
-    - '12.1 FluentAPI User Guide': 'FluentAPI/01.FluentAPI-User-Guide.md'
-    - '12.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
-- 13. Code Promotion:
-    - '13.1 Overview': 'Code-Promotion/01.Overview.md'
-    - '13.2 Setup': 'Code-Promotion/02.Setup.md'
-    - '13.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
-    - '13.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
+- 10. DashBoards:
+    - '10.1 Overview': 'DashBoards/01.Overview.md'
+- 11. Keys:
+    - '11.1 Overview': 'Keys/01.Overview.md'
+    - '11.2 Using Keys': 'Keys/02.Using-Keys.md'
+- 12. Users and Groups:
+    - '12.1 Overview': 'Users-and-Groups/01.Overview.md'
+    - '12.2 User Profile': 'Users-and-Groups/02.User-Profile.md'
+- 13. FluentAPI:
+    - '13.1 FluentAPI User Guide': 'FluentAPI/01.FluentAPI-User-Guide.md'
+    - '1.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
+- 14. Code Promotion:
+    - '14.1 Overview': 'Code-Promotion/01.Overview.md'
+    - '14.2 Setup': 'Code-Promotion/02.Setup.md'
+    - '14.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
+    - '14.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
 - Tutorials:
     - 'DataFlow: "Hello, World!"': 'Tutorial/DataFlow-Hello-World.md'
     - 'DataFlow: Word Count Using Python and C#': 'Tutorial/DataFlow-Word-Count.md'
