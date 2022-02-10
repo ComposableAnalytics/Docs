@@ -176,7 +176,7 @@ nav:
 - 7. DataCatalog:
     - '7.1 Overview': 'DataCatalogs/Overview.md'
 - 8. DataLabs:
-    - '8.1 Overview': 'DataLabs/01.Overview.md'
+    - '8.1 Overview': 'DataLabs/Overview.md'
 - 9. WebApps:
     - '9.1 Overview': 'WebApps/01.Overview.md'
     - '9.2 WebApp Basics': 'WebApps/02.WebApp-Basics.md'
