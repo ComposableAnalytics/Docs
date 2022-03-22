@@ -181,15 +181,11 @@ nav:
     - '9.1 Overview': 'WebApps/01.Overview.md'
     - '9.2 WebApp Basics': 'WebApps/02.WebApp-Basics.md'
 - 10. Boards:
-<<<<<<< HEAD
-    - '10.1 Overview': 'DashBoards/01.Overview.md'
-    - '10.2 Edit Mode': 'DashBoards/02.Edit-Mode.md'
-    - '10.3 The Sidebar': 'DashBoards/03.The-Sidebar.md'
-    - '10.4 View Mode': 'DashBoards/04.View-Mode.md'
-    - '10.5 Details Mode': 'DashBoards/05.Details-Mode.md'
-=======
     - '10.1 Overview': 'Boards/01.Overview.md'
->>>>>>> 1e4002d3457a375c2a5594f38989124c66be0490
+    - '10.2 Edit Mode': 'Boards/02.Edit-Mode.md'
+    - '10.3 The Sidebar': 'Boards/03.The-Sidebar.md'
+    - '10.4 View Mode': 'Boards/04.View-Mode.md'
+    - '10.5 Details Mode': 'Boards/05.Details-Mode.md'
 - 11. Keys:
     - '11.1 Overview': 'Keys/01.Overview.md'
     - '11.2 Using Keys': 'Keys/02.Using-Keys.md'
