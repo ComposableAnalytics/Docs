@@ -180,8 +180,8 @@ nav:
 - 9. WebApps:
     - '9.1 Overview': 'WebApps/01.Overview.md'
     - '9.2 WebApp Basics': 'WebApps/02.WebApp-Basics.md'
-- 10. DashBoards:
-    - '10.1 Overview': 'DashBoards/01.Overview.md'
+- 10. Boards:
+    - '10.1 Overview': 'Boards/01.Overview.md'
 - 11. Keys:
     - '11.1 Overview': 'Keys/01.Overview.md'
     - '11.2 Using Keys': 'Keys/02.Using-Keys.md'
