@@ -52,6 +52,7 @@ The built-in Parameters are case-sensitive.
 | -------------------- | ------------------------------------------------------------ |
 | {{ allFilters }}     | Adds  in all of the filters created in the Input panel, to put in a `WHERE` clause. Usage example: `WHERE 1=1 AND {{allFilters}}` |
 | {{ order }}          | Orders the results on the `Default Order Column` specified in the Info panel |
+| {{ inverseOrder }}   | Orders the results on the `Default Order Column` specified in the Info panel in the inverse order |
 | {{ pageStart }}      | Beginning row number for paging                              |
 | {{ pageEnd }}        | End row number for paging                                    |
 | {{ limit }}          | Number of rows to display on page. Value can be set in View mode paging features |
