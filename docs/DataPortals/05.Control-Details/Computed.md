@@ -20,7 +20,7 @@ The **Computed** control type creates a read-only control showing a value comput
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
 
 - [**Type**:](../06.Setting-Details/Type.md) Can be any numeric type, including (but not limited to):
-  - `System.Int32`
+    - `System.Int32`
     - `System.Double`
     - `System.Decimal`
   
