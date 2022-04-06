@@ -22,6 +22,8 @@ The **NumberFormatting** control supports number formatting functionality for nu
 - **Name**: The name of the field saved to the database. See [here](../06.Setting-Details/Name.md) for details and restrictions.
 
 - **Type**: Can be any of the following types:
+    - `System.Int32`
+    - `System.Int64`  
     - `System.Double`
     - `System.Single`
     - `System.Decimal` 
