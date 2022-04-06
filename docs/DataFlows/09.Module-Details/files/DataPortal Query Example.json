@@ -319,7 +319,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "62ceb1c3-9043-4c08-81e4-c11870d68620"
+            "5ceb9048-8680-442e-b70b-0a0f5bb462c2"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -341,7 +341,7 @@
         "Deprecated": false,
         "Description": "Create and edit a table",
         "DisplayName": null,
-        "Enabled": false,
+        "Enabled": true,
         "Icon": "Icons.table-editor.png",
         "Id": 443,
         "IsViableCacheModule": true,
@@ -351,7 +351,7 @@
         "Namespace": "edu.mit.ll.companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Extension.Tables.Modules.TableEditor, CompAnalytics.Extension.Tables, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 0,
         "Width": 150
       },
@@ -405,7 +405,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "62ceb1c3-9043-4c08-81e4-c11870d68620"
+            "5ceb9048-8680-442e-b70b-0a0f5bb462c2"
           ],
           "Name": "Data",
           "NestedRefModuleId": null,
@@ -734,7 +734,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "e3e8d351-b7e5-48f5-b2be-ffe67d062b7f"
+            "49612dbf-2236-4b5f-bb0a-182a015c8a86"
           ],
           "Name": "Table",
           "NestedRefModuleId": null,
@@ -755,8 +755,8 @@
         "Category": "forms",
         "Deprecated": false,
         "Description": null,
-        "DisplayName": "DataPortal Sync",
-        "Enabled": false,
+        "DisplayName": null,
+        "Enabled": true,
         "Icon": "Icons.addrow.png",
         "Id": 81,
         "IsViableCacheModule": true,
@@ -766,7 +766,7 @@
         "Namespace": "companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Extension.Automapper.TableToFormAutomapper, CompAnalytics.Extension.Automapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 7,
         "Width": 240
       },
@@ -820,9 +820,9 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "e3e8d351-b7e5-48f5-b2be-ffe67d062b7f",
-            "c3096687-cd23-4095-a942-347529cd23d1",
-            "3d21ff96-fd7a-4dae-8d0f-05fee687bca8"
+            "49612dbf-2236-4b5f-bb0a-182a015c8a86",
+            "702cdf39-61d6-4787-a01f-1ec5d5bd73aa",
+            "98234716-57ab-4246-b436-28f203603f37"
           ],
           "Name": "Tables",
           "NestedRefModuleId": null,
@@ -900,7 +900,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "db893c66-c570-4105-8b1b-eb9e71689a79"
+            "3f134460-0b83-4d15-8532-e812984fc1b0"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -922,7 +922,7 @@
         "Deprecated": false,
         "Description": "Execute arbitary query on multiple tables (join, aggregate, filter, etc ..)",
         "DisplayName": null,
-        "Enabled": false,
+        "Enabled": true,
         "Icon": "Icons.table.png",
         "Id": 449,
         "IsViableCacheModule": true,
@@ -932,7 +932,7 @@
         "Namespace": "edu.mit.ll.companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Extension.Tables.Modules.TableQueryExecutor, CompAnalytics.Extension.Tables, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 1,
         "Width": 150
       },
@@ -968,7 +968,7 @@
       "Location": {
         "__type": "Location:#CompAnalytics.Contracts",
         "Id": null,
-        "Width": 180,
+        "Width": 194.672,
         "X": 298.724,
         "Y": 234.279
       },
@@ -1107,7 +1107,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "c3096687-cd23-4095-a942-347529cd23d1"
+            "702cdf39-61d6-4787-a01f-1ec5d5bd73aa"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1129,7 +1129,7 @@
         "Deprecated": false,
         "Description": "Create and edit a table",
         "DisplayName": null,
-        "Enabled": false,
+        "Enabled": true,
         "Icon": "Icons.table-editor.png",
         "Id": 443,
         "IsViableCacheModule": true,
@@ -1139,7 +1139,7 @@
         "Namespace": "edu.mit.ll.companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Extension.Tables.Modules.TableEditor, CompAnalytics.Extension.Tables, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 0,
         "Width": 150
       },
@@ -1193,7 +1193,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "db893c66-c570-4105-8b1b-eb9e71689a79"
+            "3f134460-0b83-4d15-8532-e812984fc1b0"
           ],
           "Name": "Data",
           "NestedRefModuleId": null,
@@ -1486,7 +1486,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "a86375a0-7b1c-4a98-b6b3-1dfccdfb3867"
+            "8bbde3ce-6b43-4b97-b288-08a9fdd1008f"
           ],
           "Name": "Counts",
           "NestedRefModuleId": null,
@@ -1541,8 +1541,8 @@
         "Category": "forms",
         "Deprecated": false,
         "Description": null,
-        "DisplayName": "DataPortal Sync",
-        "Enabled": false,
+        "DisplayName": null,
+        "Enabled": true,
         "Icon": "Icons.addrow.png",
         "Id": 81,
         "IsViableCacheModule": true,
@@ -1552,7 +1552,7 @@
         "Namespace": "companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Extension.Automapper.TableToFormAutomapper, CompAnalytics.Extension.Automapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 7,
         "Width": 240
       },
@@ -1727,7 +1727,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "3d21ff96-fd7a-4dae-8d0f-05fee687bca8"
+            "98234716-57ab-4246-b436-28f203603f37"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1749,7 +1749,7 @@
         "Deprecated": false,
         "Description": "Create and edit a table",
         "DisplayName": null,
-        "Enabled": false,
+        "Enabled": true,
         "Icon": "Icons.table-editor.png",
         "Id": 443,
         "IsViableCacheModule": true,
@@ -1759,7 +1759,7 @@
         "Namespace": "edu.mit.ll.companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Extension.Tables.Modules.TableEditor, CompAnalytics.Extension.Tables, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 0,
         "Width": 150
       },
@@ -1813,7 +1813,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "52af0e44-951d-440c-a9a8-040216da5f35"
+            "d674c824-4d81-43ac-ba92-937b83c3cda4"
           ],
           "Name": "Input",
           "NestedRefModuleId": null,
@@ -1837,7 +1837,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "a86375a0-7b1c-4a98-b6b3-1dfccdfb3867"
+            "8bbde3ce-6b43-4b97-b288-08a9fdd1008f"
           ],
           "Name": "Dependencies",
           "NestedRefModuleId": null,
@@ -1864,7 +1864,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "d6335be8-e316-4de2-86f7-1b688d13d605"
+            "1f11551b-6efa-48a4-a6c6-6f9d8466332f"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1884,7 +1884,7 @@
         "Deprecated": false,
         "Description": "Takes in a list of dependencies, and the Input value that will flow out as the Result",
         "DisplayName": null,
-        "Enabled": false,
+        "Enabled": true,
         "Icon": "Icons.consolidator.png",
         "Id": 485,
         "IsViableCacheModule": true,
@@ -1894,7 +1894,7 @@
         "Namespace": "com.companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Execution.Modules.DependencyWaiter, CompAnalytics.Execution.Modules, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 0,
         "Width": 150
       },
@@ -1977,7 +1977,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "d6335be8-e316-4de2-86f7-1b688d13d605"
+            "1f11551b-6efa-48a4-a6c6-6f9d8466332f"
           ],
           "Name": "Query",
           "NestedRefModuleId": null,
@@ -1994,7 +1994,7 @@
           },
           "PropertyId": null,
           "PropertyName": null,
-          "ValueObj": null
+          "ValueObj": "SELECT\nc.Name,\nc.Food,\nc.Foods,\nc.Decimal,\nc.Double,\nc.UniqueIdentifier,\nb.FirstName,\nb.LastName,\nb.DOB,\nb.Product,\nb.PolicyCreatedDate,\nb.Gender,\nb.OptyId,\nb.InsuredFullYear,\nf.HasFamilyHistory,\nf.FamHistoryEntries\nFROM Cases AS c\nJOIN FamilyHistories AS f \nON c.Id = f.CaseId\nJOIN Basics AS b\nON c.Id = b.CaseId\nWHERE f.HasFamilyHistory = @hasFamilyHistory\nORDER BY c.Id"
         },
         {
           "__type": "ModuleInputCollectionOfKeyValuePairOfstringanyTypeR8RmUPp7:#CompAnalytics.Contracts",
@@ -2008,7 +2008,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "c0b42f81-e155-4d97-8fc2-dcfc4d940a1d"
+            "2f1c1943-1158-4586-a3cf-93a76ec19574"
           ],
           "Name": "Parameters",
           "NestedRefModuleId": null,
@@ -2042,7 +2042,7 @@
           "BaseTypes": [
             "System.Object"
           ],
-          "IsSet": false,
+          "IsSet": true,
           "ResultId": null,
           "ValueType": null,
           "ValueObj": null
@@ -2055,8 +2055,8 @@
         "Deprecated": false,
         "Description": "Query a DataPortal. Uses Entity SQL: https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/entity-sql-overview",
         "DisplayName": null,
-        "Enabled": false,
-        "Icon": "Icons.entity.png",
+        "Enabled": true,
+        "Icon": "Icons.sql.png",
         "Id": 6037,
         "IsViableCacheModule": true,
         "Iterable": false,
@@ -2065,7 +2065,7 @@
         "Namespace": "companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Extension.Automapper.Modules.DataPortalQuery, CompAnalytics.Extension.Automapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 0,
         "Width": 150
       },
@@ -2101,7 +2101,7 @@
       "Location": {
         "__type": "Location:#CompAnalytics.Contracts",
         "Id": null,
-        "Width": 280.812,
+        "Width": 280.797,
         "X": 1553.19,
         "Y": 206.095
       },
@@ -2134,7 +2134,7 @@
           },
           "PropertyId": null,
           "PropertyName": null,
-          "ValueObj": "SELECT\nc.Name,\nc.Food,\nc.Foods,\nc.Decimal,\nc.Double,\nc.UniqueIdentifier,\nb.FirstName,\nb.LastName,\nb.DOB,\nb.Product,\nb.PolicyCreatedDate,\nb.Gender,\nb.OptyId,\nb.InsuredFullYear,\nf.HasFamilyHistory\nFROM Cases AS c\nJOIN FamilyHistories AS f \nON c.Id = f.CaseId\nJOIN Basics AS b\nON c.Id = b.CaseId\nWHERE f.HasFamilyHistory = @hasFamilyHistory\nORDER BY c.Id"
+          "ValueObj": "SELECT\nc.Name,\nc.Food,\nc.Foods,\nc.Decimal,\nc.Double,\nc.UniqueIdentifier,\nb.FirstName,\nb.LastName,\nb.DOB,\nb.Product,\nb.PolicyCreatedDate,\nb.Gender,\nb.OptyId,\nb.InsuredFullYear,\nf.HasFamilyHistory,\nf.FamHistoryEntries\nFROM Cases AS c\nJOIN FamilyHistories AS f \nON c.Id = f.CaseId\nJOIN Basics AS b\nON c.Id = b.CaseId\nWHERE f.HasFamilyHistory = @hasFamilyHistory\nORDER BY c.Id"
         }
       ],
       "ModuleOutputs": [
@@ -2150,7 +2150,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "52af0e44-951d-440c-a9a8-040216da5f35"
+            "d674c824-4d81-43ac-ba92-937b83c3cda4"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2179,7 +2179,7 @@
         "Deprecated": false,
         "Description": "Simply forwards input string to result, allowing for an input to be specified in separate module",
         "DisplayName": null,
-        "Enabled": false,
+        "Enabled": true,
         "Icon": null,
         "Id": 522,
         "IsViableCacheModule": true,
@@ -2189,7 +2189,7 @@
         "Namespace": "edu.mit.ll.companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Execution.Modules.StringInputExecutor, CompAnalytics.Execution.Modules, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 0,
         "Width": 150
       },
@@ -2289,7 +2289,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "c0b42f81-e155-4d97-8fc2-dcfc4d940a1d"
+            "2f1c1943-1158-4586-a3cf-93a76ec19574"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2316,7 +2316,7 @@
         "Deprecated": false,
         "Description": "Constructs a KVP object from incoming Key string and Value object",
         "DisplayName": null,
-        "Enabled": false,
+        "Enabled": true,
         "Icon": null,
         "Id": 524,
         "IsViableCacheModule": true,
@@ -2326,7 +2326,7 @@
         "Namespace": "com.companalytics",
         "Streaming": false,
         "Type": "CompAnalytics.Execution.Modules.ObjectNamer, CompAnalytics.Execution.Modules, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
-        "Valid": false,
+        "Valid": true,
         "Version": 0,
         "Width": 150
       },
