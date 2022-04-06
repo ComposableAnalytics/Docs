@@ -46,7 +46,7 @@ This is the SQL query you wish to execute on the DataPortal. Specific formatting
 ![Example Parameter Input](img/DataPortalQuery.Parameter.png)
 
 This takes in a list of KeyValuePairs of type <string, object>. The **Object Namer** module is the recommended module to supply these values. These can be referenced in the query by pre-pending '@' before the object name. For example: 
-> SELECT <span>c.</span>Name FROM Cases AS c 
-> JOIN FamilyHistories AS h 
-> ON <span>c.</span>Id = h.CaseId
+> SELECT <span>c.</span>Name FROM Cases AS c <br/>
+> JOIN FamilyHistories AS h <br/>
+> ON <span>c.</span>Id = h.CaseId <br/>
 >  WHERE h.HasFamilyHistory = @hasFamilyHistory
