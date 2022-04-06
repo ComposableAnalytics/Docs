@@ -24,7 +24,7 @@ The following <a href = "https://raw.githubusercontent.com/ComposableAnalytics/D
 This DataFlow uses the [**DataPortal Sync**](./DataPortalSync.md) module to add entries to the DataPortal we can query from. These will create 5 entries, each having two FamilyHistoryEntries.
 
 ### Querying Data Using Entity SQL
-The recommended way to write your SQL queries with this module to ensure the proper types are returned, do not use the VALUE keyword. The module will provide a warning if the user attempts to use it and no data is returned. 
+To ensure the proper types are returned if the query produces no data, do not use the VALUE keyword. The module will provide a warning if the user attempts to use it and no data is returned. The recommended way of returning all data from a table is as shown below:
 
 ![!Example Entity SQL Query](img/DataPortalQuery.SQL.png)
 
