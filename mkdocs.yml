@@ -47,7 +47,7 @@ nav:
         - 'Code Module': 'DataFlows/09.Module-Details/Code-Module.md'
         - 'DataPortal Delete Module': 'DataFlows/09.Module-Details/DataPortalDelete.md'
         - 'DataPortal Sync Module': 'DataFlows/09.Module-Details/DataPortalSync.md'
-	- 'DataPortal Query Module': 'DataFlows/09.Module-Details/DataPortalQuery.md'
+        - 'DataPortal Query Module': 'DataFlows/09.Module-Details/DataPortalQuery.md'
 - 4. QueryViews:
     - '4.1 Overview': 'QueryViews/01.Overview.md'
     - '4.2 QueryView Basics': 'QueryViews/02.Create-QueryView.md'
