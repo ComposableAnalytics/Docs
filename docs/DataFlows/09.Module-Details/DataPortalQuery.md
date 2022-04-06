@@ -22,11 +22,15 @@ This DataFlow uses the [**DataPortal Sync**](./DataPortalSync.md) module to add 
 
 ### Querying Data Using Entity SQL
 The recommended way to write your SQL queries with this module to ensure the proper types are returned, do not use the VALUE keyword. The module will provide a warning if the user attempts to use it and no data is returned. 
+
 ![Example Entity SQL Query](img/DataPortalQuery.SQL.png)
+
 There is no '*' selector in Entity SQL. If you want all the rows to be returned in a query you must manually specify them. For a full list of the differences between Transactional SQL queries and Entity SQL queries refer to the [official documentation](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/entity-sql-reference).
 
 ## Results
+
 ![Example Entity SQL Query Results](img/DataPortalQuery.Results.png)
+
 The output of the **DataPortal Query** module is a Composable Table. If the object is a one-to-one relationship such as Double, the value will simply be returned as it exists in the database. If the object is a one-to-many relationship in the case of FamHistoryEntries, the results will be serialized into a valid JSON string as shown in the picture above.
 
 ## Input Details
@@ -38,7 +42,9 @@ This is the Id for the DataPortal you wish to query. Simply click on it and sele
 This is the SQL query you wish to execute on the DataPortal. Specific formatting can be found in the example.
 
 ### Parameters
+
 ![Example Parameter Input](img/DataPortalQuery.Parameter.png)
+
 This takes in a list of KeyValuePairs of type <string, object>. The **Object Namer** module is the recommended module to supply these values. These can be referenced in the query by pre-pending '@' before the object name. For example: 
 > SELECT <span>c.</span>Name FROM Cases AS c 
 > JOIN FamilyHistories AS h 
