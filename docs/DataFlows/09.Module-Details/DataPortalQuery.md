@@ -15,6 +15,9 @@ The **DataPortal Query** module allows querying of data in a [Composable DataPor
 See [below](#input-details) for a complete discussion of inputs and options.
 
 ## Example DataFlow
+
+![!DataPortal Query Example DataFlow](img/DataPortalQuery.DataFlow.png)
+
 The following <a href = "https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/DataFlows/09.Module-Details/files/DataPortal%20Query%20Example.json" download>example DataFlow</a> demonstrates many of the possible ways to use the **DataPortal Query** module. This DataFlow uses the <a href="https://github.com/ComposableAnalytics/Docs/blob/master/docs/DataFlows/09.Module-Details/files/DataPortalQuery.xlsx?raw=true" download>DataPortal Query</a> sample DataPortal model, which creates a DataPortal called `DataPortalQuery` by default. **WARNING: this DataFlow deletes all existing data in the DataPortal, so only run it against a test DataPortal.** You can change the name in the Excel file if you already have a `DataPortalQuery` DataPortal, just be sure to select the right DataPortal when configuring the DataFlow.
 
 ### Adding New Data
