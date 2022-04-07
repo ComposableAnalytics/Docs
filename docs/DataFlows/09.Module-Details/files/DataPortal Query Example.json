@@ -372,7 +372,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "263480b5-99c9-4bf3-9f47-3ed209f1ff5d"
+            "ca6cd00b-7601-45b7-8d40-faa01e87149a"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -458,7 +458,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "263480b5-99c9-4bf3-9f47-3ed209f1ff5d"
+            "ca6cd00b-7601-45b7-8d40-faa01e87149a"
           ],
           "Name": "Data",
           "NestedRefModuleId": null,
@@ -787,7 +787,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "9eac08c6-94b0-4279-9541-029a4428e76d"
+            "e5c1766f-4f28-4cb7-8d24-df210d590aef"
           ],
           "Name": "Table",
           "NestedRefModuleId": null,
@@ -873,9 +873,9 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "9eac08c6-94b0-4279-9541-029a4428e76d",
-            "21afc332-1fcc-42a7-9a96-0bd3b9549862",
-            "79728057-15cc-4aa1-a055-aba17c7a5489"
+            "e5c1766f-4f28-4cb7-8d24-df210d590aef",
+            "1f4dde2e-e93b-4cbb-9971-a94385f486c2",
+            "2071e05f-b131-4bd0-87d8-2ea19f101f58"
           ],
           "Name": "Tables",
           "NestedRefModuleId": null,
@@ -953,7 +953,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "14d4ab99-b01d-40fa-a5b0-1462ffa3c00c"
+            "1daec6f6-a5ca-4c39-ac9d-5cb2929f0f9c"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1160,7 +1160,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "21afc332-1fcc-42a7-9a96-0bd3b9549862"
+            "1f4dde2e-e93b-4cbb-9971-a94385f486c2"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1246,7 +1246,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "14d4ab99-b01d-40fa-a5b0-1462ffa3c00c"
+            "1daec6f6-a5ca-4c39-ac9d-5cb2929f0f9c"
           ],
           "Name": "Data",
           "NestedRefModuleId": null,
@@ -1539,8 +1539,8 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "e18ee736-6e02-44ba-82db-8a56f5b28acc",
-            "a8ff960d-c1e2-4000-a8a1-acfcd28c669e"
+            "1b02472f-c6ba-48f3-909e-ad43dbeacf03",
+            "6d5d9a74-a5a2-4b81-bed6-a7f162faa97c"
           ],
           "Name": "Counts",
           "NestedRefModuleId": null,
@@ -1781,7 +1781,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "79728057-15cc-4aa1-a055-aba17c7a5489"
+            "2071e05f-b131-4bd0-87d8-2ea19f101f58"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1867,7 +1867,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "360342df-d2bb-45c5-96c4-8400cd339ad0"
+            "a264a594-a17f-4e3d-95c0-d0451d384330"
           ],
           "Name": "Input",
           "NestedRefModuleId": null,
@@ -1891,7 +1891,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "e18ee736-6e02-44ba-82db-8a56f5b28acc"
+            "1b02472f-c6ba-48f3-909e-ad43dbeacf03"
           ],
           "Name": "Dependencies",
           "NestedRefModuleId": null,
@@ -1918,7 +1918,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "b8392326-d51c-4609-b3cf-8554d82c0a32"
+            "2e7f07d3-c412-4f41-8f81-7a1404e89d93"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2031,7 +2031,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "b8392326-d51c-4609-b3cf-8554d82c0a32"
+            "2e7f07d3-c412-4f41-8f81-7a1404e89d93"
           ],
           "Name": "Query",
           "NestedRefModuleId": null,
@@ -2062,7 +2062,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "6cd1ab48-7e1b-49f7-964b-3bef2dc8f5f9"
+            "2a72c574-f372-4051-961f-4096a661f1ca"
           ],
           "Name": "Parameters",
           "NestedRefModuleId": null,
@@ -2204,7 +2204,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "360342df-d2bb-45c5-96c4-8400cd339ad0"
+            "a264a594-a17f-4e3d-95c0-d0451d384330"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2343,7 +2343,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "6cd1ab48-7e1b-49f7-964b-3bef2dc8f5f9"
+            "2a72c574-f372-4051-961f-4096a661f1ca"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2463,7 +2463,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "8a5f4ec7-ba68-49e5-8161-dab4fb5626b8"
+            "1d9ed281-e912-47a1-b24c-f4e3aa60fce0"
           ],
           "Name": "Query",
           "NestedRefModuleId": null,
@@ -2494,7 +2494,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "38aba5b6-4360-49df-9f64-5e6fb6bdc35e"
+            "71581712-c75b-4569-b388-c80bc921cc4d"
           ],
           "Name": "Parameters",
           "NestedRefModuleId": null,
@@ -2620,7 +2620,7 @@
           },
           "PropertyId": null,
           "PropertyName": null,
-          "ValueObj": "SELECT VALUE h FROM\nCases AS c JOIN FamilyHistories AS f\nON c.Id = f.CaseId\nJOIN FamilyHistoryEntries AS h\nON f.Id = h.FamilyHistoryId\nWHERE c.Name = @caseName"
+          "ValueObj": "SELECT\nh.[Relationship],\nh.Age\nFROM\nCases AS c JOIN FamilyHistories AS f\nON c.Id = f.CaseId\nJOIN FamilyHistoryEntries AS h\nON f.Id = h.FamilyHistoryId\nWHERE c.Name = @caseName"
         }
       ],
       "ModuleOutputs": [
@@ -2636,7 +2636,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "1454fc9c-75ca-4212-bbbd-6b07f73f4c95"
+            "e2892253-eee5-4791-9999-3978eb375405"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2729,7 +2729,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "1454fc9c-75ca-4212-bbbd-6b07f73f4c95"
+            "e2892253-eee5-4791-9999-3978eb375405"
           ],
           "Name": "Input",
           "NestedRefModuleId": null,
@@ -2753,7 +2753,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "a8ff960d-c1e2-4000-a8a1-acfcd28c669e"
+            "6d5d9a74-a5a2-4b81-bed6-a7f162faa97c"
           ],
           "Name": "Dependencies",
           "NestedRefModuleId": null,
@@ -2780,7 +2780,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "8a5f4ec7-ba68-49e5-8161-dab4fb5626b8"
+            "1d9ed281-e912-47a1-b24c-f4e3aa60fce0"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2910,7 +2910,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "38aba5b6-4360-49df-9f64-5e6fb6bdc35e"
+            "71581712-c75b-4569-b388-c80bc921cc4d"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
