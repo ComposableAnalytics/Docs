@@ -1,4 +1,3 @@
-
 ---
 title: Composable Docs
 summary: Technical Documentation for the Composable DataOps Platform
