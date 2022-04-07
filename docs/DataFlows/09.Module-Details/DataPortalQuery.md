@@ -4,9 +4,10 @@ title: Composable Docs
 summary: Technical Documentation for the Composable DataOps Platform
 authors:
     - Composable Analytics, Inc.
-date: 2022-04-06
+date: 202-04-7
 some_url: https://docs.composable.ai
 ---
+
 # DataPortal Query
 
 ## Overview
