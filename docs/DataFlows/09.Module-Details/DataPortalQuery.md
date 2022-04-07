@@ -1,3 +1,4 @@
+
 ---
 title: Composable Docs
 summary: Technical Documentation for the Composable DataOps Platform
@@ -34,7 +35,9 @@ There is no '*' selector in Entity SQL. If you want all the rows to be returned 
 
 ![!Example Entity SQL Query Results](img/DataPortalQuery.Results.png)
 
-The output of the **DataPortal Query** module is a Composable Table. If the object is a one-to-one relationship such as Double, the value will simply be returned as it exists in the database. If the object is a one-to-many relationship in the case of FamHistoryEntries, the results will be serialized into a valid JSON string as shown in the picture above.
+The output of the **DataPortal Query** module is a Composable Table. If the object is a one-to-one relationship such as Double, the value will simply be returned as it exists in the database. If the object is a one-to-many relationship in the case of FamHistoryEntries which is a Table, an error will be thrown. To reference these write a SQL query like the one shown here that joins the tables:
+
+![!Example Entity SQL Query 2](img/DataPortalQuery.SQL2.png)
 
 ## Input Details
 

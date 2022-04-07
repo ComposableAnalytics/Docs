@@ -1,13 +1,13 @@
 {
   "__type": "Application:#CompAnalytics.Contracts",
-  "AvoidSavingRuns": null,
+  "AvoidSavingRuns": false,
   "CanvasComments": [
     {
       "__type": "CanvasComment:#CompAnalytics.Contracts",
       "BodyText": "Creates new entries for the DataPortal. WARNING: This will ERASE existing data!",
       "HeaderText": "Add Entries",
       "Height": 200,
-      "Id": null,
+      "Id": 24,
       "IsMinimized": false,
       "UiHandle": "b08b9ac7-d504-4a4a-a73e-d67ac226a01e",
       "Width": 250,
@@ -19,7 +19,7 @@
       "BodyText": "Adds children objects to the DataPortal",
       "HeaderText": "Add Children",
       "Height": 200,
-      "Id": null,
+      "Id": 25,
       "IsMinimized": false,
       "UiHandle": "11c36045-a026-4bd6-855d-4173d64efad9",
       "Width": 250,
@@ -29,9 +29,9 @@
     {
       "__type": "CanvasComment:#CompAnalytics.Contracts",
       "BodyText": "There is no * selector in Entity SQL. In order to select all the fields, you must manually specify them. The names of these fields and containers can easily be found in the Excel file you used to create the DataPortal.",
-      "HeaderText": "DataPortal Query",
+      "HeaderText": "Query 1",
       "Height": 200,
-      "Id": null,
+      "Id": 26,
       "IsMinimized": false,
       "UiHandle": "c1853788-44b1-45ec-8df6-1f21ed092cf7",
       "Width": 250,
@@ -43,16 +43,65 @@
       "BodyText": "Select the DataPortalQuery DataPortal for each DataPortal Sync and Query module.",
       "HeaderText": "NOTE",
       "Height": 200,
-      "Id": null,
+      "Id": 27,
       "IsMinimized": false,
       "UiHandle": "708dd63e-f93d-4e52-bead-f41f1f1ba8db",
       "Width": 250,
       "X": 29,
       "Y": 101.741
+    },
+    {
+      "__type": "CanvasComment:#CompAnalytics.Contracts",
+      "BodyText": "This example shows how to query properties of a related object/table. In this case, FamHistoryEntries.\nThis matches the first case we added, and then pulls out the associated family history entries.",
+      "HeaderText": "Query 2",
+      "Height": 200,
+      "Id": null,
+      "IsMinimized": false,
+      "UiHandle": "2b1956c7-f38a-48a5-b592-aa6915bd6658",
+      "Width": 250,
+      "X": 1872,
+      "Y": 487
     }
   ],
   "CloneCount": 0,
-  "ConnectionIdToOutputHandle": null,
+  "ConnectionIdToOutputHandle": [
+    {
+      "Key": "c88be1e4-3f9d-4f3b-8191-cdbcd2369621",
+      "Value": "output-output0"
+    },
+    {
+      "Key": "9ee0d8da-997a-4243-8f45-d9523ba07250",
+      "Value": "output-output4"
+    },
+    {
+      "Key": "07dc2c41-6ef3-453f-9216-df4d813f9716",
+      "Value": "output-output6"
+    },
+    {
+      "Key": "608ff2c2-68a9-491d-b4c6-8ed34985a04b",
+      "Value": "output-output24"
+    },
+    {
+      "Key": "4396db52-d41e-4f2b-aeb9-6d094be636e0",
+      "Value": "output-output27"
+    },
+    {
+      "Key": "6e8fcb58-0e5c-410e-a860-17b86719a9b3",
+      "Value": "output-output33"
+    },
+    {
+      "Key": "55a65278-5e70-42ca-9637-32f255cfcd92",
+      "Value": "output-output37"
+    },
+    {
+      "Key": "60d32baf-3aac-4e62-9bcf-0eda49428ad9",
+      "Value": "output-output39"
+    },
+    {
+      "Key": "fbc56a44-6c19-4819-942a-c3481f8e4caf",
+      "Value": "output-output42"
+    }
+  ],
   "ContinueOnError": false,
   "CreatedBy": null,
   "CreatedById": null,
@@ -63,11 +112,15 @@
   "ErrorAtCompletion": false,
   "ErrorEmail": null,
   "ErrorHandlingAppId": null,
-  "HighestReview": null,
+  "HighestReview": "",
   "Id": null,
-  "LowestReview": null,
-  "ModifiedById": null,
-  "ModifiedDateTime": null,
+  "LowestReview": "",
+  "ModifiedById": "1f5fda28-f026-4deb-aed0-6f4084fe9e4b",
+  "ModifiedDateTime": {
+    "__type": "DateTimeOffset:#System",
+    "DateTime": "\/Date(1649275424440)\/",
+    "OffsetMinutes": 0
+  },
   "Modules": [
     {
       "__type": "Module:#CompAnalytics.Contracts",
@@ -319,7 +372,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "946f1d38-d52c-44f1-9774-577df23259b4"
+            "263480b5-99c9-4bf3-9f47-3ed209f1ff5d"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -405,7 +458,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "946f1d38-d52c-44f1-9774-577df23259b4"
+            "263480b5-99c9-4bf3-9f47-3ed209f1ff5d"
           ],
           "Name": "Data",
           "NestedRefModuleId": null,
@@ -734,7 +787,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "167a6696-180d-4c0d-ae14-273eeb021ead"
+            "9eac08c6-94b0-4279-9541-029a4428e76d"
           ],
           "Name": "Table",
           "NestedRefModuleId": null,
@@ -820,9 +873,9 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "167a6696-180d-4c0d-ae14-273eeb021ead",
-            "b5e591de-946e-4adb-8e7c-167b54ff13cf",
-            "036ecad3-7662-468e-a2b1-028e82c61b70"
+            "9eac08c6-94b0-4279-9541-029a4428e76d",
+            "21afc332-1fcc-42a7-9a96-0bd3b9549862",
+            "79728057-15cc-4aa1-a055-aba17c7a5489"
           ],
           "Name": "Tables",
           "NestedRefModuleId": null,
@@ -900,7 +953,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "0c3b2cb2-9c87-46f7-93b0-f1eeb5549985"
+            "14d4ab99-b01d-40fa-a5b0-1462ffa3c00c"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1107,7 +1160,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "b5e591de-946e-4adb-8e7c-167b54ff13cf"
+            "21afc332-1fcc-42a7-9a96-0bd3b9549862"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1193,7 +1246,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "0c3b2cb2-9c87-46f7-93b0-f1eeb5549985"
+            "14d4ab99-b01d-40fa-a5b0-1462ffa3c00c"
           ],
           "Name": "Data",
           "NestedRefModuleId": null,
@@ -1486,7 +1539,8 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "8e0fb053-a115-4fa2-a460-e94032ff0609"
+            "e18ee736-6e02-44ba-82db-8a56f5b28acc",
+            "a8ff960d-c1e2-4000-a8a1-acfcd28c669e"
           ],
           "Name": "Counts",
           "NestedRefModuleId": null,
@@ -1727,7 +1781,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "036ecad3-7662-468e-a2b1-028e82c61b70"
+            "79728057-15cc-4aa1-a055-aba17c7a5489"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1813,7 +1867,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "8067198a-86ea-48ad-bb01-2665af4ec678"
+            "360342df-d2bb-45c5-96c4-8400cd339ad0"
           ],
           "Name": "Input",
           "NestedRefModuleId": null,
@@ -1837,7 +1891,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "8e0fb053-a115-4fa2-a460-e94032ff0609"
+            "e18ee736-6e02-44ba-82db-8a56f5b28acc"
           ],
           "Name": "Dependencies",
           "NestedRefModuleId": null,
@@ -1864,7 +1918,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "432457d2-b502-4637-883b-510d7bb66bac"
+            "b8392326-d51c-4609-b3cf-8554d82c0a32"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -1977,7 +2031,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": 1,
           "ModuleConnections": [
-            "432457d2-b502-4637-883b-510d7bb66bac"
+            "b8392326-d51c-4609-b3cf-8554d82c0a32"
           ],
           "Name": "Query",
           "NestedRefModuleId": null,
@@ -2008,7 +2062,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "bb7b335f-4768-4581-a6f9-0b7ff67aec55"
+            "6cd1ab48-7e1b-49f7-964b-3bef2dc8f5f9"
           ],
           "Name": "Parameters",
           "NestedRefModuleId": null,
@@ -2102,8 +2156,8 @@
         "__type": "Location:#CompAnalytics.Contracts",
         "Id": null,
         "Width": 280.797,
-        "X": 1553.19,
-        "Y": 206.095
+        "X": 1555,
+        "Y": 206
       },
       "LoopComplete": false,
       "ModuleInputs": [
@@ -2134,7 +2188,7 @@
           },
           "PropertyId": null,
           "PropertyName": null,
-          "ValueObj": "SELECT\nc.Name,\nc.Food,\nc.Foods,\nc.Decimal,\nc.Double,\nc.UniqueIdentifier,\nb.FirstName,\nb.LastName,\nb.DOB,\nb.Product,\nb.PolicyCreatedDate,\nb.Gender,\nb.OptyId,\nb.InsuredFullYear,\nf.HasFamilyHistory,\nf.FamHistoryEntries\nFROM Cases AS c\nJOIN FamilyHistories AS f \nON c.Id = f.CaseId\nJOIN Basics AS b\nON c.Id = b.CaseId\nWHERE f.HasFamilyHistory = @hasFamilyHistory\nORDER BY c.Id"
+          "ValueObj": "SELECT\nc.Name,\nc.Food,\nc.Foods,\nc.Decimal,\nc.Double,\nc.UniqueIdentifier,\nb.FirstName,\nb.LastName,\nb.DOB,\nb.Product,\nb.PolicyCreatedDate,\nb.Gender,\nb.OptyId,\nb.InsuredFullYear,\nf.HasFamilyHistory\nFROM Cases AS c\nJOIN FamilyHistories AS f \nON c.Id = f.CaseId\nJOIN Basics AS b\nON c.Id = b.CaseId\nWHERE f.HasFamilyHistory = @hasFamilyHistory\nORDER BY c.Id"
         }
       ],
       "ModuleOutputs": [
@@ -2143,14 +2197,14 @@
           "ArgumentTypeFriendlyName": "String",
           "ArgumentTypeName": "System.String",
           "ArgumentTypeStr": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "Description": null,
+          "Description": "Forwarded value",
           "Id": null,
           "IsCollection": false,
           "IsPrimitive": true,
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "8067198a-86ea-48ad-bb01-2665af4ec678"
+            "360342df-d2bb-45c5-96c4-8400cd339ad0"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2226,8 +2280,8 @@
         "__type": "Location:#CompAnalytics.Contracts",
         "Id": null,
         "Width": 180,
-        "X": 1613.19,
-        "Y": 391.095
+        "X": 1613,
+        "Y": 391
       },
       "LoopComplete": false,
       "ModuleInputs": [
@@ -2289,7 +2343,7 @@
           "LinkedModuleCandidates": null,
           "MaxConnections": -1,
           "ModuleConnections": [
-            "bb7b335f-4768-4581-a6f9-0b7ff67aec55"
+            "6cd1ab48-7e1b-49f7-964b-3bef2dc8f5f9"
           ],
           "Name": "Result",
           "NestedRefModuleId": null,
@@ -2341,6 +2395,573 @@
       "Skipped": false,
       "UiHandle": "module86c565f0-707d-4d99-9f8b-c57b31afe973",
       "Version": 0
+    },
+    {
+      "__type": "Module:#CompAnalytics.Contracts",
+      "AccumulatedValues": null,
+      "AvoidSavingRuns": null,
+      "CacheResults": false,
+      "ContinueOnError": null,
+      "ControlledModuleHandles": null,
+      "ControllingCycleHandles": null,
+      "Failed": false,
+      "ForceExecution": false,
+      "HasExecuted": false,
+      "HasInputConnections": true,
+      "HasOutputConnections": false,
+      "Id": null,
+      "IsMinimized": false,
+      "IterationCount": 0,
+      "LastRunId": null,
+      "Location": {
+        "__type": "Location:#CompAnalytics.Contracts",
+        "Id": null,
+        "Width": 180,
+        "X": 1895,
+        "Y": 664
+      },
+      "LoopComplete": false,
+      "ModuleInputs": [
+        {
+          "__type": "ModuleInputOflong:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "Int64",
+          "ArgumentTypeName": "System.Int64",
+          "ArgumentTypeStr": "System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": "ID of DataPortal to query",
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": true,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": 1,
+          "ModuleConnections": [],
+          "Name": "DataPortalId",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "input12",
+          "AllowNulls": null,
+          "ControlParameters": {
+            "__type": "ResourceSearchParameters:#CompAnalytics.Contracts.Controls",
+            "ControlType": "ResourceSearchControl",
+            "NameLabel": null,
+            "Query": "DataPortal",
+            "Title": "Select DataPortal",
+            "TypeLabel": null
+          },
+          "PropertyId": null,
+          "PropertyName": null,
+          "ValueObj": 6161
+        },
+        {
+          "__type": "ModuleInputOfstring:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "String",
+          "ArgumentTypeName": "System.String",
+          "ArgumentTypeStr": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": "The query to execute. Note that if you select an entire object using VALUE, any related pages/tables will not be returned. To select items from other tables/pages, join them.",
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": true,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": 1,
+          "ModuleConnections": [
+            "8a5f4ec7-ba68-49e5-8161-dab4fb5626b8"
+          ],
+          "Name": "Query",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "input13",
+          "AllowNulls": null,
+          "ControlParameters": {
+            "__type": "CodeAreaControlParameters:#CompAnalytics.Contracts.Controls",
+            "ControlType": "CodeAreaControl",
+            "AutoCompile": false,
+            "Height": 300,
+            "Mode": "text/x-sql",
+            "Width": 400
+          },
+          "PropertyId": null,
+          "PropertyName": null,
+          "ValueObj": null
+        },
+        {
+          "__type": "ModuleInputCollectionOfKeyValuePairOfstringanyTypeR8RmUPp7:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "List<KeyValuePair<String,Object>>",
+          "ArgumentTypeName": "System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+          "ArgumentTypeStr": "System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": "Query parameters to use with the query. The key is parameter name, which can be referenced in the query prefixed with '@'.",
+          "Id": null,
+          "IsCollection": true,
+          "IsPrimitive": false,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": -1,
+          "ModuleConnections": [
+            "38aba5b6-4360-49df-9f64-5e6fb6bdc35e"
+          ],
+          "Name": "Parameters",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "input17",
+          "AllowNulls": null,
+          "ControlParameters": null,
+          "PropertyId": null,
+          "PropertyName": null,
+          "ValueObj": null,
+          "CollectionArgumentTypeName": "System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+        }
+      ],
+      "ModuleOutputs": [
+        {
+          "__type": "ModuleOutputOfTableBWskODFT:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "Table",
+          "ArgumentTypeName": "CompAnalytics.Contracts.Tables.Table",
+          "ArgumentTypeStr": "CompAnalytics.Contracts.Tables.Table, CompAnalytics.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
+          "Description": "Table returned by the query",
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": false,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": -1,
+          "ModuleConnections": [],
+          "Name": "Results",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "output5",
+          "BaseTypes": [
+            "System.Object"
+          ],
+          "IsSet": true,
+          "ResultId": null,
+          "ValueType": null,
+          "ValueObj": null
+        }
+      ],
+      "ModuleType": {
+        "__type": "ModuleType:#CompAnalytics.Contracts",
+        "CachingDisabled": false,
+        "Category": "forms",
+        "Deprecated": false,
+        "Description": "Query a DataPortal. Uses Entity SQL: https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/entity-sql-overview",
+        "DisplayName": null,
+        "Enabled": true,
+        "Icon": "Icons.sql.png",
+        "Id": 6037,
+        "IsViableCacheModule": true,
+        "Iterable": false,
+        "LoopTerminating": false,
+        "Name": "DataPortal Query",
+        "Namespace": "companalytics",
+        "Streaming": false,
+        "Type": "CompAnalytics.Extension.Automapper.Modules.DataPortalQuery, CompAnalytics.Extension.Automapper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
+        "Valid": true,
+        "Version": 0,
+        "Width": 150
+      },
+      "Name": "DataPortal Query",
+      "NestedRefAppId": null,
+      "PinResults": false,
+      "ProgressStats": null,
+      "RequestingExecution": true,
+      "RetryCount": 0,
+      "RetryDelay": "PT0S",
+      "RunReuseTimeoutMS": 0,
+      "Skipped": false,
+      "UiHandle": "moduled54a5366-e15c-4ae3-b1c6-5f9c251a915a",
+      "Version": 0
+    },
+    {
+      "__type": "Module:#CompAnalytics.Contracts",
+      "AccumulatedValues": null,
+      "AvoidSavingRuns": null,
+      "CacheResults": false,
+      "ContinueOnError": null,
+      "ControlledModuleHandles": null,
+      "ControllingCycleHandles": null,
+      "Failed": false,
+      "ForceExecution": false,
+      "HasExecuted": false,
+      "HasInputConnections": false,
+      "HasOutputConnections": true,
+      "Id": null,
+      "IsMinimized": false,
+      "IterationCount": 0,
+      "LastRunId": null,
+      "Location": {
+        "__type": "Location:#CompAnalytics.Contracts",
+        "Id": null,
+        "Width": 280.797,
+        "X": 1552,
+        "Y": 623
+      },
+      "LoopComplete": false,
+      "ModuleInputs": [
+        {
+          "__type": "ModuleInputOfstring:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "String",
+          "ArgumentTypeName": "System.String",
+          "ArgumentTypeStr": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": null,
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": true,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": 0,
+          "ModuleConnections": [],
+          "Name": "Input",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "input18",
+          "AllowNulls": null,
+          "ControlParameters": {
+            "__type": "TextAreaControlParameters:#CompAnalytics.Contracts.Controls",
+            "ControlType": "TextAreaControl",
+            "AutoCompile": false,
+            "Height": 300,
+            "Mode": null,
+            "Width": 300
+          },
+          "PropertyId": null,
+          "PropertyName": null,
+          "ValueObj": "SELECT VALUE h FROM\nCases AS c JOIN FamilyHistories AS f\nON c.Id = f.CaseId\nJOIN FamilyHistoryEntries AS h\nON f.Id = h.FamilyHistoryId\nWHERE c.Name = @caseName"
+        }
+      ],
+      "ModuleOutputs": [
+        {
+          "__type": "ModuleOutputOfstring:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "String",
+          "ArgumentTypeName": "System.String",
+          "ArgumentTypeStr": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": "Forwarded value",
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": true,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": -1,
+          "ModuleConnections": [
+            "1454fc9c-75ca-4212-bbbd-6b07f73f4c95"
+          ],
+          "Name": "Result",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "output7",
+          "BaseTypes": [
+            "System.IComparable",
+            "System.ICloneable",
+            "System.IConvertible",
+            "System.Collections.IEnumerable",
+            "System.IComparable`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "System.Collections.Generic.IEnumerable`1[[System.Char, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "System.IEquatable`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+            "System.Object"
+          ],
+          "IsSet": true,
+          "ResultId": null,
+          "ValueType": null,
+          "ValueObj": null
+        }
+      ],
+      "ModuleType": {
+        "__type": "ModuleType:#CompAnalytics.Contracts",
+        "CachingDisabled": false,
+        "Category": "inputs",
+        "Deprecated": false,
+        "Description": "Simply forwards input string to result, allowing for an input to be specified in separate module",
+        "DisplayName": null,
+        "Enabled": true,
+        "Icon": null,
+        "Id": 522,
+        "IsViableCacheModule": true,
+        "Iterable": false,
+        "LoopTerminating": false,
+        "Name": "String Input",
+        "Namespace": "edu.mit.ll.companalytics",
+        "Streaming": false,
+        "Type": "CompAnalytics.Execution.Modules.StringInputExecutor, CompAnalytics.Execution.Modules, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
+        "Valid": true,
+        "Version": 0,
+        "Width": 150
+      },
+      "Name": "Entity SQL Query 2",
+      "NestedRefAppId": null,
+      "PinResults": false,
+      "ProgressStats": null,
+      "RequestingExecution": true,
+      "RetryCount": 0,
+      "RetryDelay": "PT0S",
+      "RunReuseTimeoutMS": 0,
+      "Skipped": false,
+      "UiHandle": "moduleae59e73c-515d-408e-9e6e-a4235f9a8598",
+      "Version": 0
+    },
+    {
+      "__type": "Module:#CompAnalytics.Contracts",
+      "AccumulatedValues": null,
+      "AvoidSavingRuns": null,
+      "CacheResults": false,
+      "ContinueOnError": null,
+      "ControlledModuleHandles": null,
+      "ControllingCycleHandles": null,
+      "Failed": false,
+      "ForceExecution": false,
+      "HasExecuted": false,
+      "HasInputConnections": true,
+      "HasOutputConnections": true,
+      "Id": null,
+      "IsMinimized": false,
+      "IterationCount": 0,
+      "LastRunId": null,
+      "Location": {
+        "__type": "Location:#CompAnalytics.Contracts",
+        "Id": null,
+        "Width": 189.641,
+        "X": 1586,
+        "Y": 700
+      },
+      "LoopComplete": false,
+      "ModuleInputs": [
+        {
+          "__type": "ModuleInputOfanyType:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "Object",
+          "ArgumentTypeName": "System.Object",
+          "ArgumentTypeStr": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": "The item to return",
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": false,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": 1,
+          "ModuleConnections": [
+            "1454fc9c-75ca-4212-bbbd-6b07f73f4c95"
+          ],
+          "Name": "Input",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "input19",
+          "AllowNulls": null,
+          "ControlParameters": null,
+          "PropertyId": null,
+          "PropertyName": null,
+          "ValueObj": null
+        },
+        {
+          "__type": "ModuleInputCollectionOfanyType:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "List<Object>",
+          "ArgumentTypeName": "System.Collections.Generic.List`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+          "ArgumentTypeStr": "System.Collections.Generic.List`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": "Collection of dependencies to wait for, prior to executing",
+          "Id": null,
+          "IsCollection": true,
+          "IsPrimitive": false,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": -1,
+          "ModuleConnections": [
+            "a8ff960d-c1e2-4000-a8a1-acfcd28c669e"
+          ],
+          "Name": "Dependencies",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "input20",
+          "AllowNulls": null,
+          "ControlParameters": null,
+          "PropertyId": null,
+          "PropertyName": null,
+          "ValueObj": [],
+          "CollectionArgumentTypeName": "System.Object"
+        }
+      ],
+      "ModuleOutputs": [
+        {
+          "__type": "ModuleOutputOfanyType:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "Object",
+          "ArgumentTypeName": "System.Object",
+          "ArgumentTypeStr": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": "The Input value will be set to Result",
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": false,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": -1,
+          "ModuleConnections": [
+            "8a5f4ec7-ba68-49e5-8161-dab4fb5626b8"
+          ],
+          "Name": "Result",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "output8",
+          "BaseTypes": [],
+          "IsSet": true,
+          "ResultId": null,
+          "ValueType": null,
+          "ValueObj": null
+        }
+      ],
+      "ModuleType": {
+        "__type": "ModuleType:#CompAnalytics.Contracts",
+        "CachingDisabled": false,
+        "Category": "operators",
+        "Deprecated": false,
+        "Description": "Takes in a list of dependencies, and the Input value that will flow out as the Result",
+        "DisplayName": null,
+        "Enabled": true,
+        "Icon": "Icons.consolidator.png",
+        "Id": 485,
+        "IsViableCacheModule": true,
+        "Iterable": false,
+        "LoopTerminating": false,
+        "Name": "Dependency Waiter",
+        "Namespace": "com.companalytics",
+        "Streaming": false,
+        "Type": "CompAnalytics.Execution.Modules.DependencyWaiter, CompAnalytics.Execution.Modules, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
+        "Valid": true,
+        "Version": 0,
+        "Width": 150
+      },
+      "Name": "Dependency Waiter",
+      "NestedRefAppId": null,
+      "PinResults": false,
+      "ProgressStats": null,
+      "RequestingExecution": true,
+      "RetryCount": 0,
+      "RetryDelay": "PT0S",
+      "RunReuseTimeoutMS": 0,
+      "Skipped": false,
+      "UiHandle": "module3ca268ac-fa18-48b0-b8c7-5542851b3240",
+      "Version": 0
+    },
+    {
+      "__type": "Module:#CompAnalytics.Contracts",
+      "AccumulatedValues": null,
+      "AvoidSavingRuns": null,
+      "CacheResults": false,
+      "ContinueOnError": null,
+      "ControlledModuleHandles": null,
+      "ControllingCycleHandles": null,
+      "Failed": false,
+      "ForceExecution": false,
+      "HasExecuted": false,
+      "HasInputConnections": false,
+      "HasOutputConnections": true,
+      "Id": null,
+      "IsMinimized": false,
+      "IterationCount": 0,
+      "LastRunId": null,
+      "Location": {
+        "__type": "Location:#CompAnalytics.Contracts",
+        "Id": null,
+        "Width": 180,
+        "X": 1587,
+        "Y": 802
+      },
+      "LoopComplete": false,
+      "ModuleInputs": [
+        {
+          "__type": "ModuleInputOfstring:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "String",
+          "ArgumentTypeName": "System.String",
+          "ArgumentTypeStr": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": null,
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": true,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": 1,
+          "ModuleConnections": [],
+          "Name": "Key",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "input21",
+          "AllowNulls": null,
+          "ControlParameters": null,
+          "PropertyId": null,
+          "PropertyName": null,
+          "ValueObj": "caseName"
+        },
+        {
+          "__type": "ModuleInputOfanyType:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "Object",
+          "ArgumentTypeName": "System.Object",
+          "ArgumentTypeStr": "System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": null,
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": false,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": 1,
+          "ModuleConnections": [],
+          "Name": "Value",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "input22",
+          "AllowNulls": null,
+          "ControlParameters": null,
+          "PropertyId": null,
+          "PropertyName": null,
+          "ValueObj": "CaseName1"
+        }
+      ],
+      "ModuleOutputs": [
+        {
+          "__type": "ModuleOutputOfKeyValuePairOfstringanyTypeR8RmUPp7:#CompAnalytics.Contracts",
+          "ArgumentTypeFriendlyName": "KeyValuePair<String,Object>",
+          "ArgumentTypeName": "System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+          "ArgumentTypeStr": "System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "Description": null,
+          "Id": null,
+          "IsCollection": false,
+          "IsPrimitive": false,
+          "LinkedModuleCandidates": null,
+          "MaxConnections": -1,
+          "ModuleConnections": [
+            "38aba5b6-4360-49df-9f64-5e6fb6bdc35e"
+          ],
+          "Name": "Result",
+          "NestedRefModuleId": null,
+          "NestedRefModuleUiHandle": null,
+          "UiHandle": "output9",
+          "BaseTypes": [
+            "System.ValueType",
+            "System.Object"
+          ],
+          "IsSet": true,
+          "ResultId": null,
+          "ValueType": "System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+          "ValueObj": {
+            "__type": "KeyValuePairOfstringanyType:#System.Collections.Generic",
+            "key": null,
+            "value": null
+          }
+        }
+      ],
+      "ModuleType": {
+        "__type": "ModuleType:#CompAnalytics.Contracts",
+        "CachingDisabled": false,
+        "Category": "operators-dictionary",
+        "Deprecated": false,
+        "Description": "Constructs a KVP object from incoming Key string and Value object",
+        "DisplayName": null,
+        "Enabled": true,
+        "Icon": null,
+        "Id": 524,
+        "IsViableCacheModule": true,
+        "Iterable": false,
+        "LoopTerminating": false,
+        "Name": "Object Namer",
+        "Namespace": "com.companalytics",
+        "Streaming": false,
+        "Type": "CompAnalytics.Execution.Modules.ObjectNamer, CompAnalytics.Execution.Modules, Version=1.0.0.0, Culture=neutral, PublicKeyToken=792cfbd70dcd13a9",
+        "Valid": true,
+        "Version": 0,
+        "Width": 150
+      },
+      "Name": "Object Namer",
+      "NestedRefAppId": null,
+      "PinResults": false,
+      "ProgressStats": null,
+      "RequestingExecution": true,
+      "RetryCount": 0,
+      "RetryDelay": "PT0S",
+      "RunReuseTimeoutMS": 0,
+      "Skipped": false,
+      "UiHandle": "module25c4437a-a7cf-461e-b699-8ce57edc327d",
+      "Version": 0
     }
   ],
   "Name": "DataPortal Query Example",
@@ -2354,6 +2975,6 @@
   "ReviewAverage": 0,
   "ReviewCount": 0,
   "ShowRealTimeOutputs": true,
-  "Tags": null,
+  "Tags": [],
   "WireType": null
 }
