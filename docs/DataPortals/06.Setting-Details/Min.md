@@ -9,7 +9,7 @@ some_url: https://docs.composable.ai
 
 # Min
 
-The **Min** column on a container field defines a lower bound on the value that can be stored in the database. A warning is given to the user if the input is invalid.  
+The **Min** column on a container field defines a lower bound on the controls for the value. To enforce validation on database entry please use the [**ValidationCondition**](../06.Setting-Details/ValidationCondition.md) optional field.  
 
 ## Controls
 
