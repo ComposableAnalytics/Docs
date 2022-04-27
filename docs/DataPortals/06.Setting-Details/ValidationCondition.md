@@ -13,7 +13,7 @@ The **ValidationCondition** column on a container field defines conditions for w
 
 ![ValidationCondition](../img/ValidationCondition.PNG)
 
-Supports Boolean logic `AND`s (&&), `OR`s (||) and parenthesis. Uses standard C# equality and relational operators (==, !=, <, >, <=, >=). You may reference existing entries on the same page by their name, in this case, `Day` and `Hour`.
+Supports Boolean logic `AND`'s (&&), `OR`'s (||) and parenthesis. Uses standard C# equality and relational operators (==, !=, <, >, <=, >=). You may reference existing entries on the same page by their name, in this case, `Day` and `Hour`.
 
 ## Controls
 
