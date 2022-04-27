@@ -11,6 +11,8 @@ some_url: https://docs.composable.ai
 
 The **VisibilityCondition** column on a container field checks the value of another input field on the page to see if this field is displayed to the user.  Supports Boolean logic ands (&&), ors (||) and parenthesis.  If the check returns false, the input is not displayed to the user.
 
+![VisibilityCondition](../img/VisibilityCondition.PNG)
+
 Identical to [MaskedCondition](MaskedCondition.md), but instead of shows white space where the input field would be, does not display the item at all or preserve space for it.
 
 ## Controls
