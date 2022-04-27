@@ -13,7 +13,7 @@ some_url: https://docs.composable.ai
 
 The **AppRun** control type will create a button that runs a Composable DataFlow. Depending on the DataFlow this can accept user input and/or update values on the current container page.
 
-![AppRun](../img/AppRun.png)
+![AppRun](../img/AppRun.PNG)
 
 ## Required Fields
 
