@@ -11,6 +11,10 @@ some_url: https://docs.composable.ai
 
 The **ValidationCondition** column on a container field defines conditions for whether an entered value is valid or not. Invalid values cannot be saved to the database.
 
+![ValidationCondition](../img/ValidationCondition.png)
+
+As shown in the above screenshot, ValidationConditions are simply standard C# equality operators with `AND`'s or `OR`'s. You may reference existing entries on the same page by their name, in this case, `Day` and `Hour`.
+
 ## Controls
 
 The **ValidationCondition** column applies to the following controls:
