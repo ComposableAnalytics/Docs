@@ -9,7 +9,7 @@ some_url: https://docs.composable.ai
 
 # VisibilityCondition
 
-The **VisibilityCondition** column on a container field checks the value of another input field on the page to see if this field is displayed to the user. Supports Boolean logic `AND`'s (&&), `OR`'s (||) and parenthesis. Uses standard C# equality and relational operators (==, !=, <, >, <=, >=). If the check returns false, the input is not displayed to the user. To enforce validation on entry, please use the [ValidationCondition](../06.Setting-Details/ValidationCondition.md).
+The **VisibilityCondition** column on a container field checks the value of another input field on the page to see if this field is displayed to the user. Supports Boolean logic `AND`'s (&&), `OR`'s (||) and parenthesis. Uses standard C# equality and relational operators (==, !=, <, >, <=, >=). If the check returns false, the input is not displayed to the user.
 
 ![VisibilityCondition](../img/VisibilityCondition.PNG)
 
