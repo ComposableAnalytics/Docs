@@ -15,15 +15,15 @@ Data engineers, data scientists and machine learning engineers typically use not
 
 The limitations inherent with Notebooks are that they are typically run locally, which means:
 
-- users need to install their own copy of Python/Julia/etc. locally, and set up ,configure and manage their own development environment
+- users need to install their own copy of Python/Julia/etc. locally, and set up, configure, and manage their own development environment
 - notebooks that are run locally are inherently limited to the hardware and performance of the local machine/laptop
-- notebooks are not shareable with other users, and moreover, there are constant issues from inconsisent dev environments across environments
+- notebooks are not shareable with other users, and moreover, there are constant issues from inconsistent dev environments across environments
 
-Composable Datalabs are server-hosted notebooks that overcome these limitations and further provide enterprise-scale features for collaboration and security. Specifically, Composable DataLabs has the following features and advantages:
+Composable DataLabs are server-hosted notebooks that overcome these limitations and further provide enterprise-scale features for collaboration and security. Specifically, Composable DataLabs has the following features and advantages:
 
 - Interactive Programming, Unlimited Scale, and Zero Management
 
-Composable DataLabs are hosted and executed on the server infrastructure, and can therefore leverage the scale of the cloud. Local development environment no longer need to be configured and maintained by individual users. Simply log into Composable, create a new DataLab and start coding.
+Composable DataLabs are hosted and executed on the server infrastructure, and can therefore leverage the scale of the cloud. Local development environment no longer needs to be configured and maintained by individual users. Simply log into Composable, create a new DataLab, and start coding.
 
 - Collaboration and Security
 
