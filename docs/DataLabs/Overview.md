@@ -9,7 +9,7 @@ some_url: https://docs.composable.ai
 
 # DataLabs
 
-Composable Datalabs provides a self-service, interactive programming notebook solution for exploratory, code-centric work using Python, Julia and other languages.
+Composable DataLabs provides a self-service, interactive programming notebook solution for exploratory, code-centric work using Python, Julia and other languages.
 
 Data engineers, data scientists and machine learning engineers typically use notebooks for interactive programming and development. Notebooks provide a framework that combines (markdown-based) text and executable code in a single, web-based, editable document ("notebook").
 
