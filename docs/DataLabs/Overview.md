@@ -53,4 +53,4 @@ Composable DataLabs integrates with other Composable resources, such as [Composa
 
 ## Other Integrations
 
-Other python libraries can be installed from within a notebook by simply utilzing the `pip install` command. For example: `pip install numpy`
+Other Python libraries can be installed from within a notebook by simply utilzing the `pip install` command. For example: `pip install numpy`
