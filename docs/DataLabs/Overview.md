@@ -3,7 +3,7 @@ title: Composable Docs
 summary: Technical Documentation for the Composable DataOps Platform
 authors:
     - Composable Analytics, Inc.
-date: 2021-12-01
+date: 2022-05-09
 some_url: https://docs.composable.ai
 ---
 
@@ -49,4 +49,8 @@ You can then click on Save, and your DataLab will be saved and you will be broug
 
 ## Composable Integrations
 
-Composable DataLabs integrats with other Composable resources, such as [Composable DataFlows](../DataFlows/01.Overview.md). Specifically, DataLabs comes pre-installed with [composapy](https://github.com/ComposableAnalytics/ComposaPy/), a python package that integrates and binds with the core Composable stack.
+Composable DataLabs integrates with other Composable resources, such as [Composable DataFlows](../DataFlows/01.Overview.md). Specifically, DataLabs comes pre-installed with [composapy](https://github.com/ComposableAnalytics/ComposaPy/), a python package that integrates and binds with the core Composable stack.
+
+## Other Integrations
+
+Other python libraries can be installed from within a notebook by simply utilzing the `pip install` command. For example: `pip install numpy`
