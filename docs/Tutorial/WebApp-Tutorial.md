@@ -1,23 +1,13 @@
----
-title: Composable Docs
-summary: Technical Documentation for the Composable DataOps Platform
-authors:
-    - Composable Analytics, Inc.
-date: 2022-05-11
-some_url: https://docs.composable.ai
----
 # Full Stack WebApp Tutorial: DataIntegrity Workbench
-Welcome! This tutorial will help you build a full-stack WebApp in Composable. The following <a href = "https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/WebApps/files/DataIntegrityWorkbenchFiles.zip" download>zip file</a> contains all the files you will need to build this example.
+Welcome! This tutorial will help you build a full-stack WebApp in Composable. The following <a href = "https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/Tutorial/files/DataIntegrityWorkbenchFiles.zip" download>zip file</a> contains all the files you will need to build this example.
 ## Table of Contents
-1. [DataPortal](#DIPortal)
-2. [DataFlows](#DIFlow)
-3. [QueryViews](#DIQuery)
-4. [WebApp](#DIApp)
+* 1. [DataPortal](#DIPortal)
+* 2. [DataFlows](#DIFlow)
+* 3. [QueryViews](#DIQuery)
+* 4. [WebApp](#DIApp)
 ## <a name="DIPortal"></a>1. DataPortal
 ![DataPortal Rule](img/DIPortalRules.png)
-The next step to creating this application is to create your data source. The Excel sheet for creating the proper DataPortal is attached in the files. Simply create a new DataPortal with it and you may edit entries as you see fit. Start by creating a Group, then make a rule entry. Note that you will need to give it a DataFlow ID. This is the ID of the DataFlow for the rule you want run. More information can be found in the [DataFlow](#DIFlow) section. Rules can be set to run at different frequencies, and you can have one DataFlow registered multiple times if you want differing frequencies. 
-The possible options for frequency are:
-
+The next step to creating this application is to create your data source. The Excel sheet for creating the proper DataPortal is attached in the files. Simply create a new DataPortal with it and you may edit entries as you see fit. Start by creating a Group, then make a rule entry. Note that you will need to give it a DataFlow ID. This is the ID of the DataFlow for the rule you want run. More information can be found in the [DataFlow](#DIFlow) section. Rules can be set to run at different frequencies, and you can have one DataFlow registered multiple times if you want differing frequencies. The possible options are:
 * Hourly
 * Daily (Select an hour 1-23)
 * Weekly (Select day of the week (Sun-Sat) and hour 1-23)
@@ -43,6 +33,6 @@ It is advised you **never manually run this flow**. It runs every hour by itself
 The last step before we have a fully functional WebApp is the QueryViews that will populate it. In this example, there are 4 QueryViews that need to be imported and linked to the DataPortal's database. The key to the DataPortal database must be given by an administrator. While this example relies on QueryViews, another option is to use the DataPortal Query module in a DataFlow.
 
 ## <a name="DIApp"></a>4. WebApp
-The final step is to import the files from the WebApp zip. You can try importing the zip when creating a new WebApp, but if this does not work, you can manually upload the files to the source editor once you create the new WebApp.
+The final step is to import the files from the WebApp zip. You can try importing the zip when creating a new WebApp, but if this does not work you can manually upload the files to the source editor once you create the new WebApp.
 ### How it works:
 This example uses AngularJS to perform UI-Routing. This allows the WebApp to mimic the structure of the DataPortal, and allows a user to share a link and be taken to the exact entry. This is also how information is passed between pages. This is the current recommended way to create a WebApp in Composable. The index.html page contains a `<ui-view>` tag that holds the main pages located in the `templates` directory. The `main.js` file is responsible for registering these sub-pages in the routing module. Each of these sub-pages has an individual JavaScript file with the same name responsible for controlling the page. These files use a Composable API to run QueryViews and pass in parameters. For example when you click on a DataGroup, the ID will be passed to the routing parameters in the URL and will be executed in the DIRules QueryView upon loading the DIRules page.
