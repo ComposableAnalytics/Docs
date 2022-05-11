@@ -181,6 +181,7 @@ nav:
 - 9. WebApps:
     - '9.1 Overview': 'WebApps/01.Overview.md'
     - '9.2 WebApp Basics': 'WebApps/02.WebApp-Basics.md'
+    - '9.3 WebApp Tutorial': 'WebApps/03.WebApp-Tutorial.md'
 - 10. Boards:
     - '10.1 Overview': 'Boards/01.Overview.md'
     - '10.2 Edit Mode': 'Boards/02.Edit-Mode.md'
