@@ -45,6 +45,7 @@ nav:
     - '3.10 Custom Module Extensions': 'DataFlows/07.Custom-Modules.md'
     - 3.11 Module Details:
         - 'Code Module': 'DataFlows/09.Module-Details/Code-Module.md'
+        - 'DataLab Notebook Runner': 'DataFlows/09.Module-Details/DataLabNotebookRunner.md'
         - 'DataPortal Delete Module': 'DataFlows/09.Module-Details/DataPortalDelete.md'
         - 'DataPortal Sync Module': 'DataFlows/09.Module-Details/DataPortalSync.md'
         - 'DataPortal Query Module': 'DataFlows/09.Module-Details/DataPortalQuery.md'
