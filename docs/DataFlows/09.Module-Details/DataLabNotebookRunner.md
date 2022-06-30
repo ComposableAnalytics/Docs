@@ -32,8 +32,11 @@ The keyword **`return_values`** is used by Composable to send your results back 
 
 - Each key must be a string
 
-- A restricted number of types are supported for values
-    - _Currently, only `int`, `str`, and `None` are officially supported (for other types, mileage may vary)_
+- A restricted number of types are supported for values:
+    - `int`
+    - `str`
+    - `None`
+    - `CompAnalytics.Contracts.FileReference`
 
 
 ### DataFlow
@@ -53,8 +56,7 @@ The keyword **`return_values`** is used by Composable to send your results back 
 
 Although not officially supported, you can pass other csharp types back with pythonnet by importing loading composapy into your notebook session.
 ```python
-from composapy.loader import load_init
-load_init()
+import composapy
 ``` 
 
 You can then import C# and Composable types as python objects.
