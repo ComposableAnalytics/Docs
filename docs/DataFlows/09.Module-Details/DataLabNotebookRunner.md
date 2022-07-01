@@ -36,7 +36,7 @@ The keyword **`return_values`** is used by Composable to send your results back 
     - `int`
     - `str`
     - `None`
-    - `CompAnalytics.Contracts.FileReference`
+    - `CompAnalytics.Contracts.FileReference` (although FileReference may be passed to and from a notebook, any file references created in the notebook context will be unaccessible by the DataFlow)
 
 
 ### DataFlow
