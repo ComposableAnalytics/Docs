@@ -1,0 +1,60 @@
+{
+    "tutorials": [
+        {
+            "type": "tutorial", 
+            "title": "DataFlow Tutorial: 'Hello World!'",
+            "description": "This simple DataFlow will introduce you to a few concepts, including entering in a table using the Table Editor Module and looping over rows in a table.",
+            "link": "https://docs.composable.ai/en/latest/Tutorial/DataFlow-Hello-World/"
+        },
+        {
+            "type": "tutorial",
+            "title": "DataFlow Tutorial: Image Processing",
+            "description": "This tutorial will show some examples of Image Processing capabilities that one can execute with DataFlows.",
+            "link": "https://docs.composable.ai/en/latest/Tutorial/DataFlow-Image-Processing/"
+        },
+        {
+            "type": "tutorial",
+            "title": "DataFlow Tutorial: Lunch Recommender Slack App",
+            "description": "If you\"re bad at deciding what to have for lunch, the good news is that we can automate this easily in a Composable DataFlow!",
+            "link": "https://docs.composable.ai/en/latest/Tutorial/Lunch/"
+        },
+        {
+            "type": "tutorial",
+            "title": "WebApp Tutorial: DataIntegrity Workbench",
+            "description": "This tutorial will help you build a full-stack WebApp in Composable.",
+            "link": "https://docs.composable.ai/en/latest/Tutorial/WebApp-Tutorial/"
+        },
+        {
+            "type": "tutorial",
+            "title": "DataPortal Tutorial: Online Delivery App",
+            "description": "In this tutorial, we will create a DataPortal that will be used as the back-end for an online (web or mobile) delivery application.",
+            "link": "https://docs.composable.ai/en/latest/Tutorial/DataPortals-DeliveryApp/"
+        },
+        {
+            "type": "tutorial",
+            "title": "WebApp Tutorial: Creating a Full Stack WebApp",
+            "description": "This tutorial will help you build a full-stack WebApp in Composable.",
+            "link": "https://docs.composable.ai/en/latest/Tutorial/WebApp-Tutorial/"
+        },
+        {
+            "type": "video",
+            "title": "Introduction to DataFlows",
+            "description": "The Composable DataOps Platform is a modern, full-stack data operations and integrated development environment for developing data-intensive applications.",
+            "link": "https://www.youtube.com/watch?v=HBpr_UOKvGA&ab_channel=composable"
+        },
+        {
+            "type": "video",
+            "title": "Building Advanced Web Services",
+            "description": "This video reviews how to use DataFlows as web services",
+            "link": "https://www.youtube.com/watch?v=dWOc7JMpTJc&t=2s&ab_channel=composable"
+        },
+        {
+            "type": "video",
+            "title": "Automating Recurring Reports",
+            "description": "This video demonstrates how to quickly author a DataFlow to created an automated recurring report.",
+            "link": "https://www.youtube.com/watch?v=YrxQnhNo_S8&ab_channel=composable"
+        }
+       
+    ]
+
+}

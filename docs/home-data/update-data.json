@@ -1,0 +1,120 @@
+{
+    "updates": [
+        {
+            "content": "WebApps with thumbnails can now be deleted",
+            "date": "5/16/2022",
+            "type": "bugfix"
+        },
+        {
+            "content": "Runs can now be canceled from the runs table",
+            "date": "5/12/2022",
+            "type": "bugfix"
+        },
+        {
+            "content": "Fixed error using angle brackets in comments",
+            "date": "4/25/2022",
+            "type": "bugfix"
+        },
+        {
+            "content": "Improved performance of Razor Template Module",
+            "date": "4/12/2022",
+            "type": "bugfix"
+        },
+        {
+            "content": "Sidesubs menus are now scrollable",
+            "date": "3/16/2022",
+            "type": "bugfix"
+        },
+        {
+            "content": "Datalab ribbons in search now showing online status",
+            "date": "2/10/2022",
+            "type": "bugfix"
+        },
+        {
+            "content": "Datalabs now useable with windows auth",
+            "date": "11/16/2021",
+            "type": "bugfix"
+        },
+        {
+            "content": "Fixed broken links in results view",
+            "date": "11/02/2021",
+            "type": "bugfix"
+        },
+        {
+            "content": "Save was broken in Dashboard",
+            "date": "11/2/2021",
+            "type": "bugfix"
+        },
+        {
+            "content": "Added option to disable nav bars in WebApps",
+            "date": "5/9/2022",
+            "type": "minor"
+        },
+        {
+            "content": "New SQL Read-Write Module",
+            "date": "5/5/2022",
+            "type": "major",
+            "productAreas": ["DataFlow"]
+        },
+        {
+            "content": "User can export trace and progress logs to a csv file from the designer",
+            "date": "4/26/2022",
+            "type": "minor"
+        },
+        {
+            "content": "New streaming DeepQuery runner module",
+            "date": "4/25/2022",
+            "type": "major",
+            "productAreas": ["DataFlow", "DeepQuery"]
+        },
+        {
+            "content": "Add refresh button to DeepQuery",
+            "date": "4/20/2022",
+            "type": "minor"
+        },
+        {
+            "content": "New DocToDocX DataFlow module",
+            "date": "4/14/2022",
+            "type": "major",
+            "productAreas": ["DataFlow"]
+        },
+        {
+            "content": "New File Appender DataFlow module",
+            "date": "4/13/2022",
+            "type": "major",
+            "productAreas": ["DataFlow"]
+        },
+        {
+            "content": "DataFlow connections have color highlighting when selected",
+            "date": "4/1/2022",
+            "type": "minor"
+        },
+        {
+            "content": "Delete multiple/all runs for Dataflow",
+            "date": "3/29/2022",
+            "type": "minor"
+        },
+        {
+            "content": "Users can now be put in folders",
+            "date": "3/29/2022",
+            "type": "minor"
+        },
+        {
+            "content": "WebApp template for AdminLTE",
+            "date": "3/16/2022",
+            "type": "minor"
+        },
+        {
+            "content": "Allow new query without a root collection",
+            "date": "3/4/2022",
+            "type": "minor"
+        },
+        {
+            "content": "Complete Board renovation",
+            "date": "3/29/2022", 
+            "type": "major",
+            "productAreas": ["Board"]
+        }
+
+    ]
+}
