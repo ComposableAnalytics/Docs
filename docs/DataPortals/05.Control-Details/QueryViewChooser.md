@@ -27,7 +27,7 @@ This button opens a to allow selection:
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.String`.
+- [**Type**](../06.Setting-Details/Type.md): Must be set to `System.Int32`.
 
 - [**ControlType**](../06.Setting-Details/ControlType.md): Must be set to `QueryViewChooser`.
 
