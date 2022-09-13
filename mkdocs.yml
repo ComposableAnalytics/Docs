@@ -214,7 +214,20 @@ nav:
     - 'DataPortal: Online Delivery App': 'Tutorial/DataPortals-DeliveryApp.md'
     - 'DataPortal: Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
     - 'WebApp: Creating a Full Stack WebApp': 'Tutorial/WebApp-Tutorial.md'
-- Videos: 'Videos/Composable-Videos.md'
+- Project Lab Series:
+    - 'Overview': 'PLS/Overview.md'
+    - 'NASDAQ API':
+        - 'NASDAQ API Project goals': 'PLS/NASDAQ-API/0-NASDAQ-Goals.md'
+        - 'Connect to the NASDAQ API': 'PLS/NASDAQ-API/1-ConnectAPI.md'
+    - 'BlueBikes':
+        - 'BlueBikes Project goals': 'PLS/BlueBikes/0-BlueBikes-Goals.md'
+        - 'Lab 1: DataFlow - Reading Data from the Web': 'Tutorial/ReadingBlueBikes.md'
+        - 'Lab 2: DataPortal - Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
+        - 'Lab 3: QueryView - Querying, Filtering, and Generating an Interactive Map': 'Tutorial/QueryViewDataPortal.md'
+
+
+- Videos: 
+    - 'Video Tutorials': 'Videos/Composable-Videos.md'
 
 markdown_extensions:
   - admonition
