@@ -70,7 +70,7 @@ In order to winnow down the vast array of modules to choose from, in the Search 
 
 Looking at the filtered results under WebClient Data Sources (under Data Sources), we see a variety of choices.
 
-If you want to follow an example of comparing modules to determine which best suits current needs, please check out the **[Composable Blog](https://blog.composable.ai/)** post **[Spotlight: Comparing Modules](https://blog.composable.ai/2022/09/06/spotlight-comparing-modules/)**.
+If you want to follow an example of comparing modules to determine which best suits current needs, please check out the **[Composable Blog](https://blog.composable.ai/)** post **[Spotlight: Comparing Modules](https://blog.composable.ai/2022/09/13/spotlight-comparing-modules/)**.
 
 If you want to cut to the chase now and maybe circle back to that Spotlight later, you can just drag a WebClient Robust module onto your DataFlow.
 
@@ -265,7 +265,7 @@ Bam!
 
 ## Wrapping up ##
 
-At this point, I am going to head over to the **[Composable Blog](https://blog.composable.ai/)** to the **Did You Know (DYK)** posts for **[Changing Wire Type](https://blog.composable.ai/2022/09/06/did-you-know--changing-wire-type/)** and **[Adding Comments](https://blog.composable.ai/2022/09/06/did-you-know--adding-comments/)**, which will each let me add a little more to the visual of this DataFlow.
+At this point, I am going to head over to the **[Composable Blog](https://blog.composable.ai/)** to the **Did You Know (DYK)** posts for **[Changing Wire Type](https://blog.composable.ai/2022/09/13/did-you-know--changing-wire-type/)** and **[Adding Comments](https://blog.composable.ai/2022/09/13/did-you-know--adding-comments/)**, which will each let me add a little more to the visual of this DataFlow.
 I will incorporate those into the version of the DataFlow used when we pick up in the next lab, but they are not required.
 
 Whether you want to follow those DYKs now, later, or ever is up to you.
