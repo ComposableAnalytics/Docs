@@ -5,6 +5,15 @@ site_author: Composable Analytics, Inc.
 
 repo_url: https://github.com/ComposableAnalytics/Docs
 
+theme:
+    name: material
+    custom_dir: 'themeExtension'
+    palette:
+      primary: blue grey
+    logo: img/Composable_Logo.svg
+    features:
+      - toc.integrate
+
 nav:
 - Home: 'index.md'
 - About: 'about/about.md'
