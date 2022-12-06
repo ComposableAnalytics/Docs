@@ -226,5 +226,9 @@ nav:
 - Videos: 
     - 'Video Tutorials': 'Videos/Composable-Videos.md'
 
+plugins:
+    - search
+    - pdf-export
+
 markdown_extensions:
   - admonition
