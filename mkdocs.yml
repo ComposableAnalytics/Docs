@@ -5,16 +5,6 @@ site_author: Composable Analytics, Inc.
 
 repo_url: https://github.com/ComposableAnalytics/Docs
 
-theme:
-    name: material
-    custom_dir: 'themeExtension'
-    palette:
-      primary: blue grey
-    logo: img/Composable_Logo.svg
-    features:
-      - toc.integrate
-
-
 nav:
 - Home: 'index.md'
 - About: 'about/about.md'
@@ -196,7 +186,7 @@ nav:
     - '12.2 User Profile': 'Users-and-Groups/02.User-Profile.md'
 - 13. FluentAPI:
     - '13.1 FluentAPI User Guide': 'FluentAPI/01.FluentAPI-User-Guide.md'
-    - '1.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
+    - '13.2 FluentAPI Reference': 'FluentAPI/02.FluentAPI-Reference.md'
 - 14. Code Promotion:
     - '14.1 Overview': 'Code-Promotion/01.Overview.md'
     - '14.2 Setup': 'Code-Promotion/02.Setup.md'
@@ -224,8 +214,6 @@ nav:
         - 'Lab 1: DataFlow - Reading Data from the Web': 'Tutorial/ReadingBlueBikes.md'
         - 'Lab 2: DataPortal - Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
         - 'Lab 3: QueryView - Querying, Filtering, and Generating an Interactive Map': 'Tutorial/QueryViewDataPortal.md'
-
-
 - Videos: 
     - 'Video Tutorials': 'Videos/Composable-Videos.md'
 
