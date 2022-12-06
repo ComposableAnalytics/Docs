@@ -14,6 +14,10 @@ theme:
     features:
       - toc.integrate
 
+plugins:
+    - search
+    - pdf-export
+
 nav:
 - Home: 'index.md'
 - About: 'about/about.md'
@@ -225,10 +229,6 @@ nav:
         - 'Lab 3: QueryView - Querying, Filtering, and Generating an Interactive Map': 'Tutorial/QueryViewDataPortal.md'
 - Videos: 
     - 'Video Tutorials': 'Videos/Composable-Videos.md'
-
-plugins:
-    - search
-    - pdf-export
 
 markdown_extensions:
   - admonition
