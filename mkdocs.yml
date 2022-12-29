@@ -227,9 +227,9 @@ nav:
     - 'Video Tutorials': 'Videos/Composable-Videos.md'
 - References: 
     - 'SQL Tutorial':
-        - 'SQL Overview': 'SQL/01.Overview.md'
-        - 'SQL Tutorial': 'SQL/02.Tutorial.md'
-        - 'SQL Advanced Concepts': 'SQL/03.AdvancedConcepts.md'
+        - 'SQL Overview': 'SQL/01.SQL.Overview.md'
+        - 'SQL Tutorial': 'SQL/02.SQL.Tutorial.md'
+        - 'SQL Advanced Concepts': 'SQL/03.SQL.AdvancedConcepts.md'
 
 markdown_extensions:
   - admonition
