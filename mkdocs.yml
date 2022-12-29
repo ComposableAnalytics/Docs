@@ -225,6 +225,11 @@ nav:
         - 'Lab 3: QueryView - Querying, Filtering, and Generating an Interactive Map': 'Tutorial/QueryViewDataPortal.md'
 - Videos: 
     - 'Video Tutorials': 'Videos/Composable-Videos.md'
+- References: 
+    - 'SQL Tutorial':
+        - 'SQL Overview': 'SQL/01.Overview.md'
+        - 'SQL Tutorial': 'SQL/02.Tutorial.md'
+        - 'SQL Advanced Concepts': 'SQL/03.AdvancedConcepts.md'
 
 markdown_extensions:
   - admonition
