@@ -18,6 +18,7 @@ i.e.
 {"Columns":[{"DisplayName":"Id","FormName":"Form.User.Id"},{"DisplayName":"Last","FormName":"Form.User.LastName"}, {"DisplayName":"First","FormName":"Form.User.FirstName"}]}
 
 Fields on column objects can be:
+
 - FormName - Fully qualified name of the column to view
 - DisplayName - Friendly name for the column
 - SortState - ASC or DESC
