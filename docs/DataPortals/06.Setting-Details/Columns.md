@@ -18,11 +18,11 @@ i.e.
 {"Columns":[{"DisplayName":"Id","FormName":"Form.User.Id"},{"DisplayName":"Last","FormName":"Form.User.LastName"}, {"DisplayName":"First","FormName":"Form.User.FirstName"}]}
 
 Fields on column objects can be:
-* FormName - Fully qualified name of the column to view
-* DisplayName - Friendly name for the column
-* SortState - ASC or DESC
-* SortOrder - Integer (i.e. 1 - 10).  Determines the sort order of the columns.
-* Display - true or false. If the value is false, the column is not shown, but can still be used for default sorting.
+- FormName - Fully qualified name of the column to view
+- DisplayName - Friendly name for the column
+- SortState - ASC or DESC
+- SortOrder - Integer (i.e. 1 - 10).  Determines the sort order of the columns.
+- Display - true or false. If the value is false, the column is not shown, but can still be used for default sorting.
 
 ## Controls
 
