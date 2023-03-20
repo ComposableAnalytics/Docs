@@ -15,7 +15,7 @@ Using JSON notation, have the option to rename the column names from their defau
 
 There is also a more powerful JSON notation that allows you to specify alternative column display names, and default order by columns.
 i.e.
-{"Columns":[{"DisplayName":"Id","FormName":"Form.User.Id"},{"DisplayName":"Last","FormName":"Form.User.LastName"}, {"DisplayName":"First","FormName":"Form.User.FirstName"}]}
+`{"Columns":[{"DisplayName":"Id","FormName":"Form.User.Id"},{"DisplayName":"Last","FormName":"Form.User.LastName"}, {"DisplayName":"First","FormName":"Form.User.FirstName"}]}`
 
 Fields on column objects can be:
 
