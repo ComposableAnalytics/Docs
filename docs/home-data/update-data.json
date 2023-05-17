@@ -1,5 +1,26 @@
 {
-  "updates": [
+  "updates": [ 
+    {
+      "content": "Option to refresh QueryView after action completes",
+      "date": "5/16/2023",
+      "type": "minor",
+      "productAreas": [ "QueryView" ],
+      "changesetNum": "20903"
+    },    
+    {
+      "content": "Option to hide action runs in QueryView",
+      "date": "5/15/2023",
+      "type": "minor",
+      "productAreas": [ "QueryView" ],
+      "changesetNum": "20901"
+    },  
+    {
+      "content": "Option to prevent dataloss on excel datamodel uploads",
+      "date": "2/15/2023",
+      "type": "minor",
+      "productAreas": [ "DataPortal" ],
+      "changesetNum": "20703"
+    },    
     {
       "content": "Search across files and folders in WebApps",
       "date": "1/30/2023",
