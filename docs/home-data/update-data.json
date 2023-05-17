@@ -7,7 +7,7 @@
             "changesetNum": "19984"
         },
         {
-            "content": "Runs can now be canceled from the runs table",
+            "content": "Runs can now be canceled from the Runs table",
             "date": "5/12/2022",
             "type": "bugfix",
             "changesetNum": "19965"
@@ -25,19 +25,19 @@
             "changesetNum": "19883"
         },
         {
-            "content": "Datalab ribbons in search now showing online status",
+            "content": "DataLab ribbons in search now showing online status",
             "date": "2/10/2022",
             "type": "bugfix",
             "changesetNum": "19739"
         },
         {
-            "content": "Datalabs now useable with windows auth",
+            "content": "DataLabs now useable with Windows Auth",
             "date": "11/16/2021",
             "type": "bugfix",
             "changesetNum": "19592"
         },
         {
-            "content": "Fixed broken links in results view",
+            "content": "Fixed broken links in Results view",
             "date": "11/2/2021",
             "type": "bugfix",
             "changesetNum": "19584"
@@ -68,7 +68,7 @@
             "changesetNum": "19924"
         },
         {
-            "content": "New streaming DeepQuery runner module",
+            "content": "New streaming DeepQuery Runner Module",
             "date": "4/25/2022",
             "type": "major",
             "productAreas": ["DataFlow", "DeepQuery"],
@@ -101,13 +101,13 @@
             "changesetNum": "19871"
         },
         {
-            "content": "Delete multiple/all runs for Dataflow",
+            "content": "Delete multiple/all Runs for Dataflow",
             "date": "3/29/2022",
             "type": "minor",
             "changesetNum": "19830"
         },
         {
-            "content": "Users can now be put in folders",
+            "content": "Users can now be put in Folders",
             "date": "3/29/2022",
             "type": "minor",
             "changesetNum": "19849"
