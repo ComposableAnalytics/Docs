@@ -1,143 +1,184 @@
 {
-    "updates": [
-        {
-            "content": "WebApps with thumbnails can now be deleted",
-            "date": "5/16/2022",
-            "type": "bugfix",
-            "changesetNum": "19984"
-        },
-        {
-            "content": "Runs can now be canceled from the Runs table",
-            "date": "5/12/2022",
-            "type": "bugfix",
-            "changesetNum": "19965"
-        },
-        {
-            "content": "Fixed error using angle brackets in comments",
-            "date": "4/25/2022",
-            "type": "bugfix",
-            "changesetNum": "19930"
-        },
-        {
-            "content": "Improved performance of Razor Template Module",
-            "date": "4/12/2022",
-            "type": "bugfix",
-            "changesetNum": "19883"
-        },
-        {
-            "content": "DataLab ribbons in search now showing online status",
-            "date": "2/10/2022",
-            "type": "bugfix",
-            "changesetNum": "19739"
-        },
-        {
-            "content": "DataLabs now useable with Windows Auth",
-            "date": "11/16/2021",
-            "type": "bugfix",
-            "changesetNum": "19592"
-        },
-        {
-            "content": "Fixed broken links in Results view",
-            "date": "11/2/2021",
-            "type": "bugfix",
-            "changesetNum": "19584"
-        },
-        {
-            "content": "Save was broken in Dashboard",
-            "date": "11/2/2021",
-            "type": "bugfix",
-            "changesetNum": "19584"
-        },
-        {
-            "content": "Added option to disable nav bars in WebApps",
-            "date": "5/3/2022",
-            "type": "minor",
-            "changesetNum": "19944"
-        },
-        {
-            "content": "New SQL Read-Write Module",
-            "date": "5/5/2022",
-            "type": "major",
-            "productAreas": ["DataFlow"],
-            "changesetNum": "19951"
-        },
-        {
-            "content": "User can export trace and progress logs to a csv file from the designer",
-            "date": "4/25/2022",
-            "type": "minor",
-            "changesetNum": "19924"
-        },
-        {
-            "content": "New streaming DeepQuery Runner Module",
-            "date": "4/25/2022",
-            "type": "major",
-            "productAreas": ["DataFlow", "DeepQuery"],
-            "changesetNum": "19928"
-        },
-        {
-            "content": "Add refresh button to DeepQuery",
-            "date": "4/20/2022",
-            "type": "minor",
-            "changesetNum": "19928"
-        },
-        {
-            "content": "New DocToDocX DataFlow module",
-            "date": "4/14/2022",
-            "type": "major",
-            "productAreas": ["DataFlow"],
-            "changesetNum": "19894"
-        },
-        {
-            "content": "New File Appender DataFlow module",
-            "date": "4/13/2022",
-            "type": "major",
-            "productAreas": ["DataFlow"],
-            "changesetNum": "19891"
-        },
-        {
-            "content": "DataFlow connections have color highlighting when selected",
-            "date": "4/1/2022",
-            "type": "minor",
-            "changesetNum": "19871"
-        },
-        {
-            "content": "Delete multiple/all Runs for Dataflow",
-            "date": "3/29/2022",
-            "type": "minor",
-            "changesetNum": "19830"
-        },
-        {
-            "content": "Users can now be put in Folders",
-            "date": "3/29/2022",
-            "type": "minor",
-            "changesetNum": "19849"
-        },
-        {
-            "content": "WebApp template for AdminLTE",
-            "date": "3/16/2022",
-            "type": "minor",
-            "changesetNum": "19811"
-        },
-        {
-            "content": "Allow new query without a root collection",
-            "date": "3/4/2022",
-            "type": "minor",
-            "changesetNum": "19778"
-        },
-        {
-            "content": "Complete Board renovation",
-            "date": "3/29/2022", 
-            "type": "major",
-            "productAreas": ["Board"],
-            "changesetNum": "19844"
-        },
-         {
-            "content": "Build tools are now available in WebApp editor",
-            "date": "7/6/2022", 
-            "type": "major",
-            "productAreas": ["WebApp"],
-            "changesetNum": "20104"
-        }
-
-    ]
+  "updates": [
+    {
+      "content": "Search across files and folders in WebApps",
+      "date": "1/30/2023",
+      "type": "major",
+      "productAreas": [ "WebApp" ],
+      "changesetNum": "20662"
+    },
+    {
+      "content": "Redesigned Key Vault",
+      "date": "11/4/2022",
+      "type": "major",
+      "productAreas": [ "Key" ],
+      "changesetNum": "20392"
+    },
+    {
+      "content": "Kafka modules",
+      "date": "9/9/2022",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "20211"
+    },
+    {
+      "content": "DataLabs Composapy %sql magic syntax for queryviews",
+      "date": "9/6/2022",
+      "type": "minor",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "20197"
+    },
+    {
+      "content": "Entity Hub available with starter templates",
+      "date": "8/2/2022",
+      "type": "major",
+      "productAreas": [ "EntityHub" ],
+      "changesetNum": "20149"
+    },
+    {
+      "content": "Outlook 365 email modules",
+      "date": "6/28/2022",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "20090"
+    },
+    {
+      "content": "Postgres-based dataportals",
+      "date": "6/3/2022",
+      "type": "major",
+      "productAreas": [ "DataPortal" ],
+      "changesetNum": "20039"
+    },
+    {
+      "content": "WebApps with thumbnails can now be deleted",
+      "date": "5/16/2022",
+      "type": "bugfix",
+      "changesetNum": "19984"
+    },
+    {
+      "content": "Runs can now be canceled from the Runs table",
+      "date": "5/12/2022",
+      "type": "bugfix",
+      "changesetNum": "19965"
+    },
+    {
+      "content": "Added option to disable nav bars in WebApps",
+      "date": "5/3/2022",
+      "type": "minor",
+      "changesetNum": "19944"
+    },
+    {
+      "content": "New SQL Read-Write Module",
+      "date": "5/5/2022",
+      "type": "major",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "19951"
+    },
+    {
+      "content": "User can export trace and progress logs to a csv file from the designer",
+      "date": "4/25/2022",
+      "type": "minor",
+      "changesetNum": "19924"
+    },
+    {
+      "content": "New streaming DeepQuery Runner Module",
+      "date": "4/25/2022",
+      "type": "major",
+      "productAreas": [ "DataFlow", "DeepQuery" ],
+      "changesetNum": "19928"
+    },
+    {
+      "content": "Fixed error using angle brackets in comments",
+      "date": "4/25/2022",
+      "type": "bugfix",
+      "changesetNum": "19930"
+    },
+    {
+      "content": "Add refresh button to DeepQuery",
+      "date": "4/20/2022",
+      "type": "minor",
+      "changesetNum": "19928"
+    },
+    {
+      "content": "New DocToDocX DataFlow module",
+      "date": "4/14/2022",
+      "type": "major",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "19894"
+    },
+    {
+      "content": "New File Appender DataFlow module",
+      "date": "4/13/2022",
+      "type": "major",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "19891"
+    },
+    {
+      "content": "Improved performance of Razor Template Module",
+      "date": "4/12/2022",
+      "type": "bugfix",
+      "changesetNum": "19883"
+    },
+    {
+      "content": "DataFlow connections have color highlighting when selected",
+      "date": "4/1/2022",
+      "type": "minor",
+      "changesetNum": "19871"
+    },
+    {
+      "content": "Delete multiple/all Runs for Dataflow",
+      "date": "3/29/2022",
+      "type": "minor",
+      "changesetNum": "19830"
+    },
+    {
+      "content": "Users can now be put in Folders",
+      "date": "3/29/2022",
+      "type": "minor",
+      "changesetNum": "19849"
+    },
+    {
+      "content": "WebApp template for AdminLTE",
+      "date": "3/16/2022",
+      "type": "minor",
+      "changesetNum": "19811"
+    },
+    {
+      "content": "Allow new query without a root collection",
+      "date": "3/4/2022",
+      "type": "minor",
+      "changesetNum": "19778"
+    },
+    {
+      "content": "Complete Board renovation",
+      "date": "3/29/2022",
+      "type": "major",
+      "productAreas": [ "Board" ],
+      "changesetNum": "19844"
+    },
+    {
+      "content": "DataLab ribbons in search now showing online status",
+      "date": "2/10/2022",
+      "type": "bugfix",
+      "changesetNum": "19739"
+    },
+    {
+      "content": "DataLabs now useable with Windows Auth",
+      "date": "11/16/2021",
+      "type": "bugfix",
+      "changesetNum": "19592"
+    },
+    {
+      "content": "Fixed broken links in Results view",
+      "date": "11/2/2021",
+      "type": "bugfix",
+      "changesetNum": "19584"
+    },
+    {
+      "content": "Save was broken in Dashboard",
+      "date": "11/2/2021",
+      "type": "bugfix",
+      "changesetNum": "19584"
+    }
+  ]
 }
