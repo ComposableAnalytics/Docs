@@ -15,7 +15,7 @@
       "changesetNum": "20901"
     },  
     {
-      "content": "Option to prevent dataloss on excel datamodel uploads",
+      "content": "Option to prevent dataloss on Excel datamodel uploads",
       "date": "2/15/2023",
       "type": "minor",
       "productAreas": [ "DataPortal" ],
@@ -36,7 +36,7 @@
       "changesetNum": "20392"
     },
     {
-      "content": "Kafka modules",
+      "content": "Kafka Consumer and Producer Modules",
       "date": "9/9/2022",
       "type": "minor",
       "productAreas": [ "DataFlow" ],
@@ -50,7 +50,7 @@
       "changesetNum": "20197"
     },
     {
-      "content": "Entity Hub available with starter templates",
+      "content": "EntityHub available with starter templates",
       "date": "8/2/2022",
       "type": "major",
       "productAreas": [ "EntityHub" ],
@@ -64,7 +64,7 @@
       "changesetNum": "20090"
     },
     {
-      "content": "Postgres-based dataportals",
+      "content": "PostgreSQL-based DataPortals",
       "date": "6/3/2022",
       "type": "major",
       "productAreas": [ "DataPortal" ],
@@ -121,14 +121,14 @@
       "changesetNum": "19928"
     },
     {
-      "content": "New DocToDocX DataFlow module",
+      "content": "New DocToDocX DataFlow Module",
       "date": "4/14/2022",
       "type": "major",
       "productAreas": [ "DataFlow" ],
       "changesetNum": "19894"
     },
     {
-      "content": "New File Appender DataFlow module",
+      "content": "New File Appender DataFlow Module",
       "date": "4/13/2022",
       "type": "major",
       "productAreas": [ "DataFlow" ],
