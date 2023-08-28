@@ -88,6 +88,7 @@ nav:
         - 'Table': 'DataPortals/05.Control-Details/Table.md'
         - 'Text': 'DataPortals/05.Control-Details/Text.md'
         - 'Textarea': 'DataPortals/05.Control-Details/Textarea.md'
+        - 'User': 'DataPortals/05.Control-Details/User.md'
         - 'Voice': 'DataPortals/05.Control-Details/Voice.md'
         - 'YesNo': 'DataPortals/05.Control-Details/YesNo.md'
         - 'ZIP': 'DataPortals/05.Control-Details/ZIP.md'
