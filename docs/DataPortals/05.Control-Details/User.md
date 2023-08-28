@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The Date control type allows you to select a user from a list of available users.
+The User control type allows you to select a user from a list of available users.
 
 Menu Closed                      | Menu Open
 :-------------------------------:|:------------------------:
