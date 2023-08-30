@@ -1,6 +1,139 @@
 {
   "updates": [ 
     {
+      "content": "Filters on User Management page",
+      "date": "8/30/2023",
+      "type": "minor",
+      "productAreas": [ "Admin" ],
+      "changesetNum": "21206"
+    },   
+    {
+      "content": "QueryView error linting while editing",
+      "date": "8/29/2023",
+      "type": "minor",
+      "productAreas": [ "QueryView" ],
+      "changesetNum": "21202"
+    },    
+    {
+      "content": "Animated outputs now track moved connections",
+      "date": "8/28/2023",
+      "type": "minor",
+      "productAreas": [ "Dataflow" ],
+      "changesetNum": "21199"
+    },    
+    {
+      "content": "Nested QV loading issue for fast queries fixed",
+      "date": "8/28/2023",
+      "type": "minor",
+      "productAreas": [ "Dataflow" ],
+      "changesetNum": "21198"
+    },     
+    {
+      "content": "User control type in Data Portals",
+      "date": "8/25/2023",
+      "type": "minor",
+      "productAreas": [ "DataPortal" ],
+      "changesetNum": "21194"
+    }, 
+    {
+      "content": "Dark Mode added to user theme options",
+      "date": "8/23/2023",
+      "type": "minor",
+      "productAreas": [ "User" ],
+      "changesetNum": "21185"
+    },  
+    {
+      "content": "Additional dirty check on dataflow options",
+      "date": "8/15/2023",
+      "type": "minor",
+      "productAreas": [ "User" ],
+      "changesetNum": "21158"
+    },   
+    {
+      "content": "Performance improvements on web app landing page",
+      "date": "8/15/2023",
+      "type": "minor",
+      "productAreas": [ "WebApp" ],
+      "changesetNum": "21157"
+    },   
+    {
+      "content": "Cyclic references handled in deployment API",
+      "date": "8/15/2023",
+      "type": "minor",
+      "productAreas": [ "Deployment" ],
+      "changesetNum": "21154"
+    }, 
+    {
+      "content": "Streamlined QueryView execution endpoints",
+      "date": "8/9/2023",
+      "type": "minor",
+      "productAreas": [ "QueryView" ],
+      "changesetNum": "21137"
+    },  
+    {
+      "content": "Whitespace options added to WebApp editor",
+      "date": "8/3/2023",
+      "type": "minor",
+      "productAreas": [ "WebpApp" ],
+      "changesetNum": "21110"
+    },   
+    {
+      "content": "Type preservation when resuming dataflows",
+      "date": "7/10/2023",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21110"
+    },  
+    {
+      "content": "Timeout, variable, and silence options on DataLab SQL magic commands",
+      "date": "7/10/2023",
+      "type": "minor",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "21031"
+    },  
+    {
+      "content": "Deployment API for syncing DataPortals",
+      "date": "6/7/2023",
+      "type": "minor",
+      "productAreas": [ "Deployment" ],
+      "changesetNum": "20955"
+    },   
+    {
+      "content": "JSON Path Collection query uses standard way of selecting multiple tokens",
+      "date": "6/5/2023",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "20950"
+    },   
+    {
+      "content": "Base64 encoding module",
+      "date": "5/26/2023",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "20934"
+    },
+    {
+      "content": "S3 Bucket List module",
+      "date": "5/23/2023",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "20919"
+    },     
+    {
+      "content": "Pass Dataframe from DataLab to DataFlow",
+      "date": "5/25/2023",
+      "type": "minor",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "20930"
+    }, 
+    {
+      "content": "Inverse Dependency Waiter",
+      "date": "5/24/2023",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "20926"
+    },    
+    {
       "content": "Option to refresh QueryView after action completes",
       "date": "5/16/2023",
       "type": "minor",
