@@ -1,6 +1,13 @@
 {
   "updates": [ 
     {
+      "content": "Added query linting to sql module editors",
+      "date": "9/1/2023",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21211"
+    },   
+    {
       "content": "Filters on User Management page",
       "date": "8/30/2023",
       "type": "minor",
@@ -17,7 +24,7 @@
     {
       "content": "Animated outputs now track moved connections",
       "date": "8/28/2023",
-      "type": "minor",
+      "type": "bug",
       "productAreas": [ "Dataflow" ],
       "changesetNum": "21199"
     },    
@@ -80,7 +87,7 @@
     {
       "content": "Type preservation when resuming dataflows",
       "date": "7/10/2023",
-      "type": "minor",
+      "type": "bug",
       "productAreas": [ "DataFlow" ],
       "changesetNum": "21110"
     },  
