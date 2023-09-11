@@ -1,6 +1,13 @@
 {
   "updates": [ 
     {
+      "content": "Added Python 3.11 support to DataLabs",
+      "date": "9/11/2023",
+      "type": "major",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "21211"
+    },
+    {
       "content": "Added query linting to sql module editors",
       "date": "9/1/2023",
       "type": "minor",
@@ -12,12 +19,12 @@
       "date": "8/30/2023",
       "type": "minor",
       "productAreas": [ "Admin" ],
-      "changesetNum": "21206"
+      "changesetNum": "21229"
     },   
     {
       "content": "QueryView error linting while editing",
       "date": "8/29/2023",
-      "type": "minor",
+      "type": "major",
       "productAreas": [ "QueryView" ],
       "changesetNum": "21202"
     },    
