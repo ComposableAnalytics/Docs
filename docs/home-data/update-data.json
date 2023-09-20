@@ -1,6 +1,13 @@
 {
   "updates": [ 
     {
+      "content": "Added support for DateTime columns in Composapy QueryView results",
+      "date": "9/20/2023",
+      "type": "minor",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "21243"
+    },
+    {
       "content": "Added Python 3.11 support to DataLabs",
       "date": "9/11/2023",
       "type": "major",
