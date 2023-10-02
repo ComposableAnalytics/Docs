@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Include history message with deployment dataflow saves",
+      "date": "10/2/2023",
+      "type": "minor",
+      "productAreas": [ "Deployment" ],
+      "changesetNum": "21277"
+    }, 
+    {
       "content": "View history of changes to Keys",
       "date": "9/27/2023",
       "type": "major",
