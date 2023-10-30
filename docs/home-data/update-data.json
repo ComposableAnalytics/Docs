@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Support for SAML-based Single Sign-On",
+      "date": "10/25/2023",
+      "type": "major",
+      "productAreas": [ "User" ],
+      "changesetNum": "21307"
+    }, 
+    {
       "content": "Include history message with deployment dataflow saves",
       "date": "10/2/2023",
       "type": "minor",
