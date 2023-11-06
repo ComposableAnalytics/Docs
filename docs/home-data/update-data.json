@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Enhanced Composapy QueryView driver error output",
+      "date": "11/6/2023",
+      "type": "minor",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "21326"
+    }, 
+    {
       "content": "Support for SAML-based Single Sign-On",
       "date": "10/25/2023",
       "type": "major",
