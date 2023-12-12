@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "DataLabNotebookRunner Script Support",
+      "date": "12/8/2023",
+      "type": "major",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "21370"
+    },
+    {
       "content": "Enhanced Composapy QueryView driver error output",
       "date": "11/6/2023",
       "type": "minor",
