@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Write to trace log module",
+      "date": "1/2/2023",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21410"
+    },
+    {
       "content": "DataLabNotebookRunner Script Support",
       "date": "12/8/2023",
       "type": "major",
