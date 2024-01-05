@@ -43,9 +43,11 @@ The keyword **`return_values`** is used by Composable to send your results back 
 ## Example Script
 
 ![!DataLabs Notebook Runner Script DataFlow Example](img/DLNBScriptFlow.png)
+
 The process does not change in the DataFlow setup as shown above. The script will need to be modified according to the instructions below:
 
 ![!DataLabs Notebook Runner Script Code Example](img/DLNBScriptCode.png)
+
 NOTE: You will need to remove the Parameters cell as it is not necessary for the Python script to run. Simply pass in your parameters as normal in the DataFlow. You will also need to handle imports within function definitions to make them global as appropriate.
 
 ### DataFlow
