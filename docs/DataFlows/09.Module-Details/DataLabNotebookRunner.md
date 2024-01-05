@@ -39,7 +39,9 @@ The keyword **`return_values`** is used by Composable to send your results back 
     - `None`
     - `CompAnalytics.Contracts.FileReference` (although FileReference may be passed to and from a notebook, any file references created in the notebook context will be unaccessible by the DataFlow)
 ----
+
 ##Example Script
+
 ![!DataLabs Notebook Runner Script DataFlow Example](img/DLNBScriptFlow.png)
 The process does not change in the DataFlow setup as shown above. The script will need to be modified according to the instructions below:
 
