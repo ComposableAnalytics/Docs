@@ -3,7 +3,7 @@ title: Composable Docs
 summary: Technical Documentation for the Composable DataOps Platform
 authors:
     - Composable Analytics, Inc.
-date: 2022-04-07
+date: 2024-01-05
 some_url: https://docs.composable.ai
 ---
 
@@ -13,8 +13,9 @@ some_url: https://docs.composable.ai
 
 The **DataLab Notebook Runner** module is for remotely running your DataLab notebook files in a [Composable DataLab](../../DataLabs/Overview.md) using [Composapy](https://github.com/ComposableAnalytics/ComposaPy) and [Papermill](https://github.com/nteract/papermill). It takes a DataLab ID, a name of the notebook to run, a list of string-object pairs as parameters, and returns a list of string-object pairs.
 
+The **DataLab NotebookRunner** module now also supports running python **.py** scripts.
 
-## Example
+## Example Notebook
 
 ### Setup
 ----
@@ -37,7 +38,13 @@ The keyword **`return_values`** is used by Composable to send your results back 
     - `str`
     - `None`
     - `CompAnalytics.Contracts.FileReference` (although FileReference may be passed to and from a notebook, any file references created in the notebook context will be unaccessible by the DataFlow)
+----
+##Example Script
+![!DataLabs Notebook Runner Script DataFlow Example](img/DLNBScriptFlow.png)
+The process does not change in the DataFlow setup as shown above. The script will need to be modified according to the instructions below:
 
+![!DataLabs Notebook Runner Script Code Example](img/DLNBScriptCode.png)
+NOTE: You will need to remove the Parameters cell as it is not necessary for the Python script to run. Simply pass in your parameters as normal in the DataFlow. You will also need to handle imports within function definitions to make them global as appropriate.
 
 ### DataFlow
 ----
