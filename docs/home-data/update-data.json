@@ -1,8 +1,15 @@
 {
   "updates": [
     {
+      "content": "Unit Testing Framework for DataFlows",
+      "date": "1/16/2024",
+      "type": "major",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21441"
+    },
+    {
       "content": "Write to trace log module",
-      "date": "1/2/2023",
+      "date": "1/2/2024",
       "type": "minor",
       "productAreas": [ "DataFlow" ],
       "changesetNum": "21410"
