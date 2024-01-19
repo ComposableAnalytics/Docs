@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Add Ability to Add Folder and Tags to DataFlows in the Designer",
+      "date": "1/19/2024",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21452"
+    },
+    {
       "content": "Unit Testing Framework for DataFlows",
       "date": "1/16/2024",
       "type": "major",
