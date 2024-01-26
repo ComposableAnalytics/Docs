@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Added List Key Type",
+      "date": "1/26/2024",
+      "type": "minor",
+      "productAreas": [ "Keys" ],
+      "changesetNum": "21473"
+    },
+    {
       "content": "Add Ability to Add Folder and Tags to DataFlows in the Designer",
       "date": "1/19/2024",
       "type": "minor",
