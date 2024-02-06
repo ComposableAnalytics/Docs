@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Improved DataFlow permissions error messages",
+      "date": "2/6/2024",
+      "type": "bugfix",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21483"
+    },
+    {
       "content": "Added List Key Type",
       "date": "1/26/2024",
       "type": "minor",
