@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Added a right click option to create a surrogate template for a module.",
+      "date": "2/8/2024",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21495"
+    },
+    {
       "content": "Improved DataFlow permissions error messages",
       "date": "2/6/2024",
       "type": "bugfix",
