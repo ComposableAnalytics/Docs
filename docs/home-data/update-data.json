@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Option to show soft deleted entries",
+      "date": "2/20/2024",
+      "type": "minor",
+      "productAreas": [ "DataPortal" ],
+      "changesetNum": "21521"
+    },
+    {
       "content": "Added a right click option to create a surrogate template for a module.",
       "date": "2/8/2024",
       "type": "minor",
