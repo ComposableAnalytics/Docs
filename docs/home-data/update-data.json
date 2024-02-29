@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Fixed build menu being hidded in WebApp editor",
+      "date": "2/29/2024",
+      "type": "bugfix",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21535"
+    },
+    {
       "content": "Option to show soft deleted entries",
       "date": "2/20/2024",
       "type": "minor",
