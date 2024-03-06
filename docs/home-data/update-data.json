@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Added Selenium Modules to the Testing Framework",
+      "date": "3/6/2024",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21544"
+    },
+    {
       "content": "Fixed build menu being hidded in WebApp editor",
       "date": "2/29/2024",
       "type": "bugfix",
