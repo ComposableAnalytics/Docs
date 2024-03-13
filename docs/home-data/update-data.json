@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Support empty DataFrames in the Pandas to Composable table conversion",
+      "date": "3/13/2024",
+      "type": "minor",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "21557"
+    },
+    {
       "content": "Automated DataLab Log and Execution File Cleaner",
       "date": "3/12/2024",
       "type": "major",
