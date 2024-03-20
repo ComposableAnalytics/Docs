@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Added control type for Composable Resources to DataPortals",
+      "date": "3/20/2024",
+      "type": "major",
+      "productAreas": [ "DataPortals" ],
+      "changesetNum": "21573"
+    },
+    {
       "content": "Support empty DataFrames in the Pandas to Composable table conversion",
       "date": "3/13/2024",
       "type": "minor",
