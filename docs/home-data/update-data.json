@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Enable deletion of non-empty directories in DataLabs",
+      "date": "3/22/2024",
+      "type": "minor",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "21578"
+    },
+    {
       "content": "Added control type for Composable Resources to DataPortals",
       "date": "3/20/2024",
       "type": "major",
