@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Added QueryView inputs that give information about current QueryView",
+      "date": "4/2/2024",
+      "type": "minor",
+      "productAreas": [ "QueryViews" ],
+      "changesetNum": "21600"
+    },
+    {
       "content": "Enable deletion of non-empty directories in DataLabs",
       "date": "3/22/2024",
       "type": "minor",
