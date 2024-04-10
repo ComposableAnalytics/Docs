@@ -58,7 +58,9 @@ The built-in Parameters are case-sensitive.
 | {{ limit }}          | Number of rows to display on page. Value can be set in View mode paging features |
 | {{ user.UserName }}  | Username of the composable account                           |
 | {{ user.FirstName }} | First name of the Composable Account                         |
-| {{ user.LastName }}  | Last Name of the Composable Account                          |
+| {{ user.LastName }}  | Last name of the Composable Account                          |
 | {{ user.Id }}        | Id of the Composable account                                 |
 | {{ tzOffset }}       | Database Timezone offset (eg '-05:00')                       |
+| {{ queryview.Id }}   | The id of the QueryView being executed                       |
+| {{ queryview.Name }} | The name of the QueryView being executed                     |
 
