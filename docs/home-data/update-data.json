@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Added Incoming HTTP Header support to Web Receive module",
+      "date": "4/10/2024",
+      "type": "minor",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21612"
+    },
+    {
       "content": "Added QueryView inputs that give information about current QueryView",
       "date": "4/2/2024",
       "type": "minor",
