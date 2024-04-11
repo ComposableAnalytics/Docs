@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Support for interactive table output in DataLab cells",
+      "date": "4/11/2024",
+      "type": "major",
+      "productAreas": [ "DataLab" ],
+      "changesetNum": "21617"
+    },
+    {
       "content": "Added Incoming HTTP Header support to Web Receive module",
       "date": "4/10/2024",
       "type": "minor",
