@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Changed delete button on QueryViews to red",
+      "date": "4/18/2024",
+      "type": "minor",
+      "productAreas": [ "QueryViews" ],
+      "changesetNum": "21627"
+    },
+    {
       "content": "Support for interactive table output in DataLab cells",
       "date": "4/11/2024",
       "type": "major",
