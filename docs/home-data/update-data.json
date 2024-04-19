@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Fixed code generation button so it doesn't disappear when window narrows",
+      "date": "4/19/2024",
+      "type": "bugFix",
+      "productAreas": [ "DataFlow" ],
+      "changesetNum": "21631"
+    },
+    {
       "content": "Changed delete button on QueryViews to red",
       "date": "4/18/2024",
       "type": "minor",
