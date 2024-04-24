@@ -1,6 +1,12 @@
 {
   "updates": [
     {
+      "content": "Fixed password popover on registration so that it points to the password field instead of the email field on certain browsers",
+      "date": "4/14/2024",
+      "type": "bugFix",
+      "changesetNum": "21640"
+    },
+    {
       "content": "Fixed code generation button so it doesn't disappear when window narrows",
       "date": "4/19/2024",
       "type": "bugFix",
