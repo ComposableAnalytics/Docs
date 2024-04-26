@@ -8,7 +8,7 @@
     },
     {
       "content": "Fixed password popover on registration so that it points to the password field instead of the email field on certain browsers",
-      "date": "4/14/2024",
+      "date": "4/24/2024",
       "type": "bugFix",
       "changesetNum": "21640"
     },
