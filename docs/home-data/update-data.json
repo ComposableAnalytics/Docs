@@ -1,6 +1,12 @@
 {
   "updates": [
     {
+      "content": "Fixed password popover fix so that it also works on the password reset page too",
+      "date": "4/26/2024",
+      "type": "bugFix",
+      "changesetNum": "21644"
+    },
+    {
       "content": "Fixed password popover on registration so that it points to the password field instead of the email field on certain browsers",
       "date": "4/14/2024",
       "type": "bugFix",
