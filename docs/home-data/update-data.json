@@ -1,6 +1,12 @@
 {
   "updates": [
     {
+      "content": "Fixed DataRepository so 'From Key' now wraps around if it's a long string",
+      "date": "5/28/2024",
+      "type": "bugFix",
+      "changesetNum": "21708"
+    },
+    {
       "content": "Fixed abandon color to now properly show in red in DataFlow charts",
       "date": "5/28/2024",
       "type": "bugFix",
