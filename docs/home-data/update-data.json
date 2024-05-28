@@ -1,6 +1,12 @@
 {
   "updates": [
     {
+      "content": "Removed lower shading on tabs in Run Aggregate View",
+      "date": "5/28/2024",
+      "type": "bugFix",
+      "changesetNum": "21706"
+    },
+    {
       "content": "Fixed so changing wiretype will mark page as dirty and included tests for it",
       "date": "5/17/2024",
       "type": "bugFix",
