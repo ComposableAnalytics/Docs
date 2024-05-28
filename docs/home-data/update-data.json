@@ -1,6 +1,11 @@
 {
   "updates": [
     {
+      "content": "Added ability to search comments in DataFlows.",
+      "date": "5/28/2024",
+      "changesetNum": "21710"
+    },
+    {
       "content": "Moved button group on DataRepository slightly to the right for better visual appearance",
       "date": "5/28/2024",
       "productAreas": [ "DataRepository" ],
