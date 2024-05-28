@@ -1,6 +1,12 @@
 {
   "updates": [
     {
+      "content": "Fixed abandon color to now properly show in red in DataFlow charts",
+      "date": "5/28/2024",
+      "type": "bugFix",
+      "changesetNum": "21707"
+    },
+    {
       "content": "Removed lower shading on tabs in Run Aggregate View",
       "date": "5/28/2024",
       "type": "bugFix",
