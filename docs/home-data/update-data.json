@@ -1,27 +1,37 @@
 {
   "updates": [
     {
+      "content": "Moved button group on DataRepository slightly to the right for better visual appearance",
+      "date": "5/28/2024",
+      "productAreas": [ "DataRepository" ],
+      "changesetNum": "21709"
+    },
+    {
       "content": "Fixed DataRepository so 'From Key' now wraps around if it's a long string",
       "date": "5/28/2024",
       "type": "bugFix",
+      "productAreas": [ "DataRepository" ],
       "changesetNum": "21708"
     },
     {
       "content": "Fixed abandon color to now properly show in red in DataFlow charts",
       "date": "5/28/2024",
       "type": "bugFix",
+      "productAreas": [ "DataFlow" ],
       "changesetNum": "21707"
     },
     {
       "content": "Removed lower shading on tabs in Run Aggregate View",
       "date": "5/28/2024",
       "type": "bugFix",
+      "productAreas": [ "DataFlow" ],
       "changesetNum": "21706"
     },
     {
       "content": "Fixed so changing wiretype will mark page as dirty and included tests for it",
       "date": "5/17/2024",
       "type": "bugFix",
+      "productAreas": [ "DataFlow" ],
       "changesetNum": "21684"
     },
     {
