@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Added ability to jump to page to DataPortal",
+      "date": "6/11/2024",
+      "type": "minor",
+      "productAreas": [ "DataPortal" ],
+      "changesetNum": "21729"
+    },
+    {
       "content": "ChangeSet 21709 had extraneous code. Removed it and rolled back, now made appropriate button padding shift",
       "date": "5/28/2024",
       "productAreas": [ "DataRepository" ],
