@@ -12,7 +12,7 @@
       "type": "minor",
       "productAreas": [ "DataFlow" ],
       "changesetNum": "21732"
-    },`
+    },
     {
       "content": "Added ability to jump to page to DataPortal",
       "date": "6/11/2024",
