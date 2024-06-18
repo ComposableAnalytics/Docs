@@ -1,12 +1,18 @@
 {
   "updates": [
     {
+      "content": "Added refresh button to about version modal on home page",
+      "date": "6/18/2024",
+      "type": "minor",
+      "changesetNum": "21739"
+    },
+    {
       "content": "Added Create Key Module",
       "date": "6/12/2024",
       "type": "minor",
       "productAreas": [ "DataFlow" ],
       "changesetNum": "21732"
-    },
+    },`
     {
       "content": "Added ability to jump to page to DataPortal",
       "date": "6/11/2024",
