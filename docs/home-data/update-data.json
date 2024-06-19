@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Html Multipart Form Encoder Now Supports Files",
+      "date": "6/19/2024",
+      "productAreas": [ "DataFlow" ],
+      "type": "bugfix",
+      "changesetNum": "21742"
+    },
+    {
       "content": "Added refresh button to about version modal on home page",
       "date": "6/18/2024",
       "type": "minor",
