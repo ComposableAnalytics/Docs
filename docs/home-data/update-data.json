@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Added Timeout to Sftp Modules",
+      "date": "6/20/2024",
+      "productAreas": [ "DataFlow" ],
+      "type": "minor",
+      "changesetNum": "21743"
+    },
+    {
       "content": "Html Multipart Form Encoder Now Supports Files",
       "date": "6/19/2024",
       "productAreas": [ "DataFlow" ],
