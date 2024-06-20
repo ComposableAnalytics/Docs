@@ -1,6 +1,19 @@
 {
   "updates": [
     {
+      "content": "Added jump to pages button to DataPortal",
+      "date": "6/20/2024",
+      "productAreas": [ "DataPortal" ],
+      "type": "minor",
+      "changesetNum": "21746"
+    },
+    {
+      "content": "Fixed update profile image button so text doesn't overlap button",
+      "date": "6/20/2024",
+      "type": "minor",
+      "changesetNum": "21745"
+    },
+    {
       "content": "Added Timeout to Sftp Modules",
       "date": "6/20/2024",
       "productAreas": [ "DataFlow" ],
