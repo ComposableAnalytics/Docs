@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "View activating alert on run page",
+      "date": "6/21/2024",
+      "productAreas": [ "DataFlow" ],
+      "type": "minor",
+      "changesetNum": "21751"
+    },
+    {
       "content": "Added jump to pages button to DataPortal",
       "date": "6/20/2024",
       "productAreas": [ "DataPortal" ],
