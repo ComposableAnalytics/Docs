@@ -48,3 +48,144 @@ The **VisibilityCondition** column applies to the following controls:
 - [YesNo](../05.Control-Details/YesNo.md)
 - [ZIP](../05.Control-Details/ZIP.md)
 
+
+Below is the grammar for visisbility conditions in the Backus Naur Form, and is also applicable for other conditional clauses (ReadOnlyCondition, CategoryCondition, ComputedCondition, MaskedCondition).   This describes the possible tokens, and how they can be combined.
+```
+
+/* lexical grammar */
+%lex
+%%
+
+\s+                   /* skip whitespace */
+"=="                  return '=='
+"!="                  return '!='
+">="                  return '>='
+"<="                  return '<='
+">"                   return '>'
+"<"                   return '<'
+"IN"                  return 'IN'
+"("                   return '('
+")"                   return ')'
+"AND"                 return 'AND'
+"and"                 return 'AND'
+"OR"                  return 'OR'
+"or"                  return 'OR'
+"not"                 return 'NOT';
+"NOT"                 return 'NOT';
+"null"                return 'NULL';
+"NULL"                return 'NULL';
+"true"                return 'TRUE';
+"True"                return 'TRUE';
+"TRUE"                return 'TRUE';
+"false"               return 'FALSE';  
+"False"               return 'FALSE';  
+"FALSE"               return 'FALSE';  
+[0-9]+("."[0-9]+)?\b  return 'NUMBER';
+\"([^\\\"]|\\.)*\"    return 'STRING';
+[aA-zZ]+([aA-zZ0-9]+)?   return 'VARIABLENAME';
+<<EOF>>               return 'EOF';
+.                     return 'FAIL';
+
+/lex
+
+/* condition associations and precedence */
+
+%left 'NOT'
+
+%left 'OR'
+
+%left 'AND'
+
+%start statement
+
+%% /* language grammar */
+
+statement
+    : conditions EOF
+        {return $1;}
+    ;
+
+expression
+    : boolean { $$ = ($1); }
+    | NULL { $$ = null; }
+    | NUMBER { $$ = Number($1); }
+    | STRING { $$ = ($1).substring(1, ($1).length-1); }
+    | variable
+    ;
+
+boolean 
+   : TRUE { $$ = true;}
+   | FALSE { $$ = false; }
+   ;
+
+variable
+    : VARIABLENAME {
+	   var getVariableValue;
+	   try {
+		  getVariableValue = ConditionGrammar.getVariableValue;
+	   }
+	   catch(err) {
+	      console.warn("ConditionGrammar.getVariableValue hook has not been sent. Returning variable name instead.");
+	   }
+	   if(getVariableValue) {
+	      $$  = getVariableValue($1); 
+	   } else {
+		  $$ = $1; 
+	   }
+	}
+    ;
+
+condition
+    : expression '==' expression
+        {$$ = $1 == $3;}
+    | expression '!=' expression
+        {$$ = $1 != $3;}
+    | expression '>' expression
+        {$$ = $1 > $3;}
+    | expression '<' expression
+        {$$ = $1 < $3;}
+    | expression '>=' expression
+        {$$ = $1 >= $3;}
+    | expression '<=' expression
+        {$$ = $1 <= $3;}
+    | expression IN variable 
+        {	
+			if($1 == $3) {
+			  $$ = true;
+			} else {	
+				$$ = false
+				if($3 && $3.Entries) {
+					for(var idx = 0; idx < $3.Entries.length; idx++) {
+						var category = $3.Entries[idx];
+						if($1 == category.Value) {
+							$$ = true;
+						}
+					}
+				}
+			}
+		}
+    | expression
+        {
+          if($1 == true) {
+            $$ = true;
+          } else if($1 == false) {
+            $$ = false;
+          } else {
+            $$ = (($1) != undefined && ($1) != null);
+          }
+       }
+    ;
+
+conditions
+    :  conditions 'AND' conditions
+        {$$ = $1 && $3;}
+    |  conditions 'OR' conditions
+        {$$ = $1 || $3;}    
+    | NOT conditions
+        {$$ = !($2);}
+    | '(' conditions ')'
+        {$$ = ($2);}
+    | condition
+        {$$ = ($1);}
+    ;
+```
