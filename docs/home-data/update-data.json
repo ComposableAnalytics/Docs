@@ -1,5 +1,12 @@
 {
   "updates": [
+     {
+      "content": "pdf files with different or missing extension are still handled by pdf merge module",
+      "date": "7/10/2024",
+      "productAreas": [ "DataFlow" ],
+      "type": "minor",
+      "changesetNum": "21789"
+    },
     {
       "content": "View activating alert on run page",
       "date": "6/21/2024",
