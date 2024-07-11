@@ -2,21 +2,21 @@
   "updates": [
     {
       "content": "pdf files with different or missing extension are still handled by pdf merge module",
-      "date": "6/28/2024",
-      "productAreas": [
-        "DataLab"
-      ],
-      "type": "major",
-      "changesetNum": "21766"
-    },
-    {
-      "content": "pdf files with different or missing extension are still handled by pdf merge module",
       "date": "7/10/2024",
       "productAreas": [
         "DataFlow"
       ],
       "type": "minor",
       "changesetNum": "21789"
+    },
+    {
+      "content": "pdf files with different or missing extension are still handled by pdf merge module",
+      "date": "6/28/2024",
+      "productAreas": [
+        "DataLab"
+      ],
+      "type": "major",
+      "changesetNum": "21766"
     },
     {
       "content": "View activating alert on run page",
