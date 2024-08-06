@@ -1,6 +1,12 @@
 {
   "updates": [
     {
+      "content": "Added undelete actions to restore soft-deleted dataportal records",
+      "date": "8/6/2024",
+      "type": "minor",
+      "changesetNum": "21847"
+    },
+    {
       "content": "Improved access logging for login events",
       "date": "7/31/2024",
       "type": "minor",
