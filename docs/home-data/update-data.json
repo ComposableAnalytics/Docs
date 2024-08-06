@@ -3,6 +3,9 @@
     {
       "content": "Added undelete actions to restore soft-deleted dataportal records",
       "date": "8/6/2024",
+      "productAreas": [
+        "DataPortal"
+      ],
       "type": "minor",
       "changesetNum": "21847"
     },
