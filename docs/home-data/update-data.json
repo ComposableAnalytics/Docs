@@ -16,7 +16,7 @@
       "changesetNum": "21841"
     },
     {
-      "content": "New fuzzy finder for modules, activate in designer with ctrl+g",
+      "content": "New fuzzy finder for modules, activate in designer with ctrl+Q",
       "date": "7/31/2024",
       "productAreas": [
         "DataFlow"
