@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Network view of DataFlow, Run, and Folder relationships",
+      "date": "9/9/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "major",
+      "changesetNum": "21922"
+    },
+    {
       "content": "Added undelete actions to restore soft-deleted dataportal records",
       "date": "8/6/2024",
       "productAreas": [

@@ -206,6 +206,10 @@ nav:
     - '14.2 Setup': 'Code-Promotion/02.Setup.md'
     - '14.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
     - '14.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
+- 15. System Monitoring and Visualization:
+    - '15.1 Overview': 'Monitoring/01.Overview.md'
+    - '15.2 Resource Networks': 'Monitoring/02.Resource-Network.md'
+    - '15.3 Runs Visualization': 'Monitoring/03.Runs-Visualization.md'
 - Tutorials:
     - 'DataFlow: "Hello, World!"': 'Tutorial/DataFlow-Hello-World.md'
     - 'DataFlow: Word Count Using Python and C#': 'Tutorial/DataFlow-Word-Count.md'
