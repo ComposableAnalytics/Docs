@@ -92,3 +92,7 @@ This will open a menu which allows you to assign a surrogate for the module. Thi
 ![!SurrogateAssigned](img/SurrogateAssigned.png)
 
 We can now run this DataFlow and see that the output of the calulator is 100 instead of 3.
+We also can see that there is now an icon on the calculator module indicating that a surrogate has run in its place.
+
+![!SurrogateExecuted](img/SurrogateExecuted.png)
+
