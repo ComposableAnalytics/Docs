@@ -1,6 +1,180 @@
 {
   "updates": [
     {
+      "content": "Network view of DataFlow, Run, and Folder relationships",
+      "date": "9/9/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "major",
+      "changesetNum": "21922"
+    },
+    {
+      "content": "Added undelete actions to restore soft-deleted dataportal records",
+      "date": "8/6/2024",
+      "productAreas": [
+        "DataPortal"
+      ],
+      "type": "minor",
+      "changesetNum": "21847"
+    },
+    {
+      "content": "Improved access logging for login events",
+      "date": "7/31/2024",
+      "type": "minor",
+      "changesetNum": "21841"
+    },
+    {
+      "content": "New fuzzy finder for modules, activate in designer with ctrl+Q",
+      "date": "7/31/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "21838"
+    },
+    {
+      "content": "PDF files with different or missing extension are still handled by PDF merge module",
+      "date": "7/10/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "21789"
+    },
+    {
+      "content": "PDF files with different or missing extension are still handled by PDF merge module",
+      "date": "6/28/2024",
+      "productAreas": [
+        "DataLab"
+      ],
+      "type": "major",
+      "changesetNum": "21766"
+    },
+    {
+      "content": "View activating alert on run page",
+      "date": "6/21/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "21751"
+    },
+    {
+      "content": "Added jump to pages button to DataPortal",
+      "date": "6/20/2024",
+      "productAreas": [
+        "DataPortal"
+      ],
+      "type": "minor",
+      "changesetNum": "21746"
+    },
+    {
+      "content": "Fixed update profile image button so text doesn't overlap button",
+      "date": "6/20/2024",
+      "type": "minor",
+      "changesetNum": "21745"
+    },
+    {
+      "content": "Added Timeout to Sftp Modules",
+      "date": "6/20/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "21743"
+    },
+    {
+      "content": "Html Multipart Form Encoder Now Supports Files",
+      "date": "6/19/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "bugfix",
+      "changesetNum": "21742"
+    },
+    {
+      "content": "Added refresh button to about version modal on home page",
+      "date": "6/18/2024",
+      "type": "minor",
+      "changesetNum": "21739"
+    },
+    {
+      "content": "Added Create Key Module",
+      "date": "6/12/2024",
+      "type": "minor",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "changesetNum": "21732"
+    },
+    {
+      "content": "Added ability to jump to page to DataPortal",
+      "date": "6/11/2024",
+      "type": "minor",
+      "productAreas": [
+        "DataPortal"
+      ],
+      "changesetNum": "21729"
+    },
+    {
+      "content": "ChangeSet 21709 had extraneous code. Removed it and rolled back, now made appropriate button padding shift",
+      "date": "5/28/2024",
+      "productAreas": [
+        "DataRepository"
+      ],
+      "changesetNum": "21711"
+    },
+    {
+      "content": "Added ability to search comments in DataFlows.",
+      "date": "5/28/2024",
+      "changesetNum": "21710"
+    },
+    {
+      "content": "Moved button group on DataRepository slightly to the right for better visual appearance",
+      "date": "5/28/2024",
+      "productAreas": [
+        "DataRepository"
+      ],
+      "changesetNum": "21709"
+    },
+    {
+      "content": "Fixed DataRepository so 'From Key' now wraps around if it's a long string",
+      "date": "5/28/2024",
+      "type": "bugFix",
+      "productAreas": [
+        "DataRepository"
+      ],
+      "changesetNum": "21708"
+    },
+    {
+      "content": "Fixed abandon color to now properly show in red in DataFlow charts",
+      "date": "5/28/2024",
+      "type": "bugFix",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "changesetNum": "21707"
+    },
+    {
+      "content": "Removed lower shading on tabs in Run Aggregate View",
+      "date": "5/28/2024",
+      "type": "bugFix",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "changesetNum": "21706"
+    },
+    {
+      "content": "Fixed so changing wiretype will mark page as dirty and included tests for it",
+      "date": "5/17/2024",
+      "type": "bugFix",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "changesetNum": "21684"
+    },
+    {
       "content": "Fixed password popover fix so that it also works on the password reset page too",
       "date": "4/26/2024",
       "type": "bugFix",
@@ -16,385 +190,495 @@
       "content": "Fixed code generation button so it doesn't disappear when window narrows",
       "date": "4/19/2024",
       "type": "bugFix",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21631"
     },
     {
       "content": "Changed delete button on QueryViews to red",
       "date": "4/18/2024",
       "type": "minor",
-      "productAreas": [ "QueryViews" ],
+      "productAreas": [
+        "QueryViews"
+      ],
       "changesetNum": "21627"
     },
     {
       "content": "Support for interactive table output in DataLab cells",
       "date": "4/11/2024",
       "type": "major",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21617"
     },
     {
       "content": "Added Incoming HTTP Header support to Web Receive module",
       "date": "4/10/2024",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21612"
     },
     {
       "content": "Added QueryView inputs that give information about current QueryView",
       "date": "4/2/2024",
       "type": "minor",
-      "productAreas": [ "QueryViews" ],
+      "productAreas": [
+        "QueryViews"
+      ],
       "changesetNum": "21600"
     },
     {
       "content": "Enable deletion of non-empty directories in DataLabs",
       "date": "3/22/2024",
       "type": "minor",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21578"
     },
     {
       "content": "Added control type for Composable Resources to DataPortals",
       "date": "3/20/2024",
       "type": "major",
-      "productAreas": [ "DataPortals" ],
+      "productAreas": [
+        "DataPortals"
+      ],
       "changesetNum": "21573"
     },
     {
       "content": "Support empty DataFrames in the Pandas to Composable table conversion",
       "date": "3/13/2024",
       "type": "minor",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21557"
     },
     {
       "content": "Automated DataLab Log and Execution File Cleaner",
       "date": "3/12/2024",
       "type": "major",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21554"
     },
     {
       "content": "Added Selenium Modules to the Testing Framework",
       "date": "3/6/2024",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21544"
     },
     {
       "content": "Fixed build menu being hidden in WebApp editor",
       "date": "2/29/2024",
       "type": "bugfix",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21535"
     },
     {
       "content": "Option to show soft deleted entries",
       "date": "2/20/2024",
       "type": "minor",
-      "productAreas": [ "DataPortal" ],
+      "productAreas": [
+        "DataPortal"
+      ],
       "changesetNum": "21521"
     },
     {
       "content": "Added a right click option to create a surrogate template for a module.",
       "date": "2/8/2024",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21495"
     },
     {
       "content": "Improved DataFlow permissions error messages",
       "date": "2/6/2024",
       "type": "bugfix",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21483"
     },
     {
       "content": "Added List Key Type",
       "date": "1/26/2024",
       "type": "minor",
-      "productAreas": [ "Keys" ],
+      "productAreas": [
+        "Keys"
+      ],
       "changesetNum": "21473"
     },
     {
       "content": "Add Ability to Add Folder and Tags to DataFlows in the Designer",
       "date": "1/19/2024",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21452"
     },
     {
       "content": "Unit Testing Framework for DataFlows",
       "date": "1/16/2024",
       "type": "major",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21441"
     },
     {
       "content": "Write to trace log module",
       "date": "1/2/2024",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21410"
     },
     {
       "content": "DataLabNotebookRunner Script Support",
       "date": "12/8/2023",
       "type": "major",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21370"
     },
     {
       "content": "Enhanced Composapy QueryView driver error output",
       "date": "11/6/2023",
       "type": "minor",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21326"
-    }, 
+    },
     {
       "content": "Support for SAML-based Single Sign-On",
       "date": "10/25/2023",
       "type": "major",
-      "productAreas": [ "User" ],
+      "productAreas": [
+        "User"
+      ],
       "changesetNum": "21307"
-    }, 
+    },
     {
       "content": "Include history message with deployment dataflow saves",
       "date": "10/2/2023",
       "type": "minor",
-      "productAreas": [ "Deployment" ],
+      "productAreas": [
+        "Deployment"
+      ],
       "changesetNum": "21277"
-    }, 
+    },
     {
       "content": "View history of changes to Keys",
       "date": "9/27/2023",
       "type": "major",
-      "productAreas": [ "Key" ],
+      "productAreas": [
+        "Key"
+      ],
       "changesetNum": "21271"
     },
     {
       "content": "Added support for DateTime columns in Composapy QueryView results",
       "date": "9/20/2023",
       "type": "minor",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21243"
     },
     {
       "content": "Added Python 3.11 support to DataLabs",
       "date": "9/11/2023",
       "type": "major",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21211"
     },
     {
       "content": "Added query linting to sql module editors",
       "date": "9/1/2023",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21211"
-    },   
+    },
     {
       "content": "Filters on User Management page",
       "date": "8/30/2023",
       "type": "minor",
-      "productAreas": [ "Admin" ],
+      "productAreas": [
+        "Admin"
+      ],
       "changesetNum": "21229"
-    },   
+    },
     {
       "content": "QueryView error linting while editing",
       "date": "8/29/2023",
       "type": "major",
-      "productAreas": [ "QueryView" ],
+      "productAreas": [
+        "QueryView"
+      ],
       "changesetNum": "21202"
-    },    
+    },
     {
       "content": "Animated outputs now track moved connections",
       "date": "8/28/2023",
       "type": "bug",
-      "productAreas": [ "Dataflow" ],
+      "productAreas": [
+        "Dataflow"
+      ],
       "changesetNum": "21199"
-    },    
+    },
     {
       "content": "Nested QV loading issue for fast queries fixed",
       "date": "8/28/2023",
       "type": "minor",
-      "productAreas": [ "Dataflow" ],
+      "productAreas": [
+        "Dataflow"
+      ],
       "changesetNum": "21198"
-    },     
+    },
     {
       "content": "User control type in Data Portals",
       "date": "8/25/2023",
       "type": "minor",
-      "productAreas": [ "DataPortal" ],
+      "productAreas": [
+        "DataPortal"
+      ],
       "changesetNum": "21194"
-    }, 
+    },
     {
       "content": "Dark Mode added to user theme options",
       "date": "8/23/2023",
       "type": "minor",
-      "productAreas": [ "User" ],
+      "productAreas": [
+        "User"
+      ],
       "changesetNum": "21185"
-    },  
+    },
     {
       "content": "Additional dirty check on dataflow options",
       "date": "8/15/2023",
       "type": "minor",
-      "productAreas": [ "User" ],
+      "productAreas": [
+        "User"
+      ],
       "changesetNum": "21158"
-    },   
+    },
     {
       "content": "Performance improvements on web app landing page",
       "date": "8/15/2023",
       "type": "minor",
-      "productAreas": [ "WebApp" ],
+      "productAreas": [
+        "WebApp"
+      ],
       "changesetNum": "21157"
-    },   
+    },
     {
       "content": "Cyclic references handled in deployment API",
       "date": "8/15/2023",
       "type": "minor",
-      "productAreas": [ "Deployment" ],
+      "productAreas": [
+        "Deployment"
+      ],
       "changesetNum": "21154"
-    }, 
+    },
     {
       "content": "Streamlined QueryView execution endpoints",
       "date": "8/9/2023",
       "type": "minor",
-      "productAreas": [ "QueryView" ],
+      "productAreas": [
+        "QueryView"
+      ],
       "changesetNum": "21137"
-    },  
+    },
     {
       "content": "Whitespace options added to WebApp editor",
       "date": "8/3/2023",
       "type": "minor",
-      "productAreas": [ "WebpApp" ],
+      "productAreas": [
+        "WebpApp"
+      ],
       "changesetNum": "21110"
-    },   
+    },
     {
       "content": "Type preservation when resuming dataflows",
       "date": "7/10/2023",
       "type": "bug",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "21110"
-    },  
+    },
     {
       "content": "Timeout, variable, and silence options on DataLab SQL magic commands",
       "date": "7/10/2023",
       "type": "minor",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "21031"
-    },  
+    },
     {
       "content": "Deployment API for syncing DataPortals",
       "date": "6/7/2023",
       "type": "minor",
-      "productAreas": [ "Deployment" ],
+      "productAreas": [
+        "Deployment"
+      ],
       "changesetNum": "20955"
-    },   
+    },
     {
       "content": "JSON Path Collection query uses standard way of selecting multiple tokens",
       "date": "6/5/2023",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "20950"
-    },   
+    },
     {
       "content": "Base64 encoding module",
       "date": "5/26/2023",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "20934"
     },
     {
       "content": "S3 Bucket List module",
       "date": "5/23/2023",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "20919"
-    },     
+    },
     {
       "content": "Pass Dataframe from DataLab to DataFlow",
       "date": "5/25/2023",
       "type": "minor",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "20930"
-    }, 
+    },
     {
       "content": "Inverse Dependency Waiter",
       "date": "5/24/2023",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "20926"
-    },    
+    },
     {
       "content": "Option to refresh QueryView after action completes",
       "date": "5/16/2023",
       "type": "minor",
-      "productAreas": [ "QueryView" ],
+      "productAreas": [
+        "QueryView"
+      ],
       "changesetNum": "20903"
-    },    
+    },
     {
       "content": "Option to hide action runs in QueryView",
       "date": "5/15/2023",
       "type": "minor",
-      "productAreas": [ "QueryView" ],
+      "productAreas": [
+        "QueryView"
+      ],
       "changesetNum": "20901"
-    },  
+    },
     {
       "content": "Option to prevent dataloss on Excel datamodel uploads",
       "date": "2/15/2023",
       "type": "minor",
-      "productAreas": [ "DataPortal" ],
+      "productAreas": [
+        "DataPortal"
+      ],
       "changesetNum": "20703"
-    },    
+    },
     {
       "content": "Search across files and folders in WebApps",
       "date": "1/30/2023",
       "type": "major",
-      "productAreas": [ "WebApp" ],
+      "productAreas": [
+        "WebApp"
+      ],
       "changesetNum": "20662"
     },
     {
       "content": "Redesigned Key Vault",
       "date": "11/4/2022",
       "type": "major",
-      "productAreas": [ "Key" ],
+      "productAreas": [
+        "Key"
+      ],
       "changesetNum": "20392"
     },
     {
       "content": "Kafka Consumer and Producer Modules",
       "date": "9/9/2022",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "20211"
     },
     {
       "content": "DataLabs Composapy %sql magic syntax for queryviews",
       "date": "9/6/2022",
       "type": "minor",
-      "productAreas": [ "DataLab" ],
+      "productAreas": [
+        "DataLab"
+      ],
       "changesetNum": "20197"
     },
     {
       "content": "EntityHub available with starter templates",
       "date": "8/2/2022",
       "type": "major",
-      "productAreas": [ "EntityHub" ],
+      "productAreas": [
+        "EntityHub"
+      ],
       "changesetNum": "20149"
     },
     {
       "content": "Outlook 365 email modules",
       "date": "6/28/2022",
       "type": "minor",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "20090"
     },
     {
       "content": "PostgreSQL-based DataPortals",
       "date": "6/3/2022",
       "type": "major",
-      "productAreas": [ "DataPortal" ],
+      "productAreas": [
+        "DataPortal"
+      ],
       "changesetNum": "20039"
     },
     {
@@ -419,7 +703,9 @@
       "content": "New SQL Read-Write Module",
       "date": "5/5/2022",
       "type": "major",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "19951"
     },
     {
@@ -432,7 +718,10 @@
       "content": "New streaming DeepQuery Runner Module",
       "date": "4/25/2022",
       "type": "major",
-      "productAreas": [ "DataFlow", "DeepQuery" ],
+      "productAreas": [
+        "DataFlow",
+        "DeepQuery"
+      ],
       "changesetNum": "19928"
     },
     {
@@ -451,14 +740,18 @@
       "content": "New DocToDocX DataFlow Module",
       "date": "4/14/2022",
       "type": "major",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "19894"
     },
     {
       "content": "New File Appender DataFlow Module",
       "date": "4/13/2022",
       "type": "major",
-      "productAreas": [ "DataFlow" ],
+      "productAreas": [
+        "DataFlow"
+      ],
       "changesetNum": "19891"
     },
     {
@@ -501,7 +794,9 @@
       "content": "Complete Board renovation",
       "date": "3/29/2022",
       "type": "major",
-      "productAreas": [ "Board" ],
+      "productAreas": [
+        "Board"
+      ],
       "changesetNum": "19844"
     },
     {

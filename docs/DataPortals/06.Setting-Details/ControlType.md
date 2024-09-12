@@ -41,6 +41,7 @@ The **ControlType** column applies to all controls. It's possible values are:
 - [Table](../05.Control-Details/Table.md)
 - [Text](../05.Control-Details/Text.md)
 - [Textarea](../05.Control-Details/Textarea.md)
+- [User](../05.Control-Details/User.md)
 - [Voice](../05.Control-Details/Voice.md)
 - [YesNo](../05.Control-Details/YesNo.md)
 - [ZIP](../05.Control-Details/ZIP.md)

@@ -15,6 +15,13 @@ The **AppRun** control type will create a button that runs a Composable DataFlow
 
 ![AppRun](../img/AppRun.png)
 
+The calling dataflow can have several wellknown named external inputs, allowing for the dataflow to understand the caller's context, and then be able to query for other information based on those inputs.
+
+- FormId or DataPortalId - (long) Securable resource id of the DataPortal
+- InstanceId - (int or long) Unique identifier of this container instance where the run button resides (last id in the url)
+- ParentContainerId - (int or long) Parent id of the container instance
+- ComponentId - (long) Composable Id of the UI component representing the run button
+
 ## Required Fields
 
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.

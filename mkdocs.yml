@@ -1,5 +1,5 @@
 site_name: Composable DataOps Platform
-site_url: https://docs.composable.ai
+site_url: https://docs.composable.ai/en/latest/
 site_description: Composable DataOps Platform technical documentation for big data orchestration, automation and analytics
 site_author: Composable Analytics, Inc.
 
@@ -182,7 +182,10 @@ nav:
     - '8.1 Overview': 'DataLabs/Overview.md'
 - 9. WebApps:
     - '9.1 Overview': 'WebApps/01.Overview.md'
-    - '9.2 WebApp Basics': 'WebApps/02.WebApp-Basics.md'
+    - '9.2 Creating a WebApp': 'WebApps/02.WebApp-Create-New.md'
+    - '9.3 The WebApp Editor': 'WebApps/03.WebApp-Editor.md'
+    - '9.4 WebApp Templates': 'WebApps/04.WebApp-Templates.md'
+    - '9.5 Using Build Tools': 'WebApps/05.WebApp-Build-Tools.md'
 - 10. Boards:
     - '10.1 Overview': 'Boards/01.Overview.md'
     - '10.2 Edit Mode': 'Boards/02.Edit-Mode.md'
@@ -203,6 +206,10 @@ nav:
     - '14.2 Setup': 'Code-Promotion/02.Setup.md'
     - '14.3 Optional Settings': 'Code-Promotion/03.Optional-Settings.md'
     - '14.4 Possible-Issues': 'Code-Promotion/04.Possible-Issues.md'
+- 15. System Monitoring and Visualization:
+    - '15.1 Overview': 'Monitoring/01.Overview.md'
+    - '15.2 Resource Networks': 'Monitoring/02.Resource-Network.md'
+    - '15.3 Runs Visualization': 'Monitoring/03.Runs-Visualization.md'
 - Tutorials:
     - 'DataFlow: "Hello, World!"': 'Tutorial/DataFlow-Hello-World.md'
     - 'DataFlow: Word Count Using Python and C#': 'Tutorial/DataFlow-Word-Count.md'
