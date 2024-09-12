@@ -45,33 +45,15 @@ We can see in this example test that we have a Calculator Module which takes two
 
 In this sample failing test, we have changed the input of the Calculator Module to 7 and 4, but left the expected value as 10. Running this Dataflow and selecting the output we can see that the assert is now no longer successful and we get a message about why the failure occured. In this case it was becuase the expected number was supposed to be 10, but we actually recieved 11.
 
-# Viewing Your Tests
+# Test Suites
 
-Composable offers a user interface that can be used to view the results of your tests. This UI can be accessed by (add access instructions). A sample of this UI, including the test we wrote above, can be seen below.
+In Composable, Test Suites provide a structured way to manage and execute a series of tests. Test Suites allow you to run tests in both series an parallel. When you first open a Test Suite you will see the view below. This view gives you an overview of the current state of all of your tests, and allows you to see the individual tests which are included in the Test Suite.
 
-![!TestUI](img/TestUI.png)
+![!Test Suite Overview](img/TestSuiteOverview.png)
 
-When you first open the testing UI, you will see all of your tests listed on the left. This list is comprised of the outermost parent of all DataFlows which have an Assert Module. We can filter this list based on the name of the test using the search feature at the top. Here we have applied a filter to just show "Example Test." 
+To add tests to your Test Suite, select the "Add Tests" tab. Here you can use the existing search syntax in Composable. You can then select the "+" next to the tests you want to add. If you do not see your test in the list, or need to load more tests, select the "Load More" button.
 
-The list of DataFlows on the left displays several pieces of information. These include the name of the test, the run id which is being display (which, when selected, will open that run), and the outcome of the test. This icon will display a green check mark when the test passes, a red X when the test fails (as seen here), or a blue exclamation point which indicates that the test has not been run yet. Using the blue arrow on the left of each row you are also able to inspect nested DataFlows. We will discuss this feature more later.
-
-Using this list, you can select an individual test and explore the outcome of each Assert Module. For Modules that failed, you are able to see the message as seen here with the Assert Fixed Point failure. For Modules that succeed you will see a green check mark, similar to what is shown for a successful test in the left menu.
-
-# Data Driven Tests
-
-Given that Composable is largly a data driven platform, it is important to highlight how this testing framework supports testing a dataflow over a large amount of data. To show this, we will go through an example where we test a calculator. To start, we will create the DataFlow below.
-
-![!DataDrivenTestCalculator](img/SampleDataDrivenTestCalculator.png)
-
-This DataFlow is our unit test for the calculator. It takes three inputs. A and B are the inputs to the calculator and C is the expected result. We now create a wrapper for this DataFlow which will drive what data we want to feed into our calculator test.
-
-![!DataDrivenCalculatorTest](img/DataDrivenCalcWrapper.png)
-
-In this DataFlow, we take input from a Table Editor Module, loop through it, and the pass it into our calculator test. While this example just uses a Table Editor Module, you could imagine taking a table from another source such as a SQL Query Module and checking its results. We will now shift back to the interface for viewing tests to show how the data driven tests are displayed there.
-
-![!DataDrivenTestUI](img/DataDrivenTestUI.png)
-
-Here we can see that our data driven test has been run and has failed. We can use the arrow next to this test to expand this test and see the nested DataFlows which were involved in the run. We can see specifically that one instance of the test failed and the rest passed. You are able to select the row of this Run just as you would any other test, and also select the Run Id to view the Run.
+To run your Test Suite, select the "Run" button in the upper right corner. This will begin the execution of all of your included tests with a degree of parallelism up the the number specified inb the "Test Suite Run Settings" tab. After your batch of tests has been setup, you will be switched to a view which will show you the current state. As your tests run, you will see the results appear live in the menu on the left.
 
 # Surrogates
 
