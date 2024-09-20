@@ -1,6 +1,24 @@
 {
   "updates": [
     {
+      "content": "Test Suites",
+      "date": "9/18/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "major",
+      "changesetNum": "21948"
+    },
+    {
+      "content": "Option to compress Dataflow run results",
+      "date": "9/18/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "21944"
+    },
+    {
       "content": "Network view of DataFlow, Run, and Folder relationships",
       "date": "9/9/2024",
       "productAreas": [
