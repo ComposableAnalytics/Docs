@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Module to search for Composable resources",
+      "date": "10/10/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "22038"
+    },
+    {
       "content": "Test Suites",
       "date": "9/18/2024",
       "productAreas": [
