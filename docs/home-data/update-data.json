@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Added support for accessing disk memory usage per DataFlow run",
+      "date": "10/29/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "22063"
+    },
+    {
       "content": "Module to read specified messages from Kafka",
       "date": "10/18/2024",
       "productAreas": [
