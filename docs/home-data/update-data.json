@@ -93,7 +93,7 @@
       "productAreas": [
         "DataLab"
       ],
-      "type": "major",
+      "type": "minor",
       "changesetNum": "21766"
     },
     {
