@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Added resource network view to Key page",
+      "date": "11/1/2024",
+      "productAreas": [
+        "Keys"
+      ],
+      "type": "minor",
+      "changesetNum": "22071"
+    },
+    {
       "content": "Added support for accessing disk memory usage per DataFlow run",
       "date": "10/29/2024",
       "productAreas": [
