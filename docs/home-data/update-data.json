@@ -1,7 +1,7 @@
 {
   "updates": [
     {
-      "content": "Video and audio files are now rendered when viewing DataFlow run results"
+      "content": "Video and audio files are now rendered when viewing DataFlow run results",
       "date": "11/21/2024",
       "productAreas": [
         "DataFlow"
