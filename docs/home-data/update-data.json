@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Speech to text module, use for simple transcription",
+      "date": "12/02/2024",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "22118"
+    },
+    {
       "content": "JSON key deleter module, can strip fields from a JSON recursively",
       "date": "11/26/2024",
       "productAreas": [
