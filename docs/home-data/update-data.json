@@ -1,6 +1,24 @@
 {
   "updates": [
     {
+      "content": "New module to perform set operations on arrays",
+      "date": "1/13/2025",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "22181"
+    },
+    {
+      "content": "Added resource network view to TestSuite page",
+      "date": "1/13/2025",
+      "productAreas": [
+        "TestSuite"
+      ],
+      "type": "minor",
+      "changesetNum": "22180"
+    },
+    {
       "content": "Speech to text module, use for simple transcription",
       "date": "12/02/2024",
       "productAreas": [
