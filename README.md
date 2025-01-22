@@ -30,5 +30,5 @@ We welcome contributions from the community! If you would like to contribute, fo
 
 # Stay Connected
 Visit our official site for more information.
-- Read the latest updates on our [Composable Blog](https://blog.composable.ai.
+- Read the latest updates on our [Composable Blog](https://blog.composable.ai).
 - For any questions or feedback, feel free to contact us or email us at <info@composable.ai> for inquiries, support, and requests for live tutorials and demonstrations.
