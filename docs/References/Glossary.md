@@ -157,3 +157,59 @@ We hope this glossary is a useful resource for anyone working with data.
 * `MLOps`: A set of practices and tools that aims to improve the collaboration and communication between machine learning development and operations teams in order to deliver machine learning products faster and more reliably.
 * `ModelOps`: A set of practices and tools that aims to improve the collaboration and communication between machine learning model development and operations teams in order to deploy and maintain machine learning models in a production environment.
 * `Monitoring and alerting`: The practice of monitoring systems and applications for signs of problems or performance issues, and triggering alerts when necessary.
+
+## Artificial Intelligence & GenAI/LLMs
+
+* `Artificial Intelligence (AI)`: The simulation of human intelligence processes by machines, especially computer systems, which include learning, reasoning, and self-correction.
+* `Machine Learning (ML)`: A subset of AI that involves the use of statistical techniques to enable machines to improve at tasks with experience.
+* `Deep Learning`: A specialized form of ML using neural networks with multiple layers to analyze various data types.
+* `Natural Language Processing (NLP)`: The branch of AI that enables computers to understand, interpret, and respond to human language.
+* `Generative AI (GenAI)`: AI models capable of generating new content, such as text, images, music, and code, based on learned patterns from vast datasets.
+* `Large Language Models (LLMs)`: AI models trained on massive text corpora to understand and generate human-like text.
+* `Fine-tuning`: The process of adapting a pre-trained AI model to a specific task by training it further on a smaller, task-specific dataset.
+* `Prompt engineering`: The practice of crafting effective inputs to LLMs to achieve desired outputs efficiently.
+* `Zero-shot learning`: The ability of an AI model to perform tasks it has not explicitly been trained for, based on contextual understanding.
+* `Few-shot learning`: A learning paradigm where AI models make accurate predictions with only a few examples.
+* `Hallucination`: A phenomenon in which an AI model generates incorrect or misleading information that appears plausible.
+* `Embedding`: A numerical representation of text, images, or other data types in a continuous vector space, used for similarity comparisons.
+* `Tokenization`: The process of breaking down text into smaller components, such as words or subwords, for processing by AI models.
+* `Inference`: The process of using a trained AI model to make predictions or generate outputs based on new input data.
+* `Bias in AI`: Systematic and unfair discrimination in AI outputs due to biased training data or model design.
+* `Explainability`: The ability to understand and interpret the decision-making process of AI models.
+* `AI Ethics`: The field of study that examines the moral implications and responsibilities associated with AI development and deployment.
+* `Model drift`: The degradation of an AI model's performance over time as the underlying data distribution changes.
+* `Retrieval-Augmented Generation (RAG)`: An AI technique that enhances model responses by retrieving relevant external information during generation.
+* `Token limit`: The maximum number of tokens (words or characters) an AI model can process in a single request.
+* `Knowledge Distillation`: A technique where a smaller model learns from a larger, more complex model to achieve similar performance with fewer resources.
+
+## AI Deployment & MLOps
+
+* `MLOps (Machine Learning Operations)`: A set of practices that aim to streamline the deployment, monitoring, and management of machine learning models in production.
+* `Model monitoring`: The ongoing tracking of model performance to ensure accuracy and fairness in production environments.
+* `A/B testing`: The practice of comparing two versions of a machine learning model to determine which performs better.
+* `Model retraining`: The process of periodically updating an AI model with new data to maintain accuracy and relevance.
+* `Feature store`: A centralized repository for storing, sharing, and reusing machine learning features across multiple models.
+* `Explainable AI (XAI)`: Tools and techniques designed to make AI models more transparent and interpretable.
+* `AutoML (Automated Machine Learning)`: The use of automated tools to simplify the process of developing and tuning machine learning models.
+* `Hyperparameter tuning`: The process of optimizing the parameters of a machine learning model to improve performance.
+* `Federated learning`: A technique that allows training models across decentralized data sources without moving the data itself.
+* `Model interpretability`: The degree to which humans can understand how an AI model makes decisions.
+* `Data drift`: The change in statistical properties of input data over time, which can lead to model degradation.
+* `Continuous integration/continuous deployment (CI/CD)`: A methodology that automates the process of deploying machine learning models into production.
+* `Shadow deployment`: Deploying a new AI model alongside the existing one to compare their outputs without impacting users.
+* `Canary release`: Gradually rolling out AI model updates to a subset of users to mitigate risks.
+
+## AI Applications
+
+* `Chatbots`: AI-powered conversational agents that interact with users via text or voice interfaces.
+* `Sentiment analysis`: The use of AI to determine the emotional tone of text data.
+* `Computer vision`: AI technology that enables machines to interpret and analyze visual data from the world.
+* `Recommender systems`: AI algorithms that suggest products, content, or services based on user preferences and behavior.
+* `Anomaly detection`: The identification of unusual patterns in data that do not conform to expected behavior.
+* `Speech recognition`: AI systems that convert spoken language into text.
+* `Fraud detection`: The application of AI to identify potentially fraudulent transactions or behaviors.
+* `AI-powered automation`: The use of AI to perform repetitive tasks without human intervention.
+* `Personalization`: The customization of content or experiences for users based on AI-driven insights.
+* `Digital twins`: Virtual representations of physical objects or processes that can be analyzed and optimized using AI.
+* `Autonomous systems`: AI-driven systems that can operate independently, such as self-driving cars and drones.
+* `Predictive maintenance`: Using AI to forecast equipment failures before they happen, optimizing maintenance schedules.

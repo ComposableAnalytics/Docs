@@ -239,6 +239,9 @@ nav:
         - 'SQL Overview': 'References/01.SQL.Overview.md'
         - 'SQL Primer': 'References/02.SQL.Tutorial.md'
         - 'SQL Advanced Concepts': 'References/03.SQL.AdvancedConcepts.md'
+    - 'DataOps Overview': 'References/02.DataOps.Overview.md'
+    - 'ModelOps Overview': 'References/03.ModelOps.Overview.md'
+    - 'LLMs Overview': 'References/04.LLMs.Overview.md'
     - 'Glossary': 'References/Glossary.md'   
 
 markdown_extensions:
