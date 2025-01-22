@@ -44,5 +44,8 @@ The last step before we have a fully functional WebApp is the QueryViews that wi
 
 ## <a name="DIApp"></a>4. WebApp
 The final step is to import the files from the WebApp zip. You can try importing the zip when creating a new WebApp, but if this does not work, you can manually upload the files to the source editor once you create the new WebApp.
+
+![WebApp Example](img/WebAppExample.png)
+
 ### How it works:
 This example uses AngularJS to perform UI-Routing. This allows the WebApp to mimic the structure of the DataPortal, and allows a user to share a link and be taken to the exact entry. This is also how information is passed between pages. This is the current recommended way to create a WebApp in Composable. The index.html page contains a `<ui-view>` tag that holds the main pages located in the `templates` directory. The `main.js` file is responsible for registering these sub-pages in the routing module. Each of these sub-pages has an individual JavaScript file with the same name responsible for controlling the page. These files use a Composable API to run QueryViews and pass in parameters. For example when you click on a DataGroup, the ID will be passed to the routing parameters in the URL and will be executed in the DIRules QueryView upon loading the DIRules page.
