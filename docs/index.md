@@ -45,6 +45,5 @@ In addition to this documentation, we provide a variety of resources to support 
 - **[Composable Blog](https://blog.composable.ai):** Stay informed on the latest features, updates, and best practices.
 - **[Support Forums](https://support.composable.ai):** Browse discussions, ask questions, and get help from our community.
 - **[Composable API Docs](https://dev.composable.ai):** Access detailed API documentation for integrating and extending Composable's capabilities.
-- **[Composable University](https://university.composable.ai):** Participate in courses and webinars to deepen your expertise.
 
 Feel free to [contact us](https://composable.ai/contact-us) or email us at <info@composable.ai> for inquiries, support, and requests for live tutorials and demonstrations.
