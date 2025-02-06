@@ -1,141 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Composable Support - GitHub Discussions Forum</title>
-  <style>
-    /* Global styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composable Support - GitHub Discussions Forum</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
 
-    /* Topbar styling */
-    .topbar {
-      background-color: #000;
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+        /* Topbar styling */
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-    /* Main container */
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
+        /* Logo container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-    /* Section titles */
-    h1 {
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+        .logo {
+            height: 30px;
+            width: auto;
+        }
 
-    /* Discussion card styles */
-    .discussion {
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 15px;
-      margin-bottom: 15px;
-      background: #f9f9f9;
-      transition: box-shadow 0.3s ease-in-out;
-    }
-    .discussion:hover {
-      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    }
+        /* Social icons */
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
 
-    /* Discussion title */
-    .discussion-title {
-      font-weight: bold;
-      margin-bottom: 8px;
-      font-size: 18px;
-      color: #0074d9;
-      text-decoration: none;
-    }
-    .discussion-title:hover {
-      text-decoration: underline;
-    }
+        .icon {
+            height: 24px;
+            width: 24px;
+            filter: invert(1);
+            /* Makes the icons white on black background */
+            transition: opacity 0.2s ease;
+        }
 
-    /* Discussion body preview */
-    .discussion-body {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 10px;
-    }
+        .icon:hover {
+            opacity: 0.7;
+        }
 
-    /* View link */
-    .view-link {
-      font-size: 14px;
-      color: #0074d9;
-      text-decoration: none;
-    }
-    .view-link:hover {
-      text-decoration: underline;
-    }
+        /* Main container */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-    /* Footer spacing */
-    footer {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+        /* Section titles */
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Discussion card styles */
+        .discussion {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .discussion:hover {
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Discussion title */
+        .discussion-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 18px;
+            color: #0074d9;
+            text-decoration: none;
+        }
+
+        .discussion-title:hover {
+            text-decoration: underline;
+        }
+
+        /* Discussion body preview */
+        .discussion-body {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* View link */
+        .view-link {
+            font-size: 14px;
+            color: #0074d9;
+            text-decoration: none;
+        }
+
+        .view-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer spacing */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Centered button container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        /* Post a Question button */
+        .post-question-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #000;
+            /* Black button */
+            color: #fff;
+            /* White text */
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.2s ease, opacity 0.2s ease;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .post-question-btn:hover {
+            background-color: #333;
+            /* Dark gray on hover */
+            opacity: 0.9;
+        }
+
+        .button-icon {
+            height: 20px;
+            width: 20px;
+            filter: invert(1);
+            /* Makes the icon white */
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Black topbar -->
-  <div class="topbar">Composable Support Forum</div>
+    <!-- Black topbar -->
+    <div class="topbar">
+        <div class="logo-container">
+            <img src="https://dev.composable.ai/images/LogoNav.png" alt="Composable Logo" class="logo">
+            <span></span>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/ComposableAnalytics" target="_blank" title="GitHub">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.youtube.com/@composableanalytics" target="_blank" title="YouTube">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/youtube.svg" alt="YouTube" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/company/composable-analytics-inc-/" target="_blank" title="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon">
+            </a>
 
-  <!-- Main container -->
-  <div class="container">
-    <!-- Header -->
-  <h1>Composable Support</h1>
+        </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header -->
         <h2>GitHub Discussions</h2>
-    <p>Join the conversation in our GitHub Discussions support forum. Share questions, solutions, and ideas with the Composable community.</p>
-    <hr>
-    <!-- Discussions container -->
-    <div id="discussions-container">Loading discussions...</div>
-  </div>
+        <p>Join the conversation in our GitHub Discussions support forum. Share questions, solutions, and ideas with the Composable community.</p>
+        <hr>
+        <!-- Body Content -->
+        <div class="content">
+            <div class="button-container">
+                <a href="https://github.com/orgs/ComposableAnalytics/discussions/new" target="_blank" class="post-question-btn">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="button-icon">
+                    Post a Question
+                </a>
+            </div>
+            <hr>
+            <!-- Discussions container -->
+            <div id="discussions-container">Loading discussions...</div>
+        </div>
 
-  <!-- Footer -->
-  <footer>
-    Powered by <a href="https://github.com/ComposableAnalytics" target="_blank">Composable GitHub</a>.
-  </footer>
+        <!-- Footer -->
+        <hr>
+        <footer>
+            Copyright © 2025 <a href="https://composable.ai" target="_blank">Composable Analytics, Inc.</a>
+        </footer>
 
-  <script>
-    const discussionsContainer = document.getElementById('discussions-container');
-    const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions';
+        <script>
+            const discussionsContainer = document.getElementById('discussions-container');
+            const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions';
 
-    // Fetch and display discussions
-    fetch(apiUrl)
-      .then(response => response.json())
-      .then(data => {
-        discussionsContainer.innerHTML = '';
-        data.forEach(discussion => {
-          const div = document.createElement('div');
-          div.classList.add('discussion');
-          div.innerHTML = `
+            // Fetch and display discussions
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    discussionsContainer.innerHTML = '';
+                    data.forEach(discussion => {
+                        const div = document.createElement('div');
+                        div.classList.add('discussion');
+                        div.innerHTML = `
             <a class="discussion-title" href="${discussion.html_url}" target="_blank">${discussion.title}</a>
             <p class="discussion-body">${discussion.body.slice(0, 100)}...</p>
             <a class="view-link" href="${discussion.html_url}" target="_blank">View Discussion</a>
           `;
-          discussionsContainer.appendChild(div);
-        });
-      })
-      .catch(err => {
-        console.error('Error fetching discussions:', err);
-        discussionsContainer.innerHTML = 'Failed to load discussions. Please try again later.';
-      });
-  </script>
+                        discussionsContainer.appendChild(div);
+                    });
+                })
+                .catch(err => {
+                    console.error('Error fetching discussions:', err);
+                    discussionsContainer.innerHTML = 'Failed to load discussions. Please try again later.';
+                });
+        </script>
 </body>
+
 </html>
