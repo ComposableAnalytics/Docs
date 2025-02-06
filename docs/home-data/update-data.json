@@ -1,13 +1,31 @@
 {
   "updates": [
     {
-      "content": "New module to perform set operations on arrays",
-      "date": "1/13/2025",
+      "content": "New module to query the Windows Event Viewer for logs",
+      "date": "2/6/2025",
       "productAreas": [
         "DataFlow"
       ],
       "type": "minor",
-      "changesetNum": "22181"
+      "changesetNum": "22213"
+    },
+    {
+      "content": "New string hasher module",
+      "date": "2/6/2025",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "22212"
+    },
+    {
+      "content": "User-level preferences for default search type",
+      "date": "2/6/2025",
+      "productAreas": [
+        "Search"
+      ],
+      "type": "minor",
+      "changesetNum": "22209"
     },
     {
       "content": "Added resource network view to TestSuite page",
