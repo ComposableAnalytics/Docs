@@ -52,7 +52,6 @@
             height: 24px;
             width: 24px;
             filter: invert(1);
-            /* Makes the icons white on black background */
             transition: opacity 0.2s ease;
         }
 
@@ -108,6 +107,13 @@
             margin-bottom: 10px;
         }
 
+        /* Metadata styling */
+        .discussion-meta {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
         /* View link */
         .view-link {
             font-size: 14px;
@@ -140,9 +146,7 @@
             align-items: center;
             gap: 10px;
             background-color: #000;
-            /* Black button */
             color: #fff;
-            /* White text */
             text-decoration: none;
             padding: 12px 20px;
             border-radius: 4px;
@@ -154,7 +158,6 @@
 
         .post-question-btn:hover {
             background-color: #333;
-            /* Dark gray on hover */
             opacity: 0.9;
         }
 
@@ -162,7 +165,6 @@
             height: 20px;
             width: 20px;
             filter: invert(1);
-            /* Makes the icon white */
         }
     </style>
 </head>
@@ -172,7 +174,6 @@
     <div class="topbar">
         <div class="logo-container">
             <img src="https://dev.composable.ai/images/LogoNav.png" alt="Composable Logo" class="logo">
-            <span></span>
         </div>
         <div class="social-icons">
             <a href="https://github.com/ComposableAnalytics" target="_blank" title="GitHub">
@@ -196,50 +197,55 @@
         <h2>GitHub Discussions</h2>
         <p>Join the conversation in our GitHub Discussions support forum. Share questions, solutions, and ideas with the Composable community.</p>
         <hr>
-        <!-- Body Content -->
-        <div class="content">
-            <div class="button-container">
-                <a href="https://github.com/orgs/ComposableAnalytics/discussions/new" target="_blank" class="post-question-btn">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="button-icon">
-                    Post a Question
-                </a>
-            </div>
-            <hr>
-            <!-- Discussions container -->
-            <div id="discussions-container">Loading discussions...</div>
+
+        <!-- Post a Question Button -->
+        <div class="button-container">
+            <a href="https://github.com/orgs/ComposableAnalytics/discussions/new" target="_blank" class="post-question-btn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="button-icon">
+                Post a Question
+            </a>
         </div>
-
-        <!-- Footer -->
         <hr>
-        <footer>
-            Copyright © 2025 <a href="https://composable.ai" target="_blank">Composable Analytics, Inc.</a>
-        </footer>
 
-        <script>
-            const discussionsContainer = document.getElementById('discussions-container');
-            const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions?sort=created&direction=desc';';
+        <!-- Discussions container -->
+        <div id="discussions-container">Loading discussions...</div>
+    </div>
 
-            // Fetch and display discussions
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    discussionsContainer.innerHTML = '';
-                    data.forEach(discussion => {
-                        const div = document.createElement('div');
-                        div.classList.add('discussion');
-                        div.innerHTML = `
-            <a class="discussion-title" href="${discussion.html_url}" target="_blank">${discussion.title}</a>
-            <p class="discussion-body">${discussion.body.slice(0, 100)}...</p>
-            <a class="view-link" href="${discussion.html_url}" target="_blank">View Discussion</a>
-          `;
-                        discussionsContainer.appendChild(div);
-                    });
-                })
-                .catch(err => {
-                    console.error('Error fetching discussions:', err);
-                    discussionsContainer.innerHTML = 'Failed to load discussions. Please try again later.';
+    <!-- Footer -->
+    <hr>
+    <footer>
+        Copyright © 2025 <a href="https://composable.ai" target="_blank">Composable Analytics, Inc.</a>
+    </footer>
+
+    <script>
+        const discussionsContainer = document.getElementById('discussions-container');
+        const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions?sort=created&direction=desc';
+
+        // Fetch and display discussions
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                discussionsContainer.innerHTML = '';
+                data.forEach(discussion => {
+                    const createdAt = new Date(discussion.created_at).toLocaleDateString(); // Format date
+                    const author = discussion.user.login; // Get author username
+
+                    const div = document.createElement('div');
+                    div.classList.add('discussion');
+                    div.innerHTML = `
+                        <a class="discussion-title" href="${discussion.html_url}" target="_blank">${discussion.title}</a>
+                        <p class="discussion-body">${discussion.body.slice(0, 100)}...</p>
+                        <p class="discussion-meta"><strong>Author:</strong> ${author} | <strong>Posted on:</strong> ${createdAt}</p>
+                        <a class="view-link" href="${discussion.html_url}" target="_blank">View Discussion</a>
+                    `;
+                    discussionsContainer.appendChild(div);
                 });
-        </script>
+            })
+            .catch(err => {
+                console.error('Error fetching discussions:', err);
+                discussionsContainer.innerHTML = 'Failed to load discussions. Please try again later.';
+            });
+    </script>
 </body>
 
 </html>
