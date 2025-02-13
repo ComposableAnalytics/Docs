@@ -239,7 +239,7 @@
                 div.innerHTML = `
                     <a class="discussion-title" href="${discussion.html_url}" target="_blank">${discussion.title}</a>
                     <p class="discussion-body">${discussion.body.slice(0, 100)}...</p>
-                    <p class="discussion-meta"><strong>Author:</strong> ${author} | <strong>Posted on:</strong> ${createdAt}</p>
+                    <p class="discussion-meta"><strong>Author:</strong><a class="discussion-meta" href="https://github.com/${author}" target="_blank">${author}</a> | <strong>Posted on:</strong> ${createdAt}</p>
                     <a class="view-link" href="${discussion.html_url}" target="_blank">View Discussion</a>
                 `;
                 discussionsContainer.appendChild(div);
