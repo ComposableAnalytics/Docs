@@ -14,8 +14,6 @@
             padding: 0;
             background-color: #fff;
             color: #333;
-            display: flex;
-            flex-direction: column;
         }
 
         /* Topbar styling */
@@ -25,74 +23,158 @@
             justify-content: space-between;
             background-color: #000;
             color: #fff;
-            padding: 5px 15px;
-            font-size: 16px;
-            position: fixed;
+            padding: 10px 20px;
+            font-size: 18px;
+            position: sticky;
             top: 0;
-            width: 100%;
             z-index: 1000;
-            height: 50px;
         }
 
-        .logo-container img {
+        /* Logo container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
             height: 30px;
             width: auto;
         }
 
-        /* Main layout */
-        .content-wrapper {
+        /* Social icons */
+        .social-icons {
             display: flex;
-            margin-top: 70px;
-            padding: 20px;
-            gap: 20px;
+            align-items: center;
+            gap: 15px;
         }
 
-        .main-content {
-            flex: 1;
+        .icon {
+            height: 24px;
+            width: 24px;
+            filter: invert(1);
+            transition: opacity 0.2s ease;
+        }
+
+        .icon:hover {
+            opacity: 0.7;
+        }
+
+        /* Main container */
+        .container {
+            padding: 20px;
             max-width: 800px;
             margin: 0 auto;
         }
 
-        /* Sidebar styles */
-        .sidebar {
-            width: 250px;
-            background-color: #f4f4f4;
-            padding: 20px;
-            height: fit-content;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 70px;
-            align-self: flex-start;
+        /* Section titles */
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .sidebar h3 {
-            font-size: 18px;
+        /* Discussion card styles */
+        .discussion {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
             margin-bottom: 15px;
+            background: #f9f9f9;
+            transition: box-shadow 0.3s ease-in-out;
         }
 
-        .sidebar a {
-            display: block;
-            text-decoration: none;
+        .discussion:hover {
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Discussion title */
+        .discussion-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 18px;
             color: #0074d9;
-            font-size: 16px;
-            margin-bottom: 10px;
+            text-decoration: none;
         }
 
-        .sidebar a:hover {
+        .discussion-title:hover {
             text-decoration: underline;
         }
 
-        @media (max-width: 900px) {
-            .content-wrapper {
-                flex-direction: column;
-                align-items: center;
-            }
+        /* Discussion body preview */
+        .discussion-body {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
 
-            .sidebar {
-                width: 100%;
-                position: relative;
-                top: 0;
-            }
+        /* Metadata styling */
+        .discussion-meta {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .discussion-meta a {
+            text-decoration: none; /* Removes underline */
+            color: inherit; /* Keeps the text color the same as surrounding text */
+        }
+
+        .discussion-meta a:hover {
+            text-decoration: underline; /* Optional: Underline on hover */
+        }
+
+        /* View link */
+        .view-link {
+            font-size: 14px;
+            color: #0074d9;
+            text-decoration: none;
+        }
+
+        .view-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer spacing */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Centered button container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        /* Post a Question button */
+        .post-question-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.2s ease, opacity 0.2s ease;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .post-question-btn:hover {
+            background-color: #333;
+            opacity: 0.9;
+        }
+
+        .button-icon {
+            height: 20px;
+            width: 20px;
+            filter: invert(1);
         }
     </style>
 </head>
@@ -101,52 +183,87 @@
     <!-- Black topbar -->
     <div class="topbar">
         <div class="logo-container">
-            <img src="https://dev.composable.ai/images/LogoNav.png" alt="Composable Logo">
+            <img src="https://dev.composable.ai/images/LogoNav.png" alt="Composable Logo" class="logo">
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/ComposableAnalytics" target="_blank" title="GitHub">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.youtube.com/@composableanalytics" target="_blank" title="YouTube">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/youtube.svg" alt="YouTube" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/company/composable-analytics-inc-/" target="_blank" title="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon">
+            </a>
+            <a href="mailto:support@composable.ai" target="_blank" title="Mail">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/gmail.svg" alt="Mail" class="icon">
+            </a>
         </div>
     </div>
 
-    <!-- Main content wrapper -->
-    <div class="content-wrapper">
-        <div class="main-content">
-            <h2>GitHub Discussions</h2>
-            <p>Join the conversation in our GitHub Discussions support forum. Share questions, solutions, and ideas with the Composable community.</p>
-            <hr>
-            <div id="discussions-container">Loading discussions...</div>
-        </div>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header -->
+        <h2>GitHub Discussions</h2>
+        <p>Join the conversation in our GitHub Discussions support forum. Share questions, solutions, and ideas with the Composable community.</p>
+        <hr>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h3>Need More Help?</h3>
-            <a href="mailto:support@composable.ai">📧 Email Support</a>
-            <a href="https://docs.composable.ai" target="_blank">📖 View Documentation</a>
-            <a href="https://composable.ai/schedule-a-demo/" target="_blank">📅 Request a Live Session</a>
+        <!-- Post a Question & View Discussions Buttons -->
+        <div class="button-container" style="display: flex; gap: 50px;">
+            <a href="https://github.com/orgs/ComposableAnalytics/discussions/new" target="_blank" class="post-question-btn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="button-icon">
+                Post a Question
+            </a>
+            <a href="https://github.com/orgs/ComposableAnalytics/discussions" target="_blank" class="post-question-btn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub" class="button-icon">
+                View Discussions
+            </a>
         </div>
+        <hr>
+
+        <!-- Discussions container -->
+        <div id="discussions-container">Loading discussions...</div>
     </div>
 
-    <script>
-        const discussionsContainer = document.getElementById('discussions-container');
-        const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions';
+    <!-- Footer -->
+    <hr>
+    <footer>
+        Copyright © 2025 <a href="https://composable.ai" target="_blank">Composable Analytics, Inc.</a>
+    </footer>
 
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                discussionsContainer.innerHTML = '';
-                data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-                data.forEach(discussion => {
-                    const div = document.createElement('div');
-                    div.classList.add('discussion');
-                    div.innerHTML = `
-                        <a class="discussion-title" href="${discussion.html_url}" target="_blank">${discussion.title}</a>
-                        <p class="discussion-body">${discussion.body.slice(0, 100)}...</p>
-                    `;
-                    discussionsContainer.appendChild(div);
-                });
-            })
-            .catch(err => {
-                console.error('Error fetching discussions:', err);
-                discussionsContainer.innerHTML = 'Failed to load discussions. Please try again later.';
+<script>
+    const discussionsContainer = document.getElementById('discussions-container');
+    const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions';
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            discussionsContainer.innerHTML = '';
+
+            // Manually sort discussions in descending order (newest first)
+            data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+            data.forEach(discussion => {
+                const createdAt = new Date(discussion.created_at).toLocaleDateString();
+                const author = discussion.user.login;
+
+                const div = document.createElement('div');
+                div.classList.add('discussion');
+                div.innerHTML = `
+                    <a class="discussion-title" href="${discussion.html_url}" target="_blank">${discussion.title}</a>
+                    <p class="discussion-body">${discussion.body.slice(0, 100)}...</p>
+                    <p class="discussion-meta"><strong>Author:</strong><a class="discussion-meta" href="https://github.com/${author}" target="_blank">${author}</a> | <strong>Posted on:</strong> ${createdAt}</p>
+                    <a class="view-link" href="${discussion.html_url}" target="_blank">View Discussion</a>
+                `;
+                discussionsContainer.appendChild(div);
             });
-    </script>
+        })
+        .catch(err => {
+            console.error('Error fetching discussions:', err);
+            discussionsContainer.innerHTML = 'Failed to load discussions. Please try again later.';
+        });
+</script>
+
 </body>
 
 </html>
