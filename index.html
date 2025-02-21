@@ -116,12 +116,15 @@
         }
 
         .discussion-meta a {
-            text-decoration: none; /* Removes underline */
-            color: inherit; /* Keeps the text color the same as surrounding text */
+            text-decoration: none;
+            /* Removes underline */
+            color: inherit;
+            /* Keeps the text color the same as surrounding text */
         }
 
         .discussion-meta a:hover {
-            text-decoration: underline; /* Optional: Underline on hover */
+            text-decoration: underline;
+            /* Optional: Underline on hover */
         }
 
         /* View link */
@@ -176,6 +179,59 @@
             width: 20px;
             filter: invert(1);
         }
+
+        /* Floating Help Section */
+        .help-section {
+            position: fixed;
+            right: 20px;
+            top: 80px;
+            /* Initially positioned at the top of the screen */
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            z-index: 1000;
+            display: block;
+        }
+
+        /* For larger screens (desktop), the sidebar stays on the right */
+        @media (min-width: 900px) {
+            .help-section {
+                right: 20px;
+                top: 80px;
+                /* Adjust as needed */
+                position: fixed;
+                /* Fixes the sidebar to the right */
+            }
+        }
+
+        /* For smaller screens (mobile), the sidebar stays fixed at the bottom */
+        @media (max-width: 900px) {
+            .help-section {
+                position: fixed;
+                /* Use fixed to make it sticky even on small screens */
+                right: 20px;
+                bottom: 20px;
+                /* Moves the sidebar to the bottom of the screen */
+                top: auto;
+                /* Removes the top positioning */
+            }
+        }
+
+        /* Links inside the floating sidebar */
+        .help-section a {
+            display: block;
+            /* Make links block-level */
+            color: #0074d9;
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .help-section a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -225,44 +281,52 @@
         <div id="discussions-container">Loading discussions...</div>
     </div>
 
+    <!-- Floating Help Section -->
+    <div class="help-section">
+        <h3>Need More Help?</h3>
+        <a href="mailto:support@composable.ai">📧 Email Support</a>
+        <a href="https://docs.composable.ai" target="_blank">📖 View Documentation</a>
+        <a href="https://composable.ai/schedule-a-demo/" target="_blank">📅 Request a Live Session</a>
+    </div>
+
     <!-- Footer -->
     <hr>
     <footer>
         Copyright © 2025 <a href="https://composable.ai" target="_blank">Composable Analytics, Inc.</a>
     </footer>
 
-<script>
-    const discussionsContainer = document.getElementById('discussions-container');
-    const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions';
+    <script>
+        const discussionsContainer = document.getElementById('discussions-container');
+        const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions';
 
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            discussionsContainer.innerHTML = '';
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                discussionsContainer.innerHTML = '';
 
-            // Manually sort discussions in descending order (newest first)
-            data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+                // Manually sort discussions in descending order (newest first)
+                data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
-            data.forEach(discussion => {
-                const createdAt = new Date(discussion.created_at).toLocaleDateString();
-                const author = discussion.user.login;
+                data.forEach(discussion => {
+                    const createdAt = new Date(discussion.created_at).toLocaleDateString();
+                    const author = discussion.user.login;
 
-                const div = document.createElement('div');
-                div.classList.add('discussion');
-                div.innerHTML = `
-                    <a class="discussion-title" href="${discussion.html_url}" target="_blank">${discussion.title}</a>
-                    <p class="discussion-body">${discussion.body.slice(0, 100)}...</p>
-                    <p class="discussion-meta"><strong>Author:</strong><a class="discussion-meta" href="https://github.com/${author}" target="_blank">${author}</a> | <strong>Posted on:</strong> ${createdAt}</p>
-                    <a class="view-link" href="${discussion.html_url}" target="_blank">View Discussion</a>
-                `;
-                discussionsContainer.appendChild(div);
+                    const div = document.createElement('div');
+                    div.classList.add('discussion');
+                    div.innerHTML = `
+                        <a class="discussion-title" href="${discussion.html_url}" target="_blank">${discussion.title}</a>
+                        <p class="discussion-body">${discussion.body.slice(0, 100)}...</p>
+                        <p class="discussion-meta"><strong>Author:</strong><a class="discussion-meta" href="https://github.com/${author}" target="_blank">${author}</a> | <strong>Posted on:</strong> ${createdAt}</p>
+                        <a class="view-link" href="${discussion.html_url}" target="_blank">View Discussion</a>
+                    `;
+                    discussionsContainer.appendChild(div);
+                });
+            })
+            .catch(err => {
+                console.error('Error fetching discussions:', err);
+                discussionsContainer.innerHTML = 'Failed to load discussions. Please try again later.';
             });
-        })
-        .catch(err => {
-            console.error('Error fetching discussions:', err);
-            discussionsContainer.innerHTML = 'Failed to load discussions. Please try again later.';
-        });
-</script>
+    </script>
 
 </body>
 
