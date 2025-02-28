@@ -25,7 +25,7 @@ nav:
     - Installation Options:
         - 'Composable Installer - GUI': 'Getting-Started/03-1.Installation-GUI.md'
         - 'Deployment Scripts': 'Getting-Started/03-2.Deployment-Scripts.md'
-        - 'Deployment Scripts': 'Getting-Started/03-3.Azure-Authentication.md'
+        - 'Entra ID Authentication': 'Getting-Started/03-3.Azure-Authentication.md'
 - 2. Composable Platform:
     - '2.1 Overview': 'Composable-Platform/01.Overview.md'
     - '2.2 Navigation': 'Composable-Platform/02.Navigation.md'
