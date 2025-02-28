@@ -25,7 +25,7 @@ Explore our documentation to learn how to leverage Composable for:
 ## Why Choose Composable?
 Composable provides a rich, web-based environment that facilitates self-service analytics, enabling users to compose, discover, and collaborate on analytical solutions with minimal friction. Whether your focus is on accelerating insights, optimizing operations, or driving innovation, Composable equips you with the tools and flexibility needed to succeed.
 
-### Key Benefits:
+**Key Benefits:**
 - **End-to-End Data Solutions:** From data ingestion to visualization, Composable offers a complete data pipeline.
 - **Scalability:** Designed to handle high-volume, high-velocity data across distributed environments.
 - **Interoperability:** Seamlessly integrates with cloud services, third-party applications, and enterprise systems.
