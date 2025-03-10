@@ -64,3 +64,8 @@ The built-in Parameters are case-sensitive.
 | {{ queryview.Id }}   | The id of the QueryView being executed                       |
 | {{ queryview.Name }} | The name of the QueryView being executed                     |
 
+## Referencing Keys
+
+In addition to inputs, the Template format can also be used to refer to [Composable Keys](../Keys/01.Overview.md) that the QueryView's author has access to. Keys with string, number, and boolean values meant to be used as global constants can be inserted into the query by adding the `key` option at the end of the template -- for example, `{{ <keyName>:key }}`.
+
+List-valued keys can have specific elements referenced by adding an index after the key name, such as `{{ <keyName>[0]:key }}`. Other, more complex datatypes can similarly have specific properties referenced by name -- for instance, the Username in a Database Connection Settings Key could be inserted using `{{ <keyName>[Username]:key }}`. Remember that a QueryView's access to Keys is based on its author; be aware of what other users are given permission to edit the QueryView.
