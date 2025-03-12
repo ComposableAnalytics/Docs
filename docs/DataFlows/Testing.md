@@ -50,11 +50,13 @@ In this sample failing test, we have changed the input of the Calculator Module 
 
 In Composable, Test Suites provide a structured way to manage and execute a series of tests. Test Suites allow you to run tests in both series an parallel. When you first open a Test Suite you will see the view below. This view gives you an overview of the current state of all of your tests, and allows you to see the individual tests which are included in the Test Suite.
 
-![!Test Suite Overview](img/TestSuiteOverview.png)
+![!Test Suite Overview](img/TestSuiteOverviewUpdated.png)
 
 To add tests to your Test Suite, select the "Add Tests" tab. Here you can use the existing search syntax in Composable. You can then select the "+" next to the tests you want to add. If you do not see your test in the list, or need to load more tests, select the "Load More" button.
 
-To run your Test Suite, select the "Run" button in the upper right corner. This will begin the execution of all of your included tests with a degree of parallelism up the the number specified inb the "Test Suite Run Settings" tab. After your batch of tests has been setup, you will be switched to a view which will show you the current state. As your tests run, you will see the results appear live in the menu on the left.
+To run your Test Suite, select the "Run" button in the upper right corner. This will begin the execution of all of your included tests with a degree of parallelism up the the number specified in the "Test Suite Run Settings" tab. After your batch of tests has been setup, you will be switched to a view which will show you the current state. As your tests run, you will see the results appear live in the menu on the left.
+
+The filters at the top of the Included Tests section on the right allow you to view a subset of the added tests based on the results of their most recent execution. Pressing the Run button with a filter selected will cause only the tests matching that filter to be included in the test batch. Note that you may need to press the "Reload Outcomes" button in between test runs to properly update the filter that each test appears under.
 
 # Surrogates
 
