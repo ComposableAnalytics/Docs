@@ -297,7 +297,7 @@
 
     <script>
         const discussionsContainer = document.getElementById('discussions-container');
-        const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions';
+        const apiUrl = 'https://api.github.com/repos/ComposableAnalytics/Docs/discussions?per_page=100';
 
         fetch(apiUrl)
             .then(response => response.json())
