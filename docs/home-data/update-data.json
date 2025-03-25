@@ -1,6 +1,15 @@
 {
   "updates": [
      {
+        "content": "Selenium modules can now be used in nested DataFlows",
+        "date": 3/25/2025",
+        "productAreas": [
+          "DataFlow"
+        ],
+        "type": "minor",
+        "changesetNum": "22275"
+     },
+     {
       "content": "Selenium find element modules now support searching under a WebElement as well as a Driver",
       "date": 3/25/2025",
       "productAreas": [
