@@ -1,6 +1,15 @@
-{
+{ 
   "updates": [ 
       {
+        "content": "New module to send files to a Slack channel",
+        "date": "4/2/2025",
+        "productAreas": [
+          "DataFlow"
+        ],
+        "type": "minor",
+        "changesetNum": "22285"
+     },
+     {
         "content": "New set of Selenium modules to build interaction sequences",
         "date": "4/2/2025",
         "productAreas": [
