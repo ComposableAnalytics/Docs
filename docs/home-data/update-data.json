@@ -1,5 +1,14 @@
 { 
-  "updates": [ 
+  "updates": [
+      {
+        "content": "Hover to blur non-neighboring nodes on resource network graph",
+        "date": "4/2/2025",
+        "productAreas": [
+          "Resource Network"
+        ],
+        "type": "minor",
+        "changesetNum": "22286"
+      },
       {
         "content": "New module to send files to a Slack channel",
         "date": "4/2/2025",
