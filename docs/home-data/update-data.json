@@ -1,5 +1,14 @@
 {
-  "updates": [
+  "updates": [ 
+      {
+        "content": "New set of Selenium modules to build interaction sequences",
+        "date": "4/2/2025",
+        "productAreas": [
+          "DataFlow"
+        ],
+        "type": "minor",
+        "changesetNum": "22284"
+     },
      {
         "content": "Selenium modules can now be used in nested DataFlows",
         "date": "3/25/2025",
