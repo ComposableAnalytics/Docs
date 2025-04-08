@@ -14,7 +14,7 @@ some_url: https://docs.composable.ai
 
 The **Pill** control type allows selection of one or multiple values from a predefined set of options. See [Categories](../05.Categories.md) for a complete discussion of creating and using categories. These options are presented as a collection of pill buttons:
 
-![Radio Control](C:\Users\compo\ComposableDocumentation\Docs\docs\DataPortals\img\Pill.png)
+![Radio Control](../img/Pill.png)
 
 ## Required Fields
 
