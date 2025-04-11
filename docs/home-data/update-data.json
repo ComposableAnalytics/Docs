@@ -1,6 +1,15 @@
 { 
   "updates": [
       {
+        "content": "External inputs and outputs which support nullable types",
+        "date": "4/11/2025",
+        "productAreas": [
+          "DataFlow"
+        ],
+        "type": "minor",
+        "changesetNum": "22302"
+      },
+      {
         "content": "Hover to blur non-neighboring nodes on resource network graph",
         "date": "4/2/2025",
         "productAreas": [
