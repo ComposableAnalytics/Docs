@@ -14,6 +14,10 @@ For example, you can create urls using Ids from your table to link to a page tha
 - **Hide Template Columns**: Hides any table columns that are used in the link template 
   - Only visible if DefaultLink is selected
 
+- **Link Target**: Indicates where the link will be opened
+  - Default ("_blank") will open the link in a new tab
+  - "_self" will open the link in the same tab
+  - Names of iframes can be provided to target specific parts of the page to open within
 
 ### Syntax
 
