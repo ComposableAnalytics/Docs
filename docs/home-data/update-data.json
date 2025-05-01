@@ -1,6 +1,15 @@
 { 
   "updates": [
       {
+        "content": "Open AI extension modules",
+        "date": "5/1/2025",
+        "productAreas": [
+          "DataFlow"
+        ],
+        "type": "minor",
+        "changesetNum": "22322"
+      },
+      {
         "content": "External inputs and outputs which support nullable types",
         "date": "4/11/2025",
         "productAreas": [
