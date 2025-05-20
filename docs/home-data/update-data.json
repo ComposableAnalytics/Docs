@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Browser cookie support for Web Receive module [Administrators]",
+      "date": "5/20/2025",
+      "productAreas": [
+        "DataFlow"
+      ],
+      "type": "minor",
+      "changesetNum": "22347"
+    },
+    {
       "content": "View and resolve potential run retention setting conflicts",
       "date": "5/7/2025",
       "productAreas": [
