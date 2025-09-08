@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Add Secret Key Authentication to Outlook 365 integration",
+      "date": "9/5/2025",
+      "productAreas": [
+        "Keys"
+      ],
+      "type": "minor",
+      "changesetNum": "22444"
+    },
+    {
       "content": "Browser cookie support for Web Receive module [Administrators]",
       "date": "5/20/2025",
       "productAreas": [
