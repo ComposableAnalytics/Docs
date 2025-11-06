@@ -9,7 +9,7 @@ some_url: https://docs.composable.ai
 
 # Group
 
-The **Group** column on a container field defines how to lay out the generated control. That is, it specifies which group \<div> it is displayed within. Groups are processed top-down. Nesting of items in a group is achieved with separating group names with a “.” while horizontally laying out elements in a div is achieved by ending the group names with H or HC for horizontal and horizontally centered respectively. Ending a group name with T and a digit 1-12 will place the field in a horizontal row, always taking up increments of 1/12 of the width of the page.  
+The **Group** column on a container field defines how to lay out the generated control. That is, it specifies which group `<div>` it is displayed within. Groups are processed top-down. Nesting of items in a group is achieved with separating group names with a “.” while horizontally laying out elements in a div is achieved by ending the group names with H or HC for horizontal and horizontally centered respectively. Ending a group name with T and a digit 1-12 will place the field in a horizontal row, always taking up increments of 1/12 of the width of the page.  
 
 #### Details
 
