@@ -134,7 +134,7 @@ The literal we just made could have also been a filter. Let's add a filter based
 | Hidden                 | unselected                                |
 | Visible as Child       | unselected                                |
 | Search Type            | Single-Column Search                      |
-| Column                 |                                           |
+| Column                 | TripDuration                              |
 | Default Operator       | <=                                        |
 | Allow Operator Changes | Checked                                   |
 
