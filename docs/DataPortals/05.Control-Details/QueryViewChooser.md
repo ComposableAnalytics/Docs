@@ -17,7 +17,7 @@ The control on the page is a button:
 
 ![QueryViewChooser Control](../img/QueryViewChooser.png)
 
-This button opens a table vviewer to allow selection:
+This button opens a table viewer to allow selection:
 
 ![QueryViewChooser Menu](../img/QueryViewChooser-Modal.png)
 
