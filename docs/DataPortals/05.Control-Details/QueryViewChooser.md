@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **QueryViewChooser** control type allows the user to select a row from a Composable [QueryView](../../QueryViews/01.Overview.md). The selection can be used to set other fields on the page, matching field [Name](../06.Setting-Details/Name.md) to the column name of the QueryView.
+The **QueryViewChooser** control type allows the user to select a row from a Composable [QueryView](../../QueryViews/01.Overview.md). The selection can be used to set other fields on the page, matching field [Name](../06.Setting-Details/Name.md) to the column name of the QueryView. QueryView search parameters can be passed in from the other fields on the page, matching their field [Name](../06.Setting-Details/Name.md) to the QueryView parameter [inputs](../../QueryViews/Inputs.md).
 
 The control on the page is a button:
 
