@@ -13,7 +13,7 @@ some_url: https://docs.composable.ai
 
 The **File** control type allows for saving files directly in a DataPortal.
 
-![SSN Control](../img/SSNMasked.png)
+![File Control](../img/File.png)
 
 ## Required Fields
 
