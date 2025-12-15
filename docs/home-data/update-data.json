@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Account operations history on User Management page",
+      "date": "12/15/2025",
+      "productAreas": ["Admin"],
+      "type": "minor",
+      "changesetNum": "22598"
+    },
+    {
       "content": "Add Secret Key Authentication to Outlook 365 integration",
       "date": "9/5/2025",
       "productAreas": [
