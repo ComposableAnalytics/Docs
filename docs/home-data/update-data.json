@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Added control type for Files to DataPortals",
+      "date": "12/15/2025",
+      "type": "major",
+      "productAreas": [
+        "DataPortals"
+      ],
+      "changesetNum": "22588"
+    },
+    {
       "content": "Account operations history on User Management page",
       "date": "12/15/2025",
       "productAreas": ["Admin"],
