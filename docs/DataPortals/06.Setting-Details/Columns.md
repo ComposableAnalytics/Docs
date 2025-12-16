@@ -24,6 +24,7 @@ Fields on column objects can be:
 - SortState - ASC or DESC
 - SortOrder - Integer (i.e. 1 - 10).  Determines the sort order of the columns.
 - Display - true or false. If the value is false, the column is not shown, but can still be used for default sorting.
+- Styling - Allows for numeric values to appear formatted inside of DataPortals using Intl.NumberFormat() which takes in a FormattingLocale and FormattingOptions in a JSON format. A list of the possible values for these fields can be found [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat). Example: "Styling": {"FormattingLocale": "en-us", "FormattingOptions": {"style": "unit", "unit": "kilometer", "unitDisplay": "long"}}
 
 ## Controls
 
