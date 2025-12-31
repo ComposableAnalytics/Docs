@@ -11,6 +11,17 @@ some_url: https://docs.composable.ai
 
 The **ComputedCondition** column on a container field defines the computation to perform for a [Computed](../05.Control-Details/Computed.md) control.
 
+The **ComputedCondition** column specifies the operations and values to use to compute a [Computed](../05.Control-Details/Computed.md) control value. Table values can be referenced via their name.
+
+#### Supported Operands by Type
+- #### Numeric Values
+    The following operands are supported for numeric values: +, -, *, /.
+    Example:
+    To multiply a number stored in the column named "NumberValue" by 5 the ComputedCondition should be set to:
+    `NumberValue * 5`
+- #### Strings
+    For strings the only operand available are + which are used to append strings together.
+
 ## Controls
 
 The **ComputedCondition** column applies to the following controls:
