@@ -87,6 +87,7 @@ nav:
         - 'SaveButton': 'DataPortals/05.Control-Details/SaveButton.md'
         - 'Spin': 'DataPortals/05.Control-Details/Spin.md'
         - 'SSN': 'DataPortals/05.Control-Details/SSN.md'
+        - 'SSNMasked': 'DataPortals/05.Control-Details/SSNMasked.md'
         - 'Tab': 'DataPortals/05.Control-Details/Tab.md'
         - 'Table': 'DataPortals/05.Control-Details/Table.md'
         - 'Text': 'DataPortals/05.Control-Details/Text.md'
