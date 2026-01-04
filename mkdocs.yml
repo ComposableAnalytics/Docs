@@ -72,6 +72,7 @@ nav:
         - 'Date': 'DataPortals/05.Control-Details/Date.md'
         - 'DateTime': 'DataPortals/05.Control-Details/DateTime.md'
         - 'HyperLink': 'DataPortals/05.Control-Details/HyperLink.md'
+        - 'File': 'DataPortals/05.Control-Details/File.md'
         - 'Label': 'DataPortals/05.Control-Details/Label.md'
         - 'Link': 'DataPortals/05.Control-Details/Link.md'
         - 'NumberFormatting': 'DataPortals/05.Control-Details/NumberFormatting.md'
