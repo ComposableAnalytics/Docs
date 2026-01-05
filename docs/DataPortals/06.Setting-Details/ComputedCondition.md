@@ -17,10 +17,13 @@ The **ComputedCondition** column specifies the operations and values to use to c
 - #### Numeric Values
     The following operands are supported for numeric values: +, -, *, /.
     Example:
-    To multiply a number stored in the column named "NumberValue" by 5 the ComputedCondition should be set to:
+    To multiply a number stored in the column named "NumberValue" by 5, the ComputedCondition should be set to:
     `NumberValue * 5`
 - #### Strings
     For strings the only operand available are + which are used to append strings together.
+    Example:
+    To add a string stored in the column names "StringValue" to the beginning of the string "test", the ComputedColumn should be set to:
+    `StringValue + "test"`
 
 ## Controls
 
