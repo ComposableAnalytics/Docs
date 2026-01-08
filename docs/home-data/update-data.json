@@ -1,6 +1,12 @@
 {
   "updates": [
     {
+      "content": "Fixed an issue with templated keys in queryviews interfering with other inputs",
+      "date": "1/5/2026",
+      "type": "bugfix",
+      "changesetNum": "22613"
+    },
+    {
       "content": "Added control type for Files to DataPortals",
       "date": "12/15/2025",
       "type": "major",
@@ -373,7 +379,7 @@
     {
       "content": "Fixed DataRepository so 'From Key' now wraps around if it's a long string",
       "date": "5/28/2024",
-      "type": "bugFix",
+      "type": "bugfix",
       "productAreas": [
         "DataRepository"
       ],
@@ -382,7 +388,7 @@
     {
       "content": "Fixed abandon color to now properly show in red in DataFlow charts",
       "date": "5/28/2024",
-      "type": "bugFix",
+      "type": "bugfix",
       "productAreas": [
         "DataFlow"
       ],
@@ -391,7 +397,7 @@
     {
       "content": "Removed lower shading on tabs in Run Aggregate View",
       "date": "5/28/2024",
-      "type": "bugFix",
+      "type": "bugfix",
       "productAreas": [
         "DataFlow"
       ],
@@ -400,7 +406,7 @@
     {
       "content": "Fixed so changing wiretype will mark page as dirty and included tests for it",
       "date": "5/17/2024",
-      "type": "bugFix",
+      "type": "bugfix",
       "productAreas": [
         "DataFlow"
       ],
@@ -409,19 +415,19 @@
     {
       "content": "Fixed password popover fix so that it also works on the password reset page too",
       "date": "4/26/2024",
-      "type": "bugFix",
+      "type": "bugfix",
       "changesetNum": "21644"
     },
     {
       "content": "Fixed password popover on registration so that it points to the password field instead of the email field on certain browsers",
       "date": "4/24/2024",
-      "type": "bugFix",
+      "type": "bugfix",
       "changesetNum": "21640"
     },
     {
       "content": "Fixed code generation button so it doesn't disappear when window narrows",
       "date": "4/19/2024",
-      "type": "bugFix",
+      "type": "bugfix",
       "productAreas": [
         "DataFlow"
       ],
