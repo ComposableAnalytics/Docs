@@ -17,7 +17,7 @@ The value of the **FormattingOptions** column needs to be in a readable JSON for
 
 - `{ "style":"percent" }`
 - `{ "style":"currency", "currency":"JPY" }`
-- `{ "maximumSignificantDigits":"3" }`
+- `{ "maximumSignificantDigits": 3 }`
 
 ### Possible values
 
