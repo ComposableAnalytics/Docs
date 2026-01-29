@@ -7,15 +7,15 @@ date: 2014-08-12
 some_url: https://docs.composable.ai
 ---
 
-# UniqueConstraintScopeToParent
+# ConstraintScopeToParent
 
-The **UniqueConstraintScopeToParent** column on a container field defines whether the unique constraint on this field should include the foreign key referencing the container's parent.
+The **ConstraintScopeToParent** column on a container field defines whether the unique constraint on this field should include the foreign key referencing the container's parent.
 
 **This setting has been deprecated. It will continue to work but it is recommended to create new uniqueness restrictions using a [CustomIndex](CustomIndex.md) column.**
 
 ## Controls
 
-The **UniqueConstraintScopeToParent** column applies to the following controls:
+The **ConstraintScopeToParent** column applies to the following controls:
 
 - [Category](../05.Control-Details/Category.md)
 - [CheckBox](../05.Control-Details/CheckBox.md)
