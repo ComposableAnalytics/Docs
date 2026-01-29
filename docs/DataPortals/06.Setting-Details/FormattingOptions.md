@@ -13,10 +13,11 @@ The **FormattingOptions** column on a container field is used to define specific
 
 ### Input Format
 
-The value of the **FormattingOptions** column needs to be in a readable JSON form and thus will have to be formatted correctly. Find a number of examples below:<br />
-- { "style":"percent" } 
-- { "style":"currency", "currency":"JPY" }
-- { "maximumSignificantDigits":"3" }
+The value of the **FormattingOptions** column needs to be in a readable JSON form and thus will have to be formatted correctly. Find a number of examples below:
+
+- `{ "style":"percent" }`
+- `{ "style":"currency", "currency":"JPY" }`
+- `{ "maximumSignificantDigits": 3 }`
 
 ### Possible values
 
