@@ -19,6 +19,6 @@ The **Max** column applies to the following controls:
 - [Date](../05.Control-Details/Date.md)
 - [DateTime](../05.Control-Details/DateTime.md)
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
+- [Percent](../05.Control-Details/Percent.md)
 - [Rating](../05.Control-Details/Rating.md)
 - [Spin](../05.Control-Details/Spin.md)
-
