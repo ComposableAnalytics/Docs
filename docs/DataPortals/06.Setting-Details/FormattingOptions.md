@@ -35,3 +35,4 @@ When not provided or left blank, the formatting options will be set to an empty 
 The **FormattingOptions** column applies to the following controls:
 
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
+- [Percent](../05.Control-Details/Percent.md)
