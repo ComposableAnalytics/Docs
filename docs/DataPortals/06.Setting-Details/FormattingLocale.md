@@ -34,3 +34,4 @@ When not provided or left blank, the locale will be set to United States English
 The **FormattingOptions** column applies to the following controls:
 
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
+- [Percent](../05.Control-Details/Percent.md)

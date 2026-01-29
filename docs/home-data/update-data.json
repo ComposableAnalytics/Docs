@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "Added control type for Percents to DataPortals",
+      "date": "1/8/2026",
+      "productAreas": [
+        "DataPortal"
+      ],
+      "type": "major",
+      "changesetNum": "22614"
+    },
+    {
       "content": "Fixed an issue with templated keys in queryviews interfering with other inputs",
       "date": "1/5/2026",
       "type": "bugfix",
@@ -18,7 +27,9 @@
     {
       "content": "Account operations history on User Management page",
       "date": "12/15/2025",
-      "productAreas": ["Admin"],
+      "productAreas": [
+        "Admin"
+      ],
       "type": "minor",
       "changesetNum": "22598"
     },

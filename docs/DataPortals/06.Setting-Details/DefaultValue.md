@@ -22,6 +22,7 @@ The **DefaultValue** column applies to the following controls:
 - [Date](../05.Control-Details/Date.md)
 - [DateTime](../05.Control-Details/DateTime.md)
 - [NumberFormatting](../05.Control-Details/NumberFormatting.md)
+- [Percent](../05.Control-Details/Percent.md)
 - [Phone](../05.Control-Details/Phone.md)
 - [Pill](../05.Control-Details/Pill.md)
 - [QueryView](../05.Control-Details/QueryView.md)

@@ -77,6 +77,7 @@ nav:
         - 'Link': 'DataPortals/05.Control-Details/Link.md'
         - 'NumberFormatting': 'DataPortals/05.Control-Details/NumberFormatting.md'
         - 'Page': 'DataPortals/05.Control-Details/Page.md'
+        - 'Percent': 'DataPortals/05.Control-Details/Percent.md'
         - 'Phone': 'DataPortals/05.Control-Details/Phone.md'
         - 'Pill': 'DataPortals/05.Control-Details/Pill.md'
         - 'QueryView': 'DataPortals/05.Control-Details/QueryView.md'
