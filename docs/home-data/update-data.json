@@ -3,6 +3,9 @@
     {
       "content": "Added control type for Percents to DataPortals",
       "date": "1/8/2026",
+      "productAreas": [
+        "DataPortals"
+      ],
       "type": "major",
       "changesetNum": "22614"
     },

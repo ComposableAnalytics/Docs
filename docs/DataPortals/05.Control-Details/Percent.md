@@ -11,12 +11,12 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **Percent** control supports entering a number as a percentage while still storing the number internally as it's mathematical value. For example:
+The **Percent** control supports entering a number as a percentage while still storing the number internally as its mathematical value. For example:
 
 - Enter 50 to represent 50% (stored as 0.5 in the DataPortal)
 - Enter 72.6 to represent 72.6% (stored as 0.726 in the DataPortal)
 
-After entering a number it is then displayed formatted using Intl.NumberFormat. 
+After entering a number it is then displayed formatted using [Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat). 
 
 ![Post-Populated Field](../img/Percent_3.PNG)
 
@@ -40,7 +40,7 @@ After entering a number it is then displayed formatted using Intl.NumberFormat.
 - [**Max**](../06.Setting-Details/Max.md): This defines the maximum possible numeric input into the Percent field. All input values above will display an error box to the user.
 - [**DefaultValue**](../06.Setting-Details/DefaultValue.md): This defines the default value that is displayed to the user and stored in number representation on the database upon initialization.
 
-**Note:** Min, Max, and DefaultValue should be the numeric representation of the number. For example for a max of 50%, Max should be set ot 0.5.
+**Note:** Min, Max, and DefaultValue should be the numeric representation of the number. For example for a max of 50%, Max should be set to 0.5.
 
 # User Experience
 The user experience for Percent consists of three stages. 1) Pre-populated fields, 2) fields during numeric inputting, 3) post-populated field.
