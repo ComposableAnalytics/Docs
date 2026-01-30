@@ -19,8 +19,11 @@ The **Spin** control type allows for entry of numeric values.
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
 
-- [**Type**](../06.Setting-Details/Type.md): Can be any numeric type, including (but not limited to):
+- [**Type**](../06.Setting-Details/Type.md): Can be any of the following numeric type:
+    - `System.Int16`
     - `System.Int32`
+    - `System.Int64`
+    - `System.Single`
     - `System.Double`
     - `System.Decimal`
     
