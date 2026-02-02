@@ -20,17 +20,14 @@ The **ComputedCondition** column specifies the operations and values to use to c
     To chain computations together that result in boolean values, `AND` and `OR` can be used.  
 - **Numbers:**  
     In addition to the operands listed above, the following operands are supported for numeric values: `-, *, /`.  
-    
     Example:  
     To multiply a number stored in the column named "NumberValue" by 5, the ComputedCondition should be set to: `NumberValue * 5`.  
 - **Strings:**  
     For strings + can be used to append two strings together, whereas < and > can be used to tell if a string comes before or after the other string in alphabetical order.
-    
     Example:  
     To add a string stored in a column named `StringValue` to the beginning of the string `"test"`, the ComputedColumn should be set to: `StringValue + "test"`.  
 - **Booleans:**  
     In addition to the operands listed above, the following operands are supported for booleans: `-, *, /, AND, OR`. For booleans `+, -, *, /` are computed with `true` as `1` and `false` as `0`.  
-    
     Example:  
     To see if `BooleanValue1` and `BooleanValue2` are both `true`, the ComputedColumn should be set to `BooleanVal1 AND BooleanVal2`.  
 
