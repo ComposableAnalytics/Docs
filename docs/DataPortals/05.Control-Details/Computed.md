@@ -19,14 +19,19 @@ The **Computed** control type creates a read-only control showing a value comput
 
 - [**Name**:](../06.Setting-Details/Name.md) The name of the field saved to the database.
 
-- [**Type**:](../06.Setting-Details/Type.md) Can be any numeric type, including (but not limited to):
+- [**Type**:](../06.Setting-Details/Type.md) Can be any of the following types:
+    - `System.Int16`
     - `System.Int32`
+    - `System.Int64`
     - `System.Double`
+    - `System.Single`
     - `System.Decimal`
+    - `System.String`
+    - `System.Boolean`
   
 - [**ControlType**:](../06.Setting-Details/ControlType.md) Must be set to `Computed`.
 
-- [**ComputedCondition**](../06.Setting-Details/ComputedCondition.md)
+- [**ComputedCondition**](../06.Setting-Details/ComputedCondition.md) Must be set in order to compute the value.
 
 ## Optional Fields
 
