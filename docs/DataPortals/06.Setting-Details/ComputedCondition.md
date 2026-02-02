@@ -15,7 +15,7 @@ The **ComputedCondition** column specifies the operations and values to use to c
 
 #### Supported Operands and Their Functions by Type
 - #### All Types
-    The following operands are supported by all types: `(, ), ?, :, ==, !=, +, <, >, <=, >=`.\
+    The following operands are supported by all types: `( ), ?, :, ==, !=, +, <, >, <=, >=`.\
     `?` and `:` can be used together for ternerary computations such as `NumberValue == 5 ? "The number is 5" : "The number is not 5"`.\
     To chain computations together that result in boolean values, `AND` and `OR` can be used.
 - #### Numbers
