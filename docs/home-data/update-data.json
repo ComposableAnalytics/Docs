@@ -1,5 +1,14 @@
 {
   "updates": [
+        {
+      "content": "Link to nested runs in test information panel",
+      "date": "2/6/2026",
+      "productAreas": [
+        "DataFlows"
+      ],
+      "type": "minor",
+      "changesetNum": "22645"
+    },
     {
       "content": "Added control type for Percents to DataPortals",
       "date": "1/8/2026",
