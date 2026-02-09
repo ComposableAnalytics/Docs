@@ -1,6 +1,15 @@
 {
   "updates": [
-        {
+    {
+      "content": "External Choice Output",
+      "date": "2/9/2026",
+      "productAreas": [
+        "DataFlows"
+      ],
+      "type": "minor",
+      "changesetNum": "22648"
+    },
+    {
       "content": "Link to nested runs in test information panel",
       "date": "2/6/2026",
       "productAreas": [
