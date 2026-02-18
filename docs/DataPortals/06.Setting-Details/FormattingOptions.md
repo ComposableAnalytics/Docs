@@ -15,14 +15,15 @@ The **FormattingOptions** column on a container field is used to define specific
 
 The value of the **FormattingOptions** column needs to be in a readable JSON form and thus will have to be formatted correctly.
 
-Example                                                       | SQL column type
---------------------------------------------------------------|----------------
+Example                                                       | SQL datatype
+--------------------------------------------------------------|---------------
 `{ "style":"percent" }`                                       | decimal(19,6)
 `{ "style":"currency", "currency":"JPY" }`                    | decimal(19,2)
 `{ "style":"decimal" }`                                       | decimal(28,12)
-`{ "maximumFractionDigits": 3 }`                              | decimal(4,3)
-`{ "maximumSignificantDigits": 3 }`                           | decimal(3,0)
 `{ "maximumSignificantDigits":9, "maximumFractionDigits":3 }` | decimal(9,3)
+`{ "maximumSignificantDigits":3 }`                            | decimal(3,0)
+`{ "maximumFractionDigits":13 }`                              | decimal(38,13)
+`{ "style":"decimal", "maximumFractionDigits":15 }`           | decimal(28,15)
 
 Note: `style`, `maximumSignificantDigits` and `maximumFractionDigits` are also used to define the precision and scale for a decimal column in the database.
 
