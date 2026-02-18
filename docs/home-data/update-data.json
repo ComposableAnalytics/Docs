@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Decimal precision with FormattingOptions",
+      "date": "2/18/2026",
+      "productAreas": ["DataPortal"],
+      "type": "minor",
+      "changesetNum": "22663"
+    },
+    {
       "content": "External Choice Output",
       "date": "2/9/2026",
       "productAreas": [
