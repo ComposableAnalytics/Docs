@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "DataLabs support for Python 3.13 and JupyterLab 4",
+      "date": "3/9/2026",
+      "productAreas": ["DataLab"],
+      "type": "major",
+      "changesetNum": "22692"
+    },
+    {
       "content": "Decimal precision with FormattingOptions",
       "date": "2/18/2026",
       "productAreas": ["DataPortal"],
