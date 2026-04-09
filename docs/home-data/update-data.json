@@ -1,6 +1,15 @@
 {
   "updates": [
     {
+      "content": "New Module: Table Normalizer",
+      "date": "4/9/2026",
+      "productAreas": [
+        "DataFlows"
+      ],
+      "type": "minor",
+      "changesetNum": "22728"
+    },
+    {
       "content": "DataLabs support for Python 3.13 and JupyterLab 4",
       "date": "3/9/2026",
       "productAreas": ["DataLab"],
@@ -1079,30 +1088,6 @@
         "Board"
       ],
       "changesetNum": "19844"
-    },
-    {
-      "content": "DataLab ribbons in search now showing online status",
-      "date": "2/10/2022",
-      "type": "bugfix",
-      "changesetNum": "19739"
-    },
-    {
-      "content": "DataLabs now useable with Windows Auth",
-      "date": "11/16/2021",
-      "type": "bugfix",
-      "changesetNum": "19592"
-    },
-    {
-      "content": "Fixed broken links in Results view",
-      "date": "11/2/2021",
-      "type": "bugfix",
-      "changesetNum": "19584"
-    },
-    {
-      "content": "Save was broken in Dashboard",
-      "date": "11/2/2021",
-      "type": "bugfix",
-      "changesetNum": "19584"
     }
   ]
 }
