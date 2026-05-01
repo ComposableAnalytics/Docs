@@ -1,6 +1,13 @@
 {
   "updates": [
     {
+      "content": "Table aggregate option",
+      "date": "5/1/2026",
+      "productAreas": ["DataPortal"],
+      "type": "minor",
+      "changesetNum": "22745"
+    },
+    {
       "content": "New Module: Table Normalizer",
       "date": "4/9/2026",
       "productAreas": [
