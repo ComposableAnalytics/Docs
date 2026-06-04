@@ -158,7 +158,7 @@ The final module in this example DataFlow is a DataPortal Delete module; a close
 
 To see the impact of this module, enable all modules and run the full DataFlow. When you go to the DataPortal, there should be two `Application` entries, those for Alice Andrews and Charlie Charles. The entry for Bob Bennett has been deleted.
 
-The DataPortal Sync module has many of the same inputs as the DataPortal Sync module, but uses them to identify existing containers to delete rather than creating or updating containers. The **DataPortalId** input behaves the same as the **FormId** input on DataPortal Sync, and **ContainerName** has the same meaning.
+The DataPortal Delete module has many of the same inputs as the DataPortal Sync module, but uses them to identify existing containers to delete rather than creating or updating containers. The **DataPortalId** input behaves the same as the **FormId** input on DataPortal Sync, and **ContainerName** has the same meaning.
 
 In this case, we have submitted the following table for **Data**:
 
