@@ -55,11 +55,12 @@ NOTE: You will need to remove the Parameters cell as it is not necessary for the
 ![!DataLabs Notebook Runner DataFlow Example](img/DataLabNotebookRunner.DataFlow.png)
 
 1) Create or <a href = "https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/DataFlows/09.Module-Details/files/DataLabNotebookRunnerExample.json" download>import</a> the DataFlow as seen above.
-    - Click the pencil icon and choose the DataLab named `"An Overly Complicated Calculator"`
-    - In the notebook input, include the relative path to your notebook (in this case, the notebook `add.ipynb` was contained within the custom `calculator` subdirectory)
-    - When passing inputs into parameters, use an object namer module to preserve your input types
+   
+- Click the pencil icon and choose the DataLab named `"An Overly Complicated Calculator"`
+- In the notebook input, include the relative path to your notebook (in this case, the notebook `add.ipynb` was contained within the custom `calculator` subdirectory)
+- When passing inputs into parameters, use an object namer module to preserve your input types
 
-2) Run the DataFlow. Your results window should contain the **`return_values`** passed from your `add.ipynb` notebook.
+3) Run the DataFlow. Your results window should contain the **`return_values`** passed from your `add.ipynb` notebook.
 
 
 ## Notes
