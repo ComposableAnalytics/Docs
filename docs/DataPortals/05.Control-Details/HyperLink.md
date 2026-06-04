@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **HyperLink** control type creates a link to another page either within Composable or on another site
+The **HyperLink** control type creates a link to another page either within Composable or on another site.
 
 ![HyperLink Control](../img/Hyperlink.png)
 
