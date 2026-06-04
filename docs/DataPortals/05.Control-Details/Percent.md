@@ -18,7 +18,25 @@ The **Percent** control supports entering a number as a percentage while still s
 
 After entering a number it is then displayed formatted using [Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat). 
 
-![Post-Populated Field](../img/Percent_3.PNG)
+![Post-Populated Field](../img/Percent_3.png)
+
+<!-- ## User Experience
+The user experience for Percent consists of three stages. 1) Pre-populated fields, 2) fields during numeric inputting, 3) post-populated field.
+
+### Pre-Populated Fields
+Prior to populating the Percent field, the input display is set to a default display formatted value of the locale and options applied to a value of 0, as seen in the figure below. Please note that there has been no value representation set on the database at this stage.
+
+![Pre-Populated Field](../img/Percent_1.png)
+
+### Field During Numeric Inputting
+While the user is inputting a value into the Percent field, the field will display the un-formatted number in the same scale as a percentage. This display format will remain until the user clicks away and the field enters the post-population stage. 
+
+![Field During Numeric Inputting](../img/Percent_2.png)
+
+### Post-Population Fields
+Once the numerical input has been made, and the user has clicked away from the field, the Percent field will display the formatted value of the input value. This value will only be displayed on the front-end, while the numeric value of the percent will be the value represented on the server (in this example 0.5). 
+
+![Post-Populated Field](../img/Percent_3.png) -->
 
 ## Required Fields
 
@@ -41,21 +59,3 @@ After entering a number it is then displayed formatted using [Intl.NumberFormat]
 - [**DefaultValue**](../06.Setting-Details/DefaultValue.md): This defines the default value that is displayed to the user and stored in number representation on the database upon initialization.
 
 **Note:** Min, Max, and DefaultValue should be the numeric representation of the number. For example for a max of 50%, Max should be set to 0.5.
-
-# User Experience
-The user experience for Percent consists of three stages. 1) Pre-populated fields, 2) fields during numeric inputting, 3) post-populated field.
-
-### Pre-Populated Fields
-Prior to populating the Percent field, the input display is set to a default display formatted value of the locale and options applied to a value of 0, as seen in the figure below. Please note that there has been no value representation set on the database at this stage.
-
-![Pre-Populated Field](../img/Percent_1.PNG)
-
-### Field During Numeric Inputting
-While the user is inputting a value into the Percent field, the field will display the un-formatted number in the same scale as a percentage. This display format will remain until the user clicks away and the field enters the post-population stage. 
-
-![Field During Numeric Inputting](../img/Percent_2.PNG)
-
-### Post-Population Fields
-Once the numerical input has been made, and the user has clicked away from the field, the Percent field will display the formatted value of the input value. This value will only be displayed on the front-end, while the numeric value of the percent will be the value represented on the server (in this example 0.5). 
-
-![Post-Populated Field](../img/Percent_3.PNG)
