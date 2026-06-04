@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **Code Module** is a powerful Module that allows users to execute custom code in one of the .NET framework programming languages (CLR languages), such as C#, VB.NET, and F#. C#(pronounced "C sharp") is a simple, modern, object-oriented, and type-safe programming language. Its roots in the C family of languages makes C# immediately familiar to C, C++, Java, and JavaScript programmers. F# (pronounced "F sharp") is a programming language that makes it easy to write succinct, robust, and performant code. VB (Visual Basic) is an approachable language with a simple syntax for building type-safe, object-oriented apps.
+The **Code Module** is a powerful Module that allows users to execute custom code in one of the .NET framework programming languages (CLR languages), such as C#, VB.NET, and F#. C# (pronounced "C sharp") is a simple, modern, object-oriented, and type-safe programming language. Its roots in the C family of languages makes C# immediately familiar to C, C++, Java, and JavaScript programmers. F# (pronounced "F sharp") is a programming language that makes it easy to write succinct, robust, and performant code. VB (Visual Basic) is an approachable language with a simple syntax for building type-safe, object-oriented apps.
 
 The Code Module allows for complex code to be developed and executed. 
 
