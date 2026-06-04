@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **Date** control type allows you to select a date from a calandar or enter one manually.
+The **Date** control type allows you to select a date from a calendar or enter one manually.
 
 Menu Closed                      | Menu Open
 :-------------------------------:|:------------------------:
