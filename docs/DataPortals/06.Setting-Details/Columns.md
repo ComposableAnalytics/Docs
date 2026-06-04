@@ -31,7 +31,7 @@ Fields on column objects can be:
 - **SortOrder** - Integer (i.e. 1 - 10).  Determines the sort order of the columns.
 - **Display** - true or false. If the value is false, the column is not shown, but can still be used for default sorting.
 
-Other fields on column objects...
+<!-- Other fields on column objects... -->
 
 ### Styling
 
