@@ -15,8 +15,6 @@ The **QueryView** control type displays the results of a Composable [QueryView](
 
 ![QueryView Control](../img/QueryView.png)
 
-## Excel Sheet Input
-
 ## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
