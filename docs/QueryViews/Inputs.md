@@ -11,7 +11,7 @@ Inputs can be added to the query using their **Template Name**, which is surroun
 ![QueryView Input Field](img/InputFilter.png)
 
 !!! note
-    When you add a filter into your query, it starts with `AND`. So if your where clause only has one filter, use `WHERE 1=1` before the filter.
+    When you add a filter into your query, it starts with `AND`. So if your `WHERE` clause only has one filter, use `WHERE 1=1` before the filter.
 
 ## Creating an Input (Input Settings)
 
@@ -20,12 +20,12 @@ Inputs can be added to the query using their **Template Name**, which is surroun
 - **DataType** (required): The DataType of the input.
 - **DefaultValue**: Enter an initial initial value for the input when the query is loaded
 - **ChoicesQuery**: Instead of a field for values, you can provide a selection of values to choose from using a table in your database. 
-  - If the entered query is only one column, the selected value will be the input value.
-  - If the query is a lookup field with two columns in the format of `Id, Value`, the value will be displayed to the user, but when selected, the id will be the actual input into the query.
-  - When you enter a ChoicesQuery, you will see that the `Default Value` field will run the query, and show the values to choose from.
+    - If the entered query is only one column, the selected value will be the input value.
+    - If the query is a lookup field with two columns in the format of `Id, Value`, the value will be displayed to the user, but when selected, the id will be the actual input into the query.
+    - When you enter a ChoicesQuery, you will see that the `Default Value` field will run the query, and show the values to choose from.
 - **Parent Override**: If this QueryView is the [child QueryView](./ChildrenQueries.md) of another Query, select the behavior for which values it uses from the parent query.
-  - Only override with parent data row values: If a column in the parent QueryView matches the `Display Name` of this input, the input value will be the value of the parent column in that row
-  - Allow parent input values to override: If the parent and child QueryViews both have inputs with the same `Display Name`, then the input value will be the input of the parent input. A column name in the parent QueryView takes priority over an input Display Name.
+    - Only override with parent data row values: If a column in the parent QueryView matches the `Display Name` of this input, the input value will be the value of the parent column in that row
+    - Allow parent input values to override: If the parent and child QueryViews both have inputs with the same `Display Name`, then the input value will be the input of the parent input. A column name in the parent QueryView takes priority over an input Display Name.
 
 - **Position**: Choice between displaying the input field above the query results or on the side
 - **Hidden**: Hide the input from being visible. It will still apply if it has a default value.
@@ -34,17 +34,17 @@ Inputs can be added to the query using their **Template Name**, which is surroun
 **Filter only Settings**
 
 - **Multi-Choice**: Allow selection of multiple values in a choice query.
-- **Search Type**:
-  - **Single Column Search**: Creates a filter to compare the input value to a column value of the query. It goes in the where clause in the format of `AND <Column> <operator> <UserInput`
-    - **Column**: The column to compare the input value to.
-    - **Default Operator** (required): The operator to compare the column and input values, such as `=`, `>`, `LIKE`.
-      - DataType must be selected before choosing the Default Operator.
-    - **Allow Operator Changes**: If selected, the user in View Mode can also change which operator to use
-  - **Custom SQL**: Write SQL that can be part of your query. Use double curly brackets in the query to reference the input value (the text inside the curly brackets will be ignored)
+- **Search Type**: 
+    - **Single Column Search**: Creates a filter to compare the input value to a column value of the query. It goes in the `WHERE` clause in the format: `AND <Column> <operator> <UserInput>`.
+        - **Column**: The column to compare the input value to.
+        - **Default Operator** (required): The operator to compare the column and input values, such as `=`, `>`, `LIKE`.
+            - DataType must be selected before choosing the Default Operator.
+        - **Allow Operator Changes**: If selected, the user in View Mode can also change which operator to use
+    - **Custom SQL**: Write SQL that can be part of your query. Use double curly brackets in the query to reference the input value (the text inside the curly brackets will be ignored)
 
 ## Built-In Inputs
 
-There are some already sepcified inputs that can be used for functionality. These can be used in paging, ordering, and filtering with values set in the QueryView. All of these are literals except `{{ allFilters }}`.
+There are some already specified inputs that can be used for functionality. These can be used in paging, ordering, and filtering with values set in the QueryView. All of these are literals except `{{ allFilters }}`.
 
 The built-in Parameters are case-sensitive.
 
@@ -66,6 +66,6 @@ The built-in Parameters are case-sensitive.
 
 ## Referencing Keys
 
-In addition to inputs, the Template format can also be used to refer to [Composable Keys](../Keys/01.Overview.md) that the QueryView's author has access to. Keys with string, number, and boolean values meant to be used as global constants can be inserted into the query by adding the `key` option at the end of the template -- for example, `{{ <keyName>:key }}`.
+In addition to inputs, the Template format can also be used to refer to [Composable Keys](../Keys/01.Overview.md) that the QueryView's author has access to. Keys with string, number, and boolean values meant to be used as global constants can be inserted into the query by adding the `key` option at the end of the template — for example, `{{ <keyName>:key }}`.
 
-List-valued keys can have specific elements referenced by adding an index after the key name, such as `{{ <keyName>[0]:key }}`. Other, more complex datatypes can similarly have specific properties referenced by name -- for instance, the Username in a Database Connection Settings Key could be inserted using `{{ <keyName>[Username]:key }}`. Remember that a QueryView's access to Keys is based on its author; be aware of what other users are given permission to edit the QueryView.
+List-valued keys can have specific elements referenced by adding an index after the key name, such as `{{ <keyName>[0]:key }}`. Other, more complex datatypes can similarly have specific properties referenced by name — for instance, the Username in a Database Connection Settings Key could be inserted using `{{ <keyName>[Username]:key }}`. Remember that a QueryView's access to Keys is based on its author; be aware of what other users are given permission to edit the QueryView.
