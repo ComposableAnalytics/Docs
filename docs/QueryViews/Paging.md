@@ -6,7 +6,7 @@ The options are:
 
 - **None**: The entire result set will be loaded. Note: this can cause memory issues if it is a large result table.
 - **Limit**: Similar to the SQL `LIMIT` clause, the number of rows is limited to a specified amount, displayed on one page. In View mode, there is a selection box to choose the number of rows to display.
-- **Full**: Paging where the user sets the paging paramters in the query
+- **Full**: Paging where the user sets the paging parameters in the query
 - **Auto**: Paging with the paging settings set by Composable.
 
 ## Limit and Full Settings
@@ -21,7 +21,6 @@ To use the template, replace the query in the block comments `/*` `*/` with your
 
 ### Count Query
 
-The Count Query should be written to return the total number of rows in your query, so the paging functionality knows what the last row of the data will be and show how many rows you are navigating through. This must be set
-
-In most cases, it can be similar to `SELECT COUNT(*) FROM (<YourQuery>)`
+The Count Query should be written to return the total number of rows in your query, so the paging functionality knows what the last row of the data will be and show how many rows you are navigating through. This must be set in the Count Query Template text editor which can be opened by clicking "Show Count Query".
+In most cases, it can be similar to `SELECT COUNT(*) FROM (<YourQuery>)`.
 
