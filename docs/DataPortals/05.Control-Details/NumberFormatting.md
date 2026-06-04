@@ -15,7 +15,23 @@ The **NumberFormatting** control supports number formatting functionality for nu
 
 ![Post-Populated Field](../img/05.04.Img_3.PNG)
 
-## Excel Sheet Input
+## User Experience
+The user experience for Number Formatting consists of three stages. 1) Pre-populated fields, 2) fields during numeric inputting, 3) post-populated field.
+
+### Pre-Populated Fields
+Prior to populating the Number Formatting field, the input display is set to a default display formatted value of the locale and options applied to a value of 0, as seen in the figure below. Please note that there has been no value representation set on the database at this stage.
+
+![Pre-Populated Field](../img/05.04.Img_1.PNG)
+
+### Field During Numeric Inputting
+While the user is inputting a value into the Number Formatting field, the field will display the un-formatted number as it will be stored on the database. This display format will remain until the user clicks away and the field enters the post-population stage. 
+
+![Field During Numeric Inputting](../img/05.04.Img_2.PNG)
+
+### Post-Population Fields
+Once the numerical input has been made, and the user has clicked away from the field, the Number Formatting field will display the formatted value of the input value. This value will only be displayed on the front-end, while the inputted value will be the value represented on the server. 
+
+![Post-Populated Field](../img/05.04.Img_3.PNG)
 
 ## Required Fields
 
@@ -38,21 +54,3 @@ The **NumberFormatting** control supports number formatting functionality for nu
 - [**Min**](../06.Setting-Details/Min.md): This defines the minimum possible numeric input into the NumberFormatting field. All input values below will display an error box to the user.
 - [**Max**](../06.Setting-Details/Max.md): This defines the maximum possible numeric input into the NumberFormatting field. All input values above will display an error box to the user.
 - [**DefaultValue**](../06.Setting-Details/DefaultValue.md): This defines the default value that is displayed to the user and stored in number representation on the database upon initialization.
-
-# User Experience
-The user experience for Number Formatting consists of three stages. 1) Pre-populated fields, 2) fields during numeric inputting, 3) post-populated field.
-
-### Pre-Populated Fields
-Prior to populating the Number Formatting field, the input display is set to a default display formatted value of the locale and options applied to a value of 0, as seen in the figure below. Please note that there has been no value representation set on the database at this stage.
-
-![Pre-Populated Field](../img/05.04.Img_1.PNG)
-
-### Field During Numeric Inputting
-While the user is inputting a value into the Number Formatting field, the field will display the un-formatted number as it will be stored on the database. This display format will remain until the user clicks away and the field enters the post-population stage. 
-
-![Field During Numeric Inputting](../img/05.04.Img_2.PNG)
-
-### Post-Population Fields
-Once the numerical input has been made, and the user has clicked away from the field, the Number Formatting field will display the formatted value of the input value. This value will only be displayed on the front-end, while the inputted value will be the value represented on the server. 
-
-![Post-Populated Field](../img/05.04.Img_3.PNG)
