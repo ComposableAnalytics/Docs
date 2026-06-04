@@ -11,14 +11,14 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **AppRun** control type will create a button that runs a Composable DataFlow. Depending on the DataFlow this can accept user input and/or update values on the current container page.
+The **AppRun** control type will create a button that runs a Composable DataFlow. Depending on the DataFlow this can accept user input and/or update values on the current Container page.
 
 ![AppRun](../img/AppRun.png)
 
-The calling dataflow can have several wellknown named external inputs, allowing for the dataflow to understand the caller's context, and then be able to query for other information based on those inputs.
+The calling DataFlow can have several well-known named external inputs, allowing for the DataFlow to understand the caller's context, and then be able to query for other information based on those inputs.
 
 - FormId or DataPortalId - (long) Securable resource id of the DataPortal
-- InstanceId - (int or long) Unique identifier of this container instance where the run button resides (last id in the url)
+- InstanceId - (int or long) Unique identifier of this container instance where the run button resides (last id in the URL)
 - ParentContainerId - (int or long) Parent id of the container instance
 - ComponentId - (long) Composable Id of the UI component representing the run button
 
