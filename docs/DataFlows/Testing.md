@@ -48,7 +48,7 @@ In this sample failing test, we have changed the input of the Calculator Module 
 
 # Test Suites
 
-In Composable, Test Suites provide a structured way to manage and execute a series of tests. Test Suites allow you to run tests in both series an parallel. When you first open a Test Suite you will see the view below. This view gives you an overview of the current state of all of your tests, and allows you to see the individual tests which are included in the Test Suite.
+In Composable, Test Suites provide a structured way to manage and execute a series of tests. Test Suites allow you to run tests in both series and parallel. When you first open a Test Suite you will see the view below. This view gives you an overview of the current state of all of your tests, and allows you to see the individual tests which are included in the Test Suite.
 
 ![!Test Suite Overview](img/TestSuiteOverviewUpdated.png)
 
