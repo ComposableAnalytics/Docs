@@ -15,7 +15,7 @@ The **NumberFormatting** control supports number formatting functionality for nu
 
 ![Post-Populated Field](../img/05.04.Img_3.PNG)
 
-## User Experience
+<!-- ## User Experience
 The user experience for Number Formatting consists of three stages. 1) Pre-populated fields, 2) fields during numeric inputting, 3) post-populated field.
 
 ### Pre-Populated Fields
@@ -31,7 +31,7 @@ While the user is inputting a value into the Number Formatting field, the field 
 ### Post-Population Fields
 Once the numerical input has been made, and the user has clicked away from the field, the Number Formatting field will display the formatted value of the input value. This value will only be displayed on the front-end, while the inputted value will be the value represented on the server. 
 
-![Post-Populated Field](../img/05.04.Img_3.PNG)
+![Post-Populated Field](../img/05.04.Img_3.PNG) -->
 
 ## Required Fields
 
