@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **DateTime** control type allows you to select a date and time from a calandar or enter one manually.
+The **DateTime** control type allows you to select a date and time from a calendar or enter one manually.
 
 Menu Closed                      | Menu Open
 :-------------------------------:|:------------------------:
