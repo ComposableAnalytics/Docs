@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 ## Overview
 
-The **SSN** control type allows for entry of a Social Security Number
+The **SSN** control type allows for entry of a Social Security Number.
 
 ![SSN Control](../img/SSN.png)
 
