@@ -21,8 +21,6 @@ This button opens a table viewer to allow selection:
 
 ![QueryViewChooser Menu](../img/QueryViewChooser-Modal.png)
 
-## Excel Sheet Input
-
 ## Required Fields
 
 - [**Name**](../06.Setting-Details/Name.md): The name of the field saved to the database.
