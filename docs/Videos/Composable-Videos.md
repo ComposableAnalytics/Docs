@@ -43,7 +43,7 @@ This video explains why and how to use Composable DataFlows as web services. A s
 
 ## Building Web Services with Composable DataFlows (Part 2)
 
-This video demonstrates further builds on using DataFlows as web services, and specifically demonstrates how to use the Clone and nested dataflow functionaility to introduce dynamic routing.
+This video demonstrates further builds on using DataFlows as web services, and specifically demonstrates how to use the Clone and nested DataFlow functionality to introduce dynamic routing.
 
 [![Building Web Services with Composable DataFlows (Part 2)](img/Composable_DataFlow_WebServices_02.png)](https://www.youtube.com/watch?v=dWOc7JMpTJc "Building Web Services with Composable DataFlows (Part 1)")
 
