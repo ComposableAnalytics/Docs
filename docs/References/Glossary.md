@@ -77,8 +77,8 @@ We hope this glossary is a useful resource for anyone working with data.
 * `Cross-validation`: The practice of dividing the data into a training set and a validation set, and using the validation set to evaluate the performance of a machine learning model and tune its hyperparameters.
 * `Data (science) modeling`: The process of building statistical or machine learning models to make predictions or draw insights from data.
 * `Data science`: The practice of using statistical and machine learning techniques to analyze and understand data in order to extract insights and make predictions.
-* `Deep learning`: A subfield of machine learning that involves
-* `Early stopping`: A technique that is used to prevent overfitting by interrupting the training of a machine learning model when its performance on the validation
+* `Deep learning`: A subfield of machine learning that involves utilizing layered artificial neural networks to learn patterns and representations from data
+* `Early stopping`: A technique that is used to prevent overfitting by interrupting the training of a machine learning model when its performance on the validation set exceeds a certain threshold.
 * `Feature engineering`: The process of selecting, creating, and transforming features (data variables) in order to improve the performance of a machine learning model.
 * `Machine learning`: The process of using algorithms and statistical models to allow a computer to learn from data, without being explicitly programmed.
 * `Model complexity`: The number of features, parameters, or layers in a machine learning model, which can affect its ability to fit the data accurately.
@@ -95,6 +95,7 @@ We hope this glossary is a useful resource for anyone working with data.
 * `Transfer learning`: The process of adapting a pre-trained machine learning model for a new task, by fine-tuning the model using additional data and task-specific layers.
 * `Underfitting`: The phenomenon where a machine learning model performs poorly on the training data and on new data, due to being too simplistic or not being able to capture the underlying patterns in the data.
 * `Unsupervised learning`: A type of machine learning where the training data is not labeled and the goal is to discover patterns or relationships in the data.
+* `Self-supervised learning`: A type of machine learning where the training data is not labeled, instead the data itself is used to create pseudo-labels that the model is trained on.
 
 ## Data Storage
 
@@ -122,7 +123,7 @@ We hope this glossary is a useful resource for anyone working with data.
 * `Database schema`: The logical structure of a database, including the organization of data into tables and the relationships between them.
 * `Database security`: The measures taken to protect a database from unauthorized access, use, disclosure, disruption, modification, or destruction.
 * `Non-relational database`: A database that does not store data in tables with rows and columns, but rather in a more flexible structure such as documents or key-value pairs.
-* `NoSQL`: A class of databases that are designed to handle large amounts of unstructured data.
+* `NoSQL database`: A class of databases that are designed to handle large amounts of unstructured data.
 * `Relational database`: A database that stores data in tables with rows and columns, and uses relationships between tables to retrieve data.
 * `Structured query language (SQL)`: A programming language used to manage and query relational databases.
 
