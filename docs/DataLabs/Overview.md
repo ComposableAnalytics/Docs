@@ -11,7 +11,7 @@ some_url: https://docs.composable.ai
 
 Composable DataLabs provides a self-service, interactive programming notebook solution for exploratory, code-centric work using Python, Julia and other languages.
 
-Data engineers, data scientists and machine learning engineers typically use notebooks for interactive programming and development. Notebooks provide a framework that combines (markdown-based) text and executable code in a single, web-based, editable document ("notebook").
+Data engineers, data scientists and machine learning engineers typically use notebooks for interactive programming and development. Notebooks provide a framework that combines (Markdown-based) text and executable code in a single, web-based, editable document ("notebook").
 
 The limitations inherent with Notebooks are that they are typically run locally, which means:
 
@@ -31,11 +31,11 @@ Composable DataLabs are always available, from any machine with a web browser an
 
 ## Creating a DataLabs
 
-To create a new DataLabs, select the icon in the side navigation menu.
+To create a new DataLab, select the icon in the side navigation menu.
 
 ![Composable DataLabs Menu](img/DataLabs_Sidebar_menu.png)
 
-You'll be presented with an overview page for your new DataLabs. Simply fill in the name and description. You will also need to select a [Composable Key](../Keys/01.Overview.md) of a user/service account with access to the underlying compute machine.
+You'll be presented with an overview page for your new DataLab. Simply fill in the name and description. You will also need to select a [Composable Key](../Keys/01.Overview.md) of a user/service account with access to the underlying compute machine.
 
 ![!Create New DataLabs](img/DataLabs_Create_New.png)
 
@@ -49,7 +49,7 @@ You can then click on Save, and your DataLab will be saved and you will be broug
 
 ## Composable Integrations
 
-Composable DataLabs integrates with other Composable resources, such as [Composable DataFlows](../DataFlows/01.Overview.md). Specifically, DataLabs comes pre-installed with [composapy](https://github.com/ComposableAnalytics/ComposaPy/), a python package that integrates and binds with the core Composable stack.
+Composable DataLabs integrates with other Composable resources, such as [Composable DataFlows](../DataFlows/01.Overview.md). Specifically, DataLabs comes pre-installed with [composapy](https://github.com/ComposableAnalytics/ComposaPy/), a Python package that integrates and binds with the core Composable stack.
 
 ## Other Integrations
 
