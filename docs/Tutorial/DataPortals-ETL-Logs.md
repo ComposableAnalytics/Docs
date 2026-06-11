@@ -102,7 +102,7 @@ Note, for the status field, while it may ordinarily be useful to provide multipl
 
 ![!Composable DataPortals ExtractTask Container](img/DataPortal_ETLLogs_04-2.png)
 
-## The ExtractTask Container Page
+## The LoadTask Container Page
 
 And finally, we will create a new sheet in the Excel DataPortal Model File called **LoadTask**.
 
@@ -141,7 +141,7 @@ To upload the DataPortal model file (Excel Workbook), create a new DataPortal an
 
 ![!Composable DataPortals - New DataPortal Creation](img/DataPortal_ETLLogs_06.png)
 
-In the background Composable creates your database. Once it's finished processing, click on the `Open DataPortal` button and you'll be brought to the homepage of your DataPortal, which will initially look empty, since there is no workload log data yet that has been added.
+In the background, Composable creates your database. Once it's finished processing, click on the `Open DataPortal` button and you'll be brought to the homepage of your DataPortal, which will initially look empty, since there is no workload log data yet that has been added.
 
 ![!Composable DataPortals - New DataPortal Creation - Open DataPortal](img/DataPortal_ETLLogs_07.png)
 
