@@ -124,7 +124,7 @@ The key inputs here are **JoinColumns** and **DeleteUnmatched**. All of the othe
 - If exactly one existing container matches on all join columns, that container is updated with the values from **Data**.
 - If more than one existing container matches on all join columns, the module fails. Thus the join columns should uniquely identify entries in the DataPortal; it is often a good idea to have a [CustomIndex](../../DataPortals/06.Setting-Details/CustomIndex.md) enforcing that uniqueness on columns you intend to use as **JoinColumns**.
 
-**DeleteUnmatched** allows you to delete any containers that aren't part of the current sync. The `All` option selected here means that any containers not included in **Data** will be deleted. This allows for a true "sync" behavior where the data in the DataPortal exactly matches the input data after the sync. `None` does no deletion and is usually the desired behavior. The `MatchedParents` option [is discussed below](#delete-unmatched)
+**DeleteUnmatched** allows you to delete any containers that aren't part of the current sync. The `All` option selected here means that any containers not included in **Data** will be deleted. This allows for a true "sync" behavior where the data in the DataPortal exactly matches the input data after the sync. `None` does no deletion and is usually the desired behavior. The `MatchedParents` option [is discussed below](#deleteunmatched).
 
 ### Create Child Containers
 
@@ -187,7 +187,7 @@ Then, the name of your field is `FirstName`.
 Columns whose name is a DataPortal field have two potential purposes:
 
 - Data to be mapped. This is the more common usage, in which the values that should be written into a particular field are included in the column. This applies whether a new container is being created or an existing container is being updated
-- Join columns. It is also possible to use data on fields to identify existing columns. See [JoinColumns](#join-columns) for details.
+- Join columns. It is also possible to use data on fields to identify existing columns. See [JoinColumns](#joincolumns) for details.
 
 There are two other columns that may optionally be included in **Data**:
 
@@ -195,7 +195,7 @@ There are two other columns that may optionally be included in **Data**:
 
 > ... /DataPortal.aspx#/form/2340034/SurveyManager/1/Survey/**324**
 
-- `ParentInstanceId` - This column allows you to identify which parent container each row should be mapped under. This is usually the parent under which a new instance will be created, though it can also be used to restrict the identification of an existing container (see [JoinColumns](#join-columns)).
+- `ParentInstanceId` - This column allows you to identify which parent container each row should be mapped under. This is usually the parent under which a new instance will be created, though it can also be used to restrict the identification of an existing container (see [JoinColumns](#joincolumns)).
 
 Join columns, `InstanceId`, and `ParentInstanceId` will be used to determine which container, existing or new, to write data to. The data in all other columns will be stored to the identified container. If a column does not match a field on the container that column will be ignored.
 

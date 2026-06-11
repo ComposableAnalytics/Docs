@@ -15,7 +15,7 @@ If you select paging to be Limit or Full, two additional settings will appear, T
 
 ### Templates
 
-In the top right of the Query Template will be the dropdown `Start with a Template`. These templates provide the syntax using the [built-in Inputs](./Inputs.md#Built-In-Inputs) for the paging functionality. Select the template based on the SQL Engine that you are connected to. 
+In the top right of the Query Template will be the dropdown `Start with a Template`. These templates provide the syntax using the [built-in Inputs](./Inputs.md#built-in-inputs) for the paging functionality. Select the template based on the SQL Engine that you are connected to. 
 
 To use the template, replace the query in the block comments `/*` `*/` with your query and delete the block comments.
 
