@@ -7,7 +7,7 @@ date: 2022-05-11
 some_url: https://docs.composable.ai
 ---
 # Full Stack WebApp Tutorial: DataIntegrity Workbench
-Welcome! This tutorial will help you build a full-stack WebApp in Composable. The following <a href = "https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/WebApps/files/DataIntegrityWorkbenchFiles.zip" download>zip file</a> contains all the files you will need to build this example.
+Welcome! This tutorial will help you build a full-stack WebApp in Composable. The following <a href = "https://raw.githubusercontent.com/ComposableAnalytics/Docs/master/docs/Tutorial/files/DataIntegrityWorkbenchFiles.zip" download>zip file</a> contains all the files you will need to build this example.
 ## Table of Contents
 1. [DataPortal](#DIPortal)
 2. [DataFlows](#DIFlow)
