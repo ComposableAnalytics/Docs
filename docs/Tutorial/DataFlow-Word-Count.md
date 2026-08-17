@@ -33,12 +33,15 @@ As explained previously, the Composable Designer is made up of five primary area
 
 The DataFlow we are creating will parse a set of text and produce a frequency count. Therefore, we need some text at the start of this DataFlow. This text can be retrieved from any number of sources, including a file, a database table, a web service, etc.
 
-Here, we will use a web service available at randomtext.me to produce some random text.
+Here, we will use a web service available at baconipsum.com to produce some random text.
 
 To use this web service, simply find the WebClient Module in the Module Library on the left hand side of the Designer. You can either type WebClient in the search bar, or find the Module under the Data Sources category. Drag and drop the Module onto the canvas.
 
-The WebClient Module has a number of input. For this example, simply "hard-code" in the following URL:
-http://www.randomtext.me/download/txt/gibberish/p-5/25-45
+The WebClient Module has a number of inputs. For this example, "hard-code" in the following URL:
+https://baconipsum.com/api/?type=all-meat&paras=5&format=text, and change the Method to "GET".
+
+!!! note
+    The previous website used in this tutorial, randomtext.me, is no longer available. You may see references to it in the screenshots.
 
 ![!Composable Example WebClient Module](img/03.08.Img_3.png)
 
