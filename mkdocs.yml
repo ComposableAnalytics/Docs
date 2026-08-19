@@ -236,6 +236,12 @@ nav:
         - 'Lab 1: DataFlow - Reading Data from the Web': 'Tutorial/ReadingBlueBikes.md'
         - 'Lab 2: DataPortal - Creating a Database and Inserting Data': 'Tutorial/BlueBikesDataPortal.md'
         - 'Lab 3: QueryView - Querying, Filtering, and Generating an Interactive Map': 'Tutorial/QueryViewDataPortal.md'
+    - 'MLB Park Factor':
+        - 'MLB Park Factor Project goals': 'PLS/MLB-Park-Factor/0-MLBParkFactor-Goals.md'
+        - 'Lab 1: DataFlow - Reading Ballpark Data from the MLB Stats API': 'PLS/MLB-Park-Factor/1-DataFlows.md'
+        - 'Lab 2: DataPortal - Creating the Park Factor DataPortal': 'PLS/MLB-Park-Factor/2-DataPortal.md'
+        - 'Lab 3: QueryView - Calculating Park Factors in a QueryView': 'PLS/MLB-Park-Factor/3-QueryView.md'
+        - 'Lab 4: WebApp - Charting Park Factors in a WebApp': 'PLS/MLB-Park-Factor/4-WebApp.md'
 - Videos: 
     - 'Video Tutorials': 'Videos/Composable-Videos.md'
 - References: 
