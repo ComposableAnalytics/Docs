@@ -1,6 +1,6 @@
 ---
 title: Composable Docs
-summary: Technical Documentation for the Composable DataOps Platform
+summary: Building the three DataFlows that pull MLB schedule data, load it into a DataPortal, and serve park factors as JSON
 authors:
     - Composable Analytics, Inc.
 date: 2026-08-19
@@ -18,13 +18,13 @@ The DataFlows in the second and third parts of this tutorial address the DataPor
 
 ## Extracting One Team's Games
 
-This DataFlow does the real work of talking to the API. It takes a team ID, walks eleven seasons, and returns one clean table of that team's home games.
+This DataFlow does the real work of talking to the API. It takes a team ID, goes through the past eleven seasons, and returns one clean table of every regular season game that team played, each row labelled with the park the game was played in.
 
-Create a DataFlow named `mlballpark_TOD`, and describe it as *Analysis of Hitting/Pitching statistics relative to Time of Day in MLB Ballparks*.
+Create a DataFlow named something like `mlballpark_TOD`, (you can add a description if you like).
 
 ### Looping Through the Seasons
 
-Start with an `External String Input` module named `TeamID`, with the value `112`. Declaring it as an *external* input is what lets the next DataFlow call this one as a module and pass a different team each time.
+Start with an `External String Input` module with name set to `TeamID`. For now, we can let the input be `112` as a placeholder for testing. Declaring it as an *external* input is what lets the next DataFlow call this one as a module and pass a different team each time.
 
 Add an `Array Builder` module named `Seasons`. Set `OutputType` to `String` and list the seasons to cover.
 
@@ -40,7 +40,7 @@ Now build the request url with a `String Formatter` module. Connect `External St
 https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId={0}&startDate={1}-04-01&endDate={1}-10-31&hydrate=team,linescore,venue
 ```
 
-Connect `String Formatter.Result` to the `Uri` input of a `WebClient` module, set the `Method` to `GET`, and set the `Timeout` to `100000`.
+Connect `String Formatter.Result` to the `Uri` input of a `WebClient` module, and set the `Method` to `GET`.
 
 ![!Season loop feeding the WebClient](img/PFSeasonLoop.png)
 
@@ -48,7 +48,7 @@ Reading the connection dots left to right, `Seasons` feeds the `List` input of `
 
 ### Parsing and Cleaning the Response
 
-The response is JSON, so the `JSON To Table` module turns it into a Composable Table. Connect `WebClient.Result` to its `InputJson` input, and enter the following eight expressions as the `JSONPaths`. The filter in each path drops any game that never reached a final score.
+The response is JSON, so the `JSON To Table` module turns it into a Composable Table. Connect `WebClient.Result` to its `InputJson` input, and enter the following eight expressions as the `JSONPaths`. The filter in each path drops any game that never reached a final score like a rainout.
 
 ```
 $.dates[*].games[?(@.status.detailedState=='Final')].officialDate
@@ -96,11 +96,13 @@ Save, then run the DataFlow once. It should finish in a couple of seconds and pr
 
 The second DataFlow fans the first one out across the league and lands the results in the DataPortal.
 
-Create a DataFlow named `mlballparksync`.
+Create a DataFlow named something like `mlballparksync`, (again you can add a description if you'd like).
 
 ### Looping Through the Teams
 
-Add a `WebClient` module with the `Method` set to `GET`, the `Timeout` set to `100000`, and the following `Uri`.
+Now we need to extract the teamIDs for each of the 30 teams in the MLB.
+
+Add a `WebClient` module with the `Method` set to `GET`, and the following `Uri`.
 
 ```
 https://statsapi.mlb.com/api/v1/teams?sportId=1
@@ -126,9 +128,9 @@ Here the `JSON To Table` module shows its single path and column name truncated 
 
 ### Nesting the First DataFlow
 
-In the module sidebar, go to `My DataFlows` or `Search All DataFlows` and enter `mlballpark_TOD`, then drag it onto the canvas. Composable adds it as an `App Reference Module` whose ports are the external inputs and outputs we declared in the first DataFlow. Connect `TableRow Cell Selector.CellValue` to its `TeamID` input.
+In the module sidebar, go to `My DataFlows` or `Search All DataFlows` and enter `mlballpark_TOD` (or whatever you chose to name your first dataflow), then drag it onto the canvas. Composable adds it as an `App Reference Module` whose ports are the external inputs and outputs we declared in the first DataFlow. Connect `TableRow Cell Selector.CellValue` to its `TeamID` input.
 
-Add an `Accumulator` module fed from the nested DataFlow's `External Table Output` and triggered by `Table ForEach.LoopComplete`, followed by a `Table Set Operation` module set to `Union All`. This is the same pattern as before, one level up: every team's table becomes one league wide table.
+Add an `Accumulator` module fed from the nested DataFlow's `External Table Output` and triggered by `Table ForEach.LoopComplete`, followed by a `Table Set Operation` module set to `Union All`. This is the same pattern as before: every team's table becomes one league wide table.
 
 ### Inserting Data with the DataPortal Sync Module
 
@@ -165,11 +167,11 @@ Check the `Errors` output as well. It should be an empty list, and anything in i
 
 A WebApp cannot read a QueryView directly, so we publish the same result set from an HTTP activated DataFlow. This version queries the portal through Composable rather than through SQL, so it needs no database credentials at all.
 
-Create a DataFlow named `mlballpark_TOD_api`.
+Create a DataFlow named something like `mlballpark_TOD_api`.
 
 Add a `Web Receive` module with the `Method` set to `GET`. Its presence is what makes the DataFlow reachable over HTTP.
 
-Add a [DataPortal Query](../../DataFlows/09.Module-Details/DataPortalQuery.md) module named `Games From Portal`. Set `DataPortalId` to the ID of the DataPortal and enter the query below. The module speaks Entity SQL, in which container names are pluralized and aliased.
+Add a [DataPortal Query](../../DataFlows/09.Module-Details/DataPortalQuery.md) module named `Games From Portal`. Set `DataPortalId` to the ID of the DataPortal and enter the query below. The module uses Entity SQL, in which container names are pluralized and aliased.
 
 ```sql
 SELECT g.Park, g.Month, g.DayNight, g.HomeScore, g.AwayScore FROM Games AS g

@@ -1,6 +1,6 @@
 ---
 title: Composable Docs
-summary: Technical Documentation for the Composable DataOps Platform
+summary: Storing database credentials in a Key and writing the SQL that turns stored games into park factors
 authors:
     - Composable Analytics, Inc.
 date: 2026-08-19
@@ -50,7 +50,7 @@ Save the Key, and now we can get started on creating a QueryView.
 
 ### Create a New QueryView
 
-Now go to the QueryView menu, and select `Create New`. Start with the `Info` button on the left side panel, and enter `mlballpark_query` as the `Name`. Then move to the `Connection` panel, click the `Select Connection` button, and choose the `mlballpark` Key we just created.
+Now go to the QueryView menu, and select `Create New`. Start with the `Info` button on the left side panel, and enter something like `mlballpark_query` as the `Name`. Then move to the `Connection` panel, click the `Select Connection` button, and choose the `mlballpark` Key (or whatever you named your Key) we just created.
 
 Now is a good time to hit the `Save` button in the top right. You cannot run a QueryView if it has not been saved.
 
@@ -86,7 +86,7 @@ Paste the query into the `Query Template` pane on the left. As we're typing, the
 
 ![!Query Template and Sample Output in the QueryView editor](img/PFQueryViewEditor.png)
 
-The left rail, `INFO`, `CONNECTION`, `INPUTS`, `CHILDREN`, `ACTIONS`, `HYPERLINKS`, is where the connection key is selected, under `CONNECTION`.
+The left rail `CONNECTION` button is where the connection key is selected.
 
 !!! note
 	Leave the `ORDER BY` out of the query itself and use the QueryView's own Order configuration on the `Info` panel instead. The paging wrapper adds its own ordering, and an inner `ORDER BY` collides with it.
@@ -96,8 +96,6 @@ Press the Execute button and take a look at the results. Once the sync DataFlow 
 ![!Park factor results in the QueryView](img/PFQueryViewResults.png)
 
 A `ParkFactor` above 1 is a hitter-friendly park-month, and below 1 is pitcher-friendly. `ParkFactorDeviationPct` states the same thing as a percentage away from the league average.
-
-This is a good place to sanity check the pipeline against baseball common knowledge. Filter to Coors Field and the numbers should run high, and to a pitcher's park such as Oracle Park and they should run low.
 
 ## Next Steps
 

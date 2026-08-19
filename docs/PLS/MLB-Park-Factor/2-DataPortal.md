@@ -1,6 +1,6 @@
 ---
 title: Composable Docs
-summary: Technical Documentation for the Composable DataOps Platform
+summary: Building the Excel model file for the park factor DataPortal and uploading it to create the database
 authors:
     - Composable Analytics, Inc.
 date: 2026-08-19
@@ -12,7 +12,7 @@ some_url: https://docs.composable.ai
 
 In an ETL pipeline, the next step after processing data from an external source is to put it in a data store. A [DataPortal](../../DataPortals/01.Overview.md) makes setting up a database from the data model very simple.
 
-In this tutorial, we will continue from the [Reading Ballpark Data from the MLB Stats API](1-DataFlows.md) tutorial to use it as our dataset, and build the DataPortal that its `mlballparksync` DataFlow writes into. One record is stored per game played, so that the park factor calculation always runs against the same permanent store rather than against a fresh set of API calls.
+In this tutorial, we will continue from the [Reading Ballpark Data from the MLB Stats API](1-DataFlows.md) tutorial to use it as our dataset, and build the DataPortal that its `mlballparksync` DataFlow (or whatever you named your sync DataFlow) writes into. One record is stored per game played, so that the park factor calculation always runs against the same permanent store rather than against a fresh set of API calls.
 
 The field names we choose here are a contract. The `DataPortal Sync` module matches source columns to container fields by name, so a typo on this page silently drops a column in the DataFlow.
 
@@ -91,7 +91,7 @@ On the New DataPortal page, either click the `Choose File` button, or drag your 
 
 The `Upload` panel on the right holds the connection key button at the top, the drag pad in the middle, and `Upload File` beneath it. `Download New Template File` at the bottom is where a blank workbook comes from if you want to start one from scratch.
 
-Once it's finished processing, click on the `Open DataPortal` button and you'll be brought to the homepage of your DataPortal, which will look empty, since we haven't added any data. After running the `mlballparksync` DataFlow from the previous tutorial, the same page looks like this.
+Once it's finished processing, click on the `Open DataPortal` button and you'll be brought to the homepage of your DataPortal, which will look empty, since we haven't added any data. After running the `mlballparksync` DataFlow (or whatever you named your sync DataFlow) from the previous tutorial, the same page looks like this.
 
 ![!Games Grid in the DataPortal](img/PFPortalGrid.png)
 

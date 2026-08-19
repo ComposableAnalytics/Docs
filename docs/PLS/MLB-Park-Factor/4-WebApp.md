@@ -1,6 +1,6 @@
 ---
 title: Composable Docs
-summary: Technical Documentation for the Composable DataOps Platform
+summary: Building the WebApp that charts day and night park factors, and verifying the finished pipeline
 authors:
     - Composable Analytics, Inc.
 date: 2026-08-19
@@ -20,7 +20,7 @@ At AT&T Park, night (blue) sits below 1.00 all season, while day (orange) swings
 
 ## Creating the WebApp
 
-Go to the WebApp menu, select [Create New](../../WebApps/02.WebApp-Create-New.md), and name it `mlballpark_TOD_webapp`, with `index.html` as the entrypoint.
+Go to the WebApp menu, select [Create New](../../WebApps/02.WebApp-Create-New.md), and name it something like `mlballpark_TOD_webapp`, with `index.html` as the entrypoint.
 
 In the [editor](../../WebApps/03.WebApp-Editor.md), add three files under `Project Structure` on the left, `index.html`, `script.js` and `style.css`, and paste in the listings below. Each file opens in its own tab in the code pane.
 
@@ -28,7 +28,7 @@ In the [editor](../../WebApps/03.WebApp-Editor.md), add three files under `Proje
 
 `Project Structure` on the left lists the three files, and the code pane holds the open tab. `Save` and `View WebApp` sit in the upper right.
 
-In `script.js`, set `API_URL` to the activation url of the `mlballpark_TOD_api` DataFlow. Then press `Save`, followed by `View WebApp` to open the page.
+In `script.js`, set `API_URL` to the activation url of the `mlballpark_TOD_api` DataFlow (or whatever you named your API DataFlow). Then press `Save`, followed by `View WebApp` to open the page.
 
 !!! note
 	The `?v=` query string on the stylesheet and script tags is deliberate. Browsers cache WebApp resources aggressively, so bump that number whenever you edit `script.js` or `style.css`, or you will be looking at yesterday's file while wondering why your change did nothing.
@@ -87,9 +87,7 @@ The markup is deliberately thin: a decorative sky with a pixel sun and moon, a d
 
 ## The Page Script
 
-The script fetches the JSON, builds the dropdown, and redraws the chart whenever the selection changes. Both series are plotted on the same axis, without inverting one against the other, so that hitter-friendly is above the line for day and night alike. The axis bound is computed from the data, rounded up to the nearest 5%, with a floor of 10%, which is what keeps Coors Field on the page.
-
-Note also that the callout filters to the months the chart actually plots. October rows exist in the data, and would otherwise win "most extreme" while having no point on the canvas.
+The script fetches the JSON, builds the dropdown, and redraws the chart whenever the selection changes. Both series are plotted on the same axis. The axis bound is computed from the data, rounded up to the nearest 5%, with a floor of 10%, which is what keeps Coors Field on the page.
 
 ```javascript
 const API_URL = "/CompApp/services/WebActivationService.svc/Activate?appId=89113"; // your Section 1.3 DataFlow
@@ -437,10 +435,10 @@ canvas { position: relative; z-index: 1; }
 
 Work back through the pipeline in order. Each check tells you which stage is at fault if the numbers are wrong.
 
-- Run `mlballparksync` and confirm that `Counts` reports about 48,000 records inserted, and that `Errors` is empty.
-- Open `mlballpark_query` and confirm 593 rows.
-- Run `mlballpark_TOD_api` from the Designer and confirm that its `Web Send` output carries the same 593 rows and the seven expected column names.
-- Open the WebApp, pick a ballpark, and confirm that the chart draws. Fenway Park, Coors Field and Oracle Park are good sanity checks, since their reputations should show up in the numbers.
+- Run `mlballparksync` (or whatever you named your sync DataFlow) and confirm that `Counts` reports about 48,000 records inserted, and that `Errors` is empty.
+- Open `mlballpark_query` (or whatever you named your QueryView) and confirm 593 rows.
+- Run `mlballpark_TOD_api` (or whatever you named your API DataFlow) from the Designer and confirm that its `Web Send` output carries the same 593 rows and the seven expected column names.
+- Open the WebApp, pick a ballpark, and confirm that the chart draws.
 
 If something is off, these are the usual causes.
 
@@ -460,6 +458,6 @@ The pipeline is a complete round trip: a public API becomes stored records, stor
 
 A few natural extensions to try on your own:
 
-- Schedule the sync. Add a timer activation to `mlballparksync` so that the portal refreshes nightly during the season. Timer activation runs in the Composable Activation Service, so confirm that service is running before relying on it.
+- Schedule the sync. Add a timer activation to `mlballparksync` (or whatever you named your sync DataFlow) so that the portal refreshes nightly during the season. Timer activation runs in the Composable Activation Service, so confirm that service is running before relying on it.
 - Widen the window. `MONTH_ORDER` in `script.js` covers April through September. October games are in the portal but off the chart, so add `"10"` to include them, and expect noisy values from the small sample.
 - Split by season rather than by month. The portal keeps `Season` on every row, so a year over year comparison for a single park is a small change to the aggregation.
