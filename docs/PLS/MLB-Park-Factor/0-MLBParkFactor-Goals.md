@@ -21,6 +21,6 @@ Finally, a **[WebApp](../../WebApps/01.Overview.md)** will chart the results, so
 
 ![!The finished WebApp](img/PFWebAppResult.png)
 
-The labs build on each other in order, and each one produces something you can run on its own.
+Each tutorial builds on the one before it, and each produces something you can run on its own.
 
 Let's get started!

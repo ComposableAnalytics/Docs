@@ -10,11 +10,11 @@ some_url: https://docs.composable.ai
 
 # Reading Ballpark Data from the MLB Stats API
 
-Every analysis starts by collecting data. In this lab we build three [DataFlows](../../DataFlows/01.Overview.md): the first extracts and cleans a single team's games, the second runs it for the whole league and stores the results in a DataPortal, and the third serves those results back out over HTTP as JSON.
+Every analysis starts by collecting data. In this tutorial we build three [DataFlows](../../DataFlows/01.Overview.md): the first extracts and cleans a single team's games, the second runs it for the whole league and stores the results in a DataPortal, and the third serves those results back out over HTTP as JSON.
 
 The dataset is the [MLB Stats API](https://statsapi.mlb.com) schedule endpoint, which is public and needs no API key. A single request returns every game a team played in a season, including the venue, the final score, and whether the game was played in the day or at night.
 
-The DataFlows in the second and third parts of this lab address the DataPortal we create in the [next lab](2-DataPortal.md), so they need its ID. Either jump ahead and create the portal first, since it is a five minute step, or build these DataFlows now and fill in the ID afterwards.
+The DataFlows in the second and third parts of this tutorial address the DataPortal we create in the [Creating a DataPortal](2-DataPortal.md) tutorial, so they need its ID. Either jump ahead and create the portal first, since it is a five minute step, or build these DataFlows now and fill in the ID afterwards.
 
 ## Extracting One Team's Games
 
@@ -175,7 +175,7 @@ Add a [DataPortal Query](../../DataFlows/09.Module-Details/DataPortalQuery.md) m
 SELECT g.Park, g.Month, g.DayNight, g.HomeScore, g.AwayScore FROM Games AS g
 ```
 
-Add a `Table Query` module named `Park Factor`, fed from `Games From Portal.Results`. It performs the same aggregation as the QueryView we build in the third lab, in sqlite syntax this time, and names the columns exactly as the WebApp expects them.
+Add a `Table Query` module named `Park Factor`, fed from `Games From Portal.Results`. It performs the same aggregation as the [QueryView](3-QueryView.md) we build later in the series, in sqlite syntax this time, and names the columns exactly as the WebApp expects them.
 
 ```sqlite
 SELECT
@@ -222,7 +222,7 @@ Now note the DataFlow's ID, which is the `appId` in the Designer's own address b
 
 ![!The Designer url showing the appId](img/PFApiAppId.png)
 
-In `localhost/CompApp/Designer.aspx?appId=89113`, the number after `appId=` is the ID this DataFlow answers on. Its activation url follows the pattern below, and is what the WebApp will call in the fourth lab.
+In `localhost/CompApp/Designer.aspx?appId=89113`, the number after `appId=` is the ID this DataFlow answers on. Its activation url follows the pattern below, and is what the [WebApp](4-WebApp.md) will call.
 
 ```
 <your-server>/services/WebActivationService.svc/Activate?appId=<api-dataflow-id>

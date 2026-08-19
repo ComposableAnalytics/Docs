@@ -10,7 +10,7 @@ some_url: https://docs.composable.ai
 
 # Calculating Park Factors in a QueryView
 
-QueryViews provide querying and exploration of data stored in a database in an interactive web-based environment. In this lab we compute the park factor itself in SQL, and review the result as a grid.
+QueryViews provide querying and exploration of data stored in a database in an interactive web-based environment. In this tutorial, we will continue the series using the game data [loaded into a DataPortal](2-DataPortal.md), computing the park factor itself in SQL and reviewing the result as a grid.
 
 The calculation is a ratio of two averages. For each park, calendar month and time of day, we take that park's average runs per game, and divide it by the league's average runs for the same month and time of day. Pooling every July together, rather than each individual July, keeps the sample large enough to be meaningful.
 
@@ -56,7 +56,7 @@ Now is a good time to hit the `Save` button in the top right. You cannot run a Q
 
 ### Writing a Query
 
-Our data was loaded into the `Games` table. Going back to the DataPortal lab, we named the container `Games`, and the database creation process of a DataPortal will pluralize names, which for this container leaves the name unchanged.
+Our data was loaded into the `Games` table. Going back to the DataPortal tutorial, we named the container `Games`, and the database creation process of a DataPortal will pluralize names, which for this container leaves the name unchanged.
 
 Recall that `DayNight` is a picklist, so the games table stores a `DayNight_Id` and the readable value lives in a `DayNights` lookup table. That is why the query joins the two. `RIGHT(g.Month, 2)` pulls the calendar month out of the `YYYY-MM` string, so that all eleven Julys are pooled together.
 

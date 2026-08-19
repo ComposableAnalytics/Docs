@@ -12,7 +12,7 @@ some_url: https://docs.composable.ai
 
 In an ETL pipeline, the next step after processing data from an external source is to put it in a data store. A [DataPortal](../../DataPortals/01.Overview.md) makes setting up a database from the data model very simple.
 
-In this lab we build the DataPortal that the `mlballparksync` DataFlow from the [previous lab](1-DataFlows.md) writes into. One record is stored per game played, so that the park factor calculation always runs against the same permanent store rather than against a fresh set of API calls.
+In this tutorial, we will continue from the [Reading Ballpark Data from the MLB Stats API](1-DataFlows.md) tutorial to use it as our dataset, and build the DataPortal that its `mlballparksync` DataFlow writes into. One record is stored per game played, so that the park factor calculation always runs against the same permanent store rather than against a fresh set of API calls.
 
 The field names we choose here are a contract. The `DataPortal Sync` module matches source columns to container fields by name, so a typo on this page silently drops a column in the DataFlow.
 
@@ -20,7 +20,7 @@ The field names we choose here are a contract. The `DataPortal Sync` module matc
 
 A DataPortal's data model lives in an Excel workbook, with one sheet per container and one row per field. You build the workbook, upload it, and Composable creates the portal, its containers, its picklists, and the database behind them.
 
-The Excel file used in this lab is available here: <a href="../../MLB-Park-Factor/img/MLBParkFactorDataPortal.xlsx" download="MLBParkFactorDataPortal.xlsx">Download MLB Park Factor DataPortal Model (xlsx)</a>
+The Excel file used in this tutorial is available here: <a href="../../MLB-Park-Factor/img/MLBParkFactorDataPortal.xlsx" download="MLBParkFactorDataPortal.xlsx">Download MLB Park Factor DataPortal Model (xlsx)</a>
 
 ### Master Sheet
 
@@ -91,19 +91,19 @@ On the New DataPortal page, either click the `Choose File` button, or drag your 
 
 The `Upload` panel on the right holds the connection key button at the top, the drag pad in the middle, and `Upload File` beneath it. `Download New Template File` at the bottom is where a blank workbook comes from if you want to start one from scratch.
 
-Once it's finished processing, click on the `Open DataPortal` button and you'll be brought to the homepage of your DataPortal, which will look empty, since we haven't added any data. After running the `mlballparksync` DataFlow from the previous lab, the same page looks like this.
+Once it's finished processing, click on the `Open DataPortal` button and you'll be brought to the homepage of your DataPortal, which will look empty, since we haven't added any data. After running the `mlballparksync` DataFlow from the previous tutorial, the same page looks like this.
 
 ![!Games Grid in the DataPortal](img/PFPortalGrid.png)
 
 The seven fields appear as sortable, searchable columns, with `Total: 48494` at the bottom left once the sync has run.
 
-Note the portal's ID, which is the number in the url, `DataPortal.aspx#/form/<id>`. This is the value that goes into the `FormId` input of the `DataPortal Sync` module and the `DataPortalId` input of the `DataPortal Query` module in the previous lab. Also note the database that Composable created to back the portal, which is named after the portal with a `Model` suffix, `MLBParkFactorModel`. We need that name in the next lab.
+Note the portal's ID, which is the number in the url, `DataPortal.aspx#/form/<id>`. This is the value that goes into the `FormId` input of the `DataPortal Sync` module and the `DataPortalId` input of the `DataPortal Query` module in the previous tutorial. Also note the database that Composable created to back the portal, which is named after the portal with a `Model` suffix, `MLBParkFactorModel`. We need that name in the next tutorial.
 
 !!! note
 	The workbook stays the source of truth. To change the model you edit it and [reupload it](../../DataPortals/10.UpdateDataPortals.md) on the portal's Manage page. Renames are the trap, since a DataPortal cannot detect that a field was renamed, so changing a `Name` deletes the old field and adds a new one, taking its data with it. Change the `DisplayName` instead when you only want the label to read differently.
 
 !!! note
-	Because `DayNight` is a `Category` whose members live on the `Categories` sheet, Composable stores it in its own lookup table. The `Games` table in the portal's database carries a `DayNight_Id` column pointing at a `DayNights` table, rather than the string itself. That decides how we write SQL in the next lab, and it is the easiest thing in this pipeline to get wrong.
+	Because `DayNight` is a `Category` whose members live on the `Categories` sheet, Composable stores it in its own lookup table. The `Games` table in the portal's database carries a `DayNight_Id` column pointing at a `DayNights` table, rather than the string itself. That decides how we write SQL in the next tutorial, and it is the easiest thing in this pipeline to get wrong.
 
 ## Next Steps
 

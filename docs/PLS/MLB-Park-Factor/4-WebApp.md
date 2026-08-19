@@ -10,7 +10,7 @@ some_url: https://docs.composable.ai
 
 # Charting Park Factors in a WebApp
 
-A [WebApp](../../WebApps/01.Overview.md) hosts your own HTML, JavaScript and CSS inside Composable, served from the platform and secured by the same permissions as every other resource. In this lab we build the page that reads the JSON from our API DataFlow and draws it.
+A [WebApp](../../WebApps/01.Overview.md) hosts your own HTML, JavaScript and CSS inside Composable, served from the platform and secured by the same permissions as every other resource. In this tutorial, we build the page that reads the JSON from the [API DataFlow](1-DataFlows.md) and draws it.
 
 The page fetches the JSON once, fills a ballpark dropdown from the distinct `Park` values, and draws two [Chart.js](https://www.chartjs.org/) series, day and night, both on the same axis and both expressed as park factor. Above the center line the park plays hitter-friendly, and below it plays pitcher-friendly. The axis fits itself to whichever park is selected, so that an extreme park is not drawn off the top of the chart.
 
@@ -28,7 +28,7 @@ In the [editor](../../WebApps/03.WebApp-Editor.md), add three files under `Proje
 
 `Project Structure` on the left lists the three files, and the code pane holds the open tab. `Save` and `View WebApp` sit in the upper right.
 
-In `script.js`, set `API_URL` to the activation url of the API DataFlow from the first lab. Then press `Save`, followed by `View WebApp` to open the page.
+In `script.js`, set `API_URL` to the activation url of the `mlballpark_TOD_api` DataFlow. Then press `Save`, followed by `View WebApp` to open the page.
 
 !!! note
 	The `?v=` query string on the stylesheet and script tags is deliberate. Browsers cache WebApp resources aggressively, so bump that number whenever you edit `script.js` or `style.css`, or you will be looking at yesterday's file while wondering why your change did nothing.
@@ -447,12 +447,12 @@ If something is off, these are the usual causes.
 | Symptom                                                                              | Cause                                                                                                              |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
 | QueryView fails with *"The certificate chain was issued by an authority that is not trusted"* | The Key is missing `TrustServerCertificate=yes`. ODBC Driver 18 encrypts by default.                               |
-| QueryView fails with *"Cannot open database ... requested by the login"*             | The login has no rights on the portal database. Run the grant from the QueryView lab.                              |
+| QueryView fails with *"Cannot open database ... requested by the login"*             | The login has no rights on the portal database. Run the grant from the QueryView tutorial.                              |
 | QueryView fails with *"Login failed for user"*                                       | The Key names a database that does not exist. The portal's database is `<PortalName>Model`.                        |
 | `Invalid column name 'DayNight'`                                                     | `DayNight` is a picklist. Join `DayNights` on `DayNight_Id` instead of selecting the column directly.               |
 | The page loads but the chart is empty, and the console shows a `500`                 | The viewer lacks Execute permission on the API DataFlow.                                                           |
 | An edit to `script.js` or `style.css` has no effect                                  | Cached resource. Bump the `?v=` query string and hard-reload.                                                      |
-| The sync reports errors for every row                                                | A container field name does not match its source column. Compare the DataPortal field table against the `ColumnNames` in the first lab. |
+| The sync reports errors for every row                                                | A container field name does not match its source column. Compare the DataPortal field table against the `ColumnNames` in the first DataFlow. |
 
 ## Next Steps
 
