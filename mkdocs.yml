@@ -214,6 +214,8 @@ nav:
     - '15.1 Overview': 'Monitoring/01.Overview.md'
     - '15.2 Resource Networks': 'Monitoring/02.Resource-Network.md'
     - '15.3 Runs Visualization': 'Monitoring/03.Runs-Visualization.md'
+- 16. MCP Plugin:
+    - '16.1 Composable Analytics MCP Plugin': 'MCP/01.MCP-Plugin.md'
 - Tutorials:
     - 'DataFlow: "Hello, World!"': 'Tutorial/DataFlow-Hello-World.md'
     - 'DataFlow: Word Count Using Python and C#': 'Tutorial/DataFlow-Word-Count.md'
